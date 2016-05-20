@@ -3,11 +3,15 @@
 Der serielle Monitor ist ein Werkzeug um Daten über die Kabelverbindung des Arduino direkt in der IDE anzeigen zu lassen und Daten von der Computertastatur an den Arduino zu übertragen.
 Um den seriellen Monitor zu starten musst du zuerst die IDE öffnen und dann in der Symbolleiste auf das Symbol mit der kleinen Lupe klicken.
 
-ABBILDUNG LUPE
+![Lupe](https://raw.githubusercontent.com/sensebox/resources/master/images/arduino_magnifying_glass.png
+ "Lupe")
+
 
  Das nun geöffnete Fenster hat oben eine Eingabezeile mit Senden-Schaltfläche und darunter ein Ausgabefenster. Im Ausgabefenster werden fortlaufend die neusten Ausgaben angezeigt. Wenn das Häkchen bei Autoscroll gesetzt ist, werden nur die aktuellsten Ausgaben angezeigt. Das heißt, wenn das Ausgabefenster voll ist, werden ältere Daten nach oben aus dem sichtbaren Bereich des Bildschirms geschoben um Platz für die aktuellen Ausgaben zu schaffen. Deaktiviert man die Autscroll Funktion, muss manuell über den Rollbalken am rechten Rand gescrollt werden.
 
-ABBILDUNG SERIELLER MONITOR
+![serieller Monitor](https://raw.githubusercontent.com/sensebox/resources/master/images/arduino_serial_monitor.jpg
+ "serieller Monitor")
+
 
  ## Den seriellen Monitor starten
 
@@ -19,4 +23,8 @@ Um Daten an den seriellen Monitor zu senden verwendet man die Funktionen `Serial
 
 ```Serial.print("senseBox rocks")```
 
-Wie dir bestimmt aufgefallen ist, 
+Um nach dem eingetragenen Text einen Zeilenumbruch einzufügen, benutzt man den Befehl `Serial.println()`.
+
+Neben Text kann man sich im seriellen Monitor auch die Inhalte von Variablen anzeigen lassen. Dazu muss anstatt der gewünschte Text in Anführungszeichen der Name der jeweiligen Variable eingetragen werden.
+
+```Serial.println(Beispielvariable)``
