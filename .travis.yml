@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "5"
+before_install:
+  - npm install -g gitbook-cli
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
+  deploy_docs.sh
+env:
+  global:
+    secure: ouwy46/8UcBS9vn+idIyEInxj4QUm5dZTdCTG6+W+133ZJzdh0OibF6X+ENRqIfvh1bSxqoHkcyCnMpwKAsdRCbv8IcAjDPFwDDn9A71a9Yd3Eq3A8M+FK1rkuKNSKkIWkShs5Xz6ueNpgBFkfC3TtE8KCZGlmDxHbeuoi3ZAzFh3BVKXcHRKn/Gv7g0IbDZqYHpyAkYHL+Fouk9kDSymZnQIOq8P6kZs+FtRAxnkrPte62dkOby3wuq2RXMfu8pRiwAdohCw5e6WXEqKHdQSKjVVWJ1v8x6avZfNh8HxODlAPluxrN0Y+oP4aGPpH8PW6yd78Ze8K1UZEKCVdEpnVi3cwRGvGw1ri0+LxSy1dcK7Bbf7RAraycQJ9zSdxEMngVHXZChmQeZRuQRJKf8d48326EizIO5UU2q91CIRtlOpeEPJ3Yy9LdlDKMTf4cJMRF1xzYbl3ek8ecIpm6sKM3S/PRf37fyNJo7B94m97w7IttN/Y4XLJhNC+36+SJKWzGa1f62d++OSkETb7bBY7XAZx2G6qt3qjgXf+Q/9+qkg4nCGtKzd86TMvxbSVvZvp5g1td35cC343k7o3qgCJFFz1pgKuG00n1zQQSvQIuqktsvZNdv9PTS3qSklIpF03QwFxKC8i7aDXPUgLq7FUeNlqhdD5kOLAIL4E/J3tE=
