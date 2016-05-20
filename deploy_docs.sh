@@ -10,6 +10,7 @@ for d in */; do
 		echo cd into $d
 		cd $d
 		rm -rf _book
+		gitbook install
 		gitbook build
 		mkdir ../dist/$d
 		cp -r _book/* ../dist/$d
