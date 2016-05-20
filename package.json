@@ -1,0 +1,19 @@
+{
+  "name": "sensebox-books",
+  "version": "1.0.0",
+  "description": "Open Educational Resources for senseBox:home and senseBox:edu",
+  "scripts": {
+    "dev": "gitbook serve",
+    "build": "sh deploy_docs.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensebox/books.git"
+  },
+  "author": "Matthias <matthias.pfeil@wwu.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sensebox/books/issues"
+  },
+  "homepage": "https://github.com/sensebox/books#readme"
+}
