@@ -1,0 +1,13 @@
+{
+	"gitbook": "2.6.7",
+	"plugins": ["edit-link"],
+	"pluginsConfig": {
+		"edit-link": {
+			"base": "https://github.com/sensebox/books/tree/master/edu",
+			"label": {
+        "en": "Edit This Page",
+        "de": "Seite bearbeiten"
+      }
+		}
+	}
+}
