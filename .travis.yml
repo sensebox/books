@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - "5"
+  - '5'
 before_install:
   - npm install -g gitbook-cli
 after_success:
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy_docs.sh
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
+  deploy_docs.sh
 env:
   global:
-    secure: d2wmOi2VPcDM5e+XIYJJ8pIRJ9pUBJgRSkIezgQ2jHrw4sJjtg4mtGiDxJJXJqswpZ0r6eniRbfRmX4bBwVPnrQF20WK0G1YYhkaMFMdabktq5BPapRKUfjSZ5cXzsRC0zcjDmxti76bXpRhCruOVxNgOVmn6I1M+GLqOPf44kVwx8fLUu+Xawcge7DJ6RBElJIc54HX/UiletVwq7+FadYBQcM0Vl3ABVrOceSB/RoqQ8AOn3IGLw3dnntPN7ZojlHaOPz66jhoA+oAVSTso6EQ9sWxnRJklxOFMqj/a2o/A9Pxg7CfBkgW1UhnKyLnRh7XMOolOkWZE98kpyKUQgOh9m8WKCSTVoeS5D0zJMwjLFSRcYRLkRySvVklJcm7wWsSnoeYYUHyQjeuu4h/GMm+rz2vhRry75M9OIUiDQf/qrSUMPjOuDs0yfEPiNPSP4getBHjy8rWWfIOsW0YVb1F7Trr+4YobP+y7mrLpsjJX7sLzXp6i08xkSX9AJ3N+RqJ76sxJegmECQvealkPcuR7+vOmm5qI1cXTLG2G9iacTpic7PvmR2LXi7vaa91vgPqicBYd7I3Wn6P/JXe/U5KVkCM854CUpz1F6Bfg+MAowCUv1/ag7Z3vJkAAiRC2rD2vNdArYfYxsz5l4fezV9MYjqsAN4xZOMh8xUB2mg=
+    secure: MriokGVLqkSQFMeQIeB75M8CLbRWs4Y0HEVPhL1szrcg0bYk/NkhTQ5+PUyVSYSKGaQwjAW+//ZAgb/r/u95mqVcGXByyvbM+CGjIYjzpGkwxPRgoFR2C41qZc7mULDy5oYv69ED9Dqdq7QGl1DGgmkR9F12KXw4OewvqWOz5qpT20iFqJZZHAK68YCsFh6ex1v42ZW4Znpteu9Ivm1lRRH3VaXztjlVxbP/7Jqpgd5r0N5bCSWmtKY4bN/TIiAanyskp+TGLrJW+zxCSGfAEby7flcZ7dsB7Ef28mjQQRomLpN/yS6hz4IZh5VUI+x898liXO2Pn/nmWAl5ts5lVOLkQZn338sBb6kfz2EY6Tq33LzOLx1WrgG/lZeb/vtcbTSHV3ISevm+El0jgfREz6sv5GTwoOmK9aIzfhDS5fWn5E7gn5SWiqKYenkVxIzghIbA2KSyfteOHDD1YeipCuSU66zyWVylWHreoPDfmHKcaneIuOK9TBeO+tWAtUmGjjdD/d0j5Gfgrvk0pF3NyMuE97vovsMKFxmEvsRkhFj7s68HcgMKHM7HbTvrBqPmCUi6u/fhQ9wchjxmQVPAso/Y9eU8rrkvUnlJaaH22I2/ftrbmWNK4cn6pQBiR3xDskK9E1ZXzJAZCKVctFXdiX3wYAqTivPEVBEJTQ/L8Pg=
