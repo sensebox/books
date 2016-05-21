@@ -1,4 +1,5 @@
-<img src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/sensebox_logo_neu.png" width="200"/>
+![Logo](https://raw.githubusercontent.com/sensebox/OER/master/senseBox_edu/images/sensebox_logo_neu.png
+ "Logo")
 
 #Die senseBox:edu
 
