@@ -17,6 +17,6 @@
    * [Verkehrszähler](verkehrszaehler.md)
    * [Datenlogger](datenlogger.md)
    * [Summer](summer.md)
-* [Glossar](glossar.md)
+* [Glossar](GLOSSARY.md)
 * [FAQ](faq.md)
 
