@@ -1,15 +1,23 @@
+# Driver- & software installation
 
-# Treiber und Softwareinstallation
->Bei den neusten Versionen unserer Bausätze welche das *Genuino Uno* Board enthalten, ist eine Treiberinstallation nicht mehr notwendig. Besitzer der Bausätze mit *Wattuino Uno* Board müssen diesen Schritt jedoch ausführen!
-
-
-Bevor die senseBox aktiviert werden kann, müsst ihr Treiber sowie eine Software auf eurem Computer installieren. Außerdem ist es vor Inbetriebnahme der SenseBox ratsam einen Testlauf durchzuführen, um zu überprüfen ob die Sensoren korrekt funktionieren und die Kommunikation mit dem Internet reibungslos läuft.
-
-Wie oben bereits angedeutet, gibt es die senseBox:home mit verschiedenen Microkontroller Boards. Unterhalb rechts im Bild ist der Kontroller der neuen Version abgebilden, der Genuino Uno, und links im Bild das Board der alten Version, der Wattuino Uno.
+The senseBox:home is available with different microcontrollers:
+Older versions come with a *Wattuino Uno* board (pictured on the left), current versions come with a *Genuino Uno* board (pictured on the right).
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/controller_boards.jpg" align="center" width="400"/>
 
-Falls etwas bei dem Testlauf schief geht, meldet euch am besten bei unserem Support unter [support@uni-muenster.de](mailto:support@uni-muenster.de).
+> **Only windows users with a *Wattuino Uno* have to do a manual installation of the FTDI drivers** (see below)!
+
+## Preparation
+
+Before activating your senseBox, installation of drivers and additional software on your computer is required.
+Also a test run is recommended to verify the proper operation of sensors and internet connection.
+This setup guide is written for Windows 7, but other operating systems like Linux and OSX are supported as well, and are set up similarly.
+
+If something goes wrong, just [contact our support team](mailto:support@sensebox.de)!
+
+---
+
+# `WIP TODO`
 
 ## Arduino Software herunterladen
 >Für einen reibungslosen Ablauf bitte Arduino 1.6.5 oder höher nutzen.

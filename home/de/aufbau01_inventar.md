@@ -9,9 +9,9 @@ Bevor es los geht solltet ihr überprüfen ob alle Bauteile vorhanden sind.
 
 |Platine|Beschreibung|
 |---|---|
-|Genuino Uno|Liest die angeschlossenen Sensoren aus und überträgt die Messungen ins Internet|
-|W5500 Ethernet Shield|Ist für die Internetverbindung zuständig|
-|senseBox Shield|Hier werden die Sensoren angeschlossen|
+|Genuino Uno (unten)|Liest die angeschlossenen Sensoren aus und überträgt die Messungen ins Internet|
+|W5500 Ethernet Shield (mitte)|Ist für die Internetverbindung zuständig|
+|senseBox Shield (oben)|Hier werden die Sensoren angeschlossen|
 
 #### Grundausstattung mit vier Sensoren
 
@@ -38,7 +38,7 @@ Bevor es los geht solltet ihr überprüfen ob alle Bauteile vorhanden sind.
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensebox_home_alles.jpg" align="center" width="400"/>
 
-## NICHT im Lieferumgfang enthalten
+## Zusätzliche Materialien (NICHT im Lieferumfang enthalten)
 
 - LAN-Kabel für den Anschluss der senseBox an euren Router
 - Gehäuse für eine wetterfeste Installation der Elektronik
@@ -46,7 +46,7 @@ Bevor es los geht solltet ihr überprüfen ob alle Bauteile vorhanden sind.
 
 ---
 
-# Aufbau der SenseBox
+# Aufbau der senseBox
 Hier wird in nur wenigen Schritten eure Messstation zusammengebaut.
 
 > Die senseBox wird entweder über das USB-Kabel oder über das Netzteil mit Strom versorgt. Das Netzteil braucht ihr erst später, um die Station draußen aufzubauen.
