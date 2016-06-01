@@ -17,7 +17,7 @@ The three boards are stacked on top of each other:
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensebox_home_sensoren.jpg" align="center" width="400"/>
 
 - `HDC1008`  -- thermometer and hygrometer, measuring temperature (°C) and relative air humidity (%)
-- `BMP280`   -- barometer, measuring air pressure (Pascal)
+- `BMP280`   -- barometer, measuring air pressure (hPa)
 - `TSL45315` -- luxmeter, measuring intensity of the visible light spectrum (Lux)
 - `VEML6070` -- UV-light sensor, measuring intensity of UV-light radiation (μW/cm²)
 
