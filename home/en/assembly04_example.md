@@ -1,87 +1,104 @@
->***Hinweis:***
-Ein Gehäuse speziell für die senseBox:home befindet sich noch in der Entwicklung. Der hier gezeigte Aufbau ist daher nur ein Beispiel dafür, wie sich die Komponenten anbringen lassen. Beim Aufbau ist auch immer etwas Kreativität gefragt um die Station individuell an den Aufstellungsort anzupassen!
+>***information:***
+A custom casing for the senseBox:home is currently in development, but not yet available.
+The setup shown here thus is just an examplary assembly.
+With a bit of creativity, a decent casing can be designed for your specific installation site!
 
-# Beispielanwendung
-Die Beispielanwendung setzt voraus, dass die senseBox vorher auf der openSenseMap registriert und programmiert wurde ([siehe Schritt 3](aufbau03_osem.html)).
 
-Um die senseBox draußen aufzubauen, braucht ihr noch ein ausreichend langes Netzwerkkabel, sowie ein wasserfestes Gehäuse. Bei dem Gehäuse müsst ihr darauf achten, dass es einen transparenten Deckel ohne Lichtfilterwirkung hat, damit sinnvolle Lichtmessungen gemacht werden können. Zusätzliche Kosten für ein Gehäuse belaufen sich auf ca. 20€.
+# Exemplary setup
+This hardware setup requires that the previous steps are completed, and the station is registered on the openSenseMap.
 
-Zudem braucht ihr noch eine Heißklebepistole, Bohrmaschine ,Schraubendreher sowie ein paar Kabelbinder zur Befestigung.
+To set up the senseBox outdoors, a long ethernet cable, a Power-on-LAN (POE) adapter, and a weatherproof case is required.
+For requirements on the casing see the [first section of this guide](assembly01_inventory.html#additional-accessories-not-included-with-your-senseboxhome).
 
----
+Additionaly the following tools are needed:
 
-## Gehäuseaufbau
-Für unseren Testaufbau benutzen wir [dieses Gehäuse](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf) der Firma FIBOX ([hier](http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124) bestellbar):
+- hot glue
+- drill
+- screw-driver
+- cable ties
+
+## Casing
+We use [this](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf) case, which is available for order on [the company's webshop](http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124).
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/Fibox.jpg" align="center" width="400"/>
 
-#### Kabelführung bohren
-Durch eine ca. 15mm breite Bohrung im Boden des Gehäuses werden Strom- und Netzwerkkabel gelegt, sowie das lange Verbindungskabel für den HDC1008 Temperatur-/Luftfeuchtesensor:
+#### Cable routing
+
+The combined power- and ethernet cable, as well as the long connection cable to the `HDC1008` temperature sensor is run through a 15mm wide hole, which we drill through the side of the case:
 
 |||
 |---|---|
 |<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/bohrung_1.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/bohrung_2.jpg" align="center" width="400"/>|
 
-#### Hauptplatinen festkleben
-Dazu setzen wir im Gehäuse einige Klebepunkte mit dem Heißkleber und drücken die Hauptplatine an, bis der Kleber getrocknet ist:
+#### Mounting the circuit board
+
+To fix the main board into the casing, simply a few points of hotglue are required.
+With a bit of pressure it should sit soon well within the case:
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/angeklebt.jpg" align="center" width="400"/>
 
-#### Sensoren befestigen
-Es sollte darauf geachtet werden, dass ***keine Kleberreste*** auf die Oberseite der Sensorplatinen kommt! Beim festkleben der Sensoren reicht schon ein wenig Heißkleber aus.
+#### Mounting the sensors
 
-Die beiden Lichtsensoren oben auf das senseBox-Shield kleben. Die beiden Lichtsensoren sollten "freie Sicht" zum transparenten Deckel haben und nicht von den Kabeln bedeckt werden!
+When attaching the sensors, make sure **no residues of adhesive** get onto the front side of the circuit board!
+
+Both light-sensors (`VEML6070` and `TSL45315`) are placed on top of the senseBox shield, as they require an unobstructed view to the transparent case-top.
+Make sure they are not covered by cables later on!
 
 |||
 |---|---|
 |<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensor_ankleben_1.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensor_ankleben_2.jpg" align="center" width="400"/>|
 
-Den Luftdrucksensor ebenfalls im Gehäuse mit etwas Heißkleber weiter vorne befestigen:
+The air-pressure sensor (`BMP280`) is placed more tot the front of the case:
 
 |||
 |---|---|
 |<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/luftdruck_ankleben_1.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/luftdruck_ankleben_2.jpg" align="center" width="400"/>|
 
 
-#### Temperatursensor anbringen
-Im Gehäuse werden Temperatur und Luftfeuchte durch die Eigenwärme des Mikrocontrollers beeinflusst. Daher muss der HDC1008 außerhalb in einem zweiten Gehäuse angebracht werden, in dem er vor Regen oder Spritzwasser geschützt ist. Dazu führen wir das lange Sensor-Verbindungskabel durch die Bohrung nach außen und verbinden es mit dem Sensor.
+#### Mounting the temperature sensor
+Air-pressure and -temperature are affected by the waste heat of the microcontroller.
+Thus a separate housing (see below) for the `HDC1008` is required, which has a better airflow, but still protects from rainwater.
+We use the long connection cable for this sensor and route it through the drilled hole.
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_aussen.jpg" align="center" width="400"/>
 
-#### Strom- und Netzwerkanschluss
-Um die senseBox mit Strom zu versorgen, kann ein Power over Ethernet Adapter verwendet werden. Dieser wird an den Netzwerk- und Stromanschluss der Hauptplatinen angeschlossen. Danach kann das Ethernetkabel durch das Bohrloch geführt und in den Adapter gesteckt werden.
+#### Power- and network connection
+To provide the station with power, we use a POE-adapter as it uses up less space in the drilling hole.
+The usual power connection may be used instead, of course.
+
+The adapter is connected to the respective connections on the main boards.
+Afterwards we route an ethernet cable into the case and connect it to the adapter:
 
 |||
 |---|---|
 |<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/POE_1.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/POE_2.jpg" align="center" width="400"/> |
 
-Nun kann das Gehäuse verschlossen werden.
+Now we are done with the casing and it may be closed!
 
-#### Temperatursensorgehäuse
-Damit der Temperatur- und Luftfeuchtesensor durch Regen und Schmutz geschützt ist, wird er in einem eigenen Gehäuse untergebracht. Dazu den Sensor einfach in das Gehäuse schieben und danach die Klappe aufschieben.
+#### Casing for the `HDC1008`
+To make the placement of the temperature sensor weatherproof, we 3D-printed a small separate casing.
+After sliding the sensor board in and closing the lid, we attach the case onto the main FIBOX case with hotglue:
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_gehaeuse.jpg" align="center" width="400"/>
 
-Das Gehäuse kann danach etwa mit Heißkleber an das ursprüngliche Gehäuse geklebt werden.
-
-#### Kabelzugang abdichten
-Damit kein Wasser durch die Kabelführung ins Innere des Gehäuses eindringt, muss diese Öffnung abgedichtet werden. Dazu eignet sich beispielsweise Dichtungsmasse oder auch Heißkleber:
+#### Seal the case
+At last we need to make sure that no water gets into the case.
+Once again we use our hot glue, and seal the drilled hole:
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/abdichten.jpg" align="center" width="400"/>
 
-#### Endergebnis
-Zuletzt noch den zweiten Power over Ethernet Adapter mit dem Ende des Ethernetkabels verbinden. fertig!
+#### Final result
+For the installation we attach the second piece of the POE-adapter to the ethernet cable, and connect the senseBox to the network and power supply.
+
+done!
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>
 
----
+## Placement outdoors
 
-## Aufstellen im Freien
->***Achtung:***
-Falls der Stromstecker nach draußen verlängert werden muss, ist unbeding darauf zu achten, dass eine wetterfeste Verteilerdose verwendet wird! Diese sollte mindestens die [Schutzart IP65](http://www.ncps.de/NetCare_Trier/Lexikon/IP_Schutzarten/) erfüllen.
+> ***warning!***
+In case the power plug needs to be extended outdoors, absolutely use a weatherproof junction box!
 
-Sucht euch einen Standort für die Station, an dem ihr eure Daten aufnehmen wollt. Im besten Falle sollte dieser Standort exponiert unter freiem Himmel sein. Da die Lage der Station allerdings durch Länge der Kabel begrenzt ist, werden die privaten Stationen in der Regel auf einem Balkon oder an einer Häuserwand befestigt.
+Look for a location for the station, which ideally is directly exposed to the sky and is unobstructed in its surroundings.
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpeg" align="center" width="400"/>
-
-Zuerst das Netzwerkkabel mit einem Router verbinden, danach den Strom anschließen.

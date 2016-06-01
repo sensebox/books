@@ -12,8 +12,8 @@ Bei Schritt 2 der Registrierung wirst du nach einem Hardware Setup gefragt. Wäh
 Nachdem ihr den Anhang der Email herunter geladen habt, müsst ihr dieses Programm auf eure senseBox laden. Wie man genau ein Programm auf den Mikrocontroller lädt, ist bereits in Abschnitt 2 der Anleitung ausführlich erklärt worden. Hier die Schritte in der Übersicht:
 
 - Arduino Anwendung öffnen
-- In der Menüleiste Datei → Öffnen auswählen und die „sensebox.ino“ Datei auswählen
-- Dialog mit „Ja“ bestätigen
+- In der Menüleiste `Datei` → `Öffnen` auswählen und die `sensebox.ino` Datei auswählen
+- Dialog mit "Ja" bestätigen
 - Das Programm über das **Pfeil** Icon auf den Mikrocontroller laden
 - Warten bis das Programm übertragen wurde
 

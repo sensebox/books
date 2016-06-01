@@ -8,8 +8,6 @@ Um die senseBox draußen aufzubauen, braucht ihr noch ein ausreichend langes Net
 
 Zudem braucht ihr noch eine Heißklebepistole, Bohrmaschine ,Schraubendreher sowie ein paar Kabelbinder zur Befestigung.
 
----
-
 ## Gehäuseaufbau
 Für unseren Testaufbau benutzen wir [dieses Gehäuse](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf) der Firma FIBOX ([hier](http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124) bestellbar):
 
@@ -73,8 +71,6 @@ Damit kein Wasser durch die Kabelführung ins Innere des Gehäuses eindringt, mu
 Zuletzt noch den zweiten Power over Ethernet Adapter mit dem Ende des Ethernetkabels verbinden. fertig!
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>
-
----
 
 ## Aufstellen im Freien
 >***Achtung:***

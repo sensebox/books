@@ -1,20 +1,27 @@
-# Online Aktivierung
-Hier wird die Einbindung der senseBox in unser Sensornetzwerk durch die Registrierung auf der openSenseMap beschrieben.
+# openSenseMap registration
+
+Here the integration of your senseBox:home in our sensor network *openSenseMap* is described.
+On this platform a registration is required, where you specify the exact setup of your box.
+
+> ***hint:*** *you may change the OSeM website-language in the navbar!*
 
 ## Registrierung auf der openSenseMap
-Ein Software-Programm für einen Arduino Mikrocontroller könnt ihr an der Dateiendung „.ino“ erkennen. Eine solche Ino-Datei benötigt ihr, um eure senseBox mit der openSenseMap im Internet zu verbinden. Den passenden Sketch bekommt ihr zusammen mit einer E-Mail zugeschickt, wenn ihr eure Station bei auf der [openSenseMap registriert](http://www.opensensemap.org/register).
 
-> Für die User die eine senseBox im Rahmen der *Make Light* Initiative gesendet bekommen haben, bitte in Schritt 1 bei der Gruppenkennzeichnung ***MakeLight*** angeben!
+Register your senseBox by filling out the form [here](http://www.opensensemap.org/register).
+In step 2 of the registration you are asked for a hardware setup specification. Choose *senseBox:home* and tick the *senseBox:home with ethernet* checkbox.
 
-Bei Schritt 2 der Registrierung wirst du nach einem Hardware Setup gefragt. Wähle dort die „senseBox:home“ aus und setze danach den Haken bei „senseBox:home mit Ethernet“.
+Once completed, you will recieve an email, containing keys for your senseBox and sensors, as well as an custom arduino sketch (see the file extension `.ino`) which you'll need to upload onto the microcontroller.
 
-## Programm auf die Station laden
-Nachdem ihr den Anhang der Email herunter geladen habt, müsst ihr dieses Programm auf eure senseBox laden. Wie man genau ein Programm auf den Mikrocontroller lädt, ist bereits in Abschnitt 2 der Anleitung ausführlich erklärt worden. Hier die Schritte in der Übersicht:
+> For users from the *Make Light* initiative: Please fill in `MakeLight` in the field *Group identifier*!
 
-- Arduino Anwendung öffnen
-- In der Menüleiste Datei → Öffnen auswählen und die „sensebox.ino“ Datei auswählen
-- Dialog mit „Ja“ bestätigen
-- Das Programm über das **Pfeil** Icon auf den Mikrocontroller laden
-- Warten bis das Programm übertragen wurde
+## Upload the sketch
 
-Wenn alles richtig gelaufen ist, könnt ihr nun auf der openSenseMap eure Station auswählen und verfolgen wie Messungen kontinuierlich übertragen werden. Probiert es aus und sucht dort eure senseBox!
+Once you downloaded the `sensebox.ino` attachment from the email, you need to upload the sketch onto the microcontroller, as was already described in section 2.
+Here's a brief summary of the steps:
+
+1. open the Arduino IDE
+2. in the toolbar select `File` → `Open` and choose the downloaded `sensebox.ino` sketch
+3. confirm the dialog with "yes"
+4. upload the sketch onto the microcontroller using the **arrow** button
+
+If nothing went wrong, you can now view your station on the openSenseMap (use the link in the email) and view the uploaded measurements!

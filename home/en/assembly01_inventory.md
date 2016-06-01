@@ -46,7 +46,7 @@ The casing has to meet some requirements to ensure a minimal impact on the measu
 
 - a transparent top cover, without a filtering effect (G-UVT plexiglass normally does the job). This ensures proper light measurements.
 - a white colored material, so it reflects most of the longwave radiation, allowing proper temperature measurements.
-- some holes for proper airflow (while keeping it rainwater-proof).
+- some holes for proper airflow (while keeping it waterproof).
 
 The material cost for such a case total at around 20 - 30 €. Building instructions are not contained in this tutorial, you may get creative yourself! At the end of this tutorial an [exemplary assembly](aufbau04_anwendung.html) is described.
 
