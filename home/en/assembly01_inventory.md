@@ -36,12 +36,12 @@ The three boards are stacked on top of each other:
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensebox_home_alles.jpg" align="center" width="400"/>
 
 ## Additional accessories (NOT included with your senseBox:home)
+To set up your senseBox outdoors, you need additional components, which are not included with your box.
 
-- **ethernet cable**, for (internet-) connection with your router
+- **ethernet cable**, for internet connection to your router
 - **casing**, for a weatherproof outdoor installation of the device
 - **tools** for the assembly (e.g. hot glue, drill, ...)
 
-To set up your senseBox outdoors, you need additional components, which are not included with your box.
 The casing has to meet some requirements to ensure a minimal impact on the measurements. It has to have...
 
 - a transparent top cover, without a filtering effect (G-UVT plexiglass normally does the job). This ensures proper light measurements.

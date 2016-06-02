@@ -1,16 +1,13 @@
->***information:***
+>***Information:***
 A custom casing for the senseBox:home is currently in development, but not yet available.
 The setup shown here thus is just an examplary assembly.
-With a bit of creativity, a decent casing can be designed for your specific installation site!
-
+With a bit of creativity, you can design a decent casing for your specific installation site!
 
 # Exemplary setup
 This hardware setup requires that the previous steps are completed, and the station is registered on the openSenseMap.
 
 To set up the senseBox outdoors, a long ethernet cable, a Power-on-LAN (POE) adapter, and a weatherproof case is required.
-For requirements on the casing see the [first section of this guide](assembly01_inventory.html#additional-accessories-not-included-with-your-senseboxhome).
-
-Additionaly the following tools are needed:
+Additionally the following tools are needed:
 
 - hot glue
 - drill
@@ -18,7 +15,8 @@ Additionaly the following tools are needed:
 - cable ties
 
 ## Casing
-We use [this](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf) case, which is available for order on [the company's webshop](http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124).
+For requirements on the casing see the [first section of this guide](assembly01_inventory.html#additional-accessories-not-included-with-your-senseboxhome).
+We use [this](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf) case, which is available for order on [the manufacturer's webshop](http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124).
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/Fibox.jpg" align="center" width="400"/>
 
@@ -48,7 +46,7 @@ Make sure they are not covered by cables later on!
 |---|---|
 |<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensor_ankleben_1.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensor_ankleben_2.jpg" align="center" width="400"/>|
 
-The air-pressure sensor (`BMP280`) is placed more tot the front of the case:
+The air-pressure sensor (`BMP280`) is placed on the side of the case:
 
 |||
 |---|---|
@@ -56,15 +54,15 @@ The air-pressure sensor (`BMP280`) is placed more tot the front of the case:
 
 
 #### Mounting the temperature sensor
-Air-pressure and -temperature are affected by the waste heat of the microcontroller.
-Thus a separate housing (see below) for the `HDC1008` is required, which has a better airflow, but still protects from rainwater.
-We use the long connection cable for this sensor and route it through the drilled hole.
+Air-pressure and -temperature are affected by the wasteheat of the microcontroller.
+Thus a separate housing (see below) for the `HDC1008` is required, that has a better airflow, but still protects the sensor from rainwater.
+We use the long connection cable for this sensor and route it through the drilled hole:
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_aussen.jpg" align="center" width="400"/>
 
-#### Power- and network connection
+#### Power and network connection
 To provide the station with power, we use a POE-adapter as it uses up less space in the drilling hole.
-The usual power connection may be used instead, of course.
+The usual power connection may be used instead of course.
 
 The adapter is connected to the respective connections on the main boards.
 Afterwards we route an ethernet cable into the case and connect it to the adapter:
@@ -76,10 +74,11 @@ Afterwards we route an ethernet cable into the case and connect it to the adapte
 Now we are done with the casing and it may be closed!
 
 #### Casing for the `HDC1008`
-To make the placement of the temperature sensor weatherproof, we 3D-printed a small separate casing.
-After sliding the sensor board in and closing the lid, we attach the case onto the main FIBOX case with hotglue:
+To make the placement of the temperature sensor weatherproof, we 3D-printed a small separate casing:
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_gehaeuse.jpg" align="center" width="400"/>
+
+After sliding the sensor board in and closing the lid, we attach the case onto the main FIBOX case with hotglue.
 
 #### Seal the case
 At last we need to make sure that no water gets into the case.
@@ -92,13 +91,10 @@ For the installation we attach the second piece of the POE-adapter to the ethern
 
 done!
 
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>
+|||
+|---|---|
+|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpeg" align="center" width="400"/>|
 
-## Placement outdoors
+> ***hint:*** Look for a location for the station, which ideally is directly exposed to the sky and is unobstructed in its surroundings
 
-> ***warning!***
-In case the power plug needs to be extended outdoors, absolutely use a weatherproof junction box!
-
-Look for a location for the station, which ideally is directly exposed to the sky and is unobstructed in its surroundings.
-
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpeg" align="center" width="400"/>
+> ***warning!*** you need to place the power plug outdoors, absolutely use a weatherproof junction box!

@@ -47,7 +47,7 @@ Im Gehäuse werden Temperatur und Luftfeuchte durch die Eigenwärme des Mikrocon
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_aussen.jpg" align="center" width="400"/>
 
 #### Strom- und Netzwerkanschluss
-Um die senseBox mit Strom zu versorgen, kann ein Power over Ethernet Adapter verwendet werden. Dieser wird an den Netzwerk- und Stromanschluss der Hauptplatinen angeschlossen. Danach kann das Ethernetkabel durch das Bohrloch geführt und in den Adapter gesteckt werden.
+Um die senseBox mit Strom zu versorgen, kann ein Power-over-Ethernet-Adapter (POE) verwendet werden. Dieser wird an den Netzwerk- und Stromanschluss der Hauptplatinen angeschlossen. Danach kann das Ethernetkabel durch das Bohrloch geführt und in den Adapter gesteckt werden.
 
 |||
 |---|---|
@@ -68,16 +68,18 @@ Damit kein Wasser durch die Kabelführung ins Innere des Gehäuses eindringt, mu
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/abdichten.jpg" align="center" width="400"/>
 
 #### Endergebnis
-Zuletzt noch den zweiten Power over Ethernet Adapter mit dem Ende des Ethernetkabels verbinden. fertig!
+Zuletzt noch den zweiten POE-Adapter mit dem Ende des Ethernetkabels, und diesen mit Router und Netzteil verbinden.
 
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>
+fertig!
 
-## Aufstellen im Freien
+|||
+|---|---|
+|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpeg" align="center" width="400"/>|
+
+Sucht euch einen Standort für die Station, an dem ihr eure Daten aufnehmen wollt.
+Im besten Falle sollte dieser Standort exponiert unter freiem Himmel sein.
+Da die Lage der Station allerdings durch Länge der Kabel begrenzt ist, werden die privaten Stationen in der Regel auf einem Balkon oder an einer Häuserwand befestigt.
+
+
 >***Achtung:***
 Falls der Stromstecker nach draußen verlängert werden muss, ist unbeding darauf zu achten, dass eine wetterfeste Verteilerdose verwendet wird! Diese sollte mindestens die [Schutzart IP65](http://www.ncps.de/NetCare_Trier/Lexikon/IP_Schutzarten/) erfüllen.
-
-Sucht euch einen Standort für die Station, an dem ihr eure Daten aufnehmen wollt. Im besten Falle sollte dieser Standort exponiert unter freiem Himmel sein. Da die Lage der Station allerdings durch Länge der Kabel begrenzt ist, werden die privaten Stationen in der Regel auf einem Balkon oder an einer Häuserwand befestigt.
-
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpeg" align="center" width="400"/>
-
-Zuerst das Netzwerkkabel mit einem Router verbinden, danach den Strom anschließen.

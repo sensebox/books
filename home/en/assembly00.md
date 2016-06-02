@@ -7,7 +7,7 @@ This manual is divided into the following sections:
 1. [Inventory](assembly01_inventory.md)
 2. [Software installation and sensor testing](assembly02_software.md)
 3. [Registration on the openSenseMap](assembly03_osem.md)
-4. [Exemplary application](assembly04_example.md)
+4. [Exemplary setup](assembly04_example.md)
 
 If you have questions about the assembly, which are not answered in this manual, please contact us under [support@sensebox.de](mailto:support@sensebox.de).
 
