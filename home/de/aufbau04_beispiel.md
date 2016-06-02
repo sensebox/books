@@ -74,7 +74,7 @@ fertig!
 
 |||
 |---|---|
-|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpeg" align="center" width="400"/>|
+|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpg" align="center" width="400"/>|
 
 Sucht euch einen Standort für die Station, an dem ihr eure Daten aufnehmen wollt.
 Im besten Falle sollte dieser Standort exponiert unter freiem Himmel sein.

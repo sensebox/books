@@ -93,7 +93,7 @@ done!
 
 |||
 |---|---|
-|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpeg" align="center" width="400"/>|
+|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/endergebnis.jpg" align="center" width="400"/>|<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/mario_sensebox.jpg" align="center" width="400"/>|
 
 > ***hint:*** Look for a location for the station, which ideally is directly exposed to the sky and is unobstructed in its surroundings
 
