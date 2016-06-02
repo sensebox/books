@@ -1,4 +1,4 @@
 # Languages
 
+* [Deutsch](de/)
 * [English](en/)
-* [German](de/)
