@@ -1,7 +1,3 @@
-# Datenlogger
-
-<img src="https://github.com/sensebox/OER/wiki/images_edu/sensebox_logo_neu.png" width="200"/> 
-
 #SD-Datenlogger
 
 In der folgenden kurzen Anleitung wird beschrieben, wie du Messwerte verschiedener Sensoren auslesen und auf SD-Karte speichern kannst.
