@@ -4,7 +4,7 @@ Um Daten in Programmen festzuhalten, verwendet man Variablen. Eine Variable ist 
 
 | Variablentyp | Bedeutung     | Beschreibung  |
 | -------------	|-------------	| -----	|
-| array	| Variablenfeld			| mehrere Werte eines Variablentyps können gespeichert werden |
+| array	| Variablenfeld			| mehrere Werte des selben Variablentyps können gespeichert werden |
 | boolean | wahr o. falsch		| Kann nur zwei Werte annehmen, 1 oder 0.		|
 | char	| Character				| Alphanumerische Zeichen (Buchstaben, Zahlen, Sonderzeichen)		|
 | byte	| ganze Zahlen     		| ganze Zahlen von 0 bis 255 	|
@@ -14,11 +14,11 @@ Um Daten in Programmen festzuhalten, verwendet man Variablen. Eine Variable ist 
 
 Variablen werden in einem Arduino Sketch noch vor dem `voidloop()` den jeweiligen Befehl (siehe unten) einfügt.
 
-### array
+## array
 
 Ein Array ist eigentlich kein wirklicher Datentyp, es ist viel mehr ein Sammlung mehrerer Varibalen eines Typs.
 
-``` 
+```
 int TestArray[5] = {5, 10, 15, 20, 15};
 ```
 Im Beispiel wird ein Array vom Typ integer angelegt, da Zahlen gespeichert werden sollen. Die 5 in eckigen Klammern hinter dem Namen der Variable legt die Anzahl an Speicherplätzen fest.
@@ -31,7 +31,7 @@ analogWrite(Pin, TestArray [0]);
 
 ### boolean
 
-Ein Boolean kann nur zwei Werte annehmen, wahr oder falsch (true or false). Die 0 steht in diesem Fall für den Startwert der Variable. 
+Ein Boolean kann nur zwei Werte annehmen, wahr oder falsch (true or false). Die 0 steht in diesem Fall für den Startwert der Variable.
 
 ```
 boolean Test = 0;
@@ -50,7 +50,7 @@ char Test = 'a';
 Ein Byte speichert eine 8-bit große, vorzeichenlose Zahl von 0 bis 255.
 
 ```
-byte Test = B10010; 
+byte Test = B10010;
 ```
 Das "B" kennzeichnet, dass die Folgende Zahlenfolge im Binärcode geschrieben ist (B10010 = 18 dezimal)
 ### int
