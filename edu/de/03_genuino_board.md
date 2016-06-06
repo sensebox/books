@@ -1,8 +1,7 @@
 # Das Genuino Board
 
 Der Genuino UNO ist ein Mikrocontroller-Board welches speziell für das Prototyping, also das schnelle Entwickeln von ersten funktionsfähigen Schaltungen, gedacht ist. Neben dem Genuino UNO gibt es noch eine Menge anderer Genuino Mikrocontroller-Boards, mit denen wir uns hier aber nicht weiter beschäftigen möchten.
-![alt text](https://raw.githubusercontent.com/wiki/sensebox/OER/Grundlagen/Genuino_Bauteile.png
- "Genuino Bauteile")
+![Genuino Aufbau](https://raw.githubusercontent.com/sensebox/resources/master/images/Genuino_Bauteile.jpg)
 Oben siehst du die für den Anfang wichtigsten Bauteile des Genuino UNO auf die wir nun auch kurz eigehen werden. Alle anderen Bauteile sind natürlich ebenso wichtig, aber für uns erst einmal uninteressant.
 
 ## USB-Anschluss

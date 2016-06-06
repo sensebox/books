@@ -22,7 +22,7 @@ Im Kasten der senseBox:edu findest du einen *Ethernet-Shield* (rote Platine), we
 Um Daten auf die OSeM hochzuladen, muss dort zuerst eine senseBox [registriert werden](https://opensensemap.org/#/register).
 Achte bei der Registrierung darauf, die manuelle Konfiguration zu wählen, und dort 2 Sensoren hinzuzufügen (siehe Screenshot).
 
-![osem-sensor-konfiguration](https://github.com/sensebox/OER/blob/master/senseBox_edu/images/station_8_osem_sensoren.jpg?raw=true)
+![osem-sensor-konfiguration](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_8_osem_sensoren.jpg?raw=true)
 
 Nach der Registrierung erhältst du per Email einen Key, über den die Messungen deiner senseBox zugeordnet werden.
 Zusätzlich erhältst du einen Arduino-Sketch, in welchem die Übermittelung der Messdaten schon implementiert ist, aber noch mit der Ansteuerung deines Sensors erweitert werden muss.
@@ -39,7 +39,7 @@ I²C-Geräte werden an den Arduino Uno über die Pins `A4` (SDA), und `A5` (SCL)
 Auf den Arduino muss zunächst der Ethernet-Shield gesteckt werden, um es mit einem Netzwerkanschluss auszustatten.
 Die Betriebsspannung des Sensors wird über die Verbindung des Arduino Pins `3.3V -> VCC` und `GND -> GND` realisiert.
 
-![Aufbau_station_8](https://github.com/sensebox/OER/blob/master/senseBox_edu/images/Aufbau_station_8.jpg?raw=true)
+![Aufbau_station_8](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_station_8.jpg)
 
 ## Erweiterung des OSeM-Sketches
 In dem Arduino-Sketch, den du nach der Registrierung erhalten hast, fehlt noch die Integration des Sensors.
@@ -90,10 +90,9 @@ Registriere deine senseBox auf der OSeM und konfiguriere dort den korrekten Sens
 ## Aufgabe 2
 Erweitere deinen in Aufgabe 1 erhaltenen Arduino Sketch, sodass deine senseBox die Sensordaten zur OSeM überträgt.
 
-***Hinweis: Falls du die `BMP280.h`-Bibliothek nicht in der Arduino IDE findest, kannst du sie [hier](https://github.com/sensebox/OER/raw/master/Libraries/senseBox_Libraries.zip) herunterladen und in den `Arduino/libraries` Ordner kopieren.***
+***Hinweis: Falls du die `BMP280.h`-Bibliothek nicht in der Arduino IDE findest, kannst du sie [hier](https://raw.githubusercontent.com/sensebox/resources/master/libraries/senseBox_Libraries.zip) herunterladen und in den `Arduino/libraries` Ordner kopieren.***
 
 ## Aufgabe 3
 Berechne aus der Luftdruck-Messung die Höhe über NN, und gebe diese über den seriellen Port aus.
 
 ***Tipp: sieh dir das bei der BMP280-Bibliothek beiliegende Beispiel an. Der Referenzdruck P0 muss an die derzeitige Wetterlage angepasst werden.***
-

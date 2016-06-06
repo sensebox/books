@@ -1,6 +1,6 @@
-# Die ersten Töne - Nutzung eines Summers 
+# Die ersten Töne - Nutzung eines Summers
 
-Bis jetzt ist unsere senseBox noch recht schweigsam, aber das wollen wir in dieser Station ändern. 
+Bis jetzt ist unsere senseBox noch recht schweigsam, aber das wollen wir in dieser Station ändern.
 
 ## Ziele der Station
 In einem ersten Schritt wollen wir den Summer zum Piepen bringen.
@@ -11,7 +11,7 @@ Während die ersten beiden Ziele recht schnell erreicht werden, ist der dritte T
 * Summer
 * Potentiometer
 
-## Grundlagen 
+## Grundlagen
 
 Ein Summer oder Piezo ist ein Bauteil, welches elektrische Signale in Töne umwandelt. Die Lautstärke beträgt bis zu 80dB. Der Summer hat zwei Pins, mit denen er auf das Steckboard gesteckt werden kann. Die Betriebsspannung des Summers liegt zwischen 1V und 12V, wobei er bis zu 19mA verbraucht. Wie bei der LED kann der Strom nur in eine Richtung fließen. Der  kürzer Pin muss mit Ground (GND) verbunden werden und der längere mit einer Spannungsquelle.
 
@@ -28,20 +28,21 @@ Unser Potentiometer hat einen maximalen Widerstand von 10k Ohm.
 ### Schritt 1:
 Wenn ihr den Schaltkreis wie in der Grafik steckt und den Arduino mit dem Netzteil verbindet, sollte der Summer  einen lauten Dauerton erzeugen. Damit haben wir unsere erste Aufgabe bereits erledigt.
 
-<img src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/station_9_buzzer_simple.png" width="400"/> 
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_9_buzzer_simple.png" width="400"/>
 
 ### Schritt 2:
 Nun wollen wir ein weiteres Bauteil in unseren Schaltkreis integrieren, mit dessen Hilfe sich die Lautstärke des Summers verändern lässt. Wie in älteren Radios wollen wir dazu ein Potentiometer verwenden.
 
 Verbinde dazu den `5V` Ausgang des Arduinos mit dem Potentiometer, und dieses mit dem längeren Pin des Summers. Nun musst du den kurzen Pin des Summers noch mit `GND` verbinden und schon kannst du über das Potentiometer die Lautstärke verändern.
 
-<img src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/station_9_buzzer.png" width="400"/> 
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_9_buzzer.png" width="400"/>
 
 ***Tipp:*** *Falls ihr ein paar Informationen zur Funktionsweise eines Potentiometers lesen möchtet, schaut euch den Eintrag im Glossar an.*
 
-***Idee:*** *Falls ihr nicht jedes Mal das Kabel ziehen wollt um den Summer auszuschalten, könnt ihr noch einen Drucktaster einbauen. Wie das geht steht in [Station 2](https://github.com/sensebox/oer/wiki/02_Messung_digitaler_Signale).*
+***Idee:*** *Falls ihr nicht jedes Mal das Kabel ziehen wollt um den Summer auszuschalten, könnt ihr noch einen Drucktaster einbauen.
+Wie das geht steht in [Station 2](https://github.com/sensebox/oer/wiki/02_Messung_digitaler_Signale).*
 
-### Schritt 3: 
+### Schritt 3:
 Ein einzelner durchgehender Ton ist nicht besonders spannend; unser Summer kann mehr.
 Um dem Summer verschiedene Töne zu entlocken, müssen wir spezielle Ausgänge des Arduinos nutzen, welche dazu in der Lage sind Pulsweiten auszugeben.
 Für nähere Information zu Pulsweitenmodulation (PWM) kannst du [hier](http://www.mathias-wilhelm.de/arduino/beginner/pulsweitenmodulation-pwm/ "PWM") mehr erfahren. Für dieses Projekt ist das aber nicht unbedingt nötig.
@@ -51,14 +52,14 @@ Wir wollen unser Programm so schreiben, dass eine Note (Tonleiter: c, d, e, f, g
 
 ``` arduino
 #define  h     4064    // 246 Hz     
-#define  c     3830    // 261 Hz 
+#define  c     3830    // 261 Hz
 #define  d     3400    // 294 Hz
 #define  e     3038    // 329 Hz
 #define  f     2864    // 349 Hz
 #define  g     2550    // 392 Hz
 #define  a     2272    // 440 Hz
-#define  h     2028    // 493 Hz 
-#define  C     1912    // 523 Hz 
+#define  h     2028    // 493 Hz
+#define  C     1912    // 523 Hz
 #define  E     1518    // 659 Hz
 #define  F     1432    // 698 Hz  
 #define  R     0       // Define a note, to represent a rest
@@ -99,9 +100,9 @@ Natürlich dürft ihr hier später eure eigene Melodie einfügen. Dazu könnt ih
 Wir schreiben uns eine Hilfsmethode, welche genau einen Ton unserer Melodie abspielt. Dazu überprüft sie in der ersten `if`-Anweisung ob es sich um eine Note oder eine Pause handelt. Falls es sich um eine Note handelt, wird die Note in einer Schleife für `duration` Millisekunden gespielt:
 ``` arduino
 void playTone() {
-  long elapsed_time = 0; 
+  long elapsed_time = 0;
   if (tone > 0) { // if this isn't a Rest beat
-    while (elapsed_time < duration) { 
+    while (elapsed_time < duration) {
 
       digitalWrite(speakerOut,HIGH);
       delayMicroseconds(tone / 2);
@@ -122,12 +123,12 @@ void playTone() {
 }
 ```
 Nach dem wir jetzt einen Ton abspielen können, soll eine weitere Hilfsmethode die gesamte Melodie abspielen.
-Dazu geht eine `for`-Schleife unser Array `melody` durch und ruft für jeden Eintrag die Hilfsfunktion `playTone()` auf, die wir weiter oben definiert haben. Zusätzlich wird nach jeder Note eine kurze Pause eingefügt. 
+Dazu geht eine `for`-Schleife unser Array `melody` durch und ruft für jeden Eintrag die Hilfsfunktion `playTone()` auf, die wir weiter oben definiert haben. Zusätzlich wird nach jeder Note eine kurze Pause eingefügt.
 ``` arduino
 int MAX_COUNT = sizeof(melody) / 2; // number of tones
 
 void playMelody(){
- 
+
   for (int i=0; i<MAX_COUNT; i++) {
     tone = melody[i];
     beat = beats[i];
@@ -135,7 +136,7 @@ void playMelody(){
     duration = beat * tempo; // Set up timing
 
     playTone();
-    
+
     delayMicroseconds(pause);
   }
 }
