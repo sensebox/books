@@ -1,6 +1,3 @@
-<img src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/sensebox_logo_neu.png" width="200"/> 
-
-
 # Die ersten Töne - Nutzung eines Summers 
 
 Bis jetzt ist unsere senseBox noch recht schweigsam, aber das wollen wir in dieser Station ändern. 

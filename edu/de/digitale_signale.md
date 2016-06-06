@@ -1,4 +1,4 @@
-# Digitale Sensoren
+# Digitale Signale
 
 Digitale Signale können lediglich die Werte 1 oder 0 bzw. High oder Low annehmen. Sie verwenden also nur abzählbare Elemente wie zum Beispiel Finger. Daher auch der Begriff digital, der auf das lateinische digitus, der Finger zurück geht.
 
