@@ -2,7 +2,7 @@
 
 Zur Programmierung des Arduinos muss auf dem Computer eine spezielle Software und ein Treiber installiert werden. Je nach Betriebssystem müssen unterschiedlichen Schritte zur Installation durchgeführt werden.
 
-##1. Anleitung zur Installation der Software/Treiber unter __Windows__
+##1.0 Anleitung zur Installation der Software/Treiber unter __Windows__
 
 Die jeweils aktuellen Installationsdateien finden sich unter:
  
@@ -29,7 +29,7 @@ Dazu sind folgende Schritte nötig:
 
 7.    Windows wird die Treiberinstallation vervollständigen und der Arduino-Uno sollte funktionieren.
 
-##2. Installation der Software/Treiber unter __Mac OS X__
+##1.1 Installation der Software/Treiber unter __Mac OS X__
 
 Die jeweils aktuellen Installationsdateien finden sich unter:
  
@@ -37,4 +37,7 @@ http://arduino.cc/en/Main/Software
 
 Nach dem Download muss Datenabbild eingebunden werden und die Arduino IDE kann in den Programmordner kopiert werden. Eine Treiberinstallation unter Mac OS X ist nicht nötig.
 
-##3. Installation der Software/Treiber und Linux
+##1.3 Installation der Software/Treiber und Linux
+
+##2.0 Installation von Software Bibliotheken
+
