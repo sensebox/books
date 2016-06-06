@@ -1,7 +1,7 @@
 # Inventarliste
 Bevor es los geht solltet ihr überprüfen ob alle Bauteile vorhanden sind.
 
-## Inhalt der SenseBox
+## Inhalt der senseBox
 
 #### Basisstation bestehend aus drei Platinen
 

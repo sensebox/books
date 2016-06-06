@@ -13,7 +13,7 @@ Falls etwas bei dem Testlauf schief geht, meldet euch am besten bei unserem Supp
 ## Arduino Software herunterladen
 >Für einen reibungslosen Ablauf bitte Arduino 1.6.5 oder höher nutzen.
 
-Das Mainboard der SenseBox ist eine modifizierte Version des Arduino Uno Mikrocontrollers. Um ein Programm auf das Board zu laden, braucht ihr die integrierte Entwicklungsumgebung von Arduino, kurz Arduino IDE. Ladet die neueste Version als zip-Datei von der [Arduino Homepage](https://www.arduino.cc/en/main/software) herunter:
+Das Mainboard der senseBox ist eine modifizierte Version des Arduino Uno Mikrocontrollers. Um ein Programm auf das Board zu laden, braucht ihr die integrierte Entwicklungsumgebung von Arduino, kurz Arduino IDE. Ladet die neueste Version als zip-Datei von der [Arduino Homepage](https://www.arduino.cc/en/main/software) herunter:
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/03_arduino-dl.png" align="center" width="400"/>
 
@@ -62,7 +62,7 @@ Weiter geht’s mit den folgenden Schritten:
 
 Ladet nun das Programm, um die Sensoren zu testen und übertragt es auf die Messstation:
 
-1. in der Menüleiste `Datei` → `Beispiele` → `SenseBox` → `_01_sensor_test` auswählen
+1. in der Menüleiste `Datei` → `Beispiele` → `senseBox` → `_01_sensor_test` auswählen
 2. das Programm über das **Pfeil** Icon auf den Mikrocontroller laden
 3. warten bis das Programm übertragen wurde
 4. den seriellen Monitor über das **Lupe** Icon öffnen
@@ -79,7 +79,7 @@ Nun wird noch die Internetverbindung getestet:
 
 1. den seriellen Monitor (Fenster mit den Messwerten) schließen
 2. ein Netzwerkkabel von eurem Heimnetzwerk mit der senseBox verbinden
-3. in Menüleiste `Datei` → `Beispiele` → `SenseBox` → `_02_network_test` auswählen
+3. in Menüleiste `Datei` → `Beispiele` → `senseBox` → `_02_network_test` auswählen
 4. das Programm über das **Pfeil** Icon auf den Mikrocontroller laden
 5. den seriellen Monitor über das **Lupe** Icon starten
 
