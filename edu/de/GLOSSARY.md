@@ -13,7 +13,7 @@ Genuino ist der aufgrund von Lizenzverfahren in Europa verwendete Vertriebsname 
 Der BMP280 ist ein Luftdruck- und Temperatursensor, welcher in der senseBox auf einem Breakoutboard installiert ist.
 Er wird über I²C angesteuert und hat die dort die Addresse 0x77.
 Betriebsspannung 3 - 5.5V.
-<a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet_BMP280.pdf">Datenblatt</a>
+<a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet_BMP280-pressure-sensor.pdf">Datenblatt</a>
 
 ## VEML6070
 Der VEML6070 ist ein UV-Intensitäts-Sensor, welcher in der senseBox auf einem Breakoutboard installiert ist.
