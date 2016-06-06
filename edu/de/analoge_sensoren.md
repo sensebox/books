@@ -1,2 +1,0 @@
-# Analoge Sensoren
-
