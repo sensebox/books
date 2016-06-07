@@ -17,13 +17,11 @@ Die Folgende Code Vorlage beinhaltet alle Bestandteile um Daten auf SD-Karte zu 
 ```
 /*
   senseBox Datenlogger Vorlage
-Das Auslesen der jeweiligen Sensoren muss in der void loop() stattfinden und individuell angepasst werden
-
+  Das Auslesen der jeweiligen Sensoren muss in der void loop() stattfinden und individuell angepasst werden
 */
 
 #include <SPI.h> //wichtige Libraries für das Speichern von Daten auf SD-Karte
 #include <SD.h>
-
 
 const int chipSelect = 4; //
 
@@ -54,7 +52,6 @@ void loop() {
     dataFile.print(Messwert); //Speichern der Messwerte in der geöffneten Datei
     dataFile.println(";"); //Trennzeichen für die .csv Datei
 
-
   // Wenn die Datei geöffnet ist
   if (dataFile) {
     dataFile.close();
@@ -73,9 +70,8 @@ Zur Veranschaulichung findest du unten einen Sketch, der den HDC100x ausliest un
 ```
 /*
   senseBox HDC100x Datenlogger
-Anschluss des HDC100x über I2C an den Arduino
-SDA - A4, SCL - A5, VCC - 5V, GND - GND
-
+  Anschluss des HDC100x über I2C an den Arduino
+  SDA - A4, SCL - A5, VCC - 5V, GND - GND
 */
 
 #include <SPI.h> //wichtige Libraries für das Speichern von Daten auf SD-Karte
@@ -92,7 +88,6 @@ void setup() {
   while (!Serial) {
     ;
   }
-
 
   Serial.print("Initialisiere SD-Karte");
 

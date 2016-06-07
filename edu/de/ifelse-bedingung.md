@@ -1,12 +1,11 @@
 # if/else-Bedingung
 
-Mit `if` ist es möglich in einem Sketch Entscheidungen zu fällen und den Arduino, je nachdem, wie die Entscheidung ausfällt, unterschiedlichen Code ausführen zu lassen. 
+Mit `if` ist es möglich in einem Sketch Entscheidungen zu fällen und den Arduino, je nachdem, wie die Entscheidung ausfällt, unterschiedlichen Code ausführen zu lassen.
 Wenn du beispielsweise eine LED in Abhängigkeit von einem Taster leuchten lassen möchtest würde der Code wie folgt aussehen:
 
 ```
-if (digitalRead(Button) == HIGH)
-{
-    digitalWrite(LED,HIGH);    
+if (digitalRead(Button) == HIGH) {
+  digitalWrite(LED,HIGH);
 }
 ```
 
@@ -15,23 +14,23 @@ Wie dir bestimmt aufgefallen ist, wird in der Bedingung ein Vergleichsoperator v
 
 ### Verwendung von else
 
-Mit else kannst du deiner if-Anweisung noch eine zusätzliche Aktion hinzufügen. 
+Mit else kannst du deiner if-Anweisung noch eine zusätzliche Aktion hinzufügen.
 Wenn du also den obenstehenden Code um ein `else` ergänzt würde der komplette Sketch so aussehen:
 ```
-#define LED 13          
+#define LED 13
 #define Button 7
 
-void setup(){
-    pinMode(LED, OUTPUT);
-    pinmode(Button, INPUT);
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinmode(Button, INPUT);
 }
-void loop(){
-    if(digitalRead(Button)==HIGH){
-        digitalWrite(LED, HIGH);
-    }
-    else{
-        digitalWrite(LED, LOW);
-    }
+void loop() {
+  if(digitalRead(Button)==HIGH){
+    digitalWrite(LED, HIGH);
+  }
+  else{
+    digitalWrite(LED, LOW);
+  }
 }
 ```
 

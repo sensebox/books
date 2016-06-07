@@ -29,7 +29,7 @@ long micVal = 0; //speichert den Wert des Mikrofons
 Nun muss die serielle Ausgabe initialisieren werden und dem Pin `mic` der Modus `INPUT` zuordnen. Das machen wir im `setup`:
 
 ```
-void setup() {  
+void setup() {
   Serial.begin(9600);
   pinMode(mic,INPUT);
 }
@@ -47,7 +47,7 @@ Wenn ihr nun in eurem `loop()` den Wert auslest könnt ihr ihn euch über den se
 
 ```
 void loop() {
-   Serial.print(getMicVal());
+  Serial.print(getMicVal());
 }
 ```
 

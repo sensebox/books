@@ -6,11 +6,11 @@ Ein Arduino Programm (auch Sketch genannt) hat einen sehr einfachen Aufbau, der 
 
 ```
 void setup(){
-    //Anweisungen
-  }
-  void loop(){
-    //Anweisungen
-  }
+  // Anweisungen
+}
+void loop(){
+  // Anweisungen
+}
 ```
 
 Die setup-Funktion wird nur einmal beim Start des Programmes ausgeführt. In der loop-Funktion werden hingegen alle Anweisungen fortlaufend in einer endlosen Schleife wiederholt. Beide Funktionen sind zwingend notwendig um das Programm erfolgreich kompilieren und ausführen zu können. Mit einem doppelten Schrägstrich (//) lassen sich Kommentare zum Programmcode hinzufügen. Es ist immer wichtig seinen Programmcode zu kommentieren, damit auch andere nachvollziehen können, was an einer bestimmten Stelle passiert.
@@ -23,7 +23,7 @@ Um nun einen digitalen Aktor, wie zum Beispiel eine LED, anzusteuern benötigt m
 ```
 void setup() {
   pinMode(13, OUTPUT); // Deklariere den Port, an dem die LED            
-                        // angeschlossen ist, als Ausgang
+                       // angeschlossen ist, als Ausgang
 }
 
 void loop() {
@@ -33,18 +33,18 @@ void loop() {
 
 ## Digitale Sensoren auslesen
 Dieselben Ports die wir zum Ansteuern von digitalen Aktoren genutzt haben lassen sich auch zur Registrierung von Eingangssignalen verwenden. Digitale Eingänge können dabei, genau wie digitale Ausgänge, zwei Zustände annehmen, high oder low.
-Damit eingehende Signale verarbeiten werden können, müssen sie in [Variablen](./variablen.md) gespeichert werden. 
+Damit eingehende Signale verarbeiten werden können, müssen sie in [Variablen](variablen.md) gespeichert werden.
 
 Um digitale Signale zu speichern, eignet sich besonders eine boolesche Variable (auch boolean genannt).
-Um nun einen digitalen Sensor auszulesen werden ähnlich wie beim Ansteuern digitaler Sensoren, zwei Befehle benötigt. Im `void loop()` wird duch den Befehl `pinMode(13, INPUT);` Port 13 des Arduino als Eingang festgelegt. Im `void setup()` kann durch den Befehl `TestVariable=digitalRead (13);` ein an Port 13 angeschlossener Sensor ausgelesen und der Wert in der zuvor angelegten Testvariable gespeichert werden. Genau wie beim Ansteuern von digitalen Aktoren steht die 13 für den verwendeten Port und kann durch jeden anderen digitalen Port ersetzt werden.
+Um nun einen digitalen Sensor auszulesen werden ähnlich wie beim Ansteuern digitaler Sensoren, zwei Befehle benötigt. Im `loop()` wird duch den Befehl `pinMode(13, INPUT);` Port 13 des Arduino als Eingang festgelegt. Im `setup()` kann durch den Befehl `TestVariable = digitalRead(13);` ein an Port 13 angeschlossener Sensor ausgelesen und der Wert in der zuvor angelegten Testvariable gespeichert werden. Genau wie beim Ansteuern von digitalen Aktoren steht die 13 für den verwendeten Port und kann durch jeden anderen digitalen Port ersetzt werden.
 Der Sketch sollte also wie folgt aussehen:
 ```
 boolean TestVariable = 0;
-void setup(){
-	pinMode(13,INPUT);
+void setup() {
+  pinMode(13,INPUT);
 }
-void loop(){
-	TestVariable = digitalRead (13);
+void loop() {
+  TestVariable = digitalRead (13);
 }
 ```
 

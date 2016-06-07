@@ -12,11 +12,11 @@ Ein Beispielhaftes Programm könnte so aussehen:
 ```
 int ledPin = 9;     		 // LED an Pin 9
 
-void setup(){
+void setup() {
   pinMode(ledPin, OUTPUT);   // deklariert den Pin als Ausgang
 }
 
-void loop(){
+void loop() {
   analogWrite(ledPin, 60);  // Ansteuern der LED
 }
 ```
@@ -28,30 +28,17 @@ Der Befehl `analogRead()` liest den Wert von einem analogen Pin. Die so gemessen
 Das auslesen eines digitalen Inputs dauert etwa 0,0001 Sekunden, es können also etwa 10.000 Messungen pro Minute aufgenommen werden.
 Der Syntax für den Befehl lautet `analogRead(Pin)`. Gemessene Daten können, genau wie bei digitalen Messungen, im [seriellen Monitor](./der_serielle_monitor.md) angezeigt werden.
 
-Ein neispielhaftes Programm könnte so aussehen:
+Ein beispielhaftes Programm könnte so aussehen:
 ```
 int analogPin = 3;     // Potentiometer an Pin 3
 int val = 0;           // Variable um die Messwerte zu speichern
 
-
-
-void setup()
-
-{
-
+void setup() {
   Serial.begin(9600);          //  Start des seriellen Monitors
-
 }
 
-
-
-void loop()
-
-{
-
+void loop() {
   val = analogRead(analogPin);    // Auslesen des Sensors
-
   Serial.println(val);             // Anzeigen der Messerwerte
-
 }
 ```
