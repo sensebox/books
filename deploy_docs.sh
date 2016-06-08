@@ -18,6 +18,8 @@ for d in */; do
 	fi
 done
 
+cp index.html dist/index.html
+
 # push to gh-pages
 rev=$(git rev-parse --short HEAD)
 
