@@ -33,6 +33,6 @@ Die RTC ist auf dem senseBox-Shield integriert und wird über I²C unter der Add
 
 ## I²C
 I²C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Geräten auf einem Bus.
-Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Geräte auf möglichst wenigen Kanälen ansteuern zu können.
-Geräte haben dabei eine bestimmte Addresse, über die auf zwei Kanälen SDA (data) und SDC (clock) angesteuert werden können.
+Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Geräte mit möglichst wenigen Kanälen ansteuern zu können.
+Geräte haben dabei eine bestimmte Addresse, über die sie auf zwei Kanälen SDA (serial data) und SDC (serial clock) angesteuert werden.
 Mehrere Geräte können so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.

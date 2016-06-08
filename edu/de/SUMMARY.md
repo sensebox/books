@@ -12,7 +12,7 @@
    * [if/else-Bedingung](ifelse-bedingung.md)
    * [Der Serielle Monitor](der_serielle_monitor.md)
    * [Verwendung von Software Bibliotheken](software_libraries.md)
-   * [Der serielle Datenbus](der_serielle_datenbus.md)
+   * [Der serielle Datenbus (I²C)](der_serielle_datenbus.md)
 * [Projekte](projekte.md)
    * [Verkehrszähler](verkehrszaehler.md)
    * [Datenlogger](datenlogger.md)
@@ -22,4 +22,3 @@
 * [Glossar](GLOSSARY.md)
 * [FAQ](faq.md)
 * [Downloads](downloads.md)
-
