@@ -22,7 +22,7 @@ Im Kasten der senseBox:edu findest du einen *Ethernet-Shield* (rote Platine), we
 Um Daten auf die OSeM hochzuladen, muss dort zuerst eine senseBox [registriert werden](https://opensensemap.org/#/register).
 Achte bei der Registrierung darauf, die manuelle Konfiguration zu wählen, und dort 2 Sensoren hinzuzufügen (siehe Screenshot).
 
-![osem-sensor-konfiguration](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_8_osem_sensoren.jpg?raw=true)
+![osem-sensor-konfiguration](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_8_osem_sensoren.jpg)
 
 Nach der Registrierung erhältst du per Email einen Key, über den die Messungen deiner senseBox zugeordnet werden.
 Zusätzlich erhältst du einen Arduino-Sketch, in welchem die Übermittelung der Messdaten schon implementiert ist, aber noch mit der Ansteuerung deines Sensors erweitert werden muss.
