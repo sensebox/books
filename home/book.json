@@ -1,13 +1,16 @@
 {
-	"gitbook": "2.6.7",
-	"plugins": ["edit-link"],
-	"pluginsConfig": {
-		"edit-link": {
-			"base": "https://github.com/sensebox/books/tree/master/home",
-			"label": {
+  "gitbook": "^2.6.7",
+  "plugins": ["edit-link", "localized-footer"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/sensebox/books/tree/master/home",
+      "label": {
         "en": "Edit This Page",
         "de": "Seite bearbeiten"
       }
-		}
-	}
+    },
+    "theme-default": {
+      "showLevel": true
+    }
+  }
 }
