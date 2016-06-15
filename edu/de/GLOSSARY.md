@@ -11,28 +11,47 @@ Genuino ist der aufgrund von Lizenzverfahren in Europa verwendete Vertriebsname 
 
 ## BMP280
 Der BMP280 ist ein Luftdruck- und Temperatursensor, welcher in der senseBox auf einem Breakoutboard installiert ist.
-Er wird über I²C angesteuert und hat die dort die Addresse 0x77.
+Er wird über I²C angesteuert und hat die dort die Adresse 0x77.
 Betriebsspannung 3 - 5.5V.
 <a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet_BMP280-pressure-sensor.pdf">Datenblatt</a>
 
 ## VEML6070
 Der VEML6070 ist ein UV-Intensitäts-Sensor, welcher in der senseBox auf einem Breakoutboard installiert ist.
-Er wird über I²C angesteuert und hat die dort die Addressen 0x38 und 0x39.
+Er wird über I²C angesteuert und hat die dort die Adressen 0x38 und 0x39.
 Betriebsspannung 2.7 - 5V.
 <a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf">Datenblatt</a>
 
 ## HDC1008
 Der HDC1008 ist ein Luftfeuchte- und Temperatursensor, welcher in der senseBox auf einem Breakoutboard installiert ist.
-Er wird über I²C angesteuert und hat die dort die Addresse 0x43.
+Er wird über I²C angesteuert und hat die dort die Adresse 0x43.
 Betriebsspannung 3.3 - 5V.
 <a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf">Datenblatt</a>
 
 ## RV8523
 Die RV8523 ist eine Realtimeclock (RTC), welche durch eine separate Stromversorgung (Knopfbatterie) dem Arduino immer die aktuelle Zeit angibt.
-Die RTC ist auf dem senseBox-Shield integriert und wird über I²C unter der Addresse 0x68 angesteuert.
+Die RTC ist auf dem senseBox-Shield integriert und wird über I²C unter der Adresse 0x68 angesteuert.
 
 ## I²C
 I²C (Inter-Integrated Circuit) ist ein Protokoll zur digitalen Kommunikation von Geräten auf einem Bus.
 Das Protokoll wurde 1982 entwickelt und darauf optimiert, mehrere Geräte mit möglichst wenigen Kanälen ansteuern zu können.
-Geräte haben dabei eine bestimmte Addresse, über die sie auf zwei Kanälen SDA (serial data) und SDC (serial clock) angesteuert werden.
+Geräte haben dabei eine bestimmte Adresse, über die sie auf zwei Kanälen SDA (serial data) und SDC (serial clock) angesteuert werden.
 Mehrere Geräte können so in Reihe hintereinander an ein Masterdevice (in unserem Fall den Arduino) angeschlossen werden.
+
+## Ethernet-Shield
+Das Ethernet-Shield basiert auf dem Wiznet W5500 Ethernet Chip und ermöglicht es den Geduino über ein LAN-Kabel an ein Netzwerk anzuschließen.
+Es läuft mit einer Betriebsspannung von 3.3V - 5V. Mit dem Restknopf wird sowohl das Shield als auch der Arduino resetet.
+<a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet ethernetchip w5500.pdf">Datenblatt</a> 
+
+
+## senseBox-Shield
+Das senseBox-Shield ist eine Steckplatine, die vom senseBox-Team zusammen mit <a href="http://www.watterott.com/">Watterott electronic</a> entwickelt wurde. Auf dem Shield ist ein SD-Kartenslot (über Pin 4) und eine Realtimeclock `RV8523` (über I2C) mit Batterie verbaut. Außerdem sind I2C-Steckplätze für die home-Sensoren verlötet. Die Steckplätze benötigt man für die sensBox::edu nicht. Da der SD-Kartenslot Pin 4 belegt ist, kann man diesen, sowie Pin 10 mit den Standarteinstellungen nicht mehr verwenden. 
+Benötigt man den SD-Kartenslot nicht, so kann man die Pins mit den Befehlen
+```
+pinMode(4, INPUT);
+digitalWrite(4, HIGH);
+```
+Freigeben. 
+<a href="https://github.com/sensebox/resources/raw/master/datasheets/schematics_senseBox-Shield.pdf">Schemazeichnung</a>
+
+
+
