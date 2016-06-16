@@ -1,6 +1,6 @@
 # Bauanleitung für die senseBox:home
 
-Einmal aufgebaut, programmiert und mit der openSenseMap synchronisiert, liefert die senseBox:home kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfreuchte, Luftdruck, Beleuchtungsstärke und UV-Licht.
+Einmal aufgebaut, programmiert und mit der openSenseMap synchronisiert, liefert die senseBox:home kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke und UV-Licht.
 Diese Bauanleitung für die senseBox:home ist in die folgenden Abschnitte unterteilt:
 
 1. [Inventarliste und Grundaufbau](aufbau01_inventar.html)
