@@ -40,7 +40,7 @@ Mehrere Geräte können so in Reihe hintereinander an ein Masterdevice (in unser
 ## Ethernet-Shield
 Das Ethernet-Shield basiert auf dem Wiznet W5500 Ethernet Chip und ermöglicht es den Geduino über ein LAN-Kabel an ein Netzwerk anzuschließen.
 Es läuft mit einer Betriebsspannung von 3.3V - 5V. Mit dem Restknopf wird sowohl das Shield als auch der Arduino resetet.
-<a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet ethernetchip w5500.pdf">Datenblatt</a> 
+<a href="https://github.com/sensebox/resources/raw/master/datasheets/datasheet_ethernetchip_w5500.pdf">Datenblatt</a> 
 
 
 ## senseBox-Shield
