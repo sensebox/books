@@ -8,7 +8,7 @@ On this platform a registration is required, where you specify the exact setup o
 ## Registrierung auf der openSenseMap
 
 Register your senseBox by filling out the form [here](http://www.opensensemap.org/register).
-In step 2 of the registration you are asked for a hardware setup specification. Choose *senseBox:home* and tick the *senseBox:home with ethernet* or *senseBox:home with WLAN* checkbox, depending on your edition.
+In step 2 of the registration you are asked for a hardware setup specification. Choose *senseBox:home* and tick the *senseBox:home with (Ethernet)* or *senseBox:home (WiFi)* checkbox, depending on your edition.
 
 Once the registration is completed, you will receive an email containing keys for your senseBox and sensors, as well as an custom arduino-sketch (see the file extension `.ino`) which you'll need to upload onto the microcontroller.
 

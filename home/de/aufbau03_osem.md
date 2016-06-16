@@ -6,7 +6,7 @@ Ein Software-Programm für einen Arduino Mikrocontroller könnt ihr an der Datei
 
 > Für User, die eine senseBox im Rahmen der *Make Light* Initiative gesendet bekommen haben, bitte in Schritt 1 bei der Gruppenkennzeichnung ***MakeLight*** angeben!
 
-Bei Schritt 2 der Registrierung wirst du nach einem Hardware Setup gefragt. Wähle dort die „senseBox:home“ aus und setze danach je nach Ausgabe den Haken bei „senseBox:home mit Ethernet“ oder „senseBox:home mit WLAN“.
+Bei Schritt 2 der Registrierung wirst du nach einem Hardware Setup gefragt. Wähle dort die „senseBox:home“ aus und setze danach je nach Ausgabe den Haken bei „senseBox:home (Ethernet)“ oder „senseBox:home (WLAN)“.
 
 ## Programm auf die Station laden
 Nachdem ihr den Anhang der Email heruntergeladen habt, müsst ihr dieses Programm auf eure senseBox laden. Wie man genau ein Programm auf den Mikrocontroller lädt, ist bereits in Abschnitt 2 der Anleitung ausführlich erklärt worden. Hier die Schritte in der Übersicht:
