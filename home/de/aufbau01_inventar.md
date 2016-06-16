@@ -5,12 +5,15 @@ Bevor es los geht solltet ihr überprüfen ob alle Bauteile vorhanden sind.
 
 #### Basisstation bestehend aus drei Platinen
 
+Die senseBox:home ist in zwei Ausgaben verfügbar: Einmal mit LAN-, und einmal mit WLAN-Netzwerkverbindung.
+Je nach Ausgabe ist ein W5500 Ethernet Shield, oder ein Watterott WLAN-Shield enthalten.
+
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensebox_home_platinen.jpg" align="center" width="400"/>
 
 |Platine|Beschreibung|
 |---|---|
 |Genuino Uno (unten)|Liest die angeschlossenen Sensoren aus und überträgt die Messungen ins Internet|
-|W5500 Ethernet Shield (mitte)|Ist für die Internetverbindung zuständig|
+|W5500 Ethernet Shield oder Watterott WLAN-Shield (mitte)|Ist für die Internetverbindung zuständig|
 |senseBox Shield (oben)|Hier werden die Sensoren angeschlossen|
 
 #### Grundausstattung mit vier Sensoren
@@ -40,7 +43,7 @@ Bevor es los geht solltet ihr überprüfen ob alle Bauteile vorhanden sind.
 
 ## Zusätzliche Materialien (NICHT im Lieferumfang enthalten)
 
-- LAN-Kabel für den Anschluss der senseBox an euren Router
+- LAN-Kabel für den Anschluss der senseBox an euren Router, falls die senseBox:home LAN vorliegt
 - Gehäuse für eine wetterfeste Installation der Elektronik
 - Werkzeuge für den Aufbau wie z.B. Heißklebepistole
 
