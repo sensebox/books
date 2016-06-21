@@ -7,6 +7,7 @@ Hierzu wird der bei der Registrierung erhaltene **API-Key** benötigt!
 
     Alternativ kannst du auch in der folgenden URL `<senseBox-ID>` durch deine senseBox-ID (nicht der API-Key!) ersetzen:
     `https://opensensemap.org/explore/<senseBox-ID>`
+
 2. Wähle in der rechten Sidebar den Tab "Information", und klicke unten den Button "Verwalten".
 
 3. Gebe deinen API-Key im erscheinenden Dialog ein.
@@ -15,7 +16,7 @@ Hierzu wird der bei der Registrierung erhaltene **API-Key** benötigt!
 4. Gebe deine Änderungen im sich öffnenden Formular ein.
     Neben Ändeungen an Metadaten, Standort und Foto ist es auch möglich die Sensor-Konfiguration zu ändern.
 
-    > ***Hinweis:*** *Falls du einen neuen Sensor hinzugefügt hast und den aktualisierten Arduino-Sketch herunterladen willst, ist dies erst möglich, wenn die Seite neu geladen wurde, und der API-Key erneut eingegeben wurde.*
+    > ***Hinweis:*** *Falls du einen neuen Sensor hinzugefügt hast und den aktualisierten Arduino-Sketch herunterladen willst, ist dies erst möglich, wenn die Seite nach dem Speichern neu geladen, und der API-Key erneut eingegeben wurde.*
 
 5. Klicke im oberen Teil des Dialogs auf "Speichern" um deine Änderungen zu speichern, oder "Abbrechen" um sie zu verwerfen.
 

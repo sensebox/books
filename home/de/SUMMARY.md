@@ -6,7 +6,7 @@
    * [Softwareinstallation](aufbau02_software.md)
    * [openSenseMap Registrierung](aufbau03_osem.md)
    * [Beispielaufbau](aufbau04_beispiel.md)
-* [OpenSenseMap](osem.md)
+* [openSenseMap](osem.md)
     * [Registrierung](osem_registrierung.md)
     * [Bearbeiten einer Station](osem_bearbeiten.md)
     * [Datendownload](osem_download.md)
