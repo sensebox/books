@@ -1,4 +1,4 @@
-# DIY-Umweltstation - Datenupload von zwei Sensoren zur OpenSenseMap
+# DIY - Datenupload von zwei Sensoren zur OpenSenseMap
 Wenn wir eine senseBox aufgebaut haben, wäre es doch schön die gewonnenen Daten von jedem Ort aus abrufen zu können.
 Dazu gibt es die [OpenSenseMap](https://opensensemap.org/) (OSeM), welche diverse Sensordaten sammelt und auf einer Karte visualisiert. Über den Arduino Ethernet-Shield können wir unsere senseBox ans Internet anbinden und die Daten zur OSeM hochladen.
 

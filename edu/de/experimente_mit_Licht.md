@@ -1,5 +1,3 @@
-<img src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/sensebox_logo_neu.png" width="200"/> 
-
 #DIY - Experimente mit Licht
 Wenn du fern siehst, das Radio anschaltest, mit deinem Smartphone eine Nachricht schreibst oder Essen in der Mikrowelle warm machst, nutzt du dabei elektromagnetische Energie. Heutzutage sind alle Menschen ständig auf diese Energie angewiesen. Ohne sie würde das Leben in modernen Städten völlig anders sein, als du es kennst.
 
@@ -7,7 +5,7 @@ Wenn du fern siehst, das Radio anschaltest, mit deinem Smartphone eine Nachricht
 In dieser Station verwendest du einen Lichtsensor, um die Beleuchtungsstärke des sichtbaren Lichts in Lux zu erfassen.
 
 ##Materialien
-* Lichtsensor
+* Lichtsensor `TSL 45315`
 
 ##Grundlagen
 Elektromagnetische Energie bewegt sich in Wellen durch den Raum. Ihr Spektrum reicht von sehr langen Radiowellen bis hin zur sehr kurzwelligen Gammastrahlung. Das menschliche Auge kann dabei nur einen sehr kleinen Teil dieses Spektrums wahrnehmen: das sichtbare Licht. Unsere Sonne ist dabei die Quelle der Energie über das gesamte Spektrum hinweg. Die Atmosphäre der Erde schützt uns davor, einem zu hohen Maß an Strahlung ausgesetzt zu werden, die für uns lebensgefährlich werden könnte.
@@ -20,12 +18,14 @@ Laut dem Datenblatt hat dieser Sensor eine Reichweite von 2 bis 200.000 Lux, bei
 
 ##Aufbau
 
-<image src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/Aufbau_station_6.png"/>
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_station_6.png" width="500"/>
+
+
 
 ##Grundlagen
 Zur manuellen Programmierung benutzt du dieses Mal nur die Wire-Bibliothek. Am Anfang brauchst du ein paar Konstanten, die mit der Direktive #define definiert werden. Anders als bei Variablen belegen sie einen festen Platz im Speicher, der sich nur auslesen, aber nicht beschreiben lässt. In unserem Falle soll die Busadresse sowie die folgenden Registeradressen des Sensors gespeichert werden. 
 
-<image src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/Grundlagen_Station_6.png"/>
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu//Grundlagen_Station_6.png"/>
 
 Diese Register werden zur Konfiguration und Kommunikation benötigt:
 ```

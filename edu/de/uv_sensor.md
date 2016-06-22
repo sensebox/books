@@ -1,4 +1,4 @@
-# UV-Licht Sensor 
+# DIY - UV-Licht Sensor 
 
 ## Ziele der Station
 In dieser Station verwenden wir einen UV-Lichtsensor, um die intensität des UV-Lichts in Mikrowatt je Quadratzentimeter zu erfassen. Anschließend wollen wir den Wert in den UV-Index umrechnen. 
