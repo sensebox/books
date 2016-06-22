@@ -18,7 +18,7 @@
    * [Datenlogger](datenlogger.md)
    * [Auf die Töne fertig los!](summer.md)
    * [DIY-Umweltstation](diy-umweltstation.md)
-   * [Das Mikrofon](mikrofon.md)
+   * [Lauschangriff](mikrofon.md)
 * [Glossar](GLOSSARY.md)
 * [FAQ](faq.md)
 * [Downloads](downloads.md)

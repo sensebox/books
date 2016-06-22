@@ -37,10 +37,12 @@ Verbinde dazu den `5V` Ausgang des Arduinos mit dem Potentiometer, und dieses mi
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_9_buzzer.png" width="400"/>
 
+
 ***Tipp:*** *Falls ihr ein paar Informationen zur Funktionsweise eines Potentiometers lesen möchtet, schaut euch den Eintrag im Glossar an.*
 
-***Idee:*** *Falls ihr nicht jedes Mal das Kabel ziehen wollt um den Summer auszuschalten, könnt ihr noch einen Drucktaster einbauen.
-Wie das geht steht in [Station 2](https://github.com/sensebox/oer/wiki/02_Messung_digitaler_Signale).*
+
+***Idee:*** *Falls ihr nicht jedes Mal das Kabel ziehen wollt um den Summer auszuschalten, könnt ihr noch einen Drucktaster einbauen.*
+
 
 ### Schritt 3:
 Ein einzelner durchgehender Ton ist nicht besonders spannend; unser Summer kann mehr.
@@ -149,8 +151,11 @@ void loop() {
 }
 ```
 
+
 ***Idee:*** *Falls ihr für eure Melodie höhere oder tiefere Töne benötigt, so könnt ihr diese wie im Beispiel oben  definieren.
 Wie viel Hertz ein Ton hat könnt ihr [hier](http://www.phy.mtu.edu/~suits/notefreqs.html) nachschauen.
 Diesen Wert müsst ihr dann mit einem antiproportionalen Dreisatz umrechnen.*
 
-***Achtung:*** *zwei Variablen im Programm dürfen nicht den gleichen Namen haben!*
+
+
+***Achtung:*** *Zwei Variablen im Programm dürfen nicht den gleichen Namen haben!*
