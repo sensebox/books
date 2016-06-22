@@ -1,0 +1,2 @@
+# DIY Umweltstation
+In diesem Projekt erfahrt ihr, wie man die senseBox Umweltstation aufbaut. Dieses Projekt ist das umfangreichst, weshalbt es in mehrere Kapitel aufgeteilt wurde. In jedem neuen Kapitel wird ein zusätzlicher Baustein eingeführt. 

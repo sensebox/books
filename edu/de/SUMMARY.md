@@ -14,11 +14,18 @@
    * [Verwendung von Software Bibliotheken](software_libraries.md)
    * [Der serielle Datenbus (I²C)](der_serielle_datenbus.md)
 * [Projekte](projekte.md)
+   * [DIY-Umweltstation]
+      * [Experimente mit Licht](experimente_mit_Licht.md)
+      * [UV-Sensor](uv_sensor)
+      * [Luftfeuchtigkeit und Thermometer]
+      * [Lufdruck] 
+      * [Speichern auf SD-Karte](datenlogger.md)
+      * [Ethernetshield - auf ins Internet](diy-umweltstation.md)
    * [Verkehrszähler](verkehrszaehler.md)
    * [Datenlogger](datenlogger.md)
-   * [Auf die Töne fertig los!](summer.md)
-   * [DIY-Umweltstation](diy-umweltstation.md)
+   * [Auf die Töne fertig los!](summer.md)  
    * [Lauschangriff](mikrofon.md)
+   * [Unser kleiner Webserver]
 * [Glossar](GLOSSARY.md)
 * [FAQ](faq.md)
 * [Downloads](downloads.md)
