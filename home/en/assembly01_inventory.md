@@ -5,11 +5,13 @@ Before starting out, you should check whether your box contains all components. 
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/sensebox_home_platinen.jpg" align="center" width="400"/>
 
-#### Main board consisting of 3 circuit boards:
+#### Main board consisting of 3 circuit boards
+
+The senseBox:home is available in two editions: It comes either with an ethernet- or WLAN-shield for the connection to the internet.
 
 The three boards are stacked on top of each other:
 - **bottom:** microcontroller `Wattuino Uno R3`, contains the main computing and IO unit.
-- **mid:** ethernet shield `W5500`, provides the board with an ethernet connection.
+- **mid:** ethernet shield `W5500` or Watterott WiFi-shield, provides the board with an internet connection.
 - **top:** custom `senseBox Shield`, provides an real time clock (`RV-8523-C3 RTC`), microSD-slot, and connectors for the sensors.
 
 #### Basic configuration with 4 sensors
@@ -38,7 +40,7 @@ The three boards are stacked on top of each other:
 ## Additional accessories (NOT included with your senseBox:home)
 To set up your senseBox outdoors, you need additional components, which are not included with your box.
 
-- **ethernet cable**, for internet connection to your router
+- **ethernet cable**, for internet connection to your router (if you have the ethernet edition)
 - **casing**, for a weatherproof outdoor installation of the device
 - **tools** for the assembly (e.g. hot glue, drill, ...)
 
