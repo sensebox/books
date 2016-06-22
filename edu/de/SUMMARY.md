@@ -1,7 +1,7 @@
 # Summary
 
-* [Einleitung](README.md)
-* [Getting Started](02_getting_started.md)
+
+* [Getting Started](README.md)
    * [Installation der Software](installation_der_software.md)
    * [Arduino/Genuino](03_genuino_board.md)
    * [Arduino IDE](arduino_ide.md)
