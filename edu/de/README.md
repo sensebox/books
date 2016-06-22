@@ -6,7 +6,7 @@ Zusammen mit dieser Anleitung und dem Bauteilsortiment vermittelt die senseBox E
 
 # Inhalt der Kiste
 
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Kisteninhalt.png/"/>
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Kisteninhalt.png"/>
 
 1. **Basisstation:**
     Die Grundlage für unsere Experimente bildet die Basisstation. Sie besteht aus einem Arduino Uno Mikrokontroller, dem senseBox Shield und einem Steckbrett. Letzteres besteht aus jeweils zwei vertikalen Reihen für die Plus- und Minusanschlüsse sowie zweimal 30 horizontalen Reihen mit je fünf Bohrungen, die mit `a` bis `e` bzw. `f` bis `j` beschriftet sind. Die Plus- und Minusanschlüsse sowie die fünf horizontalen Bohrungen einer Reihe sind, wie unten dargestellt, leitend miteinander verbunden.
