@@ -33,6 +33,5 @@ node_modules
 .node_repl_history
 
 dist
-edu/_book
-home/_book
-edu/de/GLOSSARY.md
+_book
+*/_book

@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" align="center" width="400"/>
+
 # openSenseMap
 
 The openSenseMap (OSeM) is a webplatform which provides upload, visualisation and analysis of location-specific sensordata.
