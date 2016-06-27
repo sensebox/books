@@ -17,7 +17,7 @@
    * [DIY-Umweltstation](diy-start.md)
       * [Experimente mit Licht](experimente_mit_Licht.md)
       * [UV-Sensor](uv_sensor.md)
-      * [Luftfeuchtigkeit und Thermometer](temp_und_luftfeuchte)
+      * [Luftfeuchtigkeit und Thermometer](temp_und_luftfeuchte.md)
       * [Lufdruck]
       * [Speichern auf SD-Karte](datenlogger.md)
       * [Ethernetshield - auf ins Internet](diy-umweltstation.md)
