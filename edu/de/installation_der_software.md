@@ -36,8 +36,10 @@ Nach dem Download (s.o.) muss Datenabbild eingebunden werden und die Arduino IDE
 Nach dem Download (s.o.) muss das heruntergeladene `.tar.xz`-Archiv entpackt werden.
 Darin liegt ein Installationskript `install.sh`, welches am einfachsten in einem Terminal über den Befehl
 
-    cd <pfad zum entpackten ordner>
-    ./install.sh
+```
+cd <pfad zum entpackten ordner>
+./install.sh
+```
 
 ausgeführt wird. Alternativ ist es unter einzelnen Desktopumgebungen möglich, das Skript über einen Doppelklick im Dateimanager zu starten.
 

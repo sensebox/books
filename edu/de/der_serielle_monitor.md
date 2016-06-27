@@ -30,12 +30,12 @@ Als ersten Versuch sollst du jetzt Text im Ausgabefenster anzeigen lassen.
 Um Text anzeigen zu lassen, muss dieser in Anführungszeichen in den Klammern der Funktion stehen:
 ```arduino
 Serial.println("senseBox rocks!");
-
 Serial.print("senseBox ");
-Serial.print("rocks!");
+Serial.println("rocks!");
 ```
 
-Das Beispiel sollte in je einer Zeile den Text "senseBox rocks!" ausgeben. Beachte die Verwendung von `print` und `println`!
+Das Beispiel sollte in je einer Zeile den Text "senseBox rocks!" ausgeben.
+Beachte die Verwendung von `print` und `println`!
 
 Neben Text kann man sich im seriellen Monitor auch die Inhalte von Variablen anzeigen lassen. Dazu muss statt dem gewünschten Text der Name der jeweiligen Variable eingetragen werden:
 

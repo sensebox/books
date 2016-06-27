@@ -21,31 +21,30 @@ Steckt den Schaltkreis wie ihr ihn unten in der Grafik seht.
 ## Aufgabe 1
 Definiert den Pin an dem der Ausgang von eurem Mikrofon anliegt wie üblich. Außerdem muss eine Variable angelegt werden, in der die Werte des Mikrofons gespeichert werden:
 
-```
+```arduino
 int mic = A0;
 long micVal = 0; //speichert den Wert des Mikrofons
 ```
 
 Nun muss die serielle Ausgabe initialisieren werden und dem Pin `mic` der Modus `INPUT` zuordnen. Das machen wir im `setup`:
 
-```
+```arduino
 void setup() {
   Serial.begin(9600);
   pinMode(mic,INPUT);
 }
-
 ```
 Wir schreiben uns eine Funktion, die den Mikrofonwert ausließt:
 
-```
-long getMicVal(){
+```arduino
+long getMicVal() {
   micVal = analogRead(mic);
   return micVal;
 }
 ```
 Wenn ihr nun in eurem `loop()` den Wert auslest könnt ihr ihn euch über den seriellen Monitor ausgeben lassen.
 
-```
+```arduino
 void loop() {
   Serial.print(getMicVal());
 }
@@ -54,7 +53,7 @@ void loop() {
 Ihr werdet sehen, dass die Ausgabe in einem leisen Raum um den Wert 510 schwankt. Bei lauten Geräuschen können auch negative Werte zurück gegeben werden.
 Um die Lesbarkeit der erhaltenen Werte zu verbessern führen wir einige Berechnungen in der Methode `getMicVal()` durch:
 
-```
+```arduino
 long getMicVal(){
   int period = 3; // mittelt drei Werte um 'Ausreißer' abzufangen
   int correction_value = 510;
@@ -67,13 +66,11 @@ long getMicVal(){
   return(micVal);
 }
 ```
-Jetzt könnt ihr ausprobieren Welche Geräusche welche Ausschläge verursachen.
+Jetzt könnt ihr ausprobieren Welche Geräusche welche Ausschläge verursachen:
 
-Wie stark ist der Ausschlag bei Gesprächen?
-
-Was passiert wenn du den Summer vor das Mikrofon hältst?
-
-Und wenn du hinein pustest?
+- Wie stark ist der Ausschlag bei Gesprächen?
+- Was passiert wenn du den Summer vor das Mikrofon hältst?
+- Und was, wenn du hinein pustest?
 
 ## Aufgabe 2
 Bau eine Geräuschampel mit drei LED's, welche in einem leisen Raum grün leuchtet, bei Zimmerlautstärke orange und bei Lärm rot.

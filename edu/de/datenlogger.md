@@ -17,7 +17,7 @@ Die Folgende Code Vorlage beinhaltet alle Bestandteile um Daten auf SD-Karte zu 
 ```arduino
 /*
   senseBox Datenlogger Vorlage
-  Das Auslesen der jeweiligen Sensoren muss in der void loop() stattfinden und individuell angepasst werden
+  Das Auslesen der jeweiligen Sensoren muss in der loop() stattfinden und individuell angepasst werden
 */
 
 #include <SPI.h> // wichtige Libraries für das Speichern von Daten auf SD-Karte
@@ -117,8 +117,7 @@ void loop() {
     dataFile.println(";");
     Serial.println(mySensor.getHumi());
 
-
-  // Wenn die Datei geöffnet ist
+  // Wenn die Datei geöffnet ist, speichere die Änderungen
   if (dataFile) {
     dataFile.close();
   }

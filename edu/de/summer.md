@@ -52,8 +52,8 @@ Für nähere Information zu Pulsweitenmodulation (PWM) kannst du [hier](http://w
 Diese Pins sind mit dem Zeichen ~ gekennzeichnet: Das sind unter anderem die Pins 4, 5, 6, 9, 10 und 11. Ein Summer setzt jede Pulsweite in einen spezifischen Ton um.
 Wir wollen unser Programm so schreiben, dass eine Note (Tonleiter: c, d, e, f, g, a, h, c) für eine Pulsweite steht.  Dazu benutzen wird das Konstrukt `#define` wie folgt:
 
-``` arduino
-#define  h     4064    // 246 Hz     
+```arduino
+#define  h     4064    // 246 Hz
 #define  c     3830    // 261 Hz
 #define  d     3400    // 294 Hz
 #define  e     3038    // 329 Hz
@@ -64,7 +64,7 @@ Wir wollen unser Programm so schreiben, dass eine Note (Tonleiter: c, d, e, f, g
 #define  C     1912    // 523 Hz
 #define  E     1518    // 659 Hz
 #define  F     1432    // 698 Hz  
-#define  R     0       // Define a note, to represent a rest
+#define  R     0       // Definiere eine Note als Ersatz für eine Pause
 ```
 Nun benötigen wir einige Variablen um das spätere Abspielverhalten des Arduinos zu steuern.
 Die Werte könnt ihr für den Anfang so übernehmen.
@@ -142,7 +142,6 @@ void playMelody(){
     delayMicroseconds(pause);
   }
 }
-
 ```
 Es fehlt uns nur noch die Hauptschleife, welche den Ablauf des Programms steuert:
 ``` arduino
@@ -150,7 +149,6 @@ void loop() {
   playMelody();
 }
 ```
-
 
 ***Idee:*** *Falls ihr für eure Melodie höhere oder tiefere Töne benötigt, so könnt ihr diese wie im Beispiel oben  definieren.
 Wie viel Hertz ein Ton hat könnt ihr [hier](http://www.phy.mtu.edu/~suits/notefreqs.html) nachschauen.

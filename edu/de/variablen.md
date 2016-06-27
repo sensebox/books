@@ -101,7 +101,7 @@ Serial.print(testarray[5]); // erzeugt einen Fehler!
 ```
 
 # Lebensdauer von Variablen
-Eine Variable ist immer in dem Block (innerhalb der geschweifeten Klammern) für das Programm sichtbar, in welchem die Variable definiert wurde.
+Eine Variable ist immer in dem Block (innerhalb der geschweifeten Klammern) für das Programm sichtbar, in welchem die Variable deklariert wurde.
 Man unterscheidet zwischen globalen und lokalen Variablen.
 Lokale Variablen sind all diejenigen, welche innerhalb geschweifeter Klammern (meist innerhalb einer Funktion) deklariert wurden.
 Globale Variablen werden üblicherweise vor der `setup`-Funktion definiert und sind für das gesamte Programm sichtbar.

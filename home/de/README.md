@@ -5,7 +5,7 @@
 Die senseBox:home ist ein Citizen Science DIY-Toolkit für die ortsbezogene Messung von Umweltdaten wie Temperatur, Luftfreuchte, Luftdruck, Beleuchtungsstärke und UV-Licht.
 Sie basiert auf der Arduino/Genuino Plattform und kann einfach in unsere Sensorweb-Plattform [openSenseMap](https://opensensemap.org) integriert werden.
 
-Auf diesen Seiten befindet sich die Dokumentation und Aufbauanleitung zur senseBox:home.
+Auf diesen Seiten befindet sich die Dokumentation und Aufbauanleitung zur senseBox:home (auch als [PDF](https://sensebox.de/books/senseBox:home_de.pdf) verfügbar).
 
 ---
 

@@ -16,6 +16,5 @@ Viele Hersteller bieten für ihre Sensoren und andere Bauteile Datenblätter an,
 | VEML6070| UV-Lichtsensor |VISHAY | [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf)                        |
 | GP2Y0A21YK0F        |   IR-Distanzsensor                        |   Sharp        |  [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_sharp_ir-dist_GP2Y0A21YK0F.pdf)                                                                                                                     |
 
-## sonstiges
-
-## Gitbook als PDF
+## Dokumentation als PDF
+Dieses Buch ist auch als [PDF zum ausdrucken](https://sensebox.de/books/senseBox:edu_de.pdf) verfügbar!

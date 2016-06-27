@@ -1,4 +1,3 @@
-
 # Inhalt der Kiste
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Kisteninhalt.png"/>
@@ -24,19 +23,19 @@ Neben dem bereits erwähnten USB Kabel, beinhaltet das Sortiment noch ein Verbin
 
 6. **Sensoren und Kleinteile:**
     Hier haben wir Sensoren und andere Komponenten zusammengestellt, die für deine Experimente notwendig sind. Das Kleinteilset beinhaltet die folgenden Teile:
-	* Leuchtdioden (Abkürzung LED, engl. für Light-Emitting Diode)
-	* Druckknöpfe
-	* 470 Ω und 10 kΩ Widerstände
-	* RGB-LED (BL-L515)
-	* Lichtabhängiger Widerstand (Abkürzung LDR.engl. für Light-Dependant Resistor)
-	* Potentiometer
-	* Mikrofon (CEM-C9745JAD462P2.54R)
-	* Summer
-	* Kombinierter Temperatur- und Luftfeuchtigkeitssensor (HDC1008)
-	* Luftdrucksensor (BMP280)
-	* Infrarot-Distanzsensor (GP2YA)
-	* Ultraschall-Distanzsensor (HC-SR04)
-	* Lichtsensor (TSL45315)
-	* UV-Sensor (VEML6070)
-	* microSD-Karte mit Adapter
-	* Batterie für das senseBox Shield
+    * Leuchtdioden (Abkürzung LED, engl. für Light-Emitting Diode)
+    * Druckknöpfe
+    * 470 Ω und 10 kΩ Widerstände
+    * RGB-LED (BL-L515)
+    * Lichtabhängiger Widerstand (Abkürzung LDR.engl. für Light-Dependant Resistor)
+    * Potentiometer
+    * Mikrofon (CEM-C9745JAD462P2.54R)
+    * Summer
+    * Kombinierter Temperatur- und Luftfeuchtigkeitssensor (HDC1008)
+    * Luftdrucksensor (BMP280)
+    * Infrarot-Distanzsensor (GP2YA)
+    * Ultraschall-Distanzsensor (HC-SR04)
+    * Lichtsensor (TSL45315)
+    * UV-Sensor (VEML6070)
+    * microSD-Karte mit Adapter
+    * Batterie für das senseBox Shield

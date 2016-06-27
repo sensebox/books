@@ -24,13 +24,12 @@ Wenn du also den obenstehenden Code um ein `else` ergänzt, würde der komplette
 
 void setup() {
   pinMode(LED_PIN, OUTPUT);
-  pinmode(BUTTON_PIN, INPUT);
+  pinMode(BUTTON_PIN, INPUT);
 }
 void loop() {
-  if(digitalRead(BUTTON_PIN)==HIGH){
+  if (digitalRead(BUTTON_PIN)==HIGH){
     digitalWrite(LED_PIN, HIGH);
-  }
-  else{
+  } else {
     digitalWrite(LED_PIN, LOW);
   }
 }

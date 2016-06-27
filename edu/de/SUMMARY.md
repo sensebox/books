@@ -2,8 +2,8 @@
 
 * [Getting Started](README.md)
     * [Inhalt der Kiste](kisteninhalt.md)
-    * [Installation der Software](installation_der_software.md)
     * [Arduino/Genuino](genuino_board.md)
+    * [Installation der Software](installation_der_software.md)
     * [Arduino IDE](arduino_ide.md)
 * [Grundlagen](grundlagen.md)
     * [Digitale Signale](digitale_signale.md)
