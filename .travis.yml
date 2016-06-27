@@ -3,8 +3,8 @@ node_js:
 - '5'
 before_install:
 - npm install -g gitbook-cli
-- sudo apt-get -qq update
-- sudo apt-get install -y calibre
+# install calibre from github, needed for pdf export
+- sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
   deploy_docs.sh
