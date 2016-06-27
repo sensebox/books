@@ -9,11 +9,17 @@ for d in */; do
 	if [[ $d != 'dist/' ]]; then
 		echo cd into $d
 		cd $d
-		rm -rf _book
+		BOOKNAME_DE="senseBox:${d%/}_de.pdf"
+		BOOKNAME_EN="senseBox:${d%/}_en.pdf"
+		rm -rf _book $BOOKNAME_DE $BOOKNAME_EN
 		gitbook install
 		gitbook build
+		gitbook pdf "de" $BOOKNAME_DE
+		gitbook pdf "en" $BOOKNAME_EN
 		mkdir ../dist/$d
 		cp -r _book/* ../dist/$d
+		cp $BOOKNAME_DE ../dist/
+		cp $BOOKNAME_EN ../dist/
 		cd ../
 	fi
 done

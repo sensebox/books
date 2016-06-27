@@ -1,15 +1,10 @@
-#Downloads
-
+# Downloads
 In diesem Bereich findest du verschiedene Downloads, die dir bei der Verwendung der senseBox helfen können.
 
-##Libraries
-
+## Libraries
 Ein vollständiges Library Paket für die senseBox:edu findest du [hier](https://github.com/sensebox/resources/blob/master/libraries/senseBox_Libraries.zip?raw=true).
 
-
-
-##Datenblätter
-
+## Datenblätter
 Viele Hersteller bieten für ihre Sensoren und andere Bauteile Datenblätter an, aus denen ihr verschiedenen elektronische Spezifikationen ablesen könnt.
 
 | Sensor  | Beschreibung   | Hersteller | Download              |
@@ -21,7 +16,6 @@ Viele Hersteller bieten für ihre Sensoren und andere Bauteile Datenblätter an,
 | VEML6070| UV-Lichtsensor |VISHAY | [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf)                        |
 | GP2Y0A21YK0F        |   IR-Distanzsensor                        |   Sharp        |  [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_sharp_ir-dist_GP2Y0A21YK0F.pdf)                                                                                                                     |
 
+## sonstiges
 
-##sonstiges
-
-##Gitbook als PDF
+## Gitbook als PDF
