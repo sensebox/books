@@ -16,7 +16,7 @@ Eine Variable hat immer einen zugeordneten Datentyp, folgende Typen sind für di
 | String| Zeichenkette			| Zeichenkette bestehend aus ASCII Zeichen|
 | array	| Variablenfeld			| mehrere Werte des selben Variablentyps können gespeichert werden |
 
- **Hinweis:** *Beim Programmieren gibt es einige Konventionen, das heißt einige Regeln, auf die man sich geeinigt hat, um die Lesbarkeit von Programmcode zu verbessern. Eine davon ist, dass Name von Variablen immer kleine geschrieben werden.*
+ **Hinweis:** *Beim Programmieren gibt es einige Konventionen, das heißt einige Regeln, auf die man sich geeinigt hat, um die Lesbarkeit von Programmcode zu verbessern. Eine davon ist, dass Name von Variablen immer klein geschrieben werden.*
 
 ## So verwendet man die verschiedenen Datentypen
 

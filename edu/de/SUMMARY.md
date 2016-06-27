@@ -24,7 +24,7 @@
     * [Datenlogger](datenlogger.md)
     * [Auf die Töne fertig los!](summer.md)  
     * [Lauschangriff](mikrofon.md)
-    * [Kleiner Webserver]
- * [Glossar](GLOSSARY.md)
- * [FAQ](faq.md)
- * [Downloads](downloads.md)
+    * [Kleiner Webserver]()
+* [Glossar](GLOSSARY.md)
+* [FAQ](faq.md)
+* [Downloads](downloads.md)

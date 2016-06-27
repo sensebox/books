@@ -37,11 +37,11 @@ Neben dem bereits erwähnten USB Kabel, beinhaltet das Sortiment noch ein Verbin
 	* Potentiometer
 	* Mikrofon (CEM-C9745JAD462P2.54R)
 	* Summer
-	* Kombinierter Temperatur- und Luftfeuchtigkeitssensor (HDC 1008)
-	* Luftdrucksensor (BMP 280)
+	* Kombinierter Temperatur- und Luftfeuchtigkeitssensor (HDC1008)
+	* Luftdrucksensor (BMP280)
 	* Infrarot-Distanzsensor (GP2YA)
 	* Ultraschall-Distanzsensor (HC-SR04)
-	* Lichtsensor (TSL 45315)
+	* Lichtsensor (TSL45315)
 	* UV-Sensor (VEML6070)
 	* microSD-Karte mit Adapter
 	* Batterie für das senseBox Shield
