@@ -3,7 +3,8 @@ node_js:
 - '5'
 before_install:
 - npm install -g gitbook-cli
-- apt-get install -y calibre
+- sudo apt-get -qq update
+- sudo apt-get install -y calibre
 after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash
   deploy_docs.sh
