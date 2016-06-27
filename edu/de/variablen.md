@@ -54,7 +54,7 @@ int testWert = 99;
 ```
 
 ### long
-Der Datentyp `long` wird dann benötigt, wenn der Wertebereich eines Integer nicht mehr aussreicht. Es können ganze Zahlen von -2 Milliarden bis 2 Milliarden gespeichert werden.
+Der Datentyp `long` wird dann benötigt, wenn der Wertebereich eines Integer nicht mehr ausreicht. Es können ganze Zahlen von -2 Milliarden bis 2 Milliarden gespeichert werden.
 
 ```arduino
 long testWert = 9999999;

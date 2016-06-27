@@ -14,16 +14,16 @@ Um Daten auf SD-Karte zu speichern stellt das senseBox-Shield einen microSD-Kart
 ## Vorlage
 Die Folgende Code Vorlage beinhaltet alle Bestandteile um Daten auf SD-Karte zu speichern. Nun muss nur das Auslesen des Sensors in die Code-Vorlage integriert werden und schon können die Messwerte gespeichert und ausgelesen werden.
 
-```
+```arduino
 /*
   senseBox Datenlogger Vorlage
   Das Auslesen der jeweiligen Sensoren muss in der void loop() stattfinden und individuell angepasst werden
 */
 
-#include <SPI.h> //wichtige Libraries für das Speichern von Daten auf SD-Karte
+#include <SPI.h> // wichtige Libraries für das Speichern von Daten auf SD-Karte
 #include <SD.h>
 
-const int chipSelect = 4; //
+const int chipSelect = 4;
 
 void setup() {
   Serial.begin(9600);
@@ -64,10 +64,11 @@ void loop() {
 }
 ```
 
-Das Auslesen des Sensors sollte in der void loop () nach dem öffnen der Datei stattfinden. Die Informationen zum Auslesen der Sensoren finden sich in den Datenblättern und Beispielcodes der Hersteller und müssen individuell angepasst werden. Die jeweiligen Messwerte werden mit dem Befehl ```dataFile.print(Messwert); ``` in eine Zeile der CSV-Datei geschrieben. Der Zusatz ```ln``` erzeugt einen Zeilenumbruch. Über den Befehl ```delay(Mikrosekunden)``` kann das Mess- und Speicherintervall angepasst werden.
+Das Auslesen des Sensors sollte in der void loop () nach dem öffnen der Datei stattfinden. Die Informationen zum Auslesen der Sensoren finden sich in den Datenblättern und Beispielcodes der Hersteller und müssen individuell angepasst werden. Die jeweiligen Messwerte werden mit dem Befehl `dataFile.print(Messwert);` in eine Zeile der CSV-Datei geschrieben. Der Zusatz `ln` erzeugt einen Zeilenumbruch. Über den Befehl `delay(Mikrosekunden)` kann das Mess- und Speicherintervall angepasst werden.
 
 Zur Veranschaulichung findest du unten einen Sketch, der den HDC100x ausliest und die Messwerte auf SD-Karte speichert.
-```
+
+```arduino
 /*
   senseBox HDC100x Datenlogger
   Anschluss des HDC100x über I2C an den Arduino
@@ -131,4 +132,4 @@ void loop() {
 
 ## Messgerät zur Erfassung der Temperatur, Luftfeuchtigkeit und Luftdruck
 
-Bei diesem Messgerät werden die Temperatur, Luftfeuchtigkeit und der Luftdruck als CSV-Datei auf SD-Karte gespeichert. Die Sensoren werden über I2C mit dem Arduino verbunden. Der Code befindet sich zum Download [Hier](https://github.com/sensebox/OER/blob/master/senseBox_edu/Beispiele/senseBox_Datenlogger_T_H_P.ino?raw=true)
+Bei diesem Messgerät werden die Temperatur, Luftfeuchtigkeit und der Luftdruck als CSV-Datei auf SD-Karte gespeichert. Die Sensoren werden über I²C mit dem Arduino verbunden. Der Code befindet sich [hier](https://github.com/sensebox/OER/blob/master/senseBox_edu/Beispiele/senseBox_Datenlogger_T_H_P.ino?raw=true) zum Download.

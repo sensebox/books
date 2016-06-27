@@ -17,7 +17,7 @@ Das SDA Kabel am ersten Sensor würde also auf der selben Reihe des Breadboards 
 
 Benutzt man den I²C-Bus auf dem Arduino, gilt der Arduino immer als Master-Gerät und alle anderen Geräte am Bus als Slave.
 Jeder Slave hat seine eigene Adresse in Form einer Hexadezimalzahl, mit welcher er eindeutig angesprochen werden kann.
-Für Gewöhnlich bringt jedes Gerät einen Bereich von Busadressen mit, welche man verwenden kann. Die jeweiligen Adressen können im Datenblatt des Herstellers nachgeschaut werden, und stehen auch bei uns im [Glossar](GLOSSARY.md).
+Für gewöhnlich bringt jedes Gerät einen Bereich von Busadressen mit, welche man verwenden kann. Die jeweiligen Adressen können im Datenblatt des Herstellers nachgeschaut werden, und stehen auch bei uns im [Glossar](GLOSSARY.md).
 
 ## Die `Wire.h` Bibliothek
 Um den I²C-Bus verwenden zu können muss die Wire-Bibliothek (welche in der Arduino IDE enthalten ist) verwendet werden.

@@ -59,12 +59,12 @@ void loop() {
   byte msb=0, lsb=0;
   uint16_t uv;
 
-  Wire.requestFrom(I2C_ADDR_UV+1, 1);   // MSB (erstes byte)
+  Wire.requestFrom(I2C_ADDR_UV+1, 1); // MSB (erstes byte am sensor lesen)
   delay(1);
   if(Wire.available())
     msb = Wire.read();
 
-  Wire.requestFrom(I2C_ADDR_UV+0, 1);   // LSB (zweites byte)
+  Wire.requestFrom(I2C_ADDR_UV+0, 1); // LSB (zweites byte am sensor lesen)
   delay(1);
   if(Wire.available())
     lsb = Wire.read();
@@ -72,7 +72,7 @@ void loop() {
   uv = (msb<<8) | lsb;   // bytes durch Bitshift zu einer Zahl verbinden
 
   Serial.print("uW je cm²: ");
-  Serial.println(uv, DEC);              // Ausgabe als 16bit integer
+  Serial.println(uv, DEC);            // Ausgabe als 16bit integer
   Serial.print("UV-Index: ");
   Serial.println(getUVI(uv));
 

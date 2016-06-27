@@ -1,6 +1,5 @@
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/sensebox_logo_neu.png" align="center" width="400"/>
 
-
 # senseBox:home
 
 Die senseBox:home ist ein Citizen Science DIY-Toolkit für die ortsbezogene Messung von Umweltdaten wie Temperatur, Luftfreuchte, Luftdruck, Beleuchtungsstärke und UV-Licht.
