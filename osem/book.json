@@ -1,5 +1,5 @@
 {
-  "gitbook": "^2.6.7",
+  "gitbook": "^3.1.0",
   "plugins": ["edit-link", "localized-footer"],
   "pluginsConfig": {
     "edit-link": {
@@ -10,7 +10,7 @@
       }
     },
     "theme-default": {
-      "showLevel": true
+      "showLevel": false
     }
   }
 }
