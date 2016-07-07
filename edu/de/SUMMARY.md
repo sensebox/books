@@ -1,6 +1,7 @@
 # Summary
 
 * [Einleitung](README.md)
+* [Eigene Projekte beitragen](eigene_projekte.md)
 
 ## Getting started
 * [Inhalt der Kiste](kisteninhalt.md)
@@ -29,6 +30,7 @@
 * [Auf die Töne fertig los!](summer.md)  
 * [Lauschangriff](mikrofon.md)
 * [Kleiner Webserver]()
+* [Community-Projekte](community_projekte.md)
 
 ## Anhang
 * [Glossar](GLOSSARY.md)
