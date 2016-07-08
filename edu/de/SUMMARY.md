@@ -17,7 +17,7 @@
 * [Der Serielle Monitor](der_serielle_monitor.md)
 * [Verwendung von Software-Bibliotheken](software_libraries.md)
 * [Der serielle Datenbus (I²C)](der_serielle_datenbus.md)
-* [Kommtare im Quelltext](kommentare.md)
+* [Kommentare im Quelltext](kommentare.md)
 
 ## Projekte
 * [DIY-Umweltstation](diy-umweltstation.md)
@@ -31,6 +31,7 @@
 * [Auf die Töne fertig los!](summer.md)  
 * [Lauschangriff](mikrofon.md)
 * [Kleiner Webserver](webserver.md)
+* [Mehrfarbige LED]
 * [Community-Projekte](community_projekte.md)
 
 ## Anhang
