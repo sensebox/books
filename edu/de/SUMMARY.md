@@ -17,6 +17,7 @@
 * [Der Serielle Monitor](der_serielle_monitor.md)
 * [Verwendung von Software-Bibliotheken](software_libraries.md)
 * [Der serielle Datenbus (I²C)](der_serielle_datenbus.md)
+* [Kommtare im Quelltext](kommentare.md)
 
 ## Projekte
 * [DIY-Umweltstation](diy-umweltstation.md)
