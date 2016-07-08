@@ -22,10 +22,10 @@ Falls ihr dennoch den Arduino über das Internet erreichbar machen wollt und Zug
 [Hier](http://www.pcwelt.de/ratgeber/Crashkurs__Fernzugriff_und_Portfreigaben-Via_Internet_ins_Heimnetz-8324897.html) findet ihr weitere Informationen dazu.
 
 ### Webserver
-Ein Webserver ist ein Programm, welches... `TODO`
+Als Webserver (englisch server ‚Diener‘) bezeichnet man einen Computer mit Webserver-Software (in unserem Fall den Arduino), der Dokumente an Clients wie z.B. Webbrowser überträgt. Das Dokument ist bei uns der Inhalt von index.htm.
 
 ## Aufbau
-`TODO: fritzing grafik`
+`TODO: picture of server`
 
 ## Aufgabe 1
 Für den Server werden drei Bibliotheken benötigt:
@@ -197,6 +197,9 @@ String filter(String htmlline){
 ```
 
 ###HTML Dokument
+Unsere erste kleine Webseite sieht so aus:
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/webserver_htm.png" width="600"/>
+
 Diesen Code musst du kopieren und in einer Textdatei abspeichern. Den Namen der Textdatei musst du anschließend in index.htm ändern. Das HTML Dokument muss anschließend auf der SD Karte gespeichert und diese in das Ethernetshield gesteckt werden.
 ```arduino
 <!DOCTYPE html>
