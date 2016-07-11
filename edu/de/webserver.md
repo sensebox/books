@@ -25,7 +25,8 @@ Falls ihr dennoch den Arduino über das Internet erreichbar machen wollt und Zug
 Als Webserver (englisch server ‚Diener‘) bezeichnet man einen Computer mit Webserver-Software (in unserem Fall den Arduino), der Dokumente an Clients wie z.B. Webbrowser überträgt. Das Dokument ist bei uns der Inhalt von index.htm.
 
 ## Aufbau
-`TODO: picture of server`
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/server.jpg" width="600"/>
+
 
 ## Aufgabe 1
 Für den Server werden drei Bibliotheken benötigt:
