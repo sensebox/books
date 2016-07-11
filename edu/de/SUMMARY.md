@@ -33,6 +33,7 @@
 * [Kleiner Webserver](webserver.md)
 * [Mehrfarbige LED]
 * [Community-Projekte](community_projekte.md)
+  * [ArduinoWeatherStation (Hasselt University)](community_projekte/Tutorial_ArduinoWeatherStation.md)
 
 ## Anhang
 * [Glossar](GLOSSARY.md)
