@@ -11,7 +11,7 @@ Zusammen mit dieser Anleitung und dem Bauteilsortiment vermittelt die senseBox:e
 Auf diesen Seiten sind alle Unterlagen zur senseBox:edu zu finden.
 Dies umfasst Anleitungen, Aufgaben, Beispiel-Projekte, sowie Downloadlinks und ein FAQ.
 
-Alle Texte sind unter der [CC BY-SA 4.0 Lizenz](https://creativecommons.org/licenses/by-sa/4.0/) veröffentlicht, was eine freie Weiterverwendung & -entwicklung durch die Community ermöglicht; gerne fügen wir eure eigenen Projekte hier ein!
+Alle Texte sind unter der [CC BY-SA 4.0 Lizenz](https://creativecommons.org/licenses/by-sa/4.0/) veröffentlicht, was eine freie Weiterverwendung & -entwicklung durch die Community ermöglicht; gerne fügen wir eure eigenen Projekte hier ein (siehe [Eigene Projekte](eigene_projekte.md))!
 Der Quelltext dieser Seiten ist auf [GitHub](https://github.com/sensebox/books) verfügbar, wo sich auch Anmerkungen und Verbesserungen eintragen lassen.
 
 Diese Seiten sind auch als PDF Dokument verfügbar, besuche dazu den [Downloadbereich](downloads.md#dokumentation-als-pdf).

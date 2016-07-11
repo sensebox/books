@@ -2,7 +2,7 @@
 In diesem Bereich findest du verschiedene Downloads, die dir bei der Verwendung der senseBox helfen können.
 
 ## Libraries
-Ein vollständiges Library Paket für die senseBox:edu findest du [hier](https://github.com/sensebox/resources/blob/master/libraries/senseBox_Libraries.zip?raw=true).
+Ein vollständiges Library Paket für die senseBox:edu findest du [hier](https://raw.githubusercontent.com/sensebox/resources/master/libraries/senseBox_Libraries.zip).
 
 ## Datenblätter
 Viele Hersteller bieten für ihre Sensoren und andere Bauteile Datenblätter an, aus denen ihr verschiedenen elektronische Spezifikationen ablesen könnt.
