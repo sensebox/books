@@ -15,6 +15,6 @@ For users unfamiliar with the GitHub process, there is a short contribution-tuto
 
 ## License
 - Content: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- Code: MIT
+- Code: Apache
 
 See [LICENSE](https://github.com/sensebox/books/blob/master/LICENSE) file.
