@@ -15,7 +15,7 @@ Die Dokumentation sollte im Markdown-Format verfasst sein, sodass der Inhalt dir
 Um das Schreiben mit Markdown zu vereinfachen gibt es übrigens auch online-Editoren wie [stackedit](https://stackedit.io/editor).
 
 ### Inhalt
-Sofern sie für euer Projekt geeignet ist, könnt ihr euch an dieser [**Vorlage**](./community_projekte/projekt_vorlage.md) für Anleitungen orientieren.
+Sofern sie für euer Projekt geeignet ist, könnt ihr euch an dieser <a href="./community_projekte/projekt_vorlage.md" target="_blank">**Vorlage**</a> für Anleitungen orientieren.
 
 In jedem Fall sollten alle Informationen enthalten sein, sodass das Projekt von anderen wiederholt werden kann!
 
@@ -71,7 +71,12 @@ Dort ist es allerdings nur möglich je eine Datei auf einmal zu bearbeiten.
 
 ### Inhalt einfügen
 Fügt eure Dateien in den Order `edu/de/community_projekte/` ein.
-Zusätzlich könnt ihr die Projekt-Anleitung im Inhaltsverzeichnis `edu/de/SUMMARY.md` verlinken, hier ist ein Beispiel:
+
+Falls ihr online auf GitHub arbeitet (`https://github.com/<dein nutername>/books/tree/master/edu/de/community_projekte`), könnt ihr über die Buttons "Upload files" und "Create New File" Bilder bzw Textdateien hochladen:
+
+![github-add-file](https://raw.githubusercontent.com/sensebox/resources/master/images/github-add-files.jpg)
+
+Zusätzlich könnt ihr die Projekt-Anleitung im Inhaltsverzeichnis (`edu/de/SUMMARY.md`) verlinken, hier ist ein Beispiel:
 
 ```md
 ...

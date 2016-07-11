@@ -6,7 +6,7 @@ mkdir dist
 
 # build gitbooks
 for d in */; do
-	if [[ $d != 'dist/' ]]; then
+	if [[ $d != 'dist/' ]] || [[ $d != 'node_modules/' ]]; then
 		echo cd into $d
 		cd $d
 		BOOKNAME_DE="senseBox:${d%/}_de.pdf"
