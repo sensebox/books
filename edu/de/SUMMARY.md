@@ -28,10 +28,12 @@
     * [Speichern auf SD-Karte](datenlogger.md)
     * [Ethernetshield - auf ins Internet](ethernet-bmp280.md)
 * [Verkehrszähler](verkehrszaehler.md)
+* [Amelschaltung](ampelButton.md)
 * [Auf die Töne fertig los!](summer.md)  
 * [Lauschangriff](mikrofon.md)
 * [Kleiner Webserver](webserver.md)
 * [Mehrfarbige LED]
+* [Kaminfeuer](randomBlink.md)
 * [Community-Projekte](community_projekte.md)
   * [ArduinoWeatherStation (Hasselt University)](community_projekte/Tutorial_ArduinoWeatherStation.md)
 
