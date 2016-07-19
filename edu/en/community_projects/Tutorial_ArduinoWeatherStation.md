@@ -31,7 +31,7 @@ Preparation
 
     -   Extract the folder and copy the content to the **libraries** folder in Arduino’s installation files.
 
-![](Tutorial_ArduinoWeatherStation/image1.PNG)
+![](Tutorial_ArduinoWeatherStation/image1.jpg)
 
 Start with the basics… How to Push a button!
 ============================================
@@ -46,7 +46,7 @@ Start with the basics… How to Push a button!
 
   -   Pushbutton (switch) __(D)__
 
-    ![](Tutorial_ArduinoWeatherStation/image5.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image5.jpg)
 
 1.  Provide voltage and grounding to the breadboard
 
@@ -54,8 +54,8 @@ Start with the basics… How to Push a button!
 
     -   Connect a black wire to the negative vertical row of the breadboard and to the ground (GND) on the Genuino Board **(B)**.
 
-    ![](Tutorial_ArduinoWeatherStation/image7.PNG)
-    ![](Tutorial_ArduinoWeatherStation/image9.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image7.jpg)
+    ![](Tutorial_ArduinoWeatherStation/image9.jpg)
 
 1.  Add the pushbutton and provide it with power and grounding
 
@@ -65,13 +65,13 @@ Start with the basics… How to Push a button!
 
     -   Connect a red wire to the **positive** vertical row of the *breadboard* **(C)**.
 
-    ![](Tutorial_ArduinoWeatherStation/image11.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image11.jpg)
 
 <!-- -->
 
   -   Provide with a green wire a connection between digital pin 2 on the Genuino Board and the leg of pushbutton connected to the ground.
 
-    ![](Tutorial_ArduinoWeatherStation/image13.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image13.jpg)
 
 
 1.  Turn on the light, ähm button… by writing some code
@@ -80,16 +80,18 @@ Start with the basics… How to Push a button!
 
   -   Programs written in the IDE are called sketches. Go to File New and name the file Pushbutton.ino or similar to create your first sketch.
 
+    ![](Tutorial_ArduinoWeatherStation/image15.jpg)
+
   -   Each sketch must contain a setup() and a loop() function:
 
-    ![](Tutorial_ArduinoWeatherStation/image16.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image16.jpg)
 
 
 <!-- -->
 
   -   As a start you can may place the following code in your sketch. It initializes the which pins are connected to the LED light on the Genuino Board and the push button. Next, it provides the functionality to turn the LED light on when the button is pressed in. This LED is built-in in the Genuino board and driven by pin 13.
 
-    ![](Tutorial_ArduinoWeatherStation/image17.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image17.jpg)
 
 
   ```arduino
@@ -132,20 +134,20 @@ Start with the basics… How to Push a button!
 
   -   Connect the board to your computer with a USB cable.
 
-    ![](Tutorial_ArduinoWeatherStation/image19.PNG)
-    ![](Tutorial_ArduinoWeatherStation/image21.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image19.jpg)
+    ![](Tutorial_ArduinoWeatherStation/image21.jpg)
 
     -   Compile the code by clicking on the Verify button __(A)__.
 
     -   Click on the Upload button __(B)__.
 
-    ![](Tutorial_ArduinoWeatherStation/image22.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image22.jpg)
 
 1.  Test your program
   * Push the button on the board.
   * A LED light on the Genuino Board should light up.
 
-    ![](Tutorial_ArduinoWeatherStation/image23.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image23.jpg)
 
 Let’s build the Sensor Data logger
 ===================================
@@ -158,13 +160,13 @@ Let’s build the Sensor Data logger
 
   -   Extra wires (C)
 
-    ![](Tutorial_ArduinoWeatherStation/image24.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image24.jpg)
 
 1.  Connect the sensor and provide it with power and grounding
 
   -   Connect the **sensor** to the *breadboard*.
 
-    ![](Tutorial_ArduinoWeatherStation/image25.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image25.jpg)
 
     -   The labels on the sensor mark tell which pins need to be connected
     to the power and ground. If you are unsure, please consult the data
@@ -176,7 +178,7 @@ Let’s build the Sensor Data logger
     -   Connect a black wire to the negative vertical row and to the GND pin
     of the sensor (B).
 
-    ![](Tutorial_ArduinoWeatherStation/image32.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image32.jpg)
 
 1.  Create a connection between the sensor and the microcontroller to
     transmit measurements
@@ -191,8 +193,8 @@ Let’s build the Sensor Data logger
     if you address the sensor in your code correctly) on the *Genuino
     Board* and the **SCL** **pin** of the sensor.
 
-    ![](Tutorial_ArduinoWeatherStation/image34.PNG)
-    ![](Tutorial_ArduinoWeatherStation/image35.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image34.jpg)
+    ![](Tutorial_ArduinoWeatherStation/image35.jpg)
 
 Write the program for the Weather Station
 =========================================
@@ -302,7 +304,7 @@ Write the program for the Weather Station
 
   -   Push the button on your board. A new result should appear on your screen (C).
 
-    ![](Tutorial_ArduinoWeatherStation/image41.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image41.jpg)
 
 Write the results to a file on a SD card
 ========================================
@@ -313,7 +315,7 @@ Write the results to a file on a SD card
 
   -   A SenseBox Shield with SD card slot.
 
-  ![](Tutorial_ArduinoWeatherStation/image42.PNG)
+  ![](Tutorial_ArduinoWeatherStation/image42.jpg)
 
 
 1.  Connect the SenseBox Shield to the Genuino Board
@@ -321,13 +323,13 @@ Write the results to a file on a SD card
   -   Since the SenseBox Shield will be placed on top of the Genuino
     Board, the wires need to be connected to the Sensebox Shield.
 
-    ![](Tutorial_ArduinoWeatherStation/image43.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image43.jpg)
 
-    ![](Tutorial_ArduinoWeatherStation/image44.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image44.jpg)
 
 -   Place the **SenseBox Shield** on the **Genuino Board**.
 
-    ![](Tutorial_ArduinoWeatherStation/image45.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image45.jpg)
 
 1.  Adjust your program
 
@@ -387,7 +389,7 @@ Write the results to a file on a SD card
 
   -   Push the button on the breadboard multiple times (C).
 
-    ![](Tutorial_ArduinoWeatherStation/image46.PNG)
+    ![](Tutorial_ArduinoWeatherStation/image46.jpg)
 
 1.  View the results
 
@@ -401,6 +403,6 @@ Write the results to a file on a SD card
 Make it mobile
 ===============
 
-![](Tutorial_ArduinoWeatherStation/image47.PNG)
+![](Tutorial_ArduinoWeatherStation/image47.jpg)
 
 Time to go on a field study and measure the temperatures throughout the building and surroundings. You can make your Arduino weather station more mobile by attaching a battery to the *Genuino Board*. Good luck during your expedition!

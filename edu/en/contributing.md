@@ -21,12 +21,12 @@ In jedem Fall sollten alle Informationen enthalten sein, sodass das Projekt von 
 
 ### Dateinamen
 Achtet darauf, dass in den Dateinamen keine Leerzeichen enthalten sind!
-Wenn Bilder oder andere Dateien (zB. Arduino-Sketches) eingebunden werden sollen, legt diese einfach im in einem gleichnamigen Unterordner ab:
+Wenn Bilder oder andere Dateien (zB. Arduino-Sketches) eingebunden werden sollen, legt diese einfach im selben Ordner mit dem Projektnamen im Dateinamen ab:
 
 ```
 mobile-wetterstation.md
-mobile-wetterstation/uebersicht.jpg
-mobile-wetterstation/sketch.ino
+mobile-wetterstation-uebersicht.jpg
+mobile-wetterstation.ino
 ```
 
 ## Hochladen der Dokumentation
