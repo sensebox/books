@@ -18,4 +18,4 @@ Viele Hersteller bieten für ihre Sensoren und andere Bauteile Datenblätter an,
 | GP2Y0A21YK0F | IR-Distanzsensor  | Sharp | [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_sharp_ir-dist_GP2Y0A21YK0F.pdf) |
 
 ## Dokumentation als PDF
-Dieses Buch ist auch als [PDF zum ausdrucken](../../senseBox:edu_de.pdf) verfügbar!
+Dieses Buch ist auch als [PDF zum ausdrucken](https://sensebox.de/books/senseBox:edu_de.pdf) verfügbar!

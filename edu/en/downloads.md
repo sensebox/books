@@ -18,4 +18,4 @@ Most manufacturers provide datasheets for their sensors and other components, wh
 | GP2Y0A21YK0F | IR distance sensor | Sharp | [datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_sharp_ir-dist_GP2Y0A21YK0F.pdf) |
 
 ## Documentation as PDF
-This book is also available as [printable PDF](../../senseBox:edu_en.pdf)!
+This book is also available as [printable PDF](https://sensebox.de/books/senseBox:edu_en.pdf)!
