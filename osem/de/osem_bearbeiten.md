@@ -14,7 +14,7 @@ Hierzu wird der bei der Registrierung erhaltene **API-Key** benötigt!
     <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/osem_edit_api-key.jpg" center width="600px" />
 
 4. Gebe deine Änderungen im sich öffnenden Formular ein.
-    Neben Ändeungen an Metadaten, Standort und Foto ist es auch möglich die Sensor-Konfiguration zu ändern.
+    Neben Änderungen an Metadaten, Standort und Foto ist es auch möglich die Sensor-Konfiguration zu ändern.
 
     > ***Hinweis:*** *Falls du einen neuen Sensor hinzugefügt hast und den aktualisierten Arduino-Sketch herunterladen willst, ist dies erst möglich, wenn die Seite nach dem Speichern neu geladen, und der API-Key erneut eingegeben wurde.*
 
