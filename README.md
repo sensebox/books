@@ -9,9 +9,7 @@ This repository contains the gitbook sources for our documentation and OER on
 Blob resources are hosted separately at https://github.com/sensebox/resources/
 
 ## Contributing
-Contributions and improvements are appreciated; just open an issue or pull request!
-
-For users unfamiliar with the GitHub process, there is a short contribution-tutorial [here](https://github.com/sensebox/books/blob/master/edu/de/eigene_projekte.md) (only in German for now).
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 - Content: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

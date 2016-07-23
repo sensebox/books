@@ -63,7 +63,7 @@ Besucht dazu die [Seite des Repositories](https://github.com/sensebox/books), un
 Das Repository wurde mit dem aktuellen Zustand zu eurem Account kopiert, und ist unter `https://github.com/<dein nutzername>/books` zu finden. Auf dieser Kopie habt ihr Schreibrechte, und könnt euren Inhalt einfügen!
 
 ### Inhalt einfügen
-Fügt eure Dateien in den Order `edu/de/community_projekte/` ein.
+Fügt eure Dateien in den Ordner `edu/de/community_projekte/` ein.
 
 Besucht dazu die Adresse `https://github.com/<dein nutername>/books/tree/master/edu/de/community_projekte`, wo ihr über die Buttons "Upload files" und "Create New File" Bilder und Textdateien hochladen könnt:
 
