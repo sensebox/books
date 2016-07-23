@@ -11,4 +11,4 @@ Auf diesen Seiten befindet sich die Dokumentation und Aufbauanleitung zur senseB
 
 > Die senseBox ist ein OpenSource Projekt und befindet sich ständig in der Weiterentwicklung. Das heißt, dass auch diese Seiten nach und nach erweitert werden.
 
-> Falls euch Fehler auffallen oder ihr bei der Entwicklung einsteigen wollt, meldet euch gerne bei uns unter [info@sensebox.de](mailto:info@sensebox.de)!
+> Falls euch Fehler auffallen oder ihr bei der Entwicklung einsteigen wollt, meldet euch gerne bei uns [per mail](mailto:info@sensebox.de) oder [öffnet ein Issue auf GitHub](https://github.com/sensebox/books/issues)!
