@@ -35,9 +35,9 @@ Setzt nun, wie unten dargestellt, im ersten Dialogfeld den Haken unten und best√
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/07_replace.png" align="center" width="400"/>
 
-Die folgende Animation zeigt den Kopiervorgang noch einmal im Detail:
+Das folgende Video zeigt den Kopiervorgang noch einmal im Detail:
 
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/lib_install.gif" align="center" width="400"/>
+{%youtube%}j-hdRJp2o4k{%endyoutube%}
 
 ## Treiber Installieren
 >Die Installation der FTDI Teiber ist unter Unix-basierten Betriebssystemen sowie f√ºr den *Genuino Uno* nicht notwendig.
