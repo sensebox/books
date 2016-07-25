@@ -19,7 +19,7 @@ Shields werden einfach in die Pins des Arduino aufgesteckt und stellen diese Pin
 Im Kasten der senseBox:edu findest du einen *Ethernet-Shield* (rote Platine), welcher den Arduino mit einem Netzwerkanschluss austattet, sowie einen *senseBox-Shield* (grüne Platine), auf welchem eine Echtzeituhr (RTC) und weitere Anschlüsse verbaut sind.
 
 Da unser Ethernet-Shield eine modifizierte Variante des offiziellen Arduino-Shields ist, funktioniert die mit der Arduino-IDE mitgelieferte `Ethernet.h` Bibliothek nicht.
-Für dieses Projekt solltest du [unsere Versionen der Bibliotheken](https://raw.githubusercontent.com/sensebox/resources/master/libraries/senseBox_Libraries.zip) verwenden.
+Für dieses Projekt solltest du unsere Versionen der Bibliotheken verwenden (siehe [Downloads](../../downloads.md)).
 Wenn ihr diese Bibliothek installiert habt, wird die Arduino-IDE möglicherweise die Ethernet-Bibliothek updaten wollen, dies solltet ihr ablehnen.
 
 ### OpenSenseMap
@@ -34,7 +34,7 @@ Zusätzlich erhältst du einen Arduino-Sketch, in welchem die Übermittelung der
 ### Sensor
 Der `BMP280` misst Luftdruck (hPa) und Temperatur (°C).
 Dieser Sensor wird über das I²C Protokoll angesteuert, und benötigt eine Betriebsspannung von 3 bis 5 Volt.
-I²C-Geräte werden an den Arduino Uno über die Pins `A4` (SDA), und `A5` (SCL) angeschlossen, und so digital ausgelesen (siehe auch [Der serielle Datenbus](der_serielle_datenbus.md)).
+I²C-Geräte werden an den Arduino Uno über die Pins `A4` (SDA), und `A5` (SCL) angeschlossen, und so digital ausgelesen (siehe auch [Der serielle Datenbus](../grundlagen/der_serielle_datenbus.md)).
 
 Da der Luftdruck von der Höhe über dem Meeresspiegel abhängt, kann über den `BMP280` auch die Aufbau-Höhe der senseBox bestimmt werden. Dazu wird ein Referenzdruck `P0` benötigt, dessen Höhe bekannt ist. Üblicherweise wird dazu der aktuelle Luftdruck auf Meerespiegelniveau verwendet.
 Da der Luftdruck in Abhängigkeit vom aktuellen Wetter stark schwanken kann, ist diese "Höhenmessung" aber nicht sehr akkurat, und muss immer wieder neu kalibriert werden.
@@ -94,7 +94,7 @@ Registriere deine senseBox auf der OSeM und konfiguriere dort den korrekten Sens
 ## Aufgabe 2
 Erweitere deinen in Aufgabe 1 erhaltenen Arduino Sketch, sodass deine senseBox die Sensordaten zur OSeM überträgt.
 
-> ***Hinweis: Falls du die `BMP280.h`-Bibliothek nicht in der Arduino IDE findest, kannst du sie [hier](https://raw.githubusercontent.com/sensebox/resources/master/libraries/senseBox_Libraries.zip) herunterladen und in den `Arduino/libraries` Ordner kopieren.***
+> ***Hinweis: Falls du die `BMP280.h`-Bibliothek nicht in der Arduino IDE findest, kannst du sie unter [Downloads](../../downloads.md) herunterladen und in den `Arduino/libraries` Ordner kopieren.***
 
 ## Aufgabe 3
 Berechne aus der Luftdruck-Messung die Aufbauhöhe über NN, und gebe diese über den seriellen Port aus.

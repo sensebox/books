@@ -32,7 +32,7 @@
 #* [Kleiner Webserver]()
 #* [Mehrfarbige LED]()
 #* [Kaminfeuer]()
-* [Community Projects](community_projects.md)
+* [Community Projects](community_projects/README.md)
     * [ArduinoWeatherStation (Hasselt University)](community_projects/Tutorial_ArduinoWeatherStation.md)
 
 ## Appendix

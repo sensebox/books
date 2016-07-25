@@ -37,7 +37,7 @@ Der Befehl `analogRead()` liest den Wert von einem analogen Pin.
 Die so gemessenen Werte zwischen 0 V und 5 V werden vom eingebauten 10-bit analog zu digital Konverter (ADC) in `integer` Werte zwischen 0 und 1023 umgewandelt, d.h. das Signal verfügt über eine Auflösung von 0.0049 Volt pro Wert.
 
 Das auslesen eines Eingangs dauert etwa 0,0001 Sekunden, es können also etwa 10.000 Messungen pro Sekunde aufgenommen werden.
-Es bietet sich an die gemessenen Daten im [seriellen Monitor](./der_serielle_monitor.md) anzuzeigen.
+Es bietet sich an die gemessenen Daten im [seriellen Monitor](der_serielle_monitor.md) anzuzeigen.
 
 Ein beispielhaftes Programm könnte so aussehen:
 

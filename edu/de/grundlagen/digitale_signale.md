@@ -32,7 +32,7 @@ Das Gegenstück zu diesen Befehl wäre `digital´Write(13, LOW);` um die Stromve
 
 ```arduino
 void setup() {
-  pinMode(13, OUTPUT); // Deklariere den Pin, an dem die LED            
+  pinMode(13, OUTPUT); // Deklariere den Pin, an dem die LED
                        // angeschlossen ist, als Ausgang
 }
 

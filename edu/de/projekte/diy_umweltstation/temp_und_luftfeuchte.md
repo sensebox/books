@@ -2,9 +2,9 @@
 Damit wir täglich den Wetterbericht im Internet, im Fernsehen, in der Zeitung oder in Apps sehen können, werden nicht nur Satellitendaten ausgewertet. Auch Daten von Wetterstationen am Boden spielen eine wichtige Rolle bei der Vorhersage. Aber wie funktioniert die Messung und Darstellung von Temperatur- und Luftfeuchtigkeitswerten?
 
 ## Voraussetzungen
-- [Die Verwendung von Software-Bibliotheken](software_libraries.md)
-- [Der seriellen Datenbus](der_serielle_datenbus.md)
-- [Der serielle Monitor](der_serielle_monitor.md)
+- [Die Verwendung von Software-Bibliotheken](../../grundlagen/software_libraries.md)
+- [Der seriellen Datenbus](../../grundlagen/der_serielle_datenbus.md)
+- [Der serielle Monitor](../../grundlagen/der_serielle_monitor.md)
 
 ## Ziele der Station
 In dieser Station beschäftigen wir uns mit dem Temperatur- und Luftfeuchtigkeitssensor der senseBox, dem HDC1008.
@@ -15,14 +15,14 @@ In dieser Station beschäftigen wir uns mit dem Temperatur- und Luftfeuchtigkeit
 ## Grundlagen
 Der `HDC1008`, aus der Serie HDX100X von Texas Instruments, ist ein kombinierter Temperatur- und Luftfeuchtigkeitssensor. Der Sensor kann die Luftfeuchtigkeit von 0% bis 100%, sowie die Temperatur von -40°C bis 125°C bei einer Genauigkeit von ±4% bzw. von ±0,2°C messen.
 
-Die Kommunikation des Sensors mit dem Mikrokontroller läuft über den [seriellen Datenbus I²C](der_serielle_datenbus.md). Anders als bei einfachen digitalen oder analogen Eingängen, können an den Datenbus mehrere I²C-Geräte (wie z.B. Sensoren oder Displays) parallel geschaltet werden. Jedes Gerät hat dabei eine eindeutige Kennung, damit der Datenbus jedes Einzelne davon zuordnen und separat ansprechen kann.
+Die Kommunikation des Sensors mit dem Mikrokontroller läuft über den [seriellen Datenbus I²C](../../grundlagen/der_serielle_datenbus.md). Anders als bei einfachen digitalen oder analogen Eingängen, können an den Datenbus mehrere I²C-Geräte (wie z.B. Sensoren oder Displays) parallel geschaltet werden. Jedes Gerät hat dabei eine eindeutige Kennung, damit der Datenbus jedes Einzelne davon zuordnen und separat ansprechen kann.
 
 ## Aufbau
 Steckt den Schaltkreis wie ihr ihn unten in der Grafik seht.
 <img src="https://raw.githubusercontent.com/sensebox/OER/master/senseBox_edu/images/aufbau_station_5.png" width="500"/>
 
 ## Programmierung
-Bevor wir mit der Programmierung starten können, müssen wir die HDC100X Bibliothek hinzufügen. Dies solltest du eigentlich bereits mit den [ersten Schritten](installation_der_software.md) getan haben, falls nicht kannst du im Kapitel zu [Softwarebibliotheken](software_libraries.md) nachlesen.
+Bevor wir mit der Programmierung starten können, müssen wir die HDC100X Bibliothek hinzufügen. Dies solltest du eigentlich bereits mit den [ersten Schritten](../../getting_started/installation_der_software.md) getan haben, falls nicht kannst du im Kapitel zu [Softwarebibliotheken](../../grundlagen/software_libraries.md) nachlesen.
 
 Um alle zusätzlichen Funktionen der Bibliothek nutzen zu können, muss sie an oberster Stelle in eurem Programm mit der Direktive `#include` eingebunden werden. In unserem Fall brauchen wir neben der HDC100X Bibliothek noch die Wire-Bibliothek (Standarderweiterung für I²C Geräte), also steht in den ersten beiden Zeilen:
 ```arduino

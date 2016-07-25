@@ -35,7 +35,7 @@ Für den Server werden drei Bibliotheken benötigt:
 #include <TextFinder.h>
 #include <SD.h>
 ```
-**Achtung** *Es ist wichtig, dass ihr die Ethernet-Bibliothek von unserer [Website](https://github.com/sensebox/resources/blob/master/libraries/senseBox_Libraries.zip?raw=true) benutzt. Mit der Standartbibliothek vom Arduino funktioniert unser Ethernet-Shield nicht. Die Arduinoumgebung wird die Ethernet-Bibliothek immer 'aktualisieren' wollen; das dürft ihr nicht machen.*
+**Achtung** *Es ist wichtig, dass ihr unsere Version der Ethernet-Bibliothek nutzt (siehe [Downloads](../downloads.md)). Mit der Standartbibliothek vom Arduino funktioniert unser Ethernet-Shield nicht. Die Arduinoumgebung wird die Ethernet-Bibliothek immer 'aktualisieren' wollen; das dürft ihr nicht machen.*
 
 Anschließend müssen in zwei Variablen die MAC-Adresse und die IP-Adresse des Arduino-Servers fest legen. Zusätzlich muss der Pin 4 als SD-Karten Pin festgelegt werden. Außerdem definieren wir uns ein`File`-Objekt `webFile` in dem die HTML Seite abgelegt wird.
 
@@ -79,7 +79,7 @@ void setup() {
   if(testmode) {
     Serial.println("Datei (index.htm) wurde gefunden.");
     Serial.println("Verbraucher schalten");
-  }  
+  }
 }
 ```
 Die `loop`-Methode ist in zwei Bereiche unterteilt. Im ersten Teil werden Aktionen auf der Website ausgewertet, im zweiten Teil wird die Website von der SD-Karte ausgelesen und an den Browser gesendet.
@@ -231,7 +231,7 @@ Diesen Code musst du kopieren und in einer Textdatei abspeichern. Den Namen der 
     <tr> <td>Pin10:</td> <td> <a href="/?pinD10=1" target="ifr">Ein</a> <a href="/?pinD10=0" target="ifr">Aus</a> </td> <td></td></tr>
     <tr> <td>Pin11:</td> <td> <a href="/?pinD11=1" target="ifr">Ein</a> <a href="/?pinD11=0" target="ifr">Aus</a> </td> <td></td></tr>
     <tr> <td>Pin12:</td> <td> <a href="/?pinD11=1" target="ifr">Ein</a> <a href="/?pinD12=0" target="ifr">Aus</a> </td> <td></td></tr>
-    <tr> <td>Pin13:</td> <td> <a href="/?pinD13=1" target="ifr">Ein</a> <a href="/?pinD13=0" target="ifr">Aus</a> </td> <td></td></tr>           
+    <tr> <td>Pin13:</td> <td> <a href="/?pinD13=1" target="ifr">Ein</a> <a href="/?pinD13=0" target="ifr">Aus</a> </td> <td></td></tr>
   </table>
   <iframe name="ifr" style="display:none;" width="0" height="0"></iframe>
 </body>

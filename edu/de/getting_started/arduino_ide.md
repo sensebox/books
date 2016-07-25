@@ -7,4 +7,4 @@ Im oberen Bereich der Software findest du die wichtigsten Bedienelemente, die im
 - Mit dem Häkchen kannst du Dein Arduino Programm (auch Sketch genannt) auf Fehler überprüfen lassen. Diesen Vorgang nennt man auch kompilieren
 - Mit dem Pfeil wird der Sketch auf den Arduino-Mikrokontroller hochgeladen
 - Hier kannst du einen neuen Sketch anlegen, einen bereits vorhandenn Sketch öffnen oder deinen aktuellen Sketch speichern
-- Mit der Lupe öffnest du den seriellen Monitor. Weitere Informationen zum seriellen Monitor findest du [hier](der_serielle_monitor.md)
+- Mit der Lupe öffnest du den seriellen Monitor. Weitere Informationen zum seriellen Monitor findest du [hier](../grundlagen/der_serielle_monitor.md)
