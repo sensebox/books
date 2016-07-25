@@ -24,7 +24,7 @@ Preparation
 
 1.  Install senseBox Plugins
 
-  -   Download from [here](https://github.com/sensebox/resources/raw/master/libraries/senseBox_Libraries.zip)
+  -   Download from [here](https://github.com/senseBox/resources/raw/master/libraries/senseBox_Libraries.zip)
 
   -   Extract the folder and copy the content to the `libraries/` folder in Arduino’s installation files.
 
@@ -310,21 +310,21 @@ Write the results to a file on a SD card
 
   -   Your Arduino construction from the previous steps.
 
-  -   A SenseBox Shield with SD card slot.
+  -   A senseBox Shield with SD card slot.
 
   ![](Tutorial_ArduinoWeatherStation/image42.jpg)
 
 
-1.  Connect the SenseBox Shield to the Genuino Board
+1.  Connect the senseBox Shield to the Genuino Board
 
-  -   Since the SenseBox Shield will be placed on top of the Genuino
-    Board, the wires need to be connected to the Sensebox Shield.
+  -   Since the senseBox Shield will be placed on top of the Genuino
+    Board, the wires need to be connected to the senseBox Shield.
 
     ![](Tutorial_ArduinoWeatherStation/image43.jpg)
 
     ![](Tutorial_ArduinoWeatherStation/image44.jpg)
 
--   Place the **SenseBox Shield** on the **Genuino Board**.
+-   Place the **senseBox Shield** on the **Genuino Board**.
 
     ![](Tutorial_ArduinoWeatherStation/image45.jpg)
 
@@ -380,7 +380,7 @@ Write the results to a file on a SD card
 
 1.  Run your program
 
-  -   Place the SD card in the slot on the SenseBox Board (A).
+  -   Place the SD card in the slot on the senseBox Board (A).
 
   -   Compile your program and upload it to the board (B).
 
