@@ -99,8 +99,7 @@ void setup() {
   }
   Serial.println("Karte erfolgreich initialisiert");
 
- mySensor.begin();
-
+  mySensor.begin();
 }
 
 void loop() {
@@ -131,4 +130,4 @@ void loop() {
 
 ## Messgerät zur Erfassung der Temperatur, Luftfeuchtigkeit und Luftdruck
 
-Bei diesem Messgerät werden die Temperatur, Luftfeuchtigkeit und der Luftdruck als CSV-Datei auf SD-Karte gespeichert. Die Sensoren werden über I²C mit dem Arduino verbunden. Der Code befindet sich [hier](https://github.com/sensebox/OER/blob/master/senseBox_edu/Beispiele/senseBox_Datenlogger_T_H_P.ino?raw=true) zum Download.
+Bei diesem Messgerät werden die Temperatur, Luftfeuchtigkeit und der Luftdruck als CSV-Datei auf SD-Karte gespeichert. Die Sensoren werden über I²C mit dem Arduino verbunden. Der Code befindet sich [hier](https://raw.githubusercontent.com/sensebox/resources/master/code/senseBox_Datenlogger_T_H_P.ino) zum Download.

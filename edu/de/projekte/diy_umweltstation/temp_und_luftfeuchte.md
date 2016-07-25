@@ -19,7 +19,7 @@ Die Kommunikation des Sensors mit dem Mikrokontroller läuft über den [serielle
 
 ## Aufbau
 Steckt den Schaltkreis wie ihr ihn unten in der Grafik seht.
-<img src="https://raw.githubusercontent.com/sensebox/OER/master/senseBox_edu/images/aufbau_station_5.png" width="500"/>
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/aufbau_station_5.png" width="500"/>
 
 ## Programmierung
 Bevor wir mit der Programmierung starten können, müssen wir die HDC100X Bibliothek hinzufügen. Dies solltest du eigentlich bereits mit den [ersten Schritten](../../getting_started/installation_der_software.md) getan haben, falls nicht kannst du im Kapitel zu [Softwarebibliotheken](../../grundlagen/software_libraries.md) nachlesen.

@@ -11,25 +11,22 @@ Edited by Felix Erdmann using _pandoc_
 
 
 This tutorial is a step-by-step guide which will teach you how to build
-mobile sensor logging device using the Sensebox Edu kit.
+mobile sensor logging device using the senseBox Edu kit.
 
 Preparation
 ===========
 
 1.  Install Arduino
 
-  -   <https://www.arduino.cc/en/Main/Software>
+  -   Download from [here](https://www.arduino.cc/en/Main/Software)
 
-  -   (Extra:) **Tutorials** and **Reference Guides** can be found here:
-      <https://www.arduino.cc/en/Guide/HomePage>
+  -   (Extra:) **Tutorials** and **Reference Guides** can be found [here](https://www.arduino.cc/en/Guide/HomePage)
 
-1.  Install SenseBox Plugins
+1.  Install senseBox Plugins
 
-  -   Download from link:
+  -   Download from [here](https://github.com/sensebox/resources/raw/master/libraries/senseBox_Libraries.zip)
 
-    -   <https://github.com/senseBox/OER/blob/master/Libraries/senseBox_Libraries.zip?raw=true>
-
-    -   Extract the folder and copy the content to the **libraries** folder in Arduino’s installation files.
+  -   Extract the folder and copy the content to the `libraries/` folder in Arduino’s installation files.
 
 ![](Tutorial_ArduinoWeatherStation/image1.jpg)
 
