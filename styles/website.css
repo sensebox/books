@@ -1,0 +1,8 @@
+.markdown-section .glossary-term {
+  text-decoration-style: dotted;
+  color: inherit;
+}
+
+.markdown-section .glossary-term:hover {
+  text-decoration-style: dotted;
+}
