@@ -4,9 +4,8 @@
 # and copy it into the osem book
 wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_project.json
 wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_data.json
-apidoc-markdown -p ./ -o osem-apidoc.md
-cp -f osem-apidoc.md osem/de/osem_api.md
-mv -f osem-apidoc.md osem/en/osem_api.md
+apidoc-markdown -p ./ -t osem/apidoc-markdown_template.md -o osem/en/osem-api.md
+cp -f osem/en/osem_api.md osem/de/osem_api.md
 
 # create dist folder
 rm -rf dist
@@ -14,7 +13,7 @@ mkdir dist
 
 # build gitbooks
 for d in */; do
-	if [[ $d != 'dist/' ]] || [[ $d != 'node_modules/' ]] || [[ $d != 'styles/' ]]; then
+	if [[ $d != 'dist/' ]] && [[ $d != 'node_modules/' ]] && [[ $d != 'styles/' ]]; then
 		echo cd into $d
 		cd $d
 		BOOKNAME_DE="senseBox:${d%/}_de.pdf"
