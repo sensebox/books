@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
-# create dist
+# build the current openSenseMap API documentation
+# and copy it into the osem book
+wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_project.json
+wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_data.json
+apidoc-markdown -p ./ -o osem-apidoc.md
+cp -f osem-apidoc.md osem/de/osem_api.md
+mv -f osem-apidoc.md osem/en/osem_api.md
+
+# create dist folder
 rm -rf dist
 mkdir dist
 

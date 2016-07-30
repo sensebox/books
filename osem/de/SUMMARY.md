@@ -5,4 +5,4 @@
 * [Bearbeiten einer Station](osem_bearbeiten.md)
 * [Datendownload](osem_download.md)
 * [Datenanalyse](osem_datenanalyse.md)
-* [API](osem_api.md)
+* [REST API](osem_api.md)

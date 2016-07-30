@@ -1,5 +1,4 @@
 # OpenSenseMap API
-Reading and writing sensor- & station-data is done via a REST-API located at https://api.opensensemap.org/.
+This file should be replaced by the `deploy_docs.sh` script, when deployed via TRAVIS.
 
-## Docs
-The API documentation can be found in the [repositories' wiki](https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation).
+Using [apidoc-markdown](https://github.com/RanzQ/node-apidoc-markdown), the [current apidoc](https://github.com/sensebox/openSenseMap-API/tree/gh-pages/) is converted to markdown

@@ -1,6 +1,4 @@
 # OpenSenseMap API
-Daten und Stationen können über eine API ausgelesen und hinzugefügt werden.
-Der API-Endpunkt liegt unter https://api.opensensemap.org/.
+This file should be replaced by the `deploy_docs.sh` script, when deployed via TRAVIS.
 
-## Dokumentation
-Die Dokumentation der API ist im [Wiki des Repositories](https://github.com/sensebox/OpenSenseMap-API/wiki/API-Dokumentation) zu finden.
+Using [apidoc-markdown](https://github.com/RanzQ/node-apidoc-markdown), the [current apidoc](https://github.com/sensebox/openSenseMap-API/tree/gh-pages/) is converted to markdown
