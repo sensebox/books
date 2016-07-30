@@ -9,7 +9,7 @@ This manual is divided into the following sections:
 3. [Registration on the openSenseMap](assembly03_osem.md)
 4. [Exemplary setup](assembly04_example.md)
 
-If you have questions about the assembly, which are not answered in this manual, please contact us under [support@sensebox.de](mailto:support@sensebox.de).
+If you have questions about the assembly, which are not answered in this manual, please [contact us](mailto:support@sensebox.de).
 
 The senseBox team wishes you fun and success with your new Do-It-Yourself sensor station!
 

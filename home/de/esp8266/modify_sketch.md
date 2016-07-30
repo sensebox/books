@@ -1,23 +1,28 @@
 # senseBox:home Sketch für den ESP8266 anpassen
 
-Damit der senseBox Sketch auf dem ESP8266 läuft, sind ein paar Anpassungen nötig. Zuallererst benötigt man seinen senseBox Sketch. Entweder man registriert eine neue senseBox ([Anleitung hier](aufbau03_osem.html)), oder man verwendet seinen bestehenden Sketch. Wichtig ist dass man seine senseBox ID und Sensor IDs kennt.
+Damit der senseBox-Sketch auf dem ESP8266 läuft, sind ein paar Anpassungen nötig.
+Zuallererst benötigt man seinen senseBox-Sketch.
+Entweder man registriert eine neue senseBox ([Anleitung hier](../aufbau/aufbau03_osem.md)), oder man verwendet seinen bestehenden Sketch.
+Wichtig ist dass man seine senseBox-ID und Sensor-IDs kennt.
 
-Weiter [unten](#kompletter-sketch) findet ihr einen komplett angepassten Sketch. Dort müssen nur noch Wifi Name und Passwort, senseBox ID und Sensor IDs ersetzt werden.
+Weiter [unten](#kompletter-sketch) findet ihr einen komplett angepassten Sketch.
+Dort müssen nur noch WiFi-Name und -Passwort, senseBox-ID und Sensor-IDs ersetzt werden.
 
 #### Ethernet durch Wifi ersetzen
 
-Da der ESP8266 mit Wifi kommuniziert, brauchen wir die Ethernet Bibliothek nicht mehr. Dafür muss die ESP Wifi Bibliothek eingeladen und konfiguriert werden.
+Da der ESP8266 über WiFi kommuniziert, brauchen wir die Ethernet Bibliothek nicht mehr.
+Dafür muss die ESP Wifi Bibliothek eingeladen und konfiguriert werden.
 
-```
+```arduino
 #include <Ethernet.h>
 ```
 ersetzen durch
-```
+```arduino
 #include <ESP8266WiFi.h>
 ```
 
-Die Zeilen die die Ethernet Verbindung konfigurieren folgendermaßen ersetzen:
-```
+Die Zeilen welche die Ethernet Verbindung konfigurieren folgendermaßen ersetzen:
+```arduino
 //Configure ethernet connection
 IPAddress myIp(192, 168, 0, 42);
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
@@ -25,7 +30,7 @@ char server[] = "www.opensensemap.org";
 EthernetClient client;
 ```
 nach
-```
+```arduino
 //Configure wifi connection
 char server[] = "www.opensensemap.org";
 WiFiClient client;
@@ -37,7 +42,7 @@ const char* password = "dein-wifi-passwort";
 Dann muss das Verbinden mit dem Ethernet mit der Wifi-Verbindung ersetzt werden.
 
 Alt:
-```
+```arduino
 // start the Ethernet connection:
 Serial.println("SenseBox Home software version 2.1");
 Serial.println();
@@ -48,7 +53,7 @@ if (Ethernet.begin(mac) == 0) {
 }else Serial.println("done!");
 ```
 Neu:
-```
+```arduino
 // start the Wifi connection:
 Serial.println("SenseBox Home software version 2.1");
 Serial.println();
@@ -63,15 +68,14 @@ Serial.println("done!");
 
 ```
 
-
 ### Kompletter Sketch
-```
+```arduino
 /*
 SenseBox Home - Citizen Sensingplatform
 Version: 2.1
 Date: 2016-07-23
 Homepage: http://www.sensebox.de
-Author: Jan Wirwahn, Institute for Geoinformatics, University of Muenster, Gerald Pape
+Author: Jan Wirwahn & Gerald Pape, Institute for Geoinformatics, University of Muenster
 Note: Sketch for senseBox Home Kit ESP8266
 Email: support@sensebox.de
 */
@@ -275,4 +279,3 @@ uint16_t getUV(){
   return uvValue*5;
 }
 ```
-

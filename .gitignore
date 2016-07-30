@@ -35,4 +35,4 @@ node_modules
 # book build files
 dist
 _book
-senseBox:*.pdf
+*.pdf

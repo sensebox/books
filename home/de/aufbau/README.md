@@ -3,12 +3,12 @@
 Einmal aufgebaut, programmiert und mit der openSenseMap synchronisiert, liefert die senseBox:home kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke und UV-Licht.
 Diese Bauanleitung für die senseBox:home ist in die folgenden Abschnitte unterteilt:
 
-1. [Inventarliste und Grundaufbau](aufbau01_inventar.html)
-2. [Softwareinstallation und Sensortests](aufbau02_software.html)
-3. [Aktivierung auf der openSenseMap](aufbau03_osem.html)
-4. [Beispielanwendung mit Gehäuse](aufbau04_beispiel.html)
+1. [Inventarliste und Grundaufbau](aufbau01_inventar.md)
+2. [Softwareinstallation und Sensortests](aufbau02_software.md)
+3. [Aktivierung auf der openSenseMap](aufbau03_osem.md)
+4. [Beispielanwendung mit Gehäuse](aufbau04_beispiel.md)
 
-Bei Fragen zum Aufbau wendet euch bitte an [support@sensebox.de](mailto:support@sensebox.de).
+Bei Fragen zum Aufbau wendet euch bitte [per Mail](mailto:support@sensebox.de) an uns.
 Das senseBox Team wünscht euch viel Spaß mit eurer Do-It-Yourself Sensorstation!
 
 ---
