@@ -29,10 +29,8 @@ cd edu            # (or home, or osem)
 gitbook install   # only required once
 
 gitbook build     # build the website
-gitbook pdf de    # build the pdf for each language
-gitbook pdf en
-gitbook epub de   # build the ebook for each language
-gitbook epub en
+gitbook pdf       # build the pdf
+gitbook epub      # build the ebook
 ```
 
 ## Repository structure
@@ -48,7 +46,9 @@ Files that are parsed specially by GitBook have a filename in caps:
 - `README.md`: the landingpage of a book, eg an introduction
 - `SUMMARY.md`: the table of contents, rendered as the left navbar
 - `GLOSSARY.md`: a glossary, whose terms are referenced on all other book pages
-- `FOOTER.md`: the page footer on any page, contains license info
+- `FOOTER.md`: the page footer on any page
+
+Stylesheets applied on all books are in `./styles`, and are symlinked into each book (unix only).
 
 Currently, all BLOB files (except for community projects, see below) are hosted at a [separate repo](https://github.com/sensebox/resources), to improve reusability within our workinggroup.
 
@@ -61,3 +61,5 @@ edu/en/community_projects/
 
 ### gh-pages
 The `gh-pages` branch contains the rendered output of the current state of `master`, automatically generated on a CI-server through the `.travis.yml` & `deploy_docs.sh` scripts.
+
+This script also fetches and generates the current API documentation for the openSenseMap-API using `apidoc-markdown`.

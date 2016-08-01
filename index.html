@@ -14,35 +14,30 @@
     <link rel="canonical" href="https://www.sensebox.de//de/books/">
     <link rel="alternate" type="application/rss+xml" title="senseBox | Die Kiste mit Sinn" href="https://www.sensebox.de//feed.xml" />
 
-
-    <!-- <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>-->
-
-
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <!-- Piwik -->
     <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-2703768-3']);
-        _gaq.push(['_trackPageview']);
-
+        var _paq = _paq || [];
+        _paq.push(["setDomains", ["*.sensebox.de","*.opensensemap.org"]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
         (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
+        var u="//piwik.uni-muenster.de/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 25]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
         })();
     </script>
+    <noscript><p><img src="//piwik.uni-muenster.de/piwik.php?idsite=25" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
 </head>
 
 
 <body>
-
     <div class="container-fluid">
-
         <nav class="navbar navbar-default">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4 navbar-logo">
@@ -113,8 +108,11 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="card">
-                                            <a href="https://www.sensebox.de/books/edu/de/index.html" style="text-decoration: none;">
-                                                <canvas class="price-header-bg" style="background-image: url(https://www.sensebox.de/images/instructions_edu_bg.jpg);"></canvas>
+                                            <a href="//sensebox.de/books/senseBox:edu_de.pdf" class="overlay opacity-animation-fast" target="_blank">
+                                                <em style="font-size: 1.4em;">PDF</em>
+                                            </a>
+                                            <a href="//sensebox.de/books/edu/de" style="text-decoration: none;" target="_blank">
+                                                <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_edu_bg.jpg'}});"></canvas>
                                                 <div class="price-text" style="padding:20px;">
                                                     <h3>senseBox:edu</h3>
                                                 </div>
@@ -123,8 +121,11 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card">
-                                            <a href="https://www.sensebox.de/books/home/de/index.html" style="text-decoration: none;">
-                                                <canvas class="price-header-bg" style="background-image: url(https://www.sensebox.de/images/instructions_home_bg.jpg);"></canvas>
+                                            <a href="//sensebox.de/books/senseBox:home_de.pdf" class="overlay opacity-animation-fast" target="_blank">
+                                                <em style="font-size: 1.4em;">PDF</em>
+                                            </a>
+                                            <a href="//sensebox.de/books/home/de" style="text-decoration: none;" target="_blank">
+                                                <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_home_bg.jpg'}});"></canvas>
                                                 <div class="price-text" style="padding:20px;">
                                                     <h3>senseBox:home</h3>
                                                 </div>
@@ -133,8 +134,11 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card">
-                                            <a href="https://www.sensebox.de/books/osem/de/index.html" style="text-decoration: none;">
-                                                <canvas class="price-header-bg" style="background-image: url(https://www.sensebox.de/images/instructions_OSeM_bg.png);"></canvas>
+                                            <a href="//sensebox.de/books/senseBox:osem_de.pdf" class="overlay opacity-animation-fast" target="_blank">
+                                                <em style="font-size: 1.4em;">PDF</em>
+                                            </a>
+                                            <a href="//sensebox.de/books/osem/de" style="text-decoration: none;" target="_blank">
+                                                <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_OSeM_bg.png'}});"></canvas>
                                                 <div class="price-text" style="padding:20px;">
                                                     <h3>openSenseMap</h3>
                                                 </div>
@@ -146,8 +150,11 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="card">
-                                            <a href="https://www.sensebox.de/books/edu/en/index.html" style="text-decoration: none;">
-                                                <canvas class="price-header-bg" style="background-image: url(https://www.sensebox.de/images/instructions_edu_bg.jpg);"></canvas>
+                                            <a href="//sensebox.de/books/senseBox:edu_en.pdf" class="overlay opacity-animation-fast" target="_blank">
+                                                <em style="font-size: 1.4em;">PDF</em>
+                                            </a>
+                                            <a href="//sensebox.de/books/edu/en" style="text-decoration: none;" target="_blank">
+                                                <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_edu_bg.jpg'}});"></canvas>
                                                 <div class="price-text" style="padding:20px;">
                                                     <h3>senseBox:edu</h3>
                                                 </div>
@@ -156,8 +163,11 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card">
-                                            <a href="https://www.sensebox.de/books/home/en/index.html" style="text-decoration: none;">
-                                                <canvas class="price-header-bg" style="background-image: url(https://www.sensebox.de/images/instructions_home_bg.jpg);"></canvas>
+                                            <a href="//sensebox.de/books/senseBox:home_en.pdf" class="overlay opacity-animation-fast" target="_blank">
+                                                <em style="font-size: 1.4em;">PDF</em>
+                                            </a>
+                                            <a href="//sensebox.de/books/home/en" style="text-decoration: none;" target="_blank">
+                                                <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_home_bg.jpg'}});"></canvas>
                                                 <div class="price-text" style="padding:20px;">
                                                     <h3>senseBox:home</h3>
                                                 </div>
@@ -166,8 +176,11 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card">
-                                            <a href="https://www.sensebox.de/books/osem/en/index.html" style="text-decoration: none;">
-                                                <canvas class="price-header-bg" style="background-image: url(https://www.sensebox.de/images/instructions_OSeM_bg.png);"></canvas>
+                                            <a href="//sensebox.de/books/senseBox:osem_en.pdf" class="overlay opacity-animation-fast" target="_blank">
+                                                <em style="font-size: 1.4em;">PDF</em>
+                                            </a>
+                                            <a href="//sensebox.de/books/osem/en" style="text-decoration: none;" target="_blank">
+                                                <canvas class="price-header-bg" style="background-image: url({{ site.baseurl | append: '/images/instructions_OSeM_bg.png'}});"></canvas>
                                                 <div class="price-text" style="padding:20px;">
                                                     <h3>openSenseMap</h3>
                                                 </div>
@@ -175,16 +188,12 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
 
         <div class="footer">
             <hr>

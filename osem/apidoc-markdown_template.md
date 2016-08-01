@@ -1,7 +1,7 @@
-The openSenseMap provides a REST API, which can be used to query data and post data.
+The openSenseMap provides a REST API, which can be used to query & post senseBox metadata & measurements.
 The endpoint is [`https://api.opensensemap.org/`](https://api.opensensemap.org/).
 
-This documentation can also be found [here](http://sensebox.github.io/openSenseMap-API) in a improved layout.
+This documentation can also be found [here](http://sensebox.github.io/openSenseMap-API) with an improved layout.
 
 ---
 
@@ -9,9 +9,13 @@ This documentation can also be found [here](http://sensebox.github.io/openSenseM
 
 <%= project.description %>
 
+<% // sort groups alphabetically and methods by order in project.order %>
 <% Object.keys(data).sort().forEach(function (group) { -%>
-- [<%= group %>](#<%=: group | mlink %>)
-  <% Object.keys(data[group]).sort(function(a, b) { return data[group][a][0].title.localeCompare(data[group][b][0].title) }).forEach(function (sub) { -%>
+<% project.order.forEach(function(method, i, arr) { -%>
+<% if (data[group][method]) data[group][method].order = i; -%>
+<% }); -%>
+[**<%= group %>**](#<%=: group | mlink %>)
+  <% Object.keys(data[group]).sort(function(a, b) { return (data[group][a].order || Number.POSITIVE_INFINITY) > data[group][b].order; }).forEach(function (sub) { -%>
 - [![](<%=: data[group][sub][0].type | badge %>) <%= data[group][sub][0].title %>](#<%=: data[group][sub][0].title | mlink %>-)
   <% }); -%>
 
@@ -23,7 +27,7 @@ This documentation can also be found [here](http://sensebox.github.io/openSenseM
 <% Object.keys(data).sort().forEach(function (group) { -%>
 # <%= group %>
 
-<% Object.keys(data[group]).sort(function(a, b) { return data[group][a][0].title.localeCompare(data[group][b][0].title) }).forEach(function (sub) { -%>
+<% Object.keys(data[group]).sort(function(a, b) { return (data[group][a].order || Number.POSITIVE_INFINITY) > data[group][b].order; }).forEach(function (sub) { -%>
 ## <%= data[group][sub][0].title %> ![<%=: data[group][sub][0].type | upcase %>](<%=: data[group][sub][0].type | badge %>)
 
 <% if (data[group][sub][0].description) { -%>
