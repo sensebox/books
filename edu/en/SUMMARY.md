@@ -34,9 +34,9 @@
 #* [Kaminfeuer]()
 * [Community Projects](community_projects/README.md)
     * [ArduinoWeatherStation (Hasselt University)](community_projects/Tutorial_ArduinoWeatherStation.md)
+    * [HeatmapCampusDiepenbeek (Hasselt University)](community_projects/Tutorial_HeatmapCampusDiepenbeek.md)
 
 ## Appendix
 #* [Glossary](GLOSSARY.md)
 #* [FAQ](faq.md)
 * [Downloads](downloads.md)
-
