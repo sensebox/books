@@ -42,7 +42,7 @@ in QGIS.
 1.  Create a new project
     -   Go to Project New.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image4.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image4.png)
 
     -   Save your project as CampusHeatMap.qgs.
 
