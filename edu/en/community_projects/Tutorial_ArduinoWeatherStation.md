@@ -2,7 +2,7 @@ _DIGITAL CITIZENS, CONNECTED COMMUNITIES:_
 
 _THE ROLE OF SPATIAL COMPUTING AND VOLUNTEERED GEOGRAPHIC INFORMATION_
 
-__TUTORIAL: “MOBILE SENSOR LOGGER”__
+# Tutorial: Mobile Sensor Logger
 
 
 Authors: Michelle Gybel and Johannes Schöning of Hasselt University
@@ -13,8 +13,7 @@ Edited by Felix Erdmann using _pandoc_
 This tutorial is a step-by-step guide which will teach you how to build
 mobile sensor logging device using the senseBox Edu kit.
 
-Preparation
-===========
+##Preparation
 
 1.  Install Arduino
 
@@ -30,8 +29,7 @@ Preparation
 
 ![](Tutorial_ArduinoWeatherStation/image1.jpg)
 
-Start with the basics… How to Push a button!
-============================================
+## Start with the basics… How to Push a button!
 
 1.  What do you need?
 
@@ -64,8 +62,6 @@ Start with the basics… How to Push a button!
 
     ![](Tutorial_ArduinoWeatherStation/image11.jpg)
 
-<!-- -->
-
   -   Provide with a green wire a connection between digital pin 2 on the Genuino Board and the leg of pushbutton connected to the ground.
 
     ![](Tutorial_ArduinoWeatherStation/image13.jpg)
@@ -83,8 +79,6 @@ Start with the basics… How to Push a button!
 
     ![](Tutorial_ArduinoWeatherStation/image16.jpg)
 
-
-<!-- -->
 
   -   As a start you can may place the following code in your sketch. It initializes the which pins are connected to the LED light on the Genuino Board and the push button. Next, it provides the functionality to turn the LED light on when the button is pressed in. This LED is built-in in the Genuino board and driven by pin 13.
 
@@ -146,8 +140,7 @@ Start with the basics… How to Push a button!
 
     ![](Tutorial_ArduinoWeatherStation/image23.jpg)
 
-Let’s build the Sensor Data logger
-===================================
+## Let’s build the Sensor Data logger
 
 1.  What do you need?
 
@@ -193,8 +186,7 @@ Let’s build the Sensor Data logger
     ![](Tutorial_ArduinoWeatherStation/image34.jpg)
     ![](Tutorial_ArduinoWeatherStation/image35.jpg)
 
-Write the program for the Weather Station
-=========================================
+## Write the program for the Weather Station
 
 1.  Create a new sketch
 
@@ -303,8 +295,7 @@ Write the program for the Weather Station
 
     ![](Tutorial_ArduinoWeatherStation/image41.jpg)
 
-Write the results to a file on a SD card
-========================================
+## Write the results to a file on a SD card
 
 1.  What do you need?
 
@@ -397,8 +388,7 @@ Write the results to a file on a SD card
   - You can now see the resulting temperature measurements.
 
 
-Make it mobile
-===============
+## Make it mobile
 
 ![](Tutorial_ArduinoWeatherStation/image47.jpg)
 

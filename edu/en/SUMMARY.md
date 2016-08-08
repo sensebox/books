@@ -33,8 +33,8 @@
 #* [Mehrfarbige LED]()
 #* [Kaminfeuer]()
 * [Community Projects](community_projects/README.md)
-    * [ArduinoWeatherStation (Hasselt University)](community_projects/Tutorial_ArduinoWeatherStation.md)
-    * [HeatmapCampusDiepenbeek (Hasselt University)](community_projects/Tutorial_HeatmapCampusDiepenbeek.md)
+    * [Mobile Sensor Logger (Hasselt University)](community_projects/Tutorial_ArduinoWeatherStation.md)
+    * [Heatmap (Hasselt University)](community_projects/Tutorial_HeatmapCampusDiepenbeek.md)
 
 ## Appendix
 #* [Glossary](GLOSSARY.md)

@@ -1,9 +1,8 @@
+_DIGITAL CITIZENS, CONNECTED COMMUNITIES:_
 
-**Digital Citizens, Connected Communities:**
+_THE ROLE OF SPATIAL COMPUTING AND VOLUNTEERED GEOGRAPHIC INFORMATION_
 
-**The Role of Spatial Computing and Volunteered Geographic Information**
-
-Tutorial: Create a heat map in QGIS
+# Tutorial: Create a heat map in QGIS
 
 Edited by Felix Erdmann using _pandoc_
 
@@ -14,97 +13,91 @@ of temperature data a heat map is the most visualization type for that.
 In this tutorial you will learn how to visualize your data as a heat map
 in QGIS.
 
-Preparation
-===========
+## Preparation
 
-1.  Install QGIS
+1. Install QGIS
+    -   <http://www.qgis.org/nl/site/index.html>
 
-  -   <http://www.qgis.org/nl/site/index.html>
-
-  -   (Extra:) **Documentation** and a **QGIS Training Manual** can be
+    -   (Extra:) **Documentation** and a **QGIS Training Manual** can be
       found here:\
       <http://www.qgis.org/en/docs/index.html>
 
-1.  Install Plugins
+1. Install Plugins
 
-  -   Open QGIS.
+    -   Open QGIS.
 
-  -   Go to **Plugins** **Manage and Install Plugins…**
+    -   Go to **Plugins** **Manage and Install Plugins…**
+    ![](Tutorial_HeatmapCampusDiepenbeek/image1.png)
 
-   ![](Tutorial_HeatmapCampusDiepenbeek/image1.png)
-
-  -   Search for **Interpolation Plugin (A)**. Select **Install
+    -   Search for **Interpolation Plugin (A)**. Select **Install
       Plugin (B)** if this option is still available.
+    ![](Tutorial_HeatmapCampusDiepenbeek/image2.png)
 
-  ![](Tutorial_HeatmapCampusDiepenbeek/image2.png)
-  -   Search for **QuickMapService** **(A)** and select **Install
+    -   Search for **QuickMapService** **(A)** and select **Install
       Plugin (B)**.
+    ![](Tutorial_HeatmapCampusDiepenbeek/image3.png)
 
-![](Tutorial_HeatmapCampusDiepenbeek/image3.png)
+## Import the data
 
-Import the data
-===============
+1.  Create a new project
+    -   Go to Project New.
 
-1.  ![](Tutorial_HeatmapCampusDiepenbeek/image4.png)
+    ![](Tutorial_HeatmapCampusDiepenbeek/image4.png)
 
-Create a new project
-
-  -   Go to Project New.
-
-  -   Save your project as CampusHeatMap.qgs.
+    -   Save your project as CampusHeatMap.qgs.
 
 1.  Get OpenStreetMap data
 
-  -   Go to Web QuickMapServices OSM OSM Mapnik.
+    -   Go to Web QuickMapServices OSM OSM Mapnik.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image5.png)
+         ![](Tutorial_HeatmapCampusDiepenbeek/image5.png)
 
-  -   Open the layer OSM Mapnik and navigate to Campus Diepenbeek by using
+    -   Open the layer OSM Mapnik and navigate to Campus Diepenbeek by using
     the Pan tool.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image6.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image6.png)
 
 1.  Add a layer for the temperature measurements
 
-  -   Go to Layer Create Layer New Shapefile Layer…
+    -   Go to Layer Create Layer New Shapefile Layer…
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image7.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image7.png)
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image8.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image8.png)
 
-  -   Set the type of the new shapefile layer to Point (A).
+    -   Set the type of the new shapefile layer to Point (A).
 
-  -   Add a new field Temp which type is Decimal number. Don’t forget to
+    -   Add a new field Temp which type is Decimal number. Don’t forget to
     click on the button Add to fields list (B).
 
-  -   Click on OK (C).
+    -   Click on OK (C).
 
-  -   Name the layer Measurements.
+    -   Name the layer Measurements.
 
 1.  Add points to the Measurements layer
 
-  -   Right click on Measurements and select Toggle Editing.
+    -   Right click on Measurements and select Toggle Editing.
 
-  -   Click on the Add Feature button. Points will now be added when you
+    -   Click on the Add Feature button. Points will now be added when you
     click on the map.
 
-  -   Place points to mark all locations where you have measured
+    -   Place points to mark all locations where you have measured
     the temperature. You can add the temperature values directly, but
     other methods will be explained later.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image9.png) ![](Tutorial_HeatmapCampusDiepenbeek/image10.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image9.png) ![](Tutorial_HeatmapCampusDiepenbeek/image10.png)
 
 1.  Changing the properties of the layers within the project
 
-  -   The checkboxes in front of the layers indicate whether a layer is
+    -   The checkboxes in front of the layers indicate whether a layer is
     visible or not.
 
-  -   By changing the order of the layers you decide which layers are in
+    -   By changing the order of the layers you decide which layers are in
     the front and which will function as backgrounds.
 
-  -   Make sure both layers are visible and Measurements is the top layer.
+    -   Make sure both layers are visible and Measurements is the top layer.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image11.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image11.png)
 
 1.  Update Measurements with your own data
 
@@ -112,22 +105,22 @@ Create a new project
 
     Option 1: Insert the data manually
 
-  -   Right click on Measurements and select Toggle Editing (A).
+    -   Right click on Measurements and select Toggle Editing (A).
 
-  -   Right click on Measurements again and select Open Attribute
+    -   Right click on Measurements again and select Open Attribute
     Table (B).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image12.png)
-    ![](Tutorial_HeatmapCampusDiepenbeek/image13.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image12.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image13.png)
 
-  -   Select each cell of the Temp field in the attribute table and fill
+    -   Select each cell of the Temp field in the attribute table and fill
     in your obtained values.
 
-  -   When you are done editing, select Toggle Editing again.
+    -   When you are done editing, select Toggle Editing again.
 
     Option 2: Import the data from a CSV file
 
-  -   Delete the **Temp** field from the attribute table.
+    -   Delete the **Temp** field from the attribute table.
 
       -   Right click on **Measurements** and click on **Toggle Editing**.
 
@@ -138,38 +131,38 @@ Create a new project
 
       -   Select **Temp** and click on **OK (B)**.
 
-        ![](Tutorial_HeatmapCampusDiepenbeek/image14.png)
-        ![](Tutorial_HeatmapCampusDiepenbeek/image15.png)
+          ![](Tutorial_HeatmapCampusDiepenbeek/image14.png)
+          ![](Tutorial_HeatmapCampusDiepenbeek/image15.png)
 
-  -   Import your **CSV file** as a layer.
+    -   Import your **CSV file** as a layer.
 
       -   Go to **Layer Add Layer Add Delimeted Text Layer... **
 
-![](Tutorial_HeatmapCampusDiepenbeek/image16.png)
+          ![](Tutorial_HeatmapCampusDiepenbeek/image16.png)
 
-  -   Browse for the file **TEMP.CSV,** which was generated by your
+    -   Browse for the file **TEMP.CSV,** which was generated by your
     Arduino Weather Station, on your computer **(A)**.
 
-  -   Name your layer **Temperatures** and select **CSV** as the file
+    -   Name your layer **Temperatures** and select **CSV** as the file
     format **(B)**.
 
-  -   Check the box **First record has field names** **(C)**.
+    -   Check the box **First record has field names** **(C)**.
 
-  -   Check **No geometry (attribute only table)** **(D)**.
+    -   Check **No geometry (attribute only table)** **(D)**.
 
-  -   Click on **OK** **(E)**.
+    -   Click on **OK** **(E)**.
 
-![](Tutorial_HeatmapCampusDiepenbeek/image17.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image17.png)
 
-  -   Join the **Temperatures** layer with the **Measurements** layer.
+    -   Join the **Temperatures** layer with the **Measurements** layer.
 
       -   Right click on **Measurements** and select **Properties (A)**.
 
       -   Open the tab **Joins** and click on **Add** **(B)**.
 
-        ![](Tutorial_HeatmapCampusDiepenbeek/image18.png)
+          ![](Tutorial_HeatmapCampusDiepenbeek/image18.png)
 
-        ![](Tutorial_HeatmapCampusDiepenbeek/image20.png)
+          ![](Tutorial_HeatmapCampusDiepenbeek/image20.png)
 
       -   Set **Temperatures** as the **Join layer**. And **id** as the
         **Join field** and **Target field** **(A)**.
@@ -179,178 +172,176 @@ Create a new project
 
       -   Click on **OK** **(C)**.
 
-![](Tutorial_HeatmapCampusDiepenbeek/image22.png)
+          ![](Tutorial_HeatmapCampusDiepenbeek/image22.png)
 
-  -   Click on **OK** in the **Layer Properties** window.
+    -   Click on **OK** in the **Layer Properties** window.
 
 1.  Change the visualization of the layer Measurements
 
-  -   Right click on Measurements and select Properties.
+    -   Right click on Measurements and select Properties.
 
-  -   Click on Labels and select Temp as variable to label the data points
+    -   Click on Labels and select Temp as variable to label the data points
     with (A).
 
-  -   Optionally, you can change the marker within the Style menu (B).
+    -   Optionally, you can change the marker within the Style menu (B).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image23.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image23.png)
 
-Interpolating Point Data
-========================
+## Interpolating Point Data
 
 1.  Open the Interpolation Plugin
 
-  -   Go to Raster Interpolation Interpolation.
+    -   Go to Raster Interpolation Interpolation.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image25.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image25.png)
 
 1.  Fill in the parameters within the Interpolation Plugin dialog
 
-  -   Set Measurements as the input vector layer and Temp as the
+    -   Set Measurements as the input vector layer and Temp as the
     interpolation attribute (A).
 
-  -   Click on Add (B).
+    -   Click on Add (B).
 
-  -   Within the output section, select Inverse Distance Weighting (IDW)
+    -   Within the output section, select Inverse Distance Weighting (IDW)
     as interpolation method (C).
 
-  -   Fill in the other values as presented in the image below (D).
+    -   Fill in the other values as presented in the image below (D).
 
-  -   Navigate to a folder to save the generated output file and name it
+    -   Navigate to a folder to save the generated output file and name it
     temperature (E).
 
-  -   Click on Ok (F).
+    -   Click on Ok (F).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image26.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image26.png)
 
 1.  Verify your result
 
-  -   The generated output file is added as a layer within the project.
+    -   The generated output file is added as a layer within the project.
 
-  -   To zoom in on the layer, right click on Temperature and select Zoom
+    -   To zoom in on the layer, right click on Temperature and select Zoom
     to Layer.
 
-  -   Move the Measurements layer on top of Temperature.
+    -   Move the Measurements layer on top of Temperature.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image27.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image27.png)
 
-Change the style of the (clipped) layer
-========================================
+## Change the style of the (clipped) layer
 
 1.  Adjust the color map
 
-  -   Right click the Temperature layer and select Properties (A).
+    -   Right click the Temperature layer and select Properties (A).
 
-  -   Open the Style tab and set the render type to Singleband
+    -   Open the Style tab and set the render type to Singleband
     pseudocolor (B).
 
-  -   Select Spectral color map (C).
+    -   Select Spectral color map (C).
 
-  -   Check the Invert box, so that blue will be assigned to low
+    -   Check the Invert box, so that blue will be assigned to low
     temperatures and red to high temperatures (C).
 
-  -   Click on Classify (D).
+    -   Click on Classify (D).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image28.png)![](Tutorial_HeatmapCampusDiepenbeek/image29.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image28.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image29.png)
 
 1.  Remove the black pixels from the output
 
-  -   Open the Transparency tab.
+    -   Open the Transparency tab.
 
-  -   Set 0 as the additional no data value.
+    -   Set 0 as the additional no data value.
 
-  -   Click on Ok.
+    -   Click on Ok.
 
-  -   This results in a temperature relief map for the campus.
+    -   This results in a temperature relief map for the campus.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image30.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image30.png)
 
 1.  \[Optional\] Generate contours lines
 
-  -   Go to Raster Extraction Contour (A).
+    -   Go to Raster Extraction Contour (A).
 
-  -   Set the Temperature\_Clipped layer as the input file and name the
+    -   Set the Temperature\_Clipped layer as the input file and name the
     output file Contours (B).
 
-  -   Set the interval between contour lines as 0.5 or 1(C).
+    -   Set the interval between contour lines as 0.5 or 1(C).
 
-  -   Check the Attribute name box and set this to CTEMP (D).
+    -   Check the Attribute name box and set this to CTEMP (D).
 
-  -   Click on OK (E).
+    -   Click on OK (E).
 
-
-![](Tutorial_HeatmapCampusDiepenbeek/image31.png)![](Tutorial_HeatmapCampusDiepenbeek/image32.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image31.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image32.png)
 
 1.  Add labels to the contour lines
 
-  -   Right click on the layer Contours and select Properties.
+    -   Right click on the layer Contours and select Properties.
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image33.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image33.png)
 
-  -   Open the Labels tab (A).
+    -   Open the Labels tab (A).
 
-  -   Select Show labels for this layer in the dropdown box (B).
+    -   Select Show labels for this layer in the dropdown box (B).
 
-  -   Set CTEMP as the value for Label with (C).
+    -   Set CTEMP as the value for Label with (C).
 
-  -   Select Curved as Placement type (D).
+    -   Select Curved as Placement type (D).
 
-  -   Click on OK (E).
+    -   Click on OK (E).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image34.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image34.png)
 
 1.  Verify the result
 
-  -   The result should look like this:
+    -   The result should look like this:
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image35.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image35.png)
 
-Exporting the result
-====================
+## Exporting the result
 
 1.  Create a new print composer
 
-  -   Go to Project New Print Composer (A).
+    -   Go to Project New Print Composer (A).
 
-  -   Set HeatMap as the print composer title (B).
+    -   Set HeatMap as the print composer title (B).
 
-![](Tutorial_HeatmapCampusDiepenbeek/image36.png)
-![](Tutorial_HeatmapCampusDiepenbeek/image37.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image36.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image37.png)
 
 1.  Add the created heat map
 
-  -   Click on the Add new map button (A).
+    -   Click on the Add new map button (A).
 
-  -   Draw a rectangle on the presented page (B).
+    -   Draw a rectangle on the presented page (B).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image38.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image38.png)
 
-  -   Click on the Move item content button (C).
+    -   Click on the Move item content button (C).
 
-  -   Click on the map and drag it until the heat map is centered within
+    -   Click on the map and drag it until the heat map is centered within
     the rectangle.
 
-  -   Set Scale to 6000 (D).
+    -   Set Scale to 6000 (D).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image42.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image42.png)
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image39.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image39.png)
 
 1.  Add a title to the page
 
-  -   Click on the Add new label button (A).
+    -   Click on the Add new label button (A).
 
-  -   Draw a rectangle on the page (B).
+    -   Draw a rectangle on the page (B).
 
-  -   Set a title for the heat map (C).
+    -   Set a title for the heat map (C).
 
-  -   Choose a font for the title (D).
+    -   Choose a font for the title (D).
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image43.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image43.png)
 
-    ![](Tutorial_HeatmapCampusDiepenbeek/image44.png)
+        ![](Tutorial_HeatmapCampusDiepenbeek/image44.png)
 
 1.  Save your creation
 
-  -  Go to Composer Export as PDF.
- ![](Tutorial_HeatmapCampusDiepenbeek/image46.png)
-  -   Name your file MyHeatMap.pdf.
+    -  Go to Composer Export as PDF.
+        ![](Tutorial_HeatmapCampusDiepenbeek/image46.png)
+    -   Name your file MyHeatMap.pdf.
