@@ -35,7 +35,7 @@ This documentation can also be found [here](http://sensebox.github.io/openSenseM
 <% } -%>
 
 ```
-<%-: data[group][sub][0].type | upcase %> <%= data[group][sub][0].url %>
+<%-: data[group][sub][0].type | upcase %> <%- data[group][sub][0].url %>
 ```
 
 <% if (data[group][sub][0].header && data[group][sub][0].header.fields.Header.length) { -%>
