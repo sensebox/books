@@ -5,7 +5,7 @@ Eine solche wurde als `ESP8266 Arduino core` von der ESP-Community entwickelt.
 Zuallererst sollten die Softwarebibliotheken für die Sensoren installiert werden, falls dies noch nicht getan wurde (siehe [Anleitung](../aufbau/aufbau02_software.md)).
 
 Danach muss die `ESP8266 Arduino core` Toolchain installiert werden.
-Diese Anleitung ist eine analog zur Anleitung aus dem [Github Repository](https://github.com/esp8266/Arduino#installing-with-boards-manager).
+Diese Anleitung ist analog zur Anleitung aus dem [Github Repository](https://github.com/esp8266/Arduino#installing-with-boards-manager):
 
 1. Arduino starten
 2. Im Menü unter Datei -> Voreinstellungen unter 'Additional Board Manager URLs' die Adresse `http://arduino.esp8266.com/stable/package_esp8266com_index.json` einfügen

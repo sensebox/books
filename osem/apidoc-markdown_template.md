@@ -51,7 +51,7 @@ This documentation can also be found [here](http://sensebox.github.io/openSenseM
 
 <% Object.keys(data[group][sub][0].parameter.fields).forEach(function(g) { -%>
 
-### <%= g %> Parameters
+### <%= g %>
 
 | Name     | Type       | Description                           |
 |:---------|:-----------|:--------------------------------------|

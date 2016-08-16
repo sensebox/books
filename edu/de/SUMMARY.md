@@ -1,5 +1,4 @@
 * [Einleitung](README.md)
-* [Eigene Projekte beitragen](eigene_projekte.md)
 
 ## Getting started
 * [Inhalt der Kiste](getting_started/kisteninhalt.md)
@@ -36,5 +35,6 @@
 
 ## Anhang
 * [Downloads](downloads.md)
+* [Eigene Projekte beitragen](eigene_projekte.md)
 * [FAQ](faq.md)
 * [Glossar](GLOSSARY.md)
