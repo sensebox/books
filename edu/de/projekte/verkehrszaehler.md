@@ -1,9 +1,9 @@
 # Verkehrszähler
 
 ## Ziele der Station
-Ziel ist es, einen Verkehrs- oder Personenzähler zu entwickeln. Dazu verwenden
-wir einen Ultraschall-Distanzsensor. Die so
-aufgenommenen Werte sollen im seriellen Monitor ausgegeben werden.
+Ziel ist es, einen Verkehrs- oder Personenzähler zu entwickeln.
+Dazu verwenden wir einen Ultraschall-Distanzsensor.
+Die so aufgenommenen Werte sollen im *Seriellen Monitor* ausgegeben werden.
 
 ## Materialien
 * Ultraschall-Distanzsensor
@@ -27,39 +27,41 @@ Trig-Pin des Sensors jeweils mit digitalen Ports des Arduino verbunden.
 
 ## Programmierung
 
-Definiert die Pins an dem ihr den Sensor angeschlossen habt wie üblich. Außerdem werden zwei Variablen angelegt in der die gemessene Zeit und die errechnete Distanz gespeichert werden.
+Definiert die Pins an dem ihr den Sensor angeschlossen habt wie üblich.
+Außerdem werden zwei Variablen angelegt in der die gemessene Zeit und die errechnete Distanz gespeichert werden.
 
-```
+```arduino
 int trig = 12;  // Trig-Pin des Sensors ist an Pin 12 angeschlossen.
 int echo = 11;  // Echo-Pin des Sensors ist an Pin 11 angeschlossen.
-unsigned int time=0;
-unsigned int distance=0;
+unsigned int time = 0;
+unsigned int distance = 0;
 ```
 
-Im `void setup` müsst ihr nun den Seriellen Monitor starten und die Ports an denen der Sensor angeschlossen ist als Ein- bzw. Ausgang definieren. Der Trigger-Pin des Sensors muss als Ausgang und der Echo-Pin als Eingang definiert werden.
+Im `setup()` müsst ihr nun den *Seriellen Monitor* starten und die Pins an denen der Sensor angeschlossen ist als Ein- bzw. Ausgang definieren. Der Trigger-Pin des Sensors muss als Ausgang und der Echo-Pin als Eingang definiert werden.
 
-```
+```arduino
 Serial.begin(9600);
 pinMode(trig, OUTPUT);
 pinMode(echo, INPUT);
 
 ```
 
-Im `void loop` wird mit den Befehlen
-```
+Im `loop()` wird mit den Befehlen
+```arduino
 digitalWrite(trig, HIGH);
 delayMicroseconds(10);
 digitalWrite(trig, LOW);
 ```
-ein 10 Microsekunden langer Ultraschallimpuls ausgesendet. Der darauffolgende Befehl `time=pulseIn(echo, HIGH);` speichert die Zeit bis zum Empfang des Echos in der Variable time.
+ein 10 Mikrosekunden langer Ultraschallimpuls ausgesendet.
+Der darauffolgende Befehl `time = pulseIn(echo, HIGH);` speichert die Zeit bis zum Empfang des Echos in der Variable `time`.
 Zum Schluss muss noch die Distanz aus der Zeit errechnet werden, sowie die Werte auf dem Seriellen Monitor angezeigt werden.
 
-```
-distance=time/58
-Serial.println(distace);
+```arduino
+distance = time / 58;
+Serial.println(distance);
 ```
 
-##Aufgabe 1
+## Aufgabe 1
 Versucht mit Hilfe bekannter Befehle und dem oben angegebenen Sketch zum Ultraschallsensor einen Personen- bzw. Verkehrszähler zu entwickeln.
 
 Beachtet dabei folgende Hinweise:
