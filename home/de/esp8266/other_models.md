@@ -31,12 +31,13 @@ Legt man den `RST` Pin des Arduinos auf `GND`, wird effektiv der Prozessor des A
 Dadurch geben die Pins `0` und `1` die Signale des seriellen Busses unverändert weiter.
 
 Da Arduinos meist mit 5V und ESPs mit 3,3V arbeiten, muss die Spannung der Signale auf ein einheitliches Level gebracht werden:
-Am einfachsten wird dazu der `RX`-Output des Arduinos durch einen Voltage-Divider auf 3,3V gebracht.
-Die `TX` Leitung kann direkt verbunden werden, da der Arduino auch 3,3V-Spannungen als `HIGH` versteht.
-Die vollständige Schaltung sieht also wie folgt aus:
+Am einfachsten wird dazu der `RX`-Output des Arduinos durch einen Voltage-Divider auf 3,3V gebracht (blaue Kabel).
+Die `TX` Leitung (lila Kabel) kann direkt verbunden werden, da der Arduino auch 3,3V-Spannungen als `HIGH` versteht.
+Die vollständige Schaltung - inklusive Pullups (graue Kabel) und Stromversorgung des ESP8266 - sieht also wie folgt aus:
 
 ![arduino-ttl-bridge schematic](https://raw.githubusercontent.com/sensebox/resources/master/images/esp8266/arduino-ttl-bridge_schematic.png)
 
 > **Hinweis:**  Der `3.3V`-Pin des Arduinos stellt nicht genügend Strom bereit, um den ESP8266 zu betreiben. Hierzu sollte eine separate Stromversorgung (3,3V!) verwendet werden!
+> *Siehe [hier](https://learn.sparkfun.com/tutorials/voltage-dividers) für Informationen zu Voltage Dividern.*
 
 Nun kann der Rechner mit dem ESP direkt kommunizieren. Zum Testen einfach den seriellen Monitor der Arduino IDE öffnen, und Kommandos an den ESP schicken!
