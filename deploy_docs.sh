@@ -16,7 +16,11 @@ for d in */; do
 	if [[ $d != 'dist/' ]] && [[ $d != 'node_modules/' ]] && [[ $d != 'styles/' ]]; then
 		echo cd into $d
 		cd $d
-		rm -rf _book book_de.pdf book_en.pdf
+		rm -rf _book book_de.pdf book_en.pdf cover.jpg
+		
+		# build cover images from svg's (gitbook requires svgexport anyway, so...)
+		svgexport cover.svg cover.jpg
+		
 		gitbook install
 		gitbook build
 		gitbook pdf
