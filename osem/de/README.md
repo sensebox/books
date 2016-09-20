@@ -7,7 +7,7 @@ Auf der Plattform lassen sich Stationen registrieren, welche die Daten eines ode
 
 Neben einer Zeitreihenvisualisierung der Daten, ist es auch möglich diese nach verschiedenen Kriterien zu Filtern und räumliche Interpolationen zu errechnen.
 
-Sämtliche Sensordaten stehen unter der [Public Domain Dedication and License 1.0](http://opendatacommons.org/licenses/pddl/summary/) zum Download zur Verfügung.
+Sämtliche Sensordaten stehen unter der [Public Domain Dedication and License 1.0](http://opendatacommons.org/licenses/pddl/summary/) zum Download zur Verfügung, und können frei verwendet werden.
 
 Sowohl die openSenseMap als auch die zugehörige API ist Open Source Software.
 Quellcode und Issuetracker sind hier zu finden:

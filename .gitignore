@@ -37,3 +37,5 @@ dist
 _book
 *.pdf
 cover.jpg
+api_data.json
+api_project.json
