@@ -1,6 +1,6 @@
 * [Einleitung](README.md)
 
-## Getting started
+## Erste Schritte
 * [Inhalt der Kiste](getting_started/kisteninhalt.md)
 * [Arduino/Genuino](getting_started/genuino_board.md)
 * [Installation der Software](getting_started/installation_der_software.md)
