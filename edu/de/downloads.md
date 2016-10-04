@@ -10,7 +10,7 @@ Viele Hersteller bieten für ihre Sensoren und andere Bauteile Datenblätter an,
 
 | Sensor  | Beschreibung  | Hersteller | Download |
 |---------|---------------|------------|----------|
-| BMP280  | Luftdrucksensor | Bosch | [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/ddatasheet_BMP280-pressure-sensor.pdf) |
+| BMP280  | Luftdrucksensor | Bosch | [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_BMP280-pressure-sensor.pdf) |
 | HC-SR04 | Ultraschall Distanzsensor | KT-Electronic | [Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_HC-SR04_ultraschallmodul.pdf) |
 | HDC1008 | Kombinierter Temperatur und Luftfeuchtigkeitssensor| Texas Instruments     |[Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_hdc1008.pdf)
 | TSL4531 | Digitaler Lichtsensor | TAOS Texas Advanced Optoelectronics Solutions |[Datenblatt](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_TSL4531_lux-sensor.pdf)|
