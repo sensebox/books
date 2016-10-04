@@ -10,12 +10,12 @@ Most manufacturers provide datasheets for their sensors and other components, wh
 
 | Sensor  | Description | Manufacturer | Download |
 |---------|-------------|--------------|----------|
-| BMP280  | air-pressure sensor | Bosch | [datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/ddatasheet_BMP280-pressure-sensor.pdf) |
-| HC-SR04 | supersonic distance-sensor | KT-Electronic | [datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_HC-SR04_ultraschallmodul.pdf) |
-| HDC1008 | temperature- & humidity-sensor | Texas Instruments  |[datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_hdc1008.pdf)
-| TSL4531 | digital lightintensity sensor | TAOS Texas Advanced Optoelectronics Solutions |[datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_TSL4531_lux-sensor.pdf)|
-| VEML6070| UV-light sensor | VISHAY | [datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf)                        |
-| GP2Y0A21YK0F | IR distance sensor | Sharp | [datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_sharp_ir-dist_GP2Y0A21YK0F.pdf) |
+| BMP280  | air-pressure sensor | Bosch | [Datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_BMP280-pressure-sensor.pdf) |
+| HC-SR04 | supersonic distance-sensor | KT-Electronic | [Datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_HC-SR04_ultraschallmodul.pdf) |
+| HDC1008 | temperature- & humidity-sensor | Texas Instruments  |[Datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_hdc1008.pdf)
+| TSL4531 | digital lightintensity sensor | TAOS Texas Advanced Optoelectronics Solutions |[Datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_TSL4531_lux-sensor.pdf)|
+| VEML6070| UV-light sensor | VISHAY | [Datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf)                        |
+| GP2Y0A21YK0F | IR distance sensor | Sharp | [Datasheet](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_sharp_ir-dist_GP2Y0A21YK0F.pdf) |
 
 ## Documentation as PDF
 This book is also available as [printable PDF](https://sensebox.de/books/senseBox:edu_en.pdf)!
