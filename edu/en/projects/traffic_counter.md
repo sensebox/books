@@ -3,7 +3,7 @@
 ## Goal
 Building a functioning traffic counter.
 For this purpose we use an ultrasonic distance sensor.
-The recorded values ​​will be shown in the * Serial Monitor *.
+The recorded values ​​will be shown in the Serial Monitor.
 
 ## Materials
 * Arduino Uno with Breadboard
