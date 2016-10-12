@@ -18,14 +18,14 @@
 
 ## Projects
 #* [DIY Eco Station](projects/eco_station/README.md)
-#    * [Experimente mit Licht]()
+#    * [Experiments with light](projecs/experiments_with_light.md)
 #    * [UV-Sensor]()
 #    * [Luftfeuchtigkeit und Thermometer]()
 #    * [Luftdruck]()
 #    * [Speichern auf SD-Karte]()
 #    * [Ethernetshield - auf ins Internet]()
-#* [Verkehrszähler]()
-#* [Ampelschaltung]()
+#* [Traffic Counter](projects/traffic_counter.md)
+#* [Traffic Light](projects/traffic_light.md)
 * [Let's implement sound!](projects/implement_sound.md)
 #* [Lauschangriff]()
 #* [Kleiner Webserver]()
