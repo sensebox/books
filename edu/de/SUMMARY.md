@@ -15,6 +15,8 @@
 * [Verwendung von Software-Bibliotheken](grundlagen/software_libraries.md)
 * [Der serielle Datenbus (I²C)](grundlagen/der_serielle_datenbus.md)
 * [Kommentare im Quelltext](grundlagen/kommentare.md)
+* [Arbeiten mit der Zeit](grundlagen/uhr.md)
+
 
 ## Projekte
 * [DIY-Umweltstation](projekte/diy_umweltstation/README.md)
@@ -29,7 +31,7 @@
 * [Auf die Töne fertig los!](projekte/summer.md)
 * [Lauschangriff](projekte/mikrofon.md)
 * [Kleiner Webserver](projekte/webserver.md)
-#* [Mehrfarbige LED]()
+* [Mehrfarbige LED]()
 * [Kaminfeuer](projekte/randomBlink.md)
 * [Community-Projekte](community_projekte/README.md)
 
