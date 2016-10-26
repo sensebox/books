@@ -1,7 +1,7 @@
 # Arbeiten mit der Zeit 
 
 ## Ziele der Station
-In dieser Station lernt ihr, wie man die RTC (Real Time Clock oder Echt Zeit Uhr) die ein Teil des senseBox-Shield ist, benutzt.
+In dieser Station lernt ihr, wie man die RTC (__R__eal __T__ime __C__lock oder Echt Zeit Uhr) die ein Teil des senseBox-Shield ist, benutzt.
 
 ## Materialien
 * senseBox-Shield
@@ -10,26 +10,50 @@ In dieser Station lernt ihr, wie man die RTC (Real Time Clock oder Echt Zeit Uhr
 Steckt das senseBox-Shield vorsichtig auf den Arduino. Für alle weiteren Projekte könnt ihr es auf dem Arduino lassen. 
 
 ## Programmierung
-Zunächst müssen wir eine Bibliothek für die Uhr importieren. Die Bibliothek wird uns einige Schritte erleichtern. Wir importieren sie mit dem Befehl `#include <RV8523.h>`. Nun muss ein Objekt dieser Bibliothekt erzeug werden. 
+Zunächst müssen wir eine Bibliothek für die Uhr importieren. Die Bibliothek wird uns einige Schritte erleichtern. Wir importieren sie mit dem Befehl: `#include <RV8523.h>`. Nun muss ein Objekt dieser Bibliothekt erzeug werden:```RV8523 rtc;
 ```
-RV8523 rtc;
-```
-Bevor die Uhr gestartet wird, sollen einige Variablen erzeug werden, in denen später die Uhrzeit gespeichert wird.
-```
-//declare variables to store the time 
-// in this case we use ´uint8_t´ wich is an integer the size of 1 bite (8bit)
-// therefor it can store values from 0 to 255 (2^8 -1)
-// the reason to use them is to safe storagespace. ´int`would also work fine
-uint8_t sec, min, hour, day, month;
 
-// the number of years is bigger than 255 therefore we can't use `uint8_t` 
-// `uint16_t` has 2 bite (16 bit)
-// it can store the values from 0 to 65535 (2^16 -1)
+Bevor die Uhr gestartet wird, sollen einige Variablen erzeug werden, in denen später die Uhrzeit gespeichert wird.
+
+```
+uint8_t sec, min, hour, day, month;
 uint16_t year; 
 ```
-***Hinweis:*** *Der Datentyp `uint8_t` steht für "_u_nsigned (- ohne Vorzeichen) _Int_eger(ganze Zahl) der größe _8_ Bit". Somit kann in einer Variable diesen Typs eine Zahl zwischen 0 und 255 gespeichert werden (2^8 -1). Da unsere heutigen Jahreszahlen größer sind als 255 sind, benötigen wir für die Variable `year` den Typ `uint8_t`*
 
+__Hinweis:__  *Der Datentyp `uint8_t` steht für "__u__nsigned (ohne Vorzeichen) __Int__eger(ganze Zahl) der größe __8__ Bit". Somit kann in einer Variable diesen Typs eine Zahl zwischen 0 und 255 gespeichert werden (2^8-1). Da unsere heutigen Jahreszahlen größer sind als 255 sind, benötigen wir für die Variable `year` den Typ `uint8_t`*
 
+In der `setup`-Methode muss der Uhr beim ersten Start die aktuelle Uhrzeit übergeben werden. Das können wir mit dem Befehl `set()` machen. Außerdem soll noch die serielle Datenübertragung gestartet werden, um später die Uhrzeit auszugeben. 
+
+```
+rtc.set(10, 24, 8, 20, 4, 2016); //08:24:10 20.04.2016 
+rtc.start();
+Serial.begin(9600);
+```
+
+__Hinweis:__ _Die Methode `rtc.set()` muss nur bei der ersten Nutzung der Uhr aufgerufen werden. Dann kann sie aus dem Code gelöscht werden. Die Uhr läuft dank der Batterie auch ohne Strom weiter._
+
+Jetzt soll die aktuelle Uhrzeit über den seriellen Monitor ausgegeben werden. Das machen wir in der Schleife:
+
+```
+void loop() {
+  //safe the current time and date in the variabels defined before
+  rtc.get(&sec, &min, &hour, &day, &month, &year);
+  
+  Serial.print("Zeitstempel: ");
+  Serial.print(hour);
+  Serial.print(":");
+  Serial.print(min);
+  Serial.print(":");
+  Serial.print(sec);
+  Serial.print("  ");
+  Serial.print(day);
+  Serial.print(".");
+  Serial.print(month);
+  Serial.print(".");
+  Serial.println(year);
+  delay(1000);  
+}
+``` 
 
 
 
