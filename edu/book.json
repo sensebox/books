@@ -1,6 +1,12 @@
 {
   "gitbook": "^3.2.2",
-  "plugins": ["edit-link", "localized-footer", "scramble-mailto", "hide-published-with", "youtubex"],
+  "plugins": [
+    "edit-link",
+    "localized-footer",
+    "scramble-mailto",
+    "hide-published-with",
+    "katex"
+  ],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/sensebox/books/tree/master/edu",
