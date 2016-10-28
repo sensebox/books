@@ -17,6 +17,8 @@
 #* [Kommentare im Quelltext](basics/comments.md)
 
 ## Projects
+* [Traffic Counter](projects/traffic_counter.md)
+* [Traffic Light](projects/traffic_light.md)
 * [DIY Eco Station](projects/eco_station/README.md)
     * [Experiments with light](projects/eco_station/experiments_with_light.md)
 #    * [UV-Sensor]()
@@ -24,8 +26,6 @@
 #    * [Luftdruck]()
 #    * [Speichern auf SD-Karte]()
 #    * [Ethernetshield - auf ins Internet]()
-* [Traffic Counter](projects/traffic_counter.md)
-* [Traffic Light](projects/traffic_light.md)
 * [Let's implement sound!](projects/implement_sound.md)
 #* [Lauschangriff]()
 #* [Kleiner Webserver]()

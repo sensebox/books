@@ -95,5 +95,3 @@ float getUVI(int uv){
   return uvi;
 }
 ```
-
-## Aufgabe

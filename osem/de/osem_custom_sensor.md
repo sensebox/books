@@ -36,7 +36,7 @@ float humi = sht1x.readHumidity();
 ```
 
 ### Manuelle Registrierung
-Um einen Sensor mit der OSeM zu verbinden, musst du ihn [zuerst dort registrieren](https://opensensemap.org/#/register).
+Um einen Sensor mit der OSeM zu verbinden, musst du ihn [zuerst dort registrieren](https://opensensemap.org/register).
 Falls du dabei keinen der senseBox-Bausätze nutzt, muss in Schritt 4 der Registrierung die manuelle Konfiguration gewählt werden.
 Wie unten in der Abbildung dargestellt, wird dort für jedes gemessene Phänomen ein neuer Sensor angelegt:
 

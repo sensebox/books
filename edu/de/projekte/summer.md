@@ -63,13 +63,14 @@ Wir wollen unser Programm so schreiben, dass eine Note (Tonleiter: c, d, e, f, g
 #define  h     2028    // 493 Hz
 #define  C     1912    // 523 Hz
 #define  E     1518    // 659 Hz
-#define  F     1432    // 698 Hz  
+#define  F     1432    // 698 Hz
 #define  R     0       // Definiere eine Note als Ersatz für eine Pause
 ```
 Nun benötigen wir einige Variablen um das spätere Abspielverhalten des Arduinos zu steuern.
 Die Werte könnt ihr für den Anfang so übernehmen.
 Wenn ihr später ein fertiges Programm habt, dann könnt ihr verschiedene Werte einsetzen und prüfen wie sich das auf die Melodie auswirkt:
-``` arduino
+
+```arduino
 // Set overall tempo
 long tempo = 26000;
 // Set length of pause between notes
@@ -77,9 +78,10 @@ int pause = 1000;
 // Loop variable to increase Rest length
 int rest_count = 50;
 ```
+
 Zusätzlich benötigen wir noch einige globale Variablen welche von den Abspielfunktionen intern genutzt werden, und definieren im `setup` unseren Ausgangs-Pin:
 
-``` arduino
+```arduino
 // Initialize core variables
 int tone = 0;
 int beat = 0;
@@ -93,14 +95,16 @@ void setup() {
 
 Jetzt könne wir unsere Melodie in ein Array schreiben. Ein weiteres Array `beats` definiert, wie lange die entsprechende Note in `melody` gespielt werden soll:
 
-``` arduino
+```arduino
 int melody[] = { g, e, R, R, R, e, f, g, E,  E,  C }; //example melody
 int beats[]  = { 8, 8, 8, 8, 8, 8, 8, 8, 16, 16, 32 };
 ```
+
 Natürlich dürft ihr hier später eure eigene Melodie einfügen. Dazu könnt ihr im Internet einmal die Noten eures Lieblingssongs suchen (siehe unten).
 
 Wir schreiben uns eine Hilfsmethode, welche genau einen Ton unserer Melodie abspielt. Dazu überprüft sie in der ersten `if`-Anweisung ob es sich um eine Note oder eine Pause handelt. Falls es sich um eine Note handelt, wird die Note in einer Schleife für `duration` Millisekunden gespielt:
-``` arduino
+
+```arduino
 void playTone() {
   long elapsed_time = 0;
   if (tone > 0) { // if this isn't a Rest beat
@@ -124,9 +128,11 @@ void playTone() {
   }
 }
 ```
+
 Nach dem wir jetzt einen Ton abspielen können, soll eine weitere Hilfsmethode die gesamte Melodie abspielen.
 Dazu geht eine `for`-Schleife unser Array `melody` durch und ruft für jeden Eintrag die Hilfsfunktion `playTone()` auf, die wir weiter oben definiert haben. Zusätzlich wird nach jeder Note eine kurze Pause eingefügt.
-``` arduino
+
+```arduino
 int MAX_COUNT = sizeof(melody) / 2; // number of tones
 
 void playMelody(){
@@ -143,8 +149,10 @@ void playMelody(){
   }
 }
 ```
+
 Es fehlt uns nur noch die Hauptschleife, welche den Ablauf des Programms steuert:
-``` arduino
+
+```arduino
 void loop() {
   playMelody();
 }

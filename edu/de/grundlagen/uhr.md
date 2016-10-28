@@ -1,7 +1,7 @@
 # Die RTC - Arbeiten mit Zeit
 
 Auf dem senseBox-Shield ist eine RTC (**R**eal **T**ime **C**lock oder Echt Zeit Uhr) installiert.
-Sie kann dazu benutzt werden, dauerhaft die aktuelle Uhrzeit zu speichern - auch wenn der Arduino für eine Weile keinen Strom hatte!
+Sie kann dazu benutzt werden, dauerhaft die aktuelle Uhrzeit zu speichern - auch wenn der Arduino für eine Weile keinen Strom hatte.
 
 ## Materialien
 * senseBox-Shield
@@ -9,7 +9,7 @@ Sie kann dazu benutzt werden, dauerhaft die aktuelle Uhrzeit zu speichern - auch
 
 ## Aufbau
 Steckt das senseBox-Shield vorsichtig auf den Arduino. Für alle weiteren Projekte könnt ihr es auf dem Arduino lassen.
-Falls die Knopfzelle noch nicht in dem Shield eingelegt ist, holt dies nach (flache Seite nach oben).
+Falls die Knopfzelle noch nicht in den Shield eingelegt ist, holt dies nach (flache Seite nach oben).
 
 ## Programmierung
 Um die Uhr nutzen zu können, müssen wir eine Bibliothek für die Uhr importieren.

@@ -18,7 +18,7 @@ According to the data sheet, the sensitivity of this sensor reaches from 2 to 20
 
 ##Construction
 
-<Img src = "https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_station_6.png" width = "500" />
+<Img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_station_6.png" width = "500" />
 
 ## Basics
 We will use the library `Wire`. In the beginning we need a few constants that are defined  with the directive #. Unlike variables, they occupy a permanent place in the store. In our case, the bus address and the following register addresses of the sensor are to be saved.
@@ -26,7 +26,8 @@ We will use the library `Wire`. In the beginning we need a few constants that ar
 <Img src = "https://raw.githubusercontent.com/sensebox/resources/master/images/edu//Grundlagen_Station_6.png" />
 
 These registers are used to configure and for communication:
-`` `Arduino
+
+```arduino
 #include <Wire.h>
 #define I2C_ADDR (0x29)
 #define REG_CONTROL 0x00
@@ -34,61 +35,61 @@ These registers are used to configure and for communication:
 #define REG_DATALOW 0x04
 #define REG_DATAHIGH 0x05
 #define REG_ID 0x0A
-`` `
+```
 
 In the setup function you will connect the sensor and start the transmission.
 
-`` `Arduino
+```arduino
 Wire.begin ();
 Wire.beginTransmission (I2C_ADDR);
 Wire.write (0x80 | REG_CONTROL);
 Wire.write (0x03); // Power on
 Wire.endTransmission ();
-`` `
+```
 
 Next, we will set a fixed exposure time of 400 ms:
 
-`` `Arduino
+```arduino
 Wire.beginTransmisson (I2C_ADDR);
 Wire.write (0x80 | REG_CONFIG);
 Wire.write (0x00); // 400 ms
 Wire.endTransmission ();
-`` `
+```
 
 To change the shutter speed, you can change the corresponding value of `` 0x00` in 0x01` or `0x02` to reduce the exposure time to 200 or 100 ms in the configuration register of the sensor.
 In the Loop function, we give the order to start the measurement routine and let the sensor send the data needed to calculate the illuminance:
 
-`` `Arduino
+```arduino
 Wire.beginTransmisson (I2C_ADDR);
 Wire.write (0x80 | REG_DATALOW);
 Wire.endTransmission ();
 Wire.requestFrom (I2C_ADDR, 2); Request // 2 bytes
 uint16_t low = Wire.read ();
 uint16_t high = Wire.read ();
-`` `
+```
 
 If the sensor still sends data, these should be caught afterwards, to avoid errors in the next passage.
 
-`` `Arduino
+```arduino
 while (Wire.available ()) {
 Wire.read ();
 }
-`` `
+```
 
 Finally, you will use the data to calculate illuminance in lux. In the data sheet, there is the matching formula:
 
-`` `Arduino
+```arduino
 uint32_t lux;
 lux = (high << 8) | (Low << 0);
 lux lux = * 1; // Multiplier for 400ms
-`` `
+```
 
 To adjust this formula to an exposure time of 200 or 100 ms, you can increase the multiplier to 2 or 4.
 
-##Exercise 1
+## Exercise 1
 Adapt this lesson's code to create a custom function that can print the sensor data to the Serial Monitor.
 
-##Exercise 2
+## Exercise 2
 Change the exposure time of the sensor and then compare the results of the measurements.
 
-Tip: Don’t forget to adjust both the lux value and exposure time in the configuration register accordingly.
+> ***Tip:*** *Don't forget to adjust both the lux value and exposure time in the configuration register accordingly.*

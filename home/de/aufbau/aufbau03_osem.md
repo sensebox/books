@@ -4,8 +4,6 @@ Hier wird die Einbindung der senseBox in unser Sensornetzwerk durch die Registri
 ## Registrierung auf der openSenseMap
 Ein Software-Programm für einen Arduino Mikrocontroller könnt ihr an der Dateiendung `.ino` erkennen. Eine solche Datei benötigt ihr, um eure senseBox mit der openSenseMap im Internet zu verbinden. Den passenden Sketch bekommt ihr zusammen mit einer E-Mail zugeschickt, wenn ihr eure Station bei auf der [openSenseMap registriert](http://www.opensensemap.org/register).
 
-> Für User, die eine senseBox im Rahmen der *Make Light* Initiative gesendet bekommen haben, bitte in Schritt 1 bei der Gruppenkennzeichnung ***MakeLight*** angeben!
-
 Bei Schritt 2 der Registrierung wirst du nach einem Hardware Setup gefragt. Wähle dort die „senseBox:home“ aus und setze danach je nach Ausgabe den Haken bei „senseBox:home (Ethernet)“ oder „senseBox:home (WLAN)“.
 
 ## Programm auf die Station laden
