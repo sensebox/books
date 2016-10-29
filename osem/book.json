@@ -1,6 +1,15 @@
 {
   "gitbook": "^3.2.2",
-  "plugins": ["edit-link", "localized-footer", "scramble-mailto", "hide-published-with", "youtubex"],
+  "plugins": [
+    "edit-link",
+    "localized-footer",
+    "scramble-mailto",
+    "hide-published-with",
+    "youtubex",
+    "katex",
+    "collapsible-chapters",
+    "sectionx"
+  ],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/sensebox/books/tree/master/osem",

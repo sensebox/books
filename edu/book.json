@@ -5,7 +5,10 @@
     "localized-footer",
     "scramble-mailto",
     "hide-published-with",
-    "katex"
+    "youtubex",
+    "katex",
+    "collapsible-chapters",
+    "sectionx"
   ],
   "pluginsConfig": {
     "edit-link": {

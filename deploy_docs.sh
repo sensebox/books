@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # build the current openSenseMap API documentation
 # and copy it into the osem book
 wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_project.json
@@ -17,10 +19,10 @@ for d in */; do
 		echo cd into $d
 		cd $d
 		rm -rf _book book_de.pdf book_en.pdf cover.jpg
-		
+
 		# build cover images from svg's (gitbook requires svgexport anyway, so...)
 		svgexport cover.svg cover.jpg
-		
+
 		gitbook install
 		gitbook build
 		gitbook pdf
