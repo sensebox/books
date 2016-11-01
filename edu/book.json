@@ -8,7 +8,8 @@
     "youtubex",
     "katex",
     "collapsible-chapters",
-    "sectionx"
+    "sectionx",
+    "sitemap-general"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -17,6 +18,12 @@
         "en": "Edit This Page",
         "de": "Seite bearbeiten"
       }
+    },
+    "sitemap-general": {
+      "prefix": "https://books.sensebox.de/edu/"
+    },
+    "sectionx": {
+      "tag": "b"
     },
     "theme-default": {
       "showLevel": true
