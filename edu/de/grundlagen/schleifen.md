@@ -8,7 +8,8 @@ digiutalWrite(led,HIGH);
 digiutalWrite(led,LOW);
 //...
 ```
-Wenn ihr eine LED 50 Mal blinken lassen wollt, dann ist das ganz schön viel Schreibarbeit. Da Informatiker immer nach Wegen suchen Arbeitsabläufe zu vereinfachen haben sie sich dafür etwas überlegt, Schleifen. Schleifen bestehen aus zwei Teilen, einem Schleifen-Kopf und einem Schleifen-Körper. Die Anweisungen die wiederholt werden sollen, werden in Geschweiften Klammern in den Schleifen-Körper geschrieben. Jetzt müssen wir aber noch fest legen, wie oft diese Anweisungen wiederholt werden sollen. Dies geschieht im Schleifen-Kopf.
+Wenn ihr eine LED 50 Mal blinken lassen wollt, dann ist das ganz schön viel Schreibarbeit. Da Informatiker immer nach Wegen suchen Arbeitsabläufe zu vereinfachen haben sie sich dafür etwas überlegt, Schleifen. Schleifen bestehen aus zwei Teilen, einem Schleifen-Kopf und einem Schleifen-Körper. Die Anweisungen die wiederholt werden sollen, werden in Geschweiften Klammern in den Schleifen-Körper geschrieben. Jetzt müssen wir aber noch fest legen, wie oft diese Anweisungen wiederholt werden sollen. 
+Dies geschieht im Schleifen-Kopf.
 
 Es gibt verschiedene Arten von Schleifen, die ihr je nach eurem Programm verwenden könnt. Hier sollen zwei Schleifentypen vorgestellt werden. 
 
@@ -28,11 +29,10 @@ In diesen Fall wird der Schleifen Körper 50 Mal durchlaufen.
 
 ### Aufgabe 1 
 Schreibt nun eine Anweisung in den Schleifenkörper, die euch den Wert der Zählvariablen über den seriellen Monitor ausgibt. (Wie das geht könnt ihr in der Anleitung "Der serielle Monitor" nachschauen).
-### a) 
-Untersucht was passiert, wenn ihr `counter = counter + 1` durch `counter = counter*2` oder `counter--` ersetzt.
 
-### b) 
-Untersucht was passiert, wenn ihr `int counter = 0` durch `int counter = 25` ersetzt.
+**a)** Untersucht was passiert, wenn ihr `counter = counter + 1` durch `counter = counter*2` oder `counter--` ersetzt.
+
+**b)** Untersucht was passiert, wenn ihr `int counter = 0` durch `int counter = 25` ersetzt.
 
 ## Die while-Schleife
 In vielen Fällen wisst ihr zu Beginn noch nicht, wie oft eine Anweisung wiederholt werden soll. Dann könnt ihr die ´while´-Schleife verwenden. Die `while`-Schleife hat einen weniger strikten Aufbau. Der Schleifenkopf besteht aus dem Bezeichner `while` gefolgt von runden Klammern. In diese Klammern wird eine Bedienung geschrieben, die vor jedem Schleifendurchlauf überprüft wird.   
@@ -47,14 +47,11 @@ Ihr könnt zum Beispiel einen Knopf an den Arduino anschließen und die Schleife
 **Achtung** *Ein häufig gemachter Fehler ist, das eine Bedingung immer wahr ist. (Zum Beispiel, wenn ihr als Bedingung schreibt `1>0`) In diesem Fall wird eure Schleife immer wieder durchlaufen. Man spricht von einer Endlosschleife. In diesem Fall reagiert euer Arduino nicht mehr und es ist relativ schwer herauszufinden, woran das liegt.*
 
 ### Aufgabe 2
-### a) 
-Programmiert eine `while`-Schleife, die den Text "Die Aussage stimmt!" über den seriellen Monitor ausgibt, wenn eine Variable `a` größer als 0 ist. 
+**a)** Programmiert eine `while`-Schleife, die den Text "Die Aussage stimmt!" über den seriellen Monitor ausgibt, wenn eine Variable `a` größer als 0 ist. 
 
-### b) 
-Programmiert eine `while`-Schleife, die eine LED blinken lässt, wenn ein Knopf gedrückt wurde. 
+**b)** Programmiert eine `while`-Schleife, die eine LED blinken lässt, wenn ein Knopf gedrückt wurde. 
 
-## c) 
-Jede `for`-Schleife lässt sich auch durch eine `while`-Schleife simulieren. Schreibt die folgende `for`-Schleife in eine `while`-Schleife um:
+**c)** Jede `for`-Schleife lässt sich auch durch eine `while`-Schleife simulieren. Schreibt die folgende `for`-Schleife in eine `while`-Schleife um:
 ```arduino
 for(int i = 10; i>0; i--){
     Serial.print("Countdown: ");
