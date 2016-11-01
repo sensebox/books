@@ -21,7 +21,7 @@ for(int counter = 1; counter < 50; counter = counter+1){
     //lasse die LED blinken
 }
 ```
-Im Beispiel heißt unsere Zählvariable `counter` (Natürlich könnt ihr der Zählvariablen jeden Namen geben. Häufig wird `i` benutzt). Die Bedingung lautet: "Solange `counter` kleiner als 50 ist" und nach jedem Durchlauf der Schleife wird `counter` um eins erhöht.
+Im Beispiel heißt unsere Zählvariable `counter` (Natürlich könnt ihr der Zählvariablen jeden Namen geben. Häufig wird der Name `i` genutzt). Die Bedingung lautet: "Solange `counter` kleiner als 50 ist" und nach jedem Durchlauf der Schleife wird `counter` um eins erhöht.
 In diesen Fall wird der Schleifen Körper 50 Mal durchlaufen.
 
 **Hinweis:** *Für den Befehl `counter = counter +1` werdet ihr häufig die Kurzschreibweise `counter++` finden. Diese macht das Gleiche.*
@@ -35,7 +35,33 @@ Untersucht was passiert, wenn ihr `counter = counter + 1` durch `counter = count
 Untersucht was passiert, wenn ihr `int counter = 0` durch `int counter = 25` ersetzt.
 
 ## Die while-Schleife
-In vielen Fällen wisst ihr zu Beginn noch nicht, wie oft eine Bedingung wiederholt werden soll. Dann könnt ihr die while-Schleife verwenden.
+In vielen Fällen wisst ihr zu Beginn noch nicht, wie oft eine Anweisung wiederholt werden soll. Dann könnt ihr die ´while´-Schleife verwenden. Die `while`-Schleife hat einen weniger strikten Aufbau. Der Schleifenkopf besteht aus dem Bezeichner `while` gefolgt von runden Klammern. In diese Klammern wird eine Bedienung geschrieben, die vor jedem Schleifendurchlauf überprüft wird.   
+
+```arduino
+while(bedingung){
+    // lasse die LED blinken
+}
+```
+Ihr könnt zum Beispiel einen Knopf an den Arduino anschließen und die Schleife nur dann durchlaufen, wenn der Knopf gedrückt wurde. 
+
+**Achtung** *Ein häufig gemachter Fehler ist, das eine Bedingung immer wahr ist. (Zum Beispiel, wenn ihr als Bedingung schreibt `1>0`) In diesem Fall wird eure Schleife immer wieder durchlaufen. Man spricht von einer Endlosschleife. In diesem Fall reagiert euer Arduino nicht mehr und es ist relativ schwer herauszufinden, woran das liegt.*
+
+### Aufgabe 2
+### a) 
+Programmiert eine `while`-Schleife, die den Text "Die Aussage stimmt!" über den seriellen Monitor ausgibt, wenn eine Variable `a` größer als 0 ist. 
+
+### b) 
+Programmiert eine `while`-Schleife, die eine LED blinken lässt, wenn ein Knopf gedrückt wurde. 
+
+## c) 
+Jede `for`-Schleife lässt sich auch durch eine `while`-Schleife simulieren. Schreibt die folgende `for`-Schleife in eine `while`-Schleife um:
+```arduino
+for(int i = 10; i>0; i--){
+    Serial.print("Countdown: ");
+    Serial.println(i);
+}
+```
+
 
 # Und täglich grüßt das Murmeltier... 
 ### Die Verwendung von Schleifen
@@ -60,7 +86,7 @@ for(int counter = 1; counter < 50; counter = counter+1){
     //lasse die LED blinken
 }
 ```
-Im Beispiel heißt unsere Zählvariable `counter` (Natürlich könnt ihr der Zählvariablen jeden Namen geben. Häufig wird `i` benutzt). Die Bedingung lautet: "Solange `counter` kleiner als 50 ist" und nach jedem Durchlauf der Schleife wird `counter` um eins erhöht.
+Im Beispiel heißt unsere Zählvariable `counter` (Natürlich könnt ihr der Zählvariablen jeden Namen geben. Häufig wird der Name `i` genutzt). Die Bedingung lautet: "Solange `counter` kleiner als 50 ist" und nach jedem Durchlauf der Schleife wird `counter` um eins erhöht.
 In diesen Fall wird der Schleifen Körper 50 Mal durchlaufen.
 
 **Hinweis:** *Für den Befehl `counter = counter +1` werdet ihr häufig die Kurzschreibweise `counter++` finden. Diese macht das Gleiche.*
@@ -74,5 +100,31 @@ Untersucht was passiert, wenn ihr `counter = counter + 1` durch `counter = count
 Untersucht was passiert, wenn ihr `int counter = 0` durch `int counter = 25` ersetzt.
 
 ## Die while-Schleife
-In vielen Fällen wisst ihr zu Beginn noch nicht, wie oft eine Bedingung wiederholt werden soll. Dann könnt ihr die while-Schleife verwenden.
+In vielen Fällen wisst ihr zu Beginn noch nicht, wie oft eine Anweisung wiederholt werden soll. Dann könnt ihr die ´while´-Schleife verwenden. Die `while`-Schleife hat einen weniger strikten Aufbau. Der Schleifenkopf besteht aus dem Bezeichner `while` gefolgt von runden Klammern. In diese Klammern wird eine Bedienung geschrieben, die vor jedem Schleifendurchlauf überprüft wird.   
+
+```arduino
+while(bedingung){
+    // lasse die LED blinken
+}
+```
+Ihr könnt zum Beispiel einen Knopf an den Arduino anschließen und die Schleife nur dann durchlaufen, wenn der Knopf gedrückt wurde. 
+
+**Achtung** *Ein häufig gemachter Fehler ist, das eine Bedingung immer wahr ist. (Zum Beispiel, wenn ihr als Bedingung schreibt `1>0`) In diesem Fall wird eure Schleife immer wieder durchlaufen. Man spricht von einer Endlosschleife. In diesem Fall reagiert euer Arduino nicht mehr und es ist relativ schwer herauszufinden, woran das liegt.*
+
+### Aufgabe 2
+### a) 
+Programmiert eine `while`-Schleife, die den Text "Die Aussage stimmt!" über den seriellen Monitor ausgibt, wenn eine Variable `a` größer als 0 ist. 
+
+### b) 
+Programmiert eine `while`-Schleife, die eine LED blinken lässt, wenn ein Knopf gedrückt wurde. 
+
+## c) 
+Jede `for`-Schleife lässt sich auch durch eine `while`-Schleife simulieren. Schreibt die folgende `for`-Schleife in eine `while`-Schleife um:
+```arduino
+for(int i = 10; i>0; i--){
+    Serial.print("Countdown: ");
+    Serial.println(i);
+}
+```
+
 
