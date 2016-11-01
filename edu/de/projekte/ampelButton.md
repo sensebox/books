@@ -1,8 +1,7 @@
 # Ampel
-## Es soll eine Ampel simuliert werden. Mit einem Button kann man die Ampel umschalten.
+Es soll eine Ampel simuliert werden. Mit einem Button kann man die Ampel umschalten.
 
 ## Materialien
-#### Aus der senseBox:edu
 * Genuino UNO
 * rote LED
 * gelbe LED
@@ -11,13 +10,12 @@
 * Button
 * 10Ω Wiederstand
 
-
-## Setup Beschreibung
-#### Hardwarekonfiguration
+## Aufbau
+### Hardwarekonfiguration
 
 ![ampel-button-schaltplan](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/ampel_button_schaltplan.png)
 
-#### Softwaresketch
+### Sketch
 
 ```arduino
 int rot = 13;
@@ -77,6 +75,6 @@ void loop() {
 
 ```
 
-* Am Anfang der `loop()` Funktion wird jedesmal abgefragt ob der Button gedrückt wird.
-* `digitalRead(button)` liest den aktuellen Zustand des Buttons aus. Wird er gedrückt, liefert die Funktion `HIGH` aus, ansonsten `LOW`.
-* Um zu Prüfen ob der Button gedrückt wurde muss `digitalRead(button)` mit `HIGH` verglichen werden. Der Vergleich geschieht mit __zwei__ Gleichzeichen `==` (Vergleichsoperator). __Ein__ Gleichzeichen `=` ist eine Zuweisung, wie etwa `int rot = 13`.
+- Am Anfang der `loop()` Funktion wird jedesmal abgefragt ob der Button gedrückt wird.
+- `digitalRead(button)` liest den aktuellen Zustand des Buttons aus. Wird er gedrückt, liefert die Funktion `HIGH` aus, ansonsten `LOW`.
+-  Um zu Prüfen ob der Button gedrückt wurde muss `digitalRead(button)` mit `HIGH` verglichen werden. Der Vergleich geschieht mit __zwei__ Gleichzeichen `==` (Vergleichsoperator). __Ein__ Gleichzeichen `=` ist eine Zuweisung, wie etwa `int rot = 13`.

@@ -162,6 +162,4 @@ void loop() {
 Wie viel Hertz ein Ton hat könnt ihr [hier](http://www.phy.mtu.edu/~suits/notefreqs.html) nachschauen.
 Diesen Wert müsst ihr dann mit einem antiproportionalen Dreisatz umrechnen.*
 
-
-
 ***Achtung:*** *Zwei Variablen im Programm dürfen nicht den gleichen Namen haben!*

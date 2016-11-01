@@ -11,7 +11,7 @@ Die REST Schnittstelle bietet aber auch jeder anderen programmierbaren und mit d
 
 ### Aufbau
 
-![Verkabelung](https://raw.githubusercontent.com/sensebox/resources/master/images/aufbau_sht15.png)
+![Verkabelung](https://raw.githubusercontent.com/sensebox/resources/master/images/aufbau-sht15.png)
 
 * VCC zu 5V
 * DATA zu Pin 6
