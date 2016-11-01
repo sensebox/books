@@ -12,7 +12,7 @@ Die so aufgenommenen Werte sollen im *Seriellen Monitor* ausgegeben werden.
 * Ihr benötigt keine zusätzlichen Materialien.
 
 ## Grundlagen
-Der Ultraschall-Distanzsensor nutzt den Schall um die Entfernung von Objekten zu bestimmen. Der Sensor sendet einen Impuls aus und misst die Zeit, bis er das Echo des Impulses wieder empfängt. Aus dieser Zeit errechnet man mit Hilfe der Schallgeschwindigkeit die Entfernung.
+Der Ultraschall-Distanzsensor nutzt den Schall um die Entfernung von Objekten zu bestimmen. Der Sensor sendet einen Impuls aus und misst die Zeit, bis er das Echo des Impulses wieder empfängt. Aus dieser Zeit errechnet man mit Hilfe der Schallgeschwindigkeit die Entfernung des Objekts.
 
 ## Aufbau
 Der Ultraschallsensor wird mit vier verschiedenen Ports des Arduino verbunden.
@@ -60,12 +60,17 @@ Zum Schluss muss noch die Distanz aus der Zeit errechnet werden, sowie die Werte
 distance = time / 58;
 Serial.println(distance);
 ```
+**Hinweis** *Wir gehen davon aus, dass sich der Schall mit 348 Metern pro Sekunde ausbreitet. Diese Zahl ist nicht fix sondern hängt von der Raumthemperatur ab.*
 
 ## Aufgabe 1
 Versucht mit Hilfe bekannter Befehle und dem oben angegebenen Sketch zum Ultraschallsensor einen Personen- bzw. Verkehrszähler zu entwickeln.
 
 Beachtet dabei folgende Hinweise:
  - Versucht nur einen bestimmten Entfernungsbereich auszuwerten, damit es
-nicht zu Störungen durch Bewegungen im Hintergrund kommt. Praktisch bedeutet solltet ihr also eure Fahrbahnen klar definieren.
+nicht zu Störungen durch Bewegungen im Hintergrund kommt. Effektiv misst der Sensor ca. 3 Meter.
 
-- Um Mehrfachzählungen eines stehenden Fahrzeuges zu vermeiden solltet ihr eine Bedingung programmieren, der den Zählvorgang stoppt bis die Spur wieder frei ist, der Sensor also eine vorher festegelegte Maximaldistanz für die Spur misst.
+- Um Mehrfachzählungen eines stehenden Fahrzeuges zu vermeiden solltet ihr eine Bedingung programmieren, der den Zählvorgang stoppt bis die Spur wieder frei ist, der Sensor also eine vorher festgelegte Maximaldistanz für die Spur misst. Dazu bietet sich ein `while`-Schleife an. Zuerst muss überprüft werden, ob sich etwas im Messbereich befindet. Solange der Sensor nicht misst, dass die Fahrbahn wieder frei ist, soll er erneut messen. Erst wenn die Fahrbahn wieder frei ist erhöhe deine Zählvariable um eins. 
+
+- Damit die Messwerte beim einfahren in den Messbereich nicht zu sehr schwanken, kann es helfen, zwischen den einzelnen Messungen eine Verzögerung von 200ms zu programmieren. 
+
+
