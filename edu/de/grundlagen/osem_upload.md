@@ -1,14 +1,14 @@
 # openSenseMap - Mit der senseBox ins Internet
 
-Mithilfe des Ethernet- oder WiFi-Shields (je nach Variante) der senseBox kannst du den Arduino in dein Netzwerk einbinden.
-Dies ermöglicht unter anderem den Upload deiner Messdaten zur [*openSenseMap*](https://opensensemap.org/) (OSeM).
+Mithilfe des Ethernet- oder WiFi-Shields der senseBox (je nach Variante) kannst du den Arduino in dein Netzwerk einbinden.
+Dies ermöglicht unter anderem den Upload deiner Sensordaten zur [*openSenseMap*](https://opensensemap.org/) (OSeM).
 [Hier](shields.md) findest du weitere Informationen zu den Shields.
 
 ## Aufbau
 Stecke den Ethernet- bzw. WiFi-Shield auf den Arduino.
-Falls der Ethernet-Shield genutzt wird, verbinde den Shield mit Netzwerkkabel mit einem Router.
+Falls der Ethernet-Shield genutzt wird, verbinde den Shield über ein Netzwerkkabel mit einem Router.
 
-> ***Hinweis:*** *Der WiFi-Shield unterstützt nur WLAN-Netzwerke mit einfacher WPA2 Verschlüsselung. Netzwerke, welche Zertifikate benötigen werden leider nicht unterstützt!*
+> ***Hinweis:*** *Der WiFi-Shield unterstützt nur WLAN-Netzwerke mit einfacher WEP/WPA/WPA2 Verschlüsselung. Netzwerke, die Zertifikate benötigen werden leider nicht unterstützt!*
 
 ## openSenseMap Registrierung
 Bevor deine Messdaten auf der openSenseMap veröffentlicht werden können, muss eine Messstation dort registriert werden.
@@ -25,15 +25,16 @@ Anschließend wird dir ein Arduino-Sketch angezeigt (und per Mail geschickt), we
 ## Erweiterung des Sketches
 Falls du eine senseBox mit WiFi-Shield hast, musst du oben im Sketch unter `ssid` und `pass` deine WLAN-Logindaten einsetzen.
 
-Den Code um Sensoren auszulesen kannst du in etwa aus den anderen Stationen übernehmen.
+Den Code zum auslesen der Sensoren kannst du in etwa aus den vorigen Stationen übernehmen.
 Für jeden Sensor muss in der Regel...
 
 1. eine Bibliothek eingefügt werden
 2. der Sensor deklariert und initialisiert werden (`setup()`-Funktion)
 3. der Sensor ausgelesen werden (`loop()`-Funktion)
 
-Dies wird im folgenden am Beispiel des BMP280 Luftdrucksensors dargestellt:
+Dies wird im folgenden am Beispiel des BMP280 Luftdrucksensors dargestellt.
 
+### Beispiel: BMP280
 Füge die `BMP280.h` Bibliothek ganz oben im Sketch hinzu, und erstelle eine Instanz `bmp` davon. Auf diesem Objekt werden alle Funktionen des BMP280 aufgerufen:
 
 ```arduino
@@ -74,7 +75,7 @@ Im [Seriellen Monitor](../../grundlagen/der_serielle_monitor.md), wird dir nun a
 Sofern die Verbindung mit dem Netzwerk klappt, solltest du bald deine Messwerte auf der openSenseMap finden!
 
 ### Verbindungsprobleme
-Falls deine Messwerte nicht auf der openSenseMap erscheinen...
+Falls deine Messwerte nicht auf der openSenseMap erscheinen, gehe folgende Schritte durch:
 
 - **Ethernet-Shield:** Überprüfe, ob die orange LED neben dem Netzwerkstecker aufblinkt. Falls nicht, überprüfe die Kabelverbindung.
 - **WiFi-Shield:** Überprüfe deine WLAN-Logindaten nochmal genau!
