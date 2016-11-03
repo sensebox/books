@@ -1,15 +1,14 @@
 # Traffic light
 
 ## Goal
-We will simulate a traffic light which will be startable from a button.
+We will simulate a traffic light which can be started using a button.
 
 ## Materials
-* Arduino Uno with Breadboard
 * Red LED
 * Yellow LED
 * Green LED
 * 3x 470Ω resistor
-* button
+* Button
 * 10kΩ resistor
 
 
@@ -73,5 +72,6 @@ void loop() {
 }
 ```
 
-* At the beginning of the `loop()` -function we check if the start button is pressed.
-* `digitalRead(button)` reads the current state of the button.
+* At the beginning of the `loop ()` function we check to see if the start button is pressed.
+* `digitalRead (button)` reads the current state of the button. If pressed, the function outputs HIGH, otherwise LOW.
+* To check whether the button has been pressed, the `digitalRead (button)` must be compared with HIGH. The comparison is made with two equal signs == (comparative operator). A match = is an assignment, such as `int red = 13`.
