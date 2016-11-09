@@ -34,10 +34,17 @@
   text-decoration-style: dotted;
 }
 
-/* setup sensebox color for links (but dont affect glossary terms) */
-.summary .chapter.active > a, .markdown-section a:not([class]), .search-results a {
+/* setup sensebox color for links (but dont affect glossary terms and sectionx parts) */
+.summary .chapter.active > a,
+.markdown-section a:not(.glossary-term):not(.atTitle),
+.search-results a {
   color: #4EAF47!important;
   font-weight: 600;
+}
+
+/* sectionx title */
+.markdown-section sec a.atTitle {
+  color: #333;
 }
 
 /* set up sensebox font & adjust for its lesser size */

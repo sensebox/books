@@ -17,16 +17,20 @@ In dieser Station wird beispielhaft die Integration eines Sensors in die openSen
 - [**openSenseMap Upload**](../../grundlagen/osem_upload.md):
     In diesem Kapitel erfährst du, wie du deine senseBox in die openSenseMap einbinden kannst.
 
-## Aufgabe 1
+## Aufgaben
+<!--sec data-title="Aufgabe 1" data-id="aufg1" data-collapse=true ces-->
 Mache dich mit der openSenseMap vertraut (siehe Grundlagen), und registriere dort deine senseBox mit den Sensoren, welche du bisher angeschlossen hast.
+<!-- endsec -->
 
-## Aufgabe 2
+<!--sec data-title="Aufgabe 2" data-id="aufg2" data-collapse=true ces-->
 In dem Arduino-Sketch, den du bei der Registrierung in Aufgabe 1 erhalten hast, fehlt noch das Auslesen von Sensoren.
 Erweitere den Sketch von der OSeM-Registrierung sodass deine angeschlossenen Sensoren ausgelesen werden.
 
 > ***Tipp:*** *Folge der Anleitung im [Grundlagenkapitel](../../grundlagen/osem_upload.md#erweiterung-des-sketches). Du kannst deinen bisherigen Code überwiegend wiederverwenden!*
+<!-- endsec -->
 
-## Aufgabe 3
-Erweitere den Sketch aus Aufgabe 2, sodass die Daten zur openSenseMap hochgeladen werden.
+<!--sec data-title="Aufgabe 3" data-id="aufg3" data-collapse=true ces-->
+Erweitere den Sketch aus Aufgabe 2, sodass die Sensordaten zur openSenseMap hochgeladen werden.
 
-> ***Hinweis: Falls du die `BMP280.h`-Bibliothek nicht in der Arduino IDE findest, kannst du sie unter [Downloads](../../downloads.md) herunterladen und in den `Arduino/libraries` Ordner kopieren.***
+> ***Hinweis:*** *Falls du die `BMP280.h`-Bibliothek nicht in der Arduino IDE findest, kannst du sie unter [Downloads](../../downloads.md) herunterladen und in den `Arduino/libraries` Ordner kopieren.*
+<!-- endsec -->
