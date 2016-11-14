@@ -1,17 +1,17 @@
-# The first sound - using a beeper
+# The first sound - using a buzzer
 
 Until now, our senseBox has been silent. In this project, we will change this!
 
 ## Aim of the Project
-For the first step, we simply want to get a sound from the beeper. Next we want to change the volume of the beeper. Finally, the beeper should play a simple melody.
+For the first step, we simply want to get a sound from the buzzer. Next we want to change the volume of the buzzer. Finally, the buzzer should play a simple melody.
 While the first two steps can be quickly achieved, the third step is a little trickier.
 
 ## Materials
-* Beeper
+* buzzer
 * Potentiometer
 
 ## Basics
-A Beeper, or a Piezo, is a component that converts electrical signals into sound. The volume can reach up to 80dB. The beeper has two pins where it can attach to the plug-in board. The operating voltage of the beeper is between 1V and 12V, and it consumes up to 19mA. Similar to the LED, the beeper’s electricity is only able to flow in one direction. The shorter pin must be connected to the grounding (GND) source and the longer pin must be connected to the voltage source.
+A buzzer, or a Piezo, is a component that converts electrical signals into sound. The volume can reach up to 80dB. The buzzer has two pins where it can attach to the plug-in board. The operating voltage of the buzzer is between 1V and 12V, and it consumes up to 19mA. Similar to the LED, the buzzer’s electricity is only able to flow in one direction. The shorter pin must be connected to the grounding (GND) source and the longer pin must be connected to the voltage source.
 
 The Potentiometer is an electrical component whose resistance value can be continuously adjusted.
 Its settings can be adjusted by moving a grinder over the resistor body.
@@ -23,23 +23,23 @@ Our potentiometer has a maximum resistance of 10k ohms.
 
 ## Construction
 ### Step 1:
-If you build the circuit as shown in the graph and connect the Arduino to the power supply, the beeper should produce a loud sound. By doing this we have already completed our first step.
+If you build the circuit as shown in the graph and connect the Arduino to the power supply, the buzzer should produce a loud sound. By doing this we have already completed our first step.
 
 <img src = "https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_9_buzzer_simple.png" width = "400" />
 
 ### Step 2:
-Now we’d like to integrate another component into our circuit that will enable us to change the volume. We will use a potentiometer to control the beeper’s volume, similar to the volume control knob that is seen on older radios.
+Now we’d like to integrate another component into our circuit that will enable us to change the volume. We will use a potentiometer to control the buzzer’s volume, similar to the volume control knob that is seen on older radios.
 
-Next, connect the `5V` output of the Arduino and the long pin of the beeper to the potentiometer.  Now you are ready to change the volume using the potentiometer!
+Next, connect the `5V` output of the Arduino and the long pin of the buzzer to the potentiometer.  Now you are ready to change the volume using the potentiometer!
 
 <img src = "https://raw.githubusercontent.com/sensebox/resources/master/images/edu/station_9_buzzer.png" width = "400" />
 
 ### Step 3:
-A single continuous sound is not really exciting - our beeper is capable of more!
+A single continuous sound is not really exciting - our buzzer is capable of more!
 To produce different tones, we can use special outputs from the Arduino that are able to output pulse-width modulation.
 For more information on pulse-width modulation (PWM), look [here](http://arduino-for-beginners.blogspot.de/2011/02/arduino-pins-analog-style-output-pulse.html"PWM").
 
-These pins are marked with the sign ~: The included pins are 4, 5, 6, 9, 10 and 11. A beeper produces a specific sound for each pulse width.
+These pins are marked with the sign ~: The included pins are 4, 5, 6, 9, 10 and 11. A buzzer produces a specific sound for each pulse width.
 Every tone on the scale (scale: c, d, e, f, g, a, h, c) receives a pulse width. We will use the construct `#define` as follows:
 
 ```arduino

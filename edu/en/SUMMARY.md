@@ -27,7 +27,7 @@
 #    * [Speichern auf SD-Karte]()
 #    * [Ethernetshield - auf ins Internet]()
 * [Let's implement sound!](projects/implement_sound.md)
-#* [Lauschangriff]()
+* [Listening for sounds](projects/listening_for_sounds.md)
 #* [Kleiner Webserver]()
 #* [Mehrfarbige LED]()
 #* [Kaminfeuer]()
