@@ -1,6 +1,7 @@
 {
   "gitbook": "^3.2.2",
   "plugins": [
+    "theme-api",
     "edit-link",
     "localized-footer",
     "scramble-mailto",
@@ -29,9 +30,6 @@
     },
     "sectionx": {
       "tag": "b"
-    },
-    "theme-default": {
-      "showLevel": false
     }
   }
 }

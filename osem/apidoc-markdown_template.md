@@ -14,24 +14,28 @@ This documentation can also be found [here](http://sensebox.github.io/openSenseM
 <% project.order.forEach(function(method, i, arr) { -%>
 <% if (data[group][method]) data[group][method].order = i; -%>
 <% }); -%>
+
 [**<%= group %>**](#<%=: group | mlink %>)
   <% Object.keys(data[group]).sort(function(a, b) { return (data[group][a].order || Number.POSITIVE_INFINITY) > data[group][b].order; }).forEach(function (sub) { -%>
 - [![](<%=: data[group][sub][0].type | badge %>) <%= data[group][sub][0].title %>](#<%=: data[group][sub][0].title | mlink %>-)
   <% }); -%>
-
 <% }); %>
 
 <% if (prepend) { -%>
 <%- prepend %>
 <% } -%>
+
 <% Object.keys(data).sort().forEach(function (group) { -%>
 # <%= group %>
-
 <% Object.keys(data[group]).sort(function(a, b) { return (data[group][a].order || Number.POSITIVE_INFINITY) > data[group][b].order; }).forEach(function (sub) { -%>
+
+---
+
+{% method %}
 ## <%= data[group][sub][0].title %> ![<%=: data[group][sub][0].type | upcase %>](<%=: data[group][sub][0].type | badge %>)
 
 <% if (data[group][sub][0].description) { -%>
-> <%-: data[group][sub][0].description %>
+<%-: data[group][sub][0].description %>
 <% } -%>
 
 ```
@@ -42,7 +46,7 @@ This documentation can also be found [here](http://sensebox.github.io/openSenseM
 ### Headers
 
 | Name    | Type      | Description                          |
-|---------|-----------|--------------------------------------|
+|:--------|:----------|:-------------------------------------|
 <% data[group][sub][0].header.fields.Header.forEach(function (header) { -%>
 | <%- header.field %> | <%- header.type %> | <%- header.optional ? '**optional**' : '' %><%- header.description %>|
 <% }); //forech parameter -%>
@@ -63,13 +67,16 @@ _Default value: <%= param.defaultValue %>_<br><% } -%>
 _Size range: <%- param.size %>_<br><% } -%>
 <% if (param.allowedValues) { -%>
 _Allowed values: <%- param.allowedValues %>_<% } %>|
-<% }); //forech (group) parameter -%>
-<% }); //forech param parameter -%>
+<% }); //foreach (group) parameter -%>
+<% }); //foreach param parameter -%>
 <% } //if parameters -%>
+
 <% if (data[group][sub][0].examples && data[group][sub][0].examples.length) { -%>
+{% common %}
 ### Examples
 
 <% data[group][sub][0].examples.forEach(function (example) { -%>
+{% sample lang="<%= example.type %>" %}
 <%= example.title %>
 
 ```json
@@ -79,9 +86,11 @@ _Allowed values: <%- param.allowedValues %>_<% } %>|
 <% } //if example -%>
 
 <% if (data[group][sub][0].success && data[group][sub][0].success.examples && data[group][sub][0].success.examples.length) { -%>
+{% common %}
 ### Success Response
 
 <% data[group][sub][0].success.examples.forEach(function (example) { -%>
+{% sample lang="<%= example.type %>" %}
 <%= example.title %>
 
 ```
@@ -92,10 +101,11 @@ _Allowed values: <%- param.allowedValues %>_<% } %>|
 
 <% if (data[group][sub][0].success && data[group][sub][0].success.fields) { -%>
 <% Object.keys(data[group][sub][0].success.fields).forEach(function(g) { -%>
+{% common %}
 ### <%= g %>
 
-| Name     | Type       | Description                           |
-|:---------|:-----------|:--------------------------------------|
+| Name     | Type       | Description    |
+|:---------|:-----------|:---------------|
 <% data[group][sub][0].success.fields[g].forEach(function (param) { -%>
 | <%- param.field %> | <%- param.type %> | <%- param.optional ? '**optional**' : '' %><%- param.description -%>
 <% if (param.defaultValue) { -%>
@@ -109,9 +119,12 @@ _Allowed values: <%- param.allowedValues %>_<% } %>|
 <% } //if success.fields -%>
 
 <% if (data[group][sub][0].error && data[group][sub][0].error.examples && data[group][sub][0].error.examples.length) { -%>
+{% common %}
 ### Error Response
 
 <% data[group][sub][0].error.examples.forEach(function (example) { -%>
+{% sample lang="<%= example.type %>" %}
+
 <%= example.title %>
 
 ```
@@ -119,6 +132,8 @@ _Allowed values: <%- param.allowedValues %>_<% } %>|
 ```
 <% }); //foreach error example -%>
 <% } //if examples -%>
----
+{% common %}
+
+{% endmethod %}
 <% }); //foreach sub  -%>
 <% }); //foreach group -%>
