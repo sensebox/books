@@ -80,7 +80,7 @@ Du kannst zum Beispiel einen Knopf an den Arduino anschließen und die Schleife 
 - **b)** Programmiere eine `while`-Schleife, die eine LED blinken lässt, wenn ein Knopf gedrückt wurde.
 - **c)** Jede `for`-Schleife lässt sich auch durch eine `while`-Schleife beschreiben. Schreibt die folgende `for`-Schleife in eine `while`-Schleife um:
     ```arduino
-    for(int i = 10; i > 0; i--){
+    for (int i = 10; i > 0; i--) {
         Serial.print("Countdown: ");
         Serial.println(i);
     }
