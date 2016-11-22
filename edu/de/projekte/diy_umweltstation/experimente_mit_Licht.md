@@ -59,7 +59,7 @@ Um die Belichtungszeit zu verändern, kann man den entsprechenden Wert von `0x00
 In der Loop-Funktion geben wir nun den Befehl zum Start der Messroutine und lassen uns vom Sensor die Daten senden, die für die Berechnung der Beleuchtungsstärke benötigt werden:
 
 ```arduino
-Wire.beginTransmisson(I2C_ADDR);
+Wire.beginTransmission(I2C_ADDR);
 Wire.write(0x80 | REG_DATALOW);
 Wire.endTransmission();
 Wire.requestFrom(I2C_ADDR, 2); //2 Bytes anfordern
