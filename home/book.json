@@ -9,7 +9,8 @@
     "katex",
     "collapsible-chapters",
     "sectionx",
-    "sitemap-general"
+    "sitemap-general",
+    "piwik"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -18,6 +19,10 @@
         "en": "Edit This Page",
         "de": "Seite bearbeiten"
       }
+    },
+    "piwik": {
+      "URL": "piwik.uni-muenster.de/",
+      "siteId": 25
     },
     "sitemap-general": {
       "prefix": "https://books.sensebox.de/home/"
