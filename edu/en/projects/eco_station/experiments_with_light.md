@@ -81,7 +81,7 @@ Finally, you will use the data to calculate illuminance in lux. In the data shee
 ```arduino
 uint32_t lux;
 lux = (high << 8) | (Low << 0);
-lux lux = * 1; // Multiplier for 400ms
+lux *= 1; // Multiplier for 400ms
 ```
 
 To adjust this formula to an exposure time of 200 or 100 ms, you can increase the multiplier to 2 or 4.
