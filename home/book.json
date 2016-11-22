@@ -10,7 +10,8 @@
     "collapsible-chapters",
     "sectionx",
     "sitemap-general",
-    "piwik"
+    "piwik",
+    "scripts"
   ],
   "pluginsConfig": {
     "edit-link": {
@@ -32,6 +33,9 @@
     },
     "theme-default": {
       "showLevel": false
+    },
+    "scripts": {
+      "files": ["../tawkto.js"]
     }
   }
 }
