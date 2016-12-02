@@ -56,7 +56,3 @@ Wenn ihr gefragt werdet ob bestehende Dateien ersetzt werden sollen, folgt den A
 Setzt nun, wie unten dargestellt, im ersten Dialogfeld den Haken unten und bestätigt mit „Ja“. Daraufhin öffnet sich ein neues Fenster, in dem ihr wieder den Haken setzt, und „Kopieren und ersetzen“ auswählt.
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/07_replace.png" align="center" width="400"/>
-
-Das folgende Video zeigt den Kopiervorgang noch einmal im Detail:
-
-{%youtube%}j-hdRJp2o4k{%endyoutube%}
