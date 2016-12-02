@@ -44,3 +44,19 @@ cd <pfad zum entpackten ordner>
 ausgeführt wird. Alternativ ist es unter einzelnen Desktopumgebungen möglich, das Skript über einen Doppelklick im Dateimanager zu starten.
 
 Anschließend sollte eine Verknüpfung in der jeweiligen Desktopumgebung angelegt worden sein, über welche die IDE zu starten ist.
+
+## Arduino Bibliotheken installieren
+Um die Sensoren und die Netzwerkkarte nutzen zu können, müssen noch ein paar Bibliotheken installiert werden. Ein zip-Archiv mit allen benötigten Bibliotheken findet ihr [hier](https://github.com/sensebox/resources/raw/master/libraries/senseBox_Libraries.zip).
+
+Ladet das zip-Archiv herunter und integriert nun die beiden Ordner „examples“ und „libraries“ aus dem Archiv in euren Arduino Ordner.
+Wenn ihr gefragt werdet ob bestehende Dateien ersetzt werden sollen, folgt den Anweisungen unten auf der Seite.
+
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/06_copy.png" align="center" width="400"/>
+
+Setzt nun, wie unten dargestellt, im ersten Dialogfeld den Haken unten und bestätigt mit „Ja“. Daraufhin öffnet sich ein neues Fenster, in dem ihr wieder den Haken setzt, und „Kopieren und ersetzen“ auswählt.
+
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/07_replace.png" align="center" width="400"/>
+
+Das folgende Video zeigt den Kopiervorgang noch einmal im Detail:
+
+{%youtube%}j-hdRJp2o4k{%endyoutube%}
