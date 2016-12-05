@@ -99,4 +99,4 @@ Da die Lage der Station allerdings durch Länge der Kabel begrenzt ist, werden d
 
 
 >***Achtung:***
-Falls der Stromstecker nach draußen verlängert werden muss, ist unbeding darauf zu achten, dass eine wetterfeste Verteilerdose verwendet wird! Diese sollte mindestens die [Schutzart IP65](http://www.ncps.de/NetCare_Trier/Lexikon/IP_Schutzarten/) erfüllen.
+Falls der Stromstecker nach draußen verlängert werden muss, ist unbedingt darauf zu achten, dass eine wetterfeste Verteilerdose verwendet wird! Diese sollte mindestens die [Schutzart IP65](http://www.ncps.de/NetCare_Trier/Lexikon/IP_Schutzarten/) erfüllen.

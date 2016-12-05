@@ -80,13 +80,14 @@ Zusätzlich könnt ihr die Projekt-Anleitung im Inhaltsverzeichnis (`edu/de/SUMM
 ...
 ```
 
-### Pullrequest erstellen
-Nun da euer Inhalt online ist, könnt ihr uns benachrichtigen, dass ihr eure Änderung in unser Ursprungs-Repository einfügen wollt.
+### Pull Request erstellen
+Euer Inhalt ist nun zwar online auf Github, aber noch nicht in unserem Repository.
+Um uns zu benachrichtigen, dass ihr eure Änderung in unser Ursprungs-Repository einfügen wollt, könnt ihr einen Pull Request auf der Github-Weboberfläche erstellen.
 Erstellt dazu auf der GitHub-Weboberfläche von eurem geforkten Repository einen Pull Request.
 
 ![github-pullrequest](https://raw.githubusercontent.com/sensebox/resources/master/images/github-pullrequest.jpg)
 
-Im Erscheinenden Fenster könnt ihr eine kurze Beschreibung eurer Änderung und weitere Kommentare angeben.
+Im erscheinenden Fenster könnt ihr eine kurze Beschreibung eurer Änderung und weitere Kommentare angeben.
 
 Wir werden nun über euren Beitrag informiert und uns eure Änderung ansehen.
 In den nächsten Tagen solltet ihr eure Anleitung in diesem Buch im Kapitel [Community-Projekte](community_projekte.md) finden!
