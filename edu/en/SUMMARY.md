@@ -7,14 +7,19 @@
 * [Arduino IDE](getting_started/arduino_ide.md)
 
 ## Basics
-* [Digitale Signale](basics/digital_signals.md)
-* [Analoge Signale](basics/analog_signals.md)
+* [Digital Signals](basics/digital_signals.md)
+* [Analog Signals](basics/analog_signals.md)
 #* [Variablen](basics/variables.md)
-#* [if/else-Bedingung](basics/if_else.md)
 #* [Serial Monitor](basics/serial_monitor.md)
+#* [if/else-Bedingung](basics/if_else.md)
+#* [Schleifen](grundlagen/schleifen.md)
 #* [Verwendung von Software-Bibliotheken](basics/libraries.md)
 #* [Der serielle Datenbus (I²C)](basics/i2c.md)
 #* [Kommentare im Quelltext](basics/comments.md)
+* [Shields](basics/shields.md)
+#    * [Die Echtzeit-Uhr](grundlagen/uhr.md)
+#    * [Speichern auf SD-Karte](grundlagen/datenlogger.md)
+    * [openSenseMap Upload](basics/osem_upload.md)
 
 ## Projects
 * [Traffic Counter](projects/traffic_counter.md)

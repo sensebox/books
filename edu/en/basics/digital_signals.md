@@ -16,7 +16,7 @@ The setup function will be executed only once after the program start. The loop 
 
 ## Controlling digital actuators
 
-To control a digital actuator, like a LED, you need two commands:
+To control a digital actuator, for example a LED, you need two commands:
 The first one is placed in the setup function, while the second command belongs in the loop function.
 In the setup function, the command `pinMode (13, OUTPUT);` is used to declare that an output is connected to port 13.
 In the loop function, the command `digitalWrite(13, HIGH);` is used to turn on power at port 13. The counterpart of this command is `digitalWrite(13, LOW);` to turn off power at port 13.
