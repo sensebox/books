@@ -71,7 +71,7 @@ postFloatValue((float)pressure, 4, PRESSURESENSOR_ID);
 
 ## Netzwerkverbindung
 Nachdem du den Arduino über ein Netwerkkabel mit dem Internet verbunden hast, kannst du den Sketch mit der IDE auf den Arduino hochladen.
-Im [Seriellen Monitor](../../grundlagen/der_serielle_monitor.md), wird dir nun angezeigt ob die Verbindung zum Internet funktioniert.
+Im [Seriellen Monitor](der_serielle_monitor.md), wird dir nun angezeigt ob die Verbindung zum Internet funktioniert.
 Sofern die Verbindung mit dem Netzwerk klappt, solltest du bald deine Messwerte auf der openSenseMap finden!
 
 ### Verbindungsprobleme

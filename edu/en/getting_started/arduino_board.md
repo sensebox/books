@@ -1,4 +1,4 @@
-# The Genuino Board
+# The Genuino board
 
 The Genuino UNO is a microcontroller board that is especially designed for developing prototype circuits. Besides the Genuino UNO, there are a lot of other microcontroller boards on the market.
 ![Genuino board](https://raw.githubusercontent.com/sensebox/resources/master/images/Genuino_Bauteile.jpg)

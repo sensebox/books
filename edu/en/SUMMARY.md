@@ -1,14 +1,14 @@
 * [Introduction](README.md)
 
 ## Getting started
-#* [Inhalt der Kiste]()
+* [Content of the box](getting_started/box_content.md)
 * [Arduino / Genuino](getting_started/arduino_board.md)
 * [Software Installation](getting_started/software_installation.md)
 * [Arduino IDE](getting_started/arduino_ide.md)
 
 ## Basics
-#* [Digitale Signale](basics/digital_signals.md)
-#* [Analoge Signale](basics/analog_signals.md)
+* [Digitale Signale](basics/digital_signals.md)
+* [Analoge Signale](basics/analog_signals.md)
 #* [Variablen](basics/variables.md)
 #* [if/else-Bedingung](basics/if_else.md)
 #* [Serial Monitor](basics/serial_monitor.md)

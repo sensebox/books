@@ -1,4 +1,4 @@
-# Traffic Counter
+# Traffic counter
 
 ## Goal
 To build a functioning traffic counter.

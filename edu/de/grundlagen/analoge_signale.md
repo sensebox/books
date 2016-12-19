@@ -20,14 +20,14 @@ Auch hier ist darauf zu achten, den Pin zuvor als `OUTPUT` zu deklarieren.
 Ein Beispielhaftes Programm könnte so aussehen:
 
 ```arduino
-int ledPin = 9;     		 // LED an Pin 9
+int ledPin = 9; // LED an Pin 9
 
 void setup() {
-  pinMode(ledPin, OUTPUT);   // deklariere den Pin als Ausgang
+  pinMode(ledPin, OUTPUT); // deklariere den Pin als Ausgang
 }
 
 void loop() {
-  analogWrite(ledPin, 60);  // Ansteuern der LED
+  analogWrite(ledPin, 60); // Ansteuern der LED
 }
 ```
 
@@ -46,6 +46,7 @@ int analogPin = 3;     // Potentiometer an Pin 3
 int val = 0;           // Variable um die Messwerte zu speichern
 
 void setup() {
+  pinMode(analogPin, INPUT);
   Serial.begin(9600);  //  Start des seriellen Monitors
 }
 
