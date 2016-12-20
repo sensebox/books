@@ -69,4 +69,4 @@ Try to build a traffic counter.
 > - Try to evaluate only a certain distance range, so that there isn’t any interference caused by movements in the background. The sensor measures up to approximately 3 meters.
 > - In order to avoid multiple counts of a stationary vehicle, you should program a condition that stops the counting process until the lane is free again.
 >
->    For this, you may use a `while`-Loop: `TODO`
+>    For this, you may use a `while` loop.

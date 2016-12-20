@@ -15,7 +15,7 @@ We will simulate a traffic light which can be started using a button.
 ## Setup Description
 
 ### Hardware configuration
-! [Ampel-button-wiring diagram] (https://raw.githubusercontent.com/sensebox/resources/master/images/edu/ampel_button_schaltplan.png)
+! [Ampel-button-wiring diagram](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/ampel_button_schaltplan.png)
 
 ### Software Sketch
 
@@ -72,6 +72,6 @@ void loop() {
 }
 ```
 
-* At the beginning of the `loop ()` function we check to see if the start button is pressed.
-* `digitalRead (button)` reads the current state of the button. If pressed, the function outputs HIGH, otherwise LOW.
-* To check whether the button has been pressed, the `digitalRead (button)` must be compared with HIGH. The comparison is made with two equal signs == (comparative operator). A match = is an assignment, such as `int red = 13`.
+* At the beginning of the `loop()` function we check to see if the start button is pressed.
+* `digitalRead(button)` reads the current state of the button. If pressed, the function outputs HIGH, otherwise LOW.
+* To check whether the button has been pressed, the `digitalRead(button)` must be compared with HIGH. The comparison is made with two equal signs == (comparative operator). A match = is an assignment, such as `int red = 13`.
