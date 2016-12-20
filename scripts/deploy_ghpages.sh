@@ -3,6 +3,9 @@ set -e
 
 cd dist
 
+# avoid ghpages magic
+touch .nojekyll
+
 # push to gh-pages
 rev=$(git rev-parse --short HEAD)
 
