@@ -11,11 +11,10 @@ We will simulate a traffic light which can be started using a button.
 * Button
 * 10kΩ resistor
 
-
 ## Setup Description
 
 ### Hardware configuration
-! [Ampel-button-wiring diagram](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/ampel_button_schaltplan.png)
+![Ampel-button-wiring diagram](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/ampel_button_schaltplan.png)
 
 ### Software Sketch
 
