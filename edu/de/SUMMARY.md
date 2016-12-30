@@ -33,7 +33,7 @@
 * [Auf die Töne fertig los!](projekte/summer.md)
 * [Lauschangriff](projekte/mikrofon.md)
 * [Kleiner Webserver](projekte/webserver.md)
-* [Mehrfarbige LED]()
+* [Mehrfarbige LED](projekte/rgb_led.md)
 * [Kaminfeuer](projekte/randomBlink.md)
 * [Community-Projekte](community_projekte/README.md)
 
