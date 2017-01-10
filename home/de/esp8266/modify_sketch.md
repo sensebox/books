@@ -1,13 +1,13 @@
-# senseBox:home Sketch für den ESP8266 anpassen
+# openSenseMap-Sketch für den ESP8266 anpassen
 
 Damit der senseBox-Sketch auf dem ESP8266 läuft, sind ein paar Anpassungen nötig.
 Zuallererst benötigt man seinen senseBox-Sketch.
-Entweder man registriert eine neue senseBox ([Anleitung hier](../aufbau/aufbau03_osem.md)), oder man verwendet seinen bestehenden Sketch.
+Entweder man registriert eine neue senseBox ([Anleitung hier](../osem.md)), oder man verwendet seinen bestehenden Sketch.
 Wichtig ist dass man seine senseBox-ID und Sensor-IDs kennt.
 
 > *Damit das Barometer (BMP280) korrekt in mit dem ESP8266 funktioniert, wird eine andere Bibliothek ([BME280](https://github.com/finitespace/BME280)) zum ansteuern des Sensors benötigt.*
 > *Diese kann [hier](https://github.com/finitespace/BME280/archive/master.zip) heruntergeladen werden.*
-> *Die Installation erfolgt analog zu unseren Bibliotheken, wie [hier](../aufbau/aufbau02_software.md#arduino-bibliotheken-installieren) beschrieben ist.*
+> *Die Installation erfolgt analog zu unseren Bibliotheken, wie [hier](../software_installation.md#arduino-bibliotheken-installieren) beschrieben ist.*
 
 Weiter [unten](#kompletter-sketch) findet ihr einen komplett angepassten Sketch.
 Dort müssen nur noch WiFi-Name und -Passwort, senseBox-ID und Sensor-IDs ersetzt werden.

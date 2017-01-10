@@ -1,20 +1,12 @@
-# Bauanleitung für die senseBox:home
+# Beispielaufbauten und Bauanleitungen
 
-Einmal aufgebaut, programmiert und mit der openSenseMap synchronisiert, liefert die senseBox:home kontinuierlich ortsbezogene Messungen zu Temperatur, Luftfeuchte, Luftdruck, Beleuchtungsstärke und UV-Licht.
-Diese Bauanleitung für die senseBox:home ist in die folgenden Abschnitte unterteilt:
+Hier sind verschiedene exemplarische Aufbauten der senseBox:home dokumentiert.
+Da wir zur Zeit noch an einer Lösung für ein Gehäuse für den Outdoor-Betrieb arbeiten, musst du diesbezüglich selber kreativ werden.
+Nutze die folgenden Anleitungen als Empfehlung und Inspiration!
 
-1. [Inventarliste und Grundaufbau](aufbau01_inventar.md)
-2. [Softwareinstallation und Sensortests](aufbau02_software.md)
-3. [Aktivierung auf der openSenseMap](aufbau03_osem.md)
-4. [Beispielanwendung mit Gehäuse](aufbau04_beispiel.md)
+Wenn du selber einen Aufbau entwickelt und dokumentiert hast, fügen wir diesen gern zu dieser Liste hinzu!
+Erstelle hierzu einen Pullrequest auf [github](https://github.com/sensebox/books), oder sende uns die Dokumentation [per Mail](mailto:info@sensebox.de?subject=Aufbau senseBox:home) (idealerweise im [Markdown Format](http://five.squarespace.com/display/ShowHelp?section=Markdown)) zu!
 
-Bei Fragen zum Aufbau wendet euch bitte [per Mail](mailto:support@sensebox.de) an uns.
-Das senseBox Team wünscht euch viel Spaß mit eurer Do-It-Yourself Sensorstation!
-
----
-
-> **Warnhinweise:**
-
-> - Durch elektrostatische Entladung können die Bauteile beschädigt oder sogar zerstört werden! Daher solltet ihr euch z.B. an einem Heizungsrohr entladen, bevor ihr mit dem Aufbau anfangt.
-> - Elektronische Bauteile und Leiterplatten können Chemikalien enthalten. Daher solltet ihr nach dem Aufbau oder Gebrauch euch die Hände waschen.
-> - Elektronik sollte umweltfreundlich entsorgt werden und bei Sammelstellen abgegeben werden.
+| Titel                     | Autor         | Datum |
+|---------------------------|---------------|-------|
+| [Fibox Gehäuse](fibox.md) | senseBox Team | 2015  |

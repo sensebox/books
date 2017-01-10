@@ -50,12 +50,12 @@ Je nach Ausgabe ist ein W5500 Ethernet Shield, oder ein Watterott WLAN-Shield en
 ---
 
 # Aufbau der senseBox
-Hier wird in nur wenigen Schritten eure Messstation zusammengebaut.
+Du kannst deine Messstation kann in wenigen Schritten zusammenbauen.
 
-> Die senseBox wird entweder über das USB-Kabel oder über das Netzteil mit Strom versorgt. Das Netzteil braucht ihr erst später, um die Station draußen aufzubauen.
+> Die senseBox wird entweder über das USB-Kabel oder über das Netzteil mit Strom versorgt. Für den temporären Betrieb wird das Netzteil also nicht benötigt.
 
-Im Bausatz der senseBox:home befinden sich vier kleinen Platinen mit den Sensoren. Die eigentlichen Sensoren sind nur wenige Millimeter groß und befinden sich auf der Oberseite der Platinen. Um einer Beschädigung vorzubeugen, solltet ihr die kleinen Sensoren nicht berühren, sondern die Platinen nur am Rand anfassen. Der Anschluss der Sensoren ist denkbar einfach: Benutzt die Verbindungskabel, um die Sensoren mit den mittleren Steckplätzen auf der Basisstation zu verbinden. Welchen Anschluss ihr dabei nutzt spielt keine Rolle.
+Im Bausatz der senseBox:home befinden sich vier kleinen Platinen mit den Sensoren. Die eigentlichen Sensoren sind nur wenige Millimeter groß und befinden sich auf der Oberseite der Platinen. Um einer Beschädigung vorzubeugen, solltest du die kleinen Sensoren nicht berühren, sondern die Platinen nur am Rand anfassen. Der Anschluss der Sensoren ist denkbar einfach: Benutze die Verbindungskabel, um die Sensoren mit den mittleren Steckplätzen auf der Basisstation zu verbinden. Welcher Anschluss dabei gewählt wird spielt keine Rolle.
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/02_connection.png" align="center" width="400"/>
 
-> Das lange Verbindungskabel ist für den HDC1008 gedacht!
+> Das lange Verbindungskabel ist für den HDC1008 gedacht, um ihn außerhalb eines Gehäuses anbringen zu können!

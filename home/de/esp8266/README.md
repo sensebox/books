@@ -1,7 +1,8 @@
-# senseBox:Home mit ESP8266
+# senseBox:home mit ESP8266
 
-Der `ESP8266` ist ein Mikrokontroller mit eingebautem WLAN.
-Er lässt sich mit der Arduino IDE programmieren, was unsere Arbeit sehr einfach macht.
+Alternativ zum Arduino/Genuino lassen sich auch andere Plattformen als Microcontroller der Sensorstation nutzen.
+Hier wird beispielhaft der ESP8266 verwendet, welcher ein schnellerer Mikrokontroller mit eingebautem WLAN ist.
+Er lässt sich mit der Arduino IDE programmieren, was die Anpassungsarbeit der Software sehr einfach macht.
 Es gibt relativ viele Varianten dieses Mikrokontrollers.
 
 > **Achtung**

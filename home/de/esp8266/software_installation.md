@@ -2,7 +2,7 @@
 Um den ESP8266 über die Arduino IDE programmierbar zu machen, wird eine passende Toolchain benötigt.
 Eine solche wurde als `ESP8266 Arduino core` von der ESP-Community entwickelt.
 
-Zuallererst sollten die Softwarebibliotheken für die Sensoren installiert werden, falls dies noch nicht getan wurde (siehe [Anleitung](../aufbau/aufbau02_software.md)).
+Zuallererst sollten die Softwarebibliotheken für die Sensoren installiert werden, falls dies noch nicht getan wurde (siehe [Anleitung](../software_installation.md)).
 
 Danach muss die `ESP8266 Arduino core` Toolchain installiert werden.
 Diese Anleitung ist analog zur Anleitung aus dem [Github Repository](https://github.com/esp8266/Arduino#installing-with-boards-manager):
