@@ -2,7 +2,7 @@
 Ein Gehäuse speziell für die senseBox:home befindet sich noch in der Entwicklung. Der hier gezeigte Aufbau ist daher nur ein Beispiel dafür, wie sich die Komponenten anbringen lassen. Beim Aufbau ist auch immer etwas Kreativität gefragt um die Station individuell an den Aufstellungsort anzupassen!
 
 # Beispielaufbau
-Dieser Beispielaufbau setzt voraus, dass die senseBox vorher auf der openSenseMap registriert und programmiert wurde ([siehe Schritt 3](aufbau03_osem.md)).
+Dieser Beispielaufbau setzt voraus, dass die senseBox vorher auf der openSenseMap registriert und programmiert wurde (siehe [hier](../osem.md)).
 
 Um die senseBox draußen aufzubauen, braucht ihr noch ein ausreichend langes Netzwerkkabel, sowie ein wasserfestes Gehäuse. Bei dem Gehäuse müsst ihr darauf achten, dass es einen transparenten Deckel ohne Lichtfilterwirkung hat, damit sinnvolle Lichtmessungen gemacht werden können. Zusätzliche Kosten für ein Gehäuse belaufen sich auf ca. 20€.
 

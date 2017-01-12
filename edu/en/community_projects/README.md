@@ -2,7 +2,7 @@
 
 In this section community-contributed projects are documented.
 
-You may also have a look on [german project tutorials](../../de/community_projekte) in the german section of this book.
+You may also have a look on [german project tutorials](../../de/community_projekte/index.html) in the german section of this book.
 
 If you want to contribute a project documentation yourself, have a look on our [contribution guide](../contributing.md).
 
