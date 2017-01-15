@@ -18,7 +18,7 @@ Wir wollen mit hilfe des Neopixelring mit 60 LED eine Uhr bauen, die durch klats
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(1).jpg?raw=true" width="500"/>&nbsp; 
 
-* **Hinweis** Man kann das RTC Modul auf dem senseBox-Shield verwenden. Wir verwenden aus platzgründen jedoch das Groove Module*
+**Hinweis** *Man kann das RTC Modul auf dem senseBox-Shield verwenden. Wir verwenden aus platzgründen jedoch das Groove Module*
 
 ## Aufbau
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(2).jpg?raw=true" width="500"/>&nbsp; 
@@ -113,14 +113,14 @@ void setPixelColour(){
         //set hour led red
         float temp_h = (hour_val % 12);//from 24 to 12
         temp_h = temp_h *5;   //  temp_h /12*60   
-        temp_h = temp_h + (minute_val/12); // ever 12 minutes the red dot wanders           one led further  
+        temp_h = temp_h + (minute_val/12); // ever 12 minutes the red dot wanders one led further  
         int temp_h2 = int(temp_h)%60;//if temp_h bigger 60 eg 12:24
         if((temp_h2 == i)){          
           pixelColorRed = 255;
           pixelColorBlue = 0;
           pixelColorGreen = 0;
         }        
-        strip.setPixelColor(i, strip.Color(pixelColorRed, pixelColorGreen,                  pixelColorBlue));  
+        strip.setPixelColor(i, strip.Color(pixelColorRed, pixelColorGreen, pixelColorBlue));  
       } 
       strip.show();      
       // wait
