@@ -1,7 +1,7 @@
 # LED Uhr
-Du wirst Nachts wach und willst wissen wie spät es ist? Einfach zweimal in die Hände klatschen und die Uhr beginnt zu leuchten.
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(3).mp4?raw=true" width="500"/>&nbsp; 
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(4).mp4?raw=true" width="500"/>&nbsp; 
+Du wirst Nachts wach und willst wissen wie spät es ist? Einfach zweimal in die Hände klatschen und die Uhr beginnt zu leuchten.&nbsp;
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(3).gif?raw=true" width="500"/>&nbsp; 
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(4).gif?raw=true" width="500"/>&nbsp; 
 
 ## Ziele der Station
 Wir wollen mit hilfe des Neopixelring mit 60 LED eine Uhr bauen, die durch klatschen gesteuert wird.
@@ -20,11 +20,11 @@ Wir wollen mit hilfe des Neopixelring mit 60 LED eine Uhr bauen, die durch klats
 
 ## Aufbau
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(2).jpg?raw=true" width="500"/>&nbsp; 
-1. Mikrofon 
-2. Neopixel LED Ring
-3. Grove RTC
-4. Arduino
-5. Analoges Uhrwerk (Ist nicht mit dem Arduino verbunden)
+1. Mikrofon  &nbsp;
+2. Neopixel LED Ring &nbsp;
+3. Grove RTC &nbsp;
+4. Arduino &nbsp;
+5. Analoges Uhrwerk (Ist nicht mit dem Arduino verbunden) &nbsp;
 
 # Schritt 1 Der LED Ring
 Viele LED Ring kommen ohne Kabel. In diesem Fall müssen wir zunächst Kabel an die Kontakte `Di` (Steuersignale),`5V` (Spannungsversorgung) und `GND` (Minuspol) anlöten. Um den LED Ring vor überspannung zu schützen, sollte ein Widerstand an den Datenpin gelötet werden.  Anschließend müssen wir den LED Ring mittig hinter die Glasscheibe der Uhr kleben. Den Ring nun mit dem Ardunio verbindn (`Di` an Pin 6) &nbsp; 
