@@ -1,1 +1,0 @@
-# Registrierung auf der OSeM

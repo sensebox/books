@@ -33,9 +33,9 @@ node_modules
 .node_repl_history
 
 # book build files
-dist
-_book
-*.pdf
 cover.jpg
-api_data.json
-api_project.json
+*.pdf
+_book/
+edu/
+osem/
+home/
