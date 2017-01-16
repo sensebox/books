@@ -1,6 +1,0 @@
-# Data analysis
-
-## Filter
-
-
-## Interpolation
