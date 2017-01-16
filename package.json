@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Open Educational Resources for senseBox:home, senseBox:edu, openSenseMap",
   "scripts": {
-    "dev": "gitbook serve edu",
-    "build": "scripts/build_osemdocs.sh && scripts/build.sh",
+    "install": "scripts/install_deps.sh",
+    "dev": "gitbook serve",
+    "build": "scripts/build.sh",
+    "buildall": "scripts/build_all.sh",
     "deploy": "scripts/deploy_ghpages.sh"
   },
   "repository": {

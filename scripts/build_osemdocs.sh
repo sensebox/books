@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 # build the current openSenseMap API documentation
 # and copy it into the osem book
 
-wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_project.json
-wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_data.json
+wget https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_project.json \
+     https://raw.githubusercontent.com/sensebox/openSenseMap-API/gh-pages/api_data.json
 
-apidoc-markdown -p ./ -t osem/apidoc-markdown_template.md -o osem/en/osem_api.md
+apidoc-markdown -p ./ -t scripts/apidoc-markdown_template.md -o en/osem_api.md
 
-cp -f osem/en/osem_api.md osem/de/osem_api.md
+cp -f en/osem_api.md de/osem_api.md
 rm api_project.json api_data.json
