@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - '6'
+sudo: required
 install:
   - scripts/install_deps.sh
 cache:
