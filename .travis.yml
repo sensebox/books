@@ -1,9 +1,9 @@
 language: node_js
 node_js:
   - '6'
-sudo: required
 install:
-  - scripts/install_deps.sh
+  - npm install -g "gitbook-cli" "svgexport" "github:RanzQ/node-apidoc-markdown"
+  - sudo -v && wget -q -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 cache:
   directories:
     - node_modules
