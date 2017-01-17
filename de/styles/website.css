@@ -1,0 +1,66 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3076439, 2015-08-17T05:38:19-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: BrixSlab-Bold by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-slab/bold/
+ *
+ * Webfont: BrixSlab-Regular by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brix-slab/regular/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3076439
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2011 by Hannes von Doehren, Livius Dietzel. All rights reserved.
+ *
+ * © 2015 MyFonts Inc
+*/
+@import url("//hello.myfonts.net/count/2ef157");
+@font-face {font-family: 'BrixSlab-Bold';src: url('https://sensebox.de/css/webfonts/2EF157_0_0.eot');src: url('https://sensebox.de/css/webfonts/2EF157_0_0.eot?#iefix') format('embedded-opentype'),url('https://sensebox.de/css/webfonts/2EF157_0_0.woff2') format('woff2'),url('https://sensebox.de/css/webfonts/2EF157_0_0.woff') format('woff'),url('https://sensebox.de/css/webfonts/2EF157_0_0.ttf') format('truetype');}
+@font-face {font-family: 'BrixSlab-Regular';src: url('https://sensebox.de/css/webfonts/2EF157_1_0.eot');src: url('https://sensebox.de/css/webfonts/2EF157_1_0.eot?#iefix') format('embedded-opentype'),url('https://sensebox.de/css/webfonts/2EF157_1_0.woff2') format('woff2'),url('https://sensebox.de/css/webfonts/2EF157_1_0.woff') format('woff'),url('https://sensebox.de/css/webfonts/2EF157_1_0.ttf') format('truetype');}
+
+/* distinguish glossary terms from actual links */
+.markdown-section .glossary-term {
+  text-decoration-style: dotted;
+  color: inherit;
+}
+.markdown-section .glossary-term:hover {
+  text-decoration-style: dotted;
+}
+
+/* setup sensebox color for links (but dont affect glossary terms and sectionx parts) */
+.summary .chapter.active > a,
+.markdown-section a:not(.glossary-term):not(.atTitle),
+.search-results a {
+  color: #4EAF47!important;
+  font-weight: 600;
+}
+
+/* sectionx title */
+.markdown-section sec a.atTitle {
+  color: #333;
+}
+
+/* set up sensebox font & adjust for its lesser size */
+.book.font-family-1 {
+  font-family: BrixSlab-Regular;
+}
+.markdown-section p, .markdown-section ul, .markdown-section ol {
+  font-size: 1.1em;
+}
+.book-summary {
+  font-family: BrixSlab-Regular;
+  font-size: 1.1em;
+}
+.summary .header {
+  letter-spacing: 0.1em;
+}
+.book-header {
+  font-family: BrixSlab-Regular;
+}
