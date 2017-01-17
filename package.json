@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Open Educational Resources for senseBox:home, senseBox:edu, openSenseMap",
   "scripts": {
-    "install": "scripts/install_deps.sh",
+    "install": "npm i -g 'gitbook-cli' 'svgexport' 'github:RanzQ/node-apidoc-markdown'",
     "dev": "gitbook serve",
     "build": "scripts/build.sh",
     "buildall": "scripts/build_all.sh",
