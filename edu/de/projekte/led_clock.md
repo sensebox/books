@@ -1,11 +1,11 @@
 # LED Uhr
-Du wirst Nachts wach und willst wissen wie spät es ist? Einfach zweimal in die Hände klatschen und die Uhr beginnt zu leuchten.&nbsp;
+Du wirst Nachts wach und willst wissen wie spät es ist? Einfach zweimal in die Hände klatschen und eine Uhr beginnt zu leuchten. &nbsp;
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(3).gif?raw=true" width="500"/>&nbsp; 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(4).gif?raw=true" width="500"/>&nbsp; 
 
 ## Ziele der Station
-Wir wollen mit hilfe des Neopixelring mit 60 LED eine Uhr bauen, die durch klatschen gesteuert wird.
+Wir wollen mit Hilfe des Neopixelrings mit 60 LEDs eine Uhr bauen, die durch klatschen aktiviert wird.
 
 ## Materialien
 * Arduino
@@ -14,31 +14,33 @@ Wir wollen mit hilfe des Neopixelring mit 60 LED eine Uhr bauen, die durch klats
 ## Materialien die nicht in der senseBox enthalten sind
 * Neopixelring
 * RTC Element 
-* analoge Uhr mit Glasscheibe
+* analoge Uhr mit Glasscheibe (Optional)
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(1).jpg?raw=true" width="500"/>&nbsp; 
 
-**Hinweis** *Man kann das RTC Modul auf dem senseBox-Shield verwenden. Wir verwenden aus platzgründen jedoch das Groove Module*
+**Hinweis** *Man kann das RTC Modul auf dem senseBox-Shield verwenden. Wir verwenden aus Platzgründen jedoch das Grove Module*
 
 ## Aufbau
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(2).jpg?raw=true" width="500"/>&nbsp; 
 
-* 1. Mikrofon  &nbsp;
-* 2. Neopixel LED Ring &nbsp;
-* 3. Grove RTC &nbsp;
-* 4. Arduino &nbsp;
-* 5. Analoges Uhrwerk (Ist nicht mit dem Arduino verbunden) &nbsp;
+* 1. Mikrofon  
+* 2. Neopixel LED Ring 
+* 3. Grove RTC 
+* 4. Arduino 
+* 5. Analoges Uhrwerk (Ist nicht mit dem Arduino verbunden) 
 
-# Schritt 1 Der LED Ring
-Viele LED Ring kommen ohne Kabel. In diesem Fall müssen wir zunächst Kabel an die Kontakte `Di` (Steuersignale),`5V` (Spannungsversorgung) und `GND` (Minuspol) anlöten. Um den LED Ring vor überspannung zu schützen, sollte ein Widerstand an den Datenpin gelötet werden.  Anschließend müssen wir den LED Ring mittig hinter die Glasscheibe der Uhr kleben. Den Ring nun mit dem Ardunio verbindn (`Di` an Pin 6) &nbsp; 
-# Schritt 2 RTC Modul (Uhr)
-Die RTC wird über den I2C-Bus angeschlossen. Dazu muss der Anschluss `SCL` mit Pin A5 verbunden werden und der Anschluss `SDA` mit Pin A4. Anschluss `GND` und `VCC` wie üblich an Pin `GND` und Pin `3.3V`.&nbsp; 
-# Schritt 3 Mikrofon 
-Das Mikrofon wird über 3 Pins anschgeschlossen `GND`, `3.3V` und eine Datenleitung. Da wir bereits beide Pins mit konstanter Spannung beim Arduino belegt haben, müssen wir uns mit einem kleinen Trick behelfen. Entwerder löten wir die `3.3V` Anschlüsse von RTC Modul und Mikrofon zusammen oder Teilen den Pin über ein Breadboard auf. Die Datenleitung muss an einen analogen Pin des Arduino angeschlossen werden. Wir wählen pin `A0`.&nbsp; 
-Jetzt müssen alle Bauteile mit heißkleber oder Panzerband hinter der Glasscheibe befestigt werden.
+### Schritt 1 Der LED Ring
+Viele LED Ringe kommen ohne angelötete Kabel. In diesem Fall müssen wir zunächst Kabel an die Kontakte `Di` (Steuersignale),`5V` (Spannungsversorgung) und `GND` (Minuspol) anlöten. Um den LED Ring vor Überspannung zu schützen, sollte ein Widerstand an den Datenpin gelötet werden. Anschließend müssen wir den LED Ring mittig hinter die Glasscheibe der Uhr kleben. Den Ring nun mit dem Arduino verbinden (`Di` an Pin 6) &nbsp; 
+
+### Schritt 2 RTC Modul (Uhr)
+Die RTC wird über den I2C-Bus angeschlossen. Dazu muss der Anschluss `SCL` mit Pin `A5` verbunden werden und der Anschluss `SDA` mit Pin `A4`. Anschluss `GND` und `VCC` wie üblich an Pin `GND` und Pin `3.3V`.&nbsp; 
+
+### Schritt 3 Mikrofon 
+Das Mikrofon wird über 3 Pins angeschlossenen `GND`, `3.3V` und eine analoge Datenleitung. Da wir bereits beide Pins mit konstanter Spannung am Arduino belegt haben, müssen wir uns mit einem kleinen Trick behelfen. Entweder löten wir die `3.3V` Anschlüsse von RTC Modul und Mikrofon zusammen oder Teilen den Pin über ein Breadboard auf. Die Datenleitung muss an einen analogen Pin des Arduino angeschlossen werden. Wir wählen pin `A0`.&nbsp; 
+Jetzt müssen alle Bauteile mit Heißkleber oder Panzerband hinter der Glasscheibe befestigt werden.
 
 ## Programmierung
-Zunächst importieren wir die bnötigeten Bibliotheken:
+Zunächst importieren wir die benötigen Bibliotheken für den LED-Ring, die RTC und den I2C Bus:
 ```arduino
 #include <Wire.h>
 #include <RTClib.h>
@@ -57,9 +59,9 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(60, ring, NEO_GRB + NEO_KHZ800); // 
 byte hour_val, minute_val, second_val,day_val, month_val, year_val; // holds the time
 byte pixelColorRed, pixelColorGreen, pixelColorBlue; // holds color values
 ```
-In der `setup`-Methode Werden die Objekte mit der Methode `begin` inizialisiert. Den Pins für das Mikrofon und für den LED Ring wird zugewiesen, ob sie ein Eingang oder Ausgang sind und schließlich wird der Uhr eine Uhrzeit übergeben. (Dies ist spezifisch für die RTC von Grove. Wie man die RTC des senseBox-Shields startet kannst du im Grundlagenkapitel [Die Echtzeit-Uhr]((../grundlagen/uhr.md)) nachschauen.)  
+In der `setup`-Methode Werden die Objekte mit der Methode `begin` initialisiert. Den Pins für das Mikrofon und für den LED Ring wird zugewiesen, ob sie ein Eingang oder Ausgang sind und schließlich wird der Uhr eine Uhrzeit übergeben. (Dies ist spezifisch für die RTC von Grove. Wie man die RTC des senseBox-Shields startet kannst du im Grundlagenkapitel [Die Echtzeit-Uhr]((../grundlagen/uhr.md)) nachschauen.)  
 
-Die Uhrzeit soll nur dann auf dem LED Ring angezeigt werden, wenn das Mikrofon zwei laute Geräusche in einem Zeitintervall von ca. 3 Sekunden registriert. Dazu schreiben wir die Methode `checkfordoubleClap`. Sie gibt `true` zurück falls zwei Geräusche registriet wurden. Ansonsten gibt sie `false` zurück.
+Die Uhrzeit soll nur dann auf dem LED Ring angezeigt werden, wenn das Mikrofon zwei laute Geräusche in einem Zeitintervall von ca. 3 Sekunden registriert. Dazu schreiben wir die Methode `checkfordoubleClap`. Sie gibt `true` zurück falls zwei Geräusche registriert wurden. Ansonsten gibt sie `false` zurück.
 
 ```arduino
 boolean checkDoubleClap(){
@@ -92,7 +94,8 @@ void getTime(){
    year_val = (Clock.year() +1792);
 }
 ```
-Etwas komplizierter ist die Methode `setPixelColour, welche aus der Uhrzeit berechnet, welcher Pixel in welcher Farbe gesetzt sein muss. 
+Etwas komplizierter ist die Methode `setPixelColour` zu schreiben. Diese Methode soll mit Hilfe der Uhrzeit berechnen, in welcher Farbe die jeweiligen LEDs leuchten müssen. 
+
 ```arduino 
 void setPixelColour(){
   for(uint8_t i=0; i<strip.numPixels(); i++){    
@@ -128,7 +131,7 @@ void setPixelColour(){
 }
 ```
 
-Nun haben alle Teile die wir brauchen. In der 'loop'-Methode soll nun alles verbunden werden.
+Nun haben wir alle Methoden die wir brauchen. In der 'loop'-Methode soll nun alles zu einem funktionierenden Programm verbunden werden.
 ```arduino
 void loop(){
   //checks for two loud noises within 3 sec.
@@ -154,3 +157,6 @@ void loop(){
   delay(5);
 }
 ```
+
+## Aufgabe 1
+Füge deiner Uhr einen Piezo hinzu, der zu jeder vollen Stunde kurz piept. 
