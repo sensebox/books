@@ -18,7 +18,7 @@ Wir wollen mit Hilfe des Neopixelrings mit 60 LEDs eine Uhr bauen, die durch kla
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(1).jpg?raw=true" width="500"/>&nbsp; 
 
-**Hinweis** *Man kann das RTC Modul auf dem senseBox-Shield verwenden. Wir verwenden aus Platzgründen jedoch das Grove Module*
+***Hinweis*** *Man kann das RTC Modul auf dem senseBox-Shield verwenden. Wir verwenden aus Platzgründen jedoch das Grove Module*
 
 ## Aufbau
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/led_clock(2).jpg?raw=true" width="500"/>&nbsp; 
@@ -29,13 +29,13 @@ Wir wollen mit Hilfe des Neopixelrings mit 60 LEDs eine Uhr bauen, die durch kla
 * 4. Arduino 
 * 5. Analoges Uhrwerk (Ist nicht mit dem Arduino verbunden) 
 
-### Schritt 1 Der LED Ring
+### Schritt 1: Der LED Ring
 Viele LED Ringe kommen ohne angelötete Kabel. In diesem Fall müssen wir zunächst Kabel an die Kontakte `Di` (Steuersignale),`5V` (Spannungsversorgung) und `GND` (Minuspol) anlöten. Um den LED Ring vor Überspannung zu schützen, sollte ein Widerstand an den Datenpin gelötet werden. Anschließend müssen wir den LED Ring mittig hinter die Glasscheibe der Uhr kleben. Den Ring nun mit dem Arduino verbinden (`Di` an Pin 6) &nbsp; 
 
-### Schritt 2 RTC Modul (Uhr)
+### Schritt 2: RTC Modul (Uhr)
 Die RTC wird über den I2C-Bus angeschlossen. Dazu muss der Anschluss `SCL` mit Pin `A5` verbunden werden und der Anschluss `SDA` mit Pin `A4`. Anschluss `GND` und `VCC` wie üblich an Pin `GND` und Pin `3.3V`.&nbsp; 
 
-### Schritt 3 Mikrofon 
+### Schritt 3: Mikrofon 
 Das Mikrofon wird über 3 Pins angeschlossenen `GND`, `3.3V` und eine analoge Datenleitung. Da wir bereits beide Pins mit konstanter Spannung am Arduino belegt haben, müssen wir uns mit einem kleinen Trick behelfen. Entweder löten wir die `3.3V` Anschlüsse von RTC Modul und Mikrofon zusammen oder Teilen den Pin über ein Breadboard auf. Die Datenleitung muss an einen analogen Pin des Arduino angeschlossen werden. Wir wählen pin `A0`.&nbsp; 
 Jetzt müssen alle Bauteile mit Heißkleber oder Panzerband hinter der Glasscheibe befestigt werden.
 
@@ -131,7 +131,7 @@ void setPixelColour(){
 }
 ```
 
-Nun haben wir alle Methoden die wir brauchen. In der 'loop'-Methode soll nun alles zu einem funktionierenden Programm verbunden werden.
+Nun haben wir alle Methoden die wir brauchen. In der `loop`-Methode soll nun alles zu einem funktionierenden Programm verbunden werden.
 ```arduino
 void loop(){
   //checks for two loud noises within 3 sec.
