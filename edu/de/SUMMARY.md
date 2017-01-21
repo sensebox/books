@@ -36,6 +36,8 @@
 * [Mehrfarbige LED](projekte/rgb_led.md)
 * [Kaminfeuer](projekte/randomBlink.md)
 * [Community-Projekte](community_projekte/README.md)
+    * [Rauchmelder](community_projekte/rauchmelder.md)
+    * [LED Uhr](community_projekte/led_clock.md)
 
 ## Anhang
 * [Downloads](downloads.md)
