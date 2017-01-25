@@ -7,9 +7,11 @@
 
 <!--sec data-title="BMP280 Sensor" data-id="grundlagensensor" data-collapse=true ces-->
 Der BMP280 Sensor misst sowohl Luftdruck (hPa) als auch Temperatur (°C).
-Dieser Sensor wird über das [I²C Protokoll](../../grundlagen/der_serielle_datenbus.md) angesteuert, und benötigt eine Betriebsspannung von 3 bis 5 Volt.
+Dieser Sensor wird über das [I²C Protokoll](../../grundlagen/der_serielle_datenbus.md) angesteuert, und benötigt eine Betriebsspannung von 3.3 bis 5 Volt.
 
 I²C-Geräte werden an den Arduino Uno über die Pins `A4` (SDA), und `A5` (SCL) angeschlossen, und so digital ausgelesen (siehe auch [Der serielle Datenbus](../../grundlagen/der_serielle_datenbus.md)).
+Die I²C-Adresse des BMP280 kann über den `SDO` Pin umgeschaltet werden:
+Liegt `SDO` auf Masse (`GND`) ist die Adresse `0x76`, sonst `0x77`.
 <!-- endsec -->
 
 <!--sec data-title="Höhenbestimmung über den Luftdruck" data-id="grundlagenhoehe" data-collapse=true ces-->
@@ -19,13 +21,14 @@ Da der Luftdruck in Abhängigkeit vom aktuellen Wetter stark schwanken kann, ist
 
 ## Aufbau
 Die Betriebsspannung des Sensors wird über die Verbindung des Arduino Pins `3.3V -> VCC` und `GND -> GND` realisiert.
+Die I²C Verbindung wird wie üblich über `SDA` und `SCL` hergestellt.
+Zusätzlich muss `SDO` am Sensor mit `GND` verbunden werden, da die von uns genutzte `BMP280.h`-Bibliothek für die I²C Adresse `0x76` konfiguriert ist.
 
-![Aufbau_station_8](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_station_8.jpg)
+![Aufbau_Arduino_BMP280](https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_Arduino_BMP280.png)
 
-### Auslesen des Sensors
-
+## Programmierung - Auslesen des Sensors
 Der Sensor kann über die Bibliothek `BMP280.h` ausgelesen werden.
-Nachdem diese eingebunden wurde, muss eine Instanz (`bmp`) davon erstellt werden
+Nachdem diese eingebunden wurde, muss eine Instanz `bmp` davon erstellt werden
 Auf diesem Objekt werden alle Funktionen der Bibliothek aufgerufen:
 
 ```arduino
