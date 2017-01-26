@@ -1,31 +1,43 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
-# builds the website & pdf versions of all books into ./dist/
+# builds the specified targets for a gitbook in the current directory.
+# if no target (pdf|website) is specified, all are built.
 
-# create dist folder
-rm -rf dist
-mkdir dist
+function build_website {
+    echo "building website into $bookname/"
+    gitbook build
+    rm -rf $bookname
+    mv -f _book $bookname
+}
 
-# build gitbooks
-for d in */; do
-	if [[ $d == 'edu/' ]] || [[ $d == 'home/' ]] || [[ $d == 'osem/' ]]; then
-		echo cd into $d
-		cd $d
-		rm -rf _book book_de.pdf book_en.pdf cover.jpg
+function build_pdf {
+    echo "building pdfs for $bookname"
+    svgexport cover.svg cover.jpg
+    gitbook pdf
+    mv -f book_de.pdf senseBox:${bookname}_de.pdf
+    mv -f book_en.pdf senseBox:${bookname}_en.pdf
+}
 
-		# build cover images from svg's (gitbook requires svgexport anyway, so...)
-		svgexport cover.svg cover.jpg
+branch=$(git symbolic-ref --short -q HEAD)
+bookname=${branch#book_}
+targets=$@
 
-		gitbook install
-		gitbook build
-		gitbook pdf
-		mkdir ../dist/$d
-		cp -r _book/* ../dist/$d
-		cp book_de.pdf ../dist/senseBox:${d%/}_de.pdf
-		cp book_en.pdf ../dist/senseBox:${d%/}_en.pdf
-		cd ../
-	fi
+# build all targets if none is specified
+if [[ -z $@ ]]; then
+    targets="website pdf"
+fi
+
+gitbook install
+
+for arg in $targets
+do
+    case $arg in
+    -w|website)
+        build_website ;;
+    -p|pdf)
+        build_pdf ;;
+    *)
+        echo "invalid target. try 'pdf' or 'website'" ;;
+    esac
 done
-
-cp index.html dist/index.html

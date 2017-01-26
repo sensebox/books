@@ -3,17 +3,23 @@
 We appreciate any contributions to our documentational resources!
 This includes improvements and corrections to existing content, as well as translations & entirely new content.
 
-In case you are unfamiliar with the GitHub process; there's a guide on adding your own senseBox project documentation [here](edu/en/contributing.md) (english) and [here](edu/de/eigene_projekte.md) (german)!
+In case you are unfamiliar with the GitHub process; there's a guide on adding your own senseBox project documentation [here](/sensebox/books/blob/book_edu/en/contributing.md) (english) and [here](/sensebox/books/blob/book_edu/de/eigene_projekte.md) (german)!
 
 **Thank you for your contribution!**
 
 ## Development environment
 We use the node.js-based tool [GitBook](https://github.com/GitbookIO/gitbook) for the rendering of the content.
 
+### GitBook editor
+There is an editor specifically for GitBooks, which may be used to edit the book's content.
+You can [get it here](https://www.gitbook.com/editor).
+It should be quite convenient to use, we didn't try it yet though.
+
+### command line
 To live-preview or render a book, you need the npm package `gitbook-cli`.
 Install it by running `npm i -g gitbook-cli`. If that does not work or you don't have `npm`, have a look at the [official documentation](https://github.com/GitbookIO/gitbook/blob/master/docs/setup.md).
 
-### Live preview
+#### Live preview
 To get a live preview of a books website-output, run
 ```
 cd edu            # (or home, or osem)
@@ -21,7 +27,7 @@ gitbook install   # only required once
 gitbook serve
 ```
 
-### Render to disk
+#### Render to disk
 GitBook provides the output formats `website`, `pdf` and `ebook`.
 To render a book run:
 ```
@@ -35,8 +41,8 @@ gitbook epub      # build the ebook
 
 ## Repository structure
 
-Each (multilingual) book resides in its own subdirectory.
-Currently these are `edu`, `home` and `osem`, each containing a `de` and `en` language book.
+Each (multilingual) book resides on its own branch.
+Currently these are `book_edu`, `book_home` and `book_osem`, each containing a `de` and `en` language book.
 
 The german versions have far more content, while the english versions are steadily supplemented from there.
 
@@ -59,7 +65,9 @@ edu/de/community_projekte/
 edu/en/community_projects/
 ```
 
-### gh-pages
-The `gh-pages` branch contains the rendered output of the current state of `master`, automatically generated on a CI-server through the `.travis.yml` & `deploy_docs.sh` scripts.
+### Deployment
+Currently the books are built and hosted by [gitbook.com](https://gitbook.com/@sensebox).
+A commit on each of the `book_<name>` branches automatically triggers a new build of the book there.
+The domains <edu.books.sensebox.de>, <home.books.sensebox.de> and <osem.books.sensebox.de> are pointing on the builds of these books.
 
-This script also fetches and generates the current API documentation for the openSenseMap-API using `apidoc-markdown`.
+The old travis builds (deployed on the `ghpages` branch) are deprecated by 26.01.2017.

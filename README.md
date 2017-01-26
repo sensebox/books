@@ -1,15 +1,16 @@
-# senseBox books [![Build Status](https://travis-ci.org/sensebox/books.svg?branch=master)](https://travis-ci.org/sensebox/books)
+# senseBox books
 
-This repository contains the gitbook sources for our documentation and OER on
+This repository contains the gitbook sources for our documentation and OER on separate branches:
 
-- [senseBox:edu](http://www.sensebox.de/books/edu)
-- [senseBox:home](http://www.sensebox.de/books/home)
-- [openSenseMap](http://www.sensebox.de/books/osem)
+- [senseBox:edu](tree/book_edu)
+- [senseBox:home](tree/book_home)
+- [openSenseMap](tree/book_osem)
 
-Blob resources are hosted separately at https://github.com/sensebox/resources/
+The books are built and hosted at [gitbook.com](https://gitbook.com/@sensebox).
+BLOB resources (images, libraries) are hosted separately at [sensebox/resources](https://github.com/sensebox/resources/).
 
 ## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 - Content: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
