@@ -7,6 +7,7 @@ Ihr könnt auch einen Blick auf die [englischsprachigen Projekte](../../en/commu
 Wenn ihr selber ein Projekt hinzufügen wollt, schaut euch die [Anleitung](../eigene_projekte.md) an.
 
 
-| Projekt Titel | Autor | Datum | zusätzliche Materialien |
-|---------------|-------|-------|-------------------------|
-|  |  |  |  |
+| Projekt Titel                 | Autor | Datum    | zusätzliche Materialien |
+|-------------------------------|-------|----------|-------------------------|
+| [Rauchmelder](rauchmelder.md) | Bernd | Jan 2017 | Rauchmelder, Lötkoben   |
+| [LED Uhr](led_clock.md)       | Bernd | Jan 2017 | LED-Ring, analoge Uhr   |
