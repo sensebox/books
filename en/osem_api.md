@@ -1,4 +1,5 @@
-# OpenSenseMap API
-This file should be replaced by the `deploy_docs.sh` script, when deployed via TRAVIS.
+# openSenseMap RESTful API
+The openSenseMap provides a REST API, which can be used to query & post senseBox metadata and measurements.
+The endpoint is https://api.opensensemap.org/.
 
-Using [apidoc-markdown](https://github.com/RanzQ/node-apidoc-markdown), the [current apidoc](https://github.com/sensebox/openSenseMap-API/tree/gh-pages/) is converted to markdown
+The API documentation can be found [here](https://docs.opensensemap.org).

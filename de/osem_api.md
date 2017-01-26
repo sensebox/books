@@ -1,4 +1,4 @@
-# OpenSenseMap API
-This file should be replaced by the `deploy_docs.sh` script, when deployed via TRAVIS.
+# openSenseMap RESTful API
+Die openSenseMap stellt eine API zur Abfrage von Daten zu Boxen und Messungen sowie zum Upload von Messungen unter der Adresse https://api.opensensemap.org/ zur Verfügung.
 
-Using [apidoc-markdown](https://github.com/RanzQ/node-apidoc-markdown), the [current apidoc](https://github.com/sensebox/openSenseMap-API/tree/gh-pages/) is converted to markdown
+Die Dokumentation der API-Routen ist [hier](https://docs.opensensemap.org) zu finden.
