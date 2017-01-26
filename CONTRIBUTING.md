@@ -3,7 +3,7 @@
 We appreciate any contributions to our documentational resources!
 This includes improvements and corrections to existing content, as well as translations & entirely new content.
 
-In case you are unfamiliar with the GitHub process; there's a guide on adding your own senseBox project documentation [here](/sensebox/books/blob/book_edu/en/contributing.md) (english) and [here](/sensebox/books/blob/book_edu/de/eigene_projekte.md) (german)!
+In case you are unfamiliar with the GitHub process; there's a guide on adding your own senseBox project documentation [here](https://github.com/sensebox/books/blob/book_edu/en/contributing.md) (english) and [here](https://github.com/sensebox/books/blob/book_edu/de/eigene_projekte.md) (german)!
 
 **Thank you for your contribution!**
 
