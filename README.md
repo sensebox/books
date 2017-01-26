@@ -2,9 +2,9 @@
 
 This repository contains the gitbook sources for our documentation and OER on separate branches:
 
-- [senseBox:edu](tree/book_edu)
-- [senseBox:home](tree/book_home)
-- [openSenseMap](tree/book_osem)
+- [senseBox:edu](/sensebox/books/tree/book_edu)
+- [senseBox:home](/sensebox/books/tree/book_home)
+- [openSenseMap](/sensebox/books/tree/book_osem)
 
 The books are built and hosted at [gitbook.com](https://gitbook.com/@sensebox).
 BLOB resources (images, libraries) are hosted separately at [sensebox/resources](https://github.com/sensebox/resources/).
