@@ -14,7 +14,7 @@ Die Entfernungsmessung mit Infrarotlicht erfolgt durch eine sog. Triangulation. 
 
 Baue die oben abgebildete Schaltung nach.
 
-***Tipp:*** *Der in der senseBox verwendete Infrarot Distanzmesser gibt ein analoges Signal aus und kann nur Distanzen zwischen 5 cmund 60cm messen. Der gemessene Wert kann mit einer Formel in die Distanz in Zentimetern umgerechnet werden:*
+***Tipp:*** *Der in der senseBox verwendete Infrarot Distanzmesser gibt ein analoges Signal aus und kann nur Distanzen zwischen 5cm und 60cm messen. Der gemessene Wert kann mit einer Formel in die Distanz in Zentimetern umgerechnet werden:*
 
 *Distanz = 4800/(Sensorwert - 20)*
 
