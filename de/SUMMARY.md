@@ -22,8 +22,9 @@
     * [openSenseMap Upload](grundlagen/osem_upload.md)
 
 ## Projekte
-* [Verkehrszähler](projekte/verkehrszaehler.md)
 * [Ampelschaltung](projekte/ampelButton.md)
+* [Verkehrszähler](projekte/verkehrszaehler.md)
+* [Infrarot Abstandssensor](projekte/irsensor.md)
 * [DIY-Umweltstation](projekte/diy_umweltstation/README.md)
     * [Experimente mit Licht](projekte/diy_umweltstation/experimente_mit_Licht.md)
     * [UV-Sensor](projekte/diy_umweltstation/uv_sensor.md)
