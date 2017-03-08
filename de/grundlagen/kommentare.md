@@ -8,7 +8,7 @@ Ein einzeiliger Kommentar wird durch zwei `//`gekennzeichnet.
 
 ```arduino
 // Ich bin ein Kommentar
-int led = 13;  // Die variable LED bekommt den Wert 12
+int led = 13;  // Die variable led bekommt den Wert 13
 ```
 ## Mehrzeilige Kommentare
 Mehrzeilige Kommentare stehen oft zu beginn eines Programms oder vor einer Methode. Sie beginnen mit `/*` und enden mit `*/`. Man kann sie außerdem dazu verwenden Teile eines Programms auszukommentieren. Etwa wenn man einen Fehler hat und überprüfen möchten in welchem Programmteil er liegt. 
