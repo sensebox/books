@@ -27,24 +27,6 @@ Dazu sind folgende Schritte nötig:
 
 7. Windows wird die Treiberinstallation vervollständigen und der Arduino-Uno sollte funktionieren.
 
-## Installation der Software/Treiber unter **Mac OS X**
-
-Nach dem Download (s.o.) muss Datenabbild eingebunden werden und die Arduino IDE kann in den Programmordner kopiert werden. Eine Treiberinstallation unter Mac OS X ist nicht nötig.
-
-## Installation der Software unter Linux
-
-Nach dem Download (s.o.) muss das heruntergeladene `.tar.xz`-Archiv entpackt werden.
-Darin liegt ein Installationskript `install.sh`, welches am einfachsten in einem Terminal über den Befehl
-
-```
-cd <pfad zum entpackten ordner>
-./install.sh
-```
-
-ausgeführt wird. Alternativ ist es unter einzelnen Desktopumgebungen möglich, das Skript über einen Doppelklick im Dateimanager zu starten.
-
-Anschließend sollte eine Verknüpfung in der jeweiligen Desktopumgebung angelegt worden sein, über welche die IDE zu starten ist.
-
 ## Arduino Bibliotheken installieren
 Um die Sensoren und die Netzwerkkarte nutzen zu können, müssen noch ein paar Bibliotheken installiert werden. Ein zip-Archiv mit allen benötigten Bibliotheken findet ihr [hier](https://github.com/sensebox/resources/raw/master/libraries/senseBox_Libraries.zip).
 
