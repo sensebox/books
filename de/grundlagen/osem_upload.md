@@ -80,3 +80,4 @@ Falls deine Messwerte nicht auf der openSenseMap erscheinen, gehe folgende Schri
 - **Ethernet-Shield:** Überprüfe, ob die orange LED neben dem Netzwerkstecker aufblinkt. Falls nicht, überprüfe die Kabelverbindung.
 - **WiFi-Shield:** Überprüfe deine WLAN-Logindaten nochmal genau!
 - öffne den Seriellen Monitor, und überprüfe die Textausgabe.
+- Manche Schul- und Firmennetzwerke blockieren den Port 8000. Für diesen Fall kannst du eine alternative Upload-Addresse auf Port 80 angeben: Ersetze in deinem Sketch `char server[] = "opensensemap.org";` durch `char server[] = "ingress.opensensemap.org";`, und weiter unten in der Funktion `postObservation()` die Zeile `if (client.connect(server, 8000))` durch `if (client.connect(server, 80))`.
