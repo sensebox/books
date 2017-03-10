@@ -3,17 +3,16 @@ node_js:
   - '6'
 install:
   - npm install -g "gitbook-cli" "svgexport" "github:RanzQ/node-apidoc-markdown"
+  - sudo apt-get install ghostscript imagemagick
   - sudo -v && wget -q -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 cache:
   directories:
     - node_modules
-script:
-  - scripts/build.sh pdf
-after_success:
-  - test $TRAVIS_PULL_REQUEST == "false"
+after_success: |
+  test $TRAVIS_PULL_REQUEST == "false" && \
+  git checkout $TRAVIS_BRANCH && \
+  bash scripts/build.sh && \
+  bash scripts/deploy_ghpages.sh
 env:
   global:
     secure: P9yT1tYN2NM2qSR7RNT5fV+NYLb//fPzhmc+nM+mmez/pM29ZJqDp4w4+vv86Sa21kOAkW0/PyBuF1AMzsRnP7+YFXveDSTFyM+RCFeLUQXnIZ4/bkjhrUh0qEULBL9aefWkd1S28oWc+6jpaRzAYu6S0WGGZCx2RnXm9fh1TU2LuWd0VTV646+koi6oSxF+/LEE/PPuB5DHDAwRiq1F6oPk3HdNhO2ii6caOxv/wKlhie568O2THKClejnAqPKZ+gR5cs9O9Bs8uQyJz62aBw6YcdK8V0i93kpS3x89O4wALoqITn9F7KJVLN0suFBUhKE62ZEWKWe0IsVjf+rNtpa8islwW1hA0Q+YAd2/ixWcMfkepw6Tr610EacRmXcWD++HqTAGyOuJJWDCZRJZvM+82q6eUJvrtaYAx8xj7+AxcAi8+gx9g7wNOM/2I4s4O7/ofKvxIsbCTY39AflcjVDuKb+0rpQ3k2uBi3E7IMZPWzd62D8NWCRJ0TozPmYsQ10w0q/F0KUjIDiJc/tZYb9b0JP6VEKyL4EkblLdLxnWf29BP19NmiFe8OEoMON4ZjyfbdL0wpXc7s8j1JtOV5AfPVN0LZofGqJW2PG9j/honG7tCRkwpLOzb3bPkvL3YsjslBTzAKfL4w2Oy6J27O/pm6xkG6Ckb1X9d9lnQzI=
-branches:
-  only:
-    - /^book_.*$/
