@@ -29,6 +29,9 @@ Arduino is an open source project and is funded through donations. Thus you are 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/04_donate.png" align="center" width="400"/>
 
 Create a new folder on your harddrive and unpack the downloaded zip-File there.
+To launch the IDE, click on `arduino.exe`.
+
+Linux users may check [this](https://www.arduino.cc/en/Guide/Linux) page for installation instructions.
 
 ## Installation of Arduino libraries
 To be able to control the sensors and ethernet-shield, additional libraries are required. As we are using a custom ethernet shield, the default `ethernet` libary won't work.

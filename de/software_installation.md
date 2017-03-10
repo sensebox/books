@@ -14,7 +14,31 @@ Arduino ist ein Open-Source Projekt und wird durch Spenden finanziert. Daher wir
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/04_donate.png" align="center" width="400"/>
 
-Legt auf eurer Festplatte einen neuen Ordner an und entpackt darin die Zip-Datei.
+Lege auf deiner Festplatte einen neuen Ordner an und entpacke darin die Zip-Datei.
+Durch starten der Datei `arduino.exe` kann die IDE gestartet werden.
+
+## Installation der IDE unter Linux
+Linux-Nutzer können die Linuxvariante herunterladen und entpacken. Das enthaltene `install.sh`-Skript legt automatisch eine Desktopverknüpfung an.
+Am schnellsten geht dies über die folgenden Terminal-Befehle:
+
+```bash
+tar -xvf arduino-1.8.1-linux64.tar.xz
+cd arduino-1.8.1
+./install.sh
+```
+
+Um den Arduino programmieren zu können, sind unter Ubuntu 14 & 16 zusätzliche Rechte notwendig.
+Diese können für den aktuellen Nutzer mit den folgenden Befehlen eingerichtet werden (benötigt Admin-Rechte):
+Führe `udevadm monitor --udev` aus und schließe den Arduino per USB an, um die Device-ID zu bestimmen.
+Der angegebene Bezeichnung am Ende der Ausgabe (zB. `ttyUSB0`) ist die Device-ID.
+Beende `udevadm` per `ctrl+C`, und führe noch die folgenden Befehle aus, wobei die herausgefundene Device-ID eingesetzt werden muss:
+
+```bash
+sudo usermod -a -G dialout $(whoami)
+sudo chmod a+rw /dev/<device-id>
+```
+
+Nach einem Logout und erneutem Login sollte der Arduino aus der Arduino IDE programmierbar sein!
 
 ## Arduino Bibliotheken installieren
 Um die Sensoren und die Netzwerkkarte nutzen zu können, müssen noch ein paar Bibliotheken installiert werden. Ein zip-Archiv mit allen benötigten Bibliotheken findest du [hier](https://github.com/sensebox/resources/raw/master/libraries/senseBox_Libraries.zip).
@@ -31,20 +55,6 @@ Setze nun wie unten dargestellt im ersten Dialogfeld den Haken unten und bestät
 Das folgende Video zeigt den Kopiervorgang noch einmal im Detail:
 
 {%youtube%}j-hdRJp2o4k{%endyoutube%}
-
-## Treiber installieren
-Als letzten Schritt für die Softwareinstallation müssen Windows-User einen Treiber installieren.
-Die senseBox:home gibt es mit verschiedenen Microkontroller Boards. Unten rechts im Bild ist der Kontroller der neuen Version abgebildet (Genuino Uno), links im Bild das Board der alten Version (Wattuino Uno).
-Bei den neuen Versionen unserer Bausätze welche das *Genuino Uno* Board enthalten, ist eine Treiberinstallation **nicht** mehr notwendig. Besitzer der Bausätze mit *Wattuino Uno* Board müssen diesen Schritt jedoch ausführen!
-
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/controller_boards.jpg" align="center" width="400"/>
-
-Die Treiberinstallation sollte bei vorhandener Internetverbindung automatisch funktionieren (getestet mit Win7/Win8/Win10).
-Dazu einfach den Microkontroller mit dem USB Kabel mit dem Rechner verbinden und abwarten bis die Treiber installiert sind.
-Dieser Vorgang kann dann bis zu 10 Minuten dauern.
-Unten rechts in der Taskleiste wird dann entsprechende Meldung erscheinen, sobald die Installation beendet wurde:
-
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/10_tray.png" align="center" width="400"/>
 
 ## Sensoren testen
 Die Sensoren der senseBox:home können nun auf funktionstüchtigkeit und getestet werden.
