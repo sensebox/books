@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
 
 # builds the specified targets for a gitbook in the current directory.
 # if no target (pdf|website) is specified, all are built.
@@ -13,10 +12,14 @@ function build_website {
 
 function build_pdf {
     echo "building pdfs for $bookname"
-    svgexport cover.svg cover.jpg
+    svgexport cover.svg cover.png
+    convert -units PixelsPerInch cover.png -density 72 -page A4 cover.pdf
     gitbook pdf
-    mv -f book_de.pdf senseBox:${bookname}_de.pdf
-    mv -f book_en.pdf senseBox:${bookname}_en.pdf
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r300 \
+      -sOutputFile=senseBox:${bookname}_de.pdf cover.pdf book_de.pdf
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r300 \
+      -sOutputFile=senseBox:${bookname}_en.pdf cover.pdf book_en.pdf
+    rm -f cover.pdf cover.png book_*.pdf
 }
 
 branch=$(git symbolic-ref --short -q HEAD)
