@@ -18,3 +18,7 @@ Nachdem du den `.ino` Anhang der Email heruntergeladen hast, muss dieses Program
 - Warten bis das Programm übertragen wurde
 
 Wenn alles richtig gelaufen ist, kannst du nun auf der openSenseMap deine Station auswählen und verfolgen, wie Messungen kontinuierlich übertragen werden!
+
+> **Hinweis:** *Standardmäßig werden Messungen zur openSenseMap auf Port 8000 hochgeladen. Falls dein Netzwerk diesen Port blockieren sollte, kannst du deinen Sketch wie folgt anpassen um einen alternativen Endpoint auf Port 80 zu nutzen:*
+> - Ersetze die Zeile `char server[] = "opensensemap.org";` durch `char server[] = "ingress.opensensemap.org";`.
+> - Ersetze in der Funktion `postObservation()` die Zeile `if (client.connect(server, 8000))` durch `if (client.connect(server, 80))`.
