@@ -60,20 +60,20 @@ Besucht dazu die [Seite des Repositories](https://github.com/sensebox/books), un
 
 ![github-fork](https://raw.githubusercontent.com/sensebox/resources/master/images/github-fork.jpg)
 
-Das Repository wurde mit dem aktuellen Zustand zu eurem Account kopiert, und ist unter `https://github.com/<dein nutzername>/books` zu finden. Auf dieser Kopie habt ihr Schreibrechte, und könnt euren Inhalt einfügen!
+Das Repository wurde mit dem aktuellen Zustand zu eurem Account kopiert, und ist unter `https://github.com/<dein nutzername>/books/tree/book_edu` zu finden. Auf dieser Kopie habt ihr Schreibrechte, und könnt euren Inhalt einfügen!
 
 ### Inhalt einfügen
-Fügt eure Dateien in den Ordner `edu/de/community_projekte/` ein.
+Fügt eure Dateien in den Ordner `de/community_projekte/` ein.
 
-Besucht dazu die Adresse `https://github.com/<dein nutername>/books/tree/master/edu/de/community_projekte`, wo ihr über die Buttons "Upload files" und "Create New File" Bilder und Textdateien hochladen könnt:
+Besucht dazu die Adresse `https://github.com/<dein nutername>/books/tree/book_edu/de/community_projekte`, wo ihr über die Buttons "Upload files" und "Create New File" Bilder und Textdateien hochladen könnt:
 
 ![github-add-file](https://raw.githubusercontent.com/sensebox/resources/master/images/github-add-files.jpg)
 
-Zusätzlich könnt ihr die Projekt-Anleitung im Inhaltsverzeichnis (`edu/de/SUMMARY.md`) verlinken, hier ist ein Beispiel:
+Zusätzlich könnt ihr die Projekt-Anleitung im Inhaltsverzeichnis (`de/SUMMARY.md`) verlinken, hier ist ein Beispiel:
 
 ```md
 ...
-* [Community-Projekte](community_projekte.md)
+* [Community-Projekte](community_projekte/README.md)
     * ...
     * [Mobile Wetterstation](community_projekte/mobile_wetterstation.md)
 
@@ -87,10 +87,10 @@ Erstellt dazu auf der GitHub-Weboberfläche von eurem geforkten Repository einen
 
 ![github-pullrequest](https://raw.githubusercontent.com/sensebox/resources/master/images/github-pullrequest.jpg)
 
-Im erscheinenden Fenster könnt ihr eine kurze Beschreibung eurer Änderung und weitere Kommentare angeben.
+Im erscheinenden Fenster könnt ihr eine kurze Beschreibung eurer Änderung und weitere Kommentare angeben. Wählt hier unter Base den Branch `book_edu`.
 
 Wir werden nun über euren Beitrag informiert und uns eure Änderung ansehen.
-In den nächsten Tagen solltet ihr eure Anleitung in diesem Buch im Kapitel [Community-Projekte](community_projekte.md) finden!
+In den nächsten Tagen solltet ihr eure Anleitung in diesem Buch im Kapitel [Community-Projekte](community_projekte/README.md) finden!
 
 ---
 

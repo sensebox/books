@@ -16,12 +16,12 @@ If you are not familiar with markdown, have a look at an explanation and syntax-
 To streamline the writing of markdown we recommend dedicated editors, such as the web-editor [stackedit](https://stackedit.io/editor).
 
 ### Content
-Should it be applicable to your project, you may use our <a href="./community_projekte/projekt_vorlage.md" target="_blank">**project template**</a> as a starting point.
+Should it be applicable to your project, you may use our <a href="./community_projects/project_template.md" target="_blank">**project template**</a> as a starting point.
 
 Make shure you provide all information required to reproduce your project with a senseBox:edu kit!
 
 ### File structure
-Place your documentation file in the directory `edu/en/community_projects/`.
+Place your documentation file in the directory `en/community_projects/`.
 
 If you want to include additional resources, place them in a subfolder with the same name:
 

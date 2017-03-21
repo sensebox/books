@@ -2,7 +2,7 @@
 
 Zur Programmierung des Arduinos muss auf dem Computer eine spezielle Software und ein Treiber installiert werden. Je nach Betriebssystem müssen unterschiedliche Schritte zur Installation durchgeführt werden.
 
-Die jeweils aktuellen Installationsdateien finden sich [hier](http://arduino.cc/en/Main/Software) zum Download.
+Die jeweils aktuellen Installationsdateien finden sich unter [http://arduino.cc/en/Main/Software](http://arduino.cc/en/Main/Software) zum Download.
 
 ## Anleitung zur Installation der Software/Treiber unter **Windows**
 
