@@ -1,7 +1,7 @@
 # Treiber und Softwareinstallation
 Bevor die senseBox aktiviert werden kann, musst du Treiber sowie eine Software auf deinem Computer installieren. Außerdem ist es vor Inbetriebnahme der senseBox ratsam einen Testlauf durchzuführen, um zu überprüfen ob die Sensoren korrekt funktionieren und die Kommunikation mit dem Internet reibungslos läuft.
 
-Falls etwas bei dem Testlauf schief geht, melde dich am besten [per Mail](mailto:support@uni-muenster.de) bei unserem Support.
+Falls etwas bei dem Testlauf schief geht, melde dich am besten [per Mail](mailto:support@sensebox.de) bei unserem Support.
 
 ## Arduino Software herunterladen
 > Für einen reibungslosen Ablauf bitte Arduino 1.6.5 oder höher nutzen.

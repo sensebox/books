@@ -77,7 +77,7 @@ Finally we check the internet connection to the openSenseMap (OSeM) server:
 
 1. close the serial monitor window
 2. connect an ethernet cable from your home network to the sensebox
-    - you may also connect it to another computer and share it's WiFi as described [here](TODO)
+    - you may also connect it to another computer and share it's WiFi as described [here](https://www.lifewire.com/how-to-share-your-internet-connection-on-windows-2377463)
 3. load the `_02_network_test` sketch: `File` → `Examples` →  `senseBox`
 4. reopen the serial monitor
 

@@ -50,7 +50,7 @@ The casing has to meet some requirements to ensure a minimal impact on the measu
 - a white colored material, so it reflects most of the longwave radiation, allowing proper temperature measurements.
 - some holes for proper airflow (while keeping it waterproof).
 
-The material cost for such a case total at around 20 - 30 €. Building instructions are not contained in this tutorial, you may get creative yourself! At the end of this tutorial an [exemplary assembly](aufbau04_anwendung.html) is described.
+The material cost for such a case total at around 20 - 30 €. Building instructions are not contained in this tutorial, you may get creative yourself! At the end of this tutorial an [exemplary assembly](assembly04_example.md) is described.
 
 ---
 

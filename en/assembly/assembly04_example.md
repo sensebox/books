@@ -15,7 +15,7 @@ Additionally the following tools are needed:
 - cable ties
 
 ## Casing
-For requirements on the casing see the [first section of this guide](assembly01_inventory.html#additional-accessories-not-included-with-your-senseboxhome).
+For requirements on the casing see the [first section of this guide](assembly01_inventory.md#additional-accessories-not-included-with-your-senseboxhome).
 We use [this](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf) case, which is available for order on [the manufacturer's webshop](http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124).
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/Fibox.jpg" align="center" width="400"/>
