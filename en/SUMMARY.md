@@ -13,7 +13,7 @@
 #* [Serial Monitor](basics/serial_monitor.md)
 #* [if/else-Bedingung](basics/if_else.md)
 #* [Schleifen](grundlagen/schleifen.md)
-#* [Verwendung von Software-Bibliotheken](basics/libraries.md)
+* [Using software-libraries](basics/software_libraries.md)
 #* [Der serielle Datenbus (I²C)](basics/i2c.md)
 #* [Kommentare im Quelltext](basics/comments.md)
 * [Shields](basics/shields.md)

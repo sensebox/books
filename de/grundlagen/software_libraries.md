@@ -4,18 +4,25 @@
 Eine solche Bibliothek (engl. Library) kann prinzipiell von jedem erstellt werden.
 Im Normalfall stellen die Entwickler der Hardwarekomponenten Bibliotheken für ihre Produkte bereit, sodass der Nutzer sich diese Arbeit sparen kann.
 
-In der Arduino-IDE sind bereits einige Software-Bibliotheken enthalten. Um diese in deinen Sketch einzubinden musst du auf *Sketch* -> *Library importieren* klicken, woraufhin sich eine Liste aller verfügbarer Bibliotheken öffnet. Wenn du in einem unserer Projekte eine Bibliothek benötigst, wird dir genau erklärt werden, welche du einbinden musst.
+In der Arduino-IDE sind bereits einige Software-Bibliotheken enthalten, aber Bibliotheken für die senseBox Sensoren müssen manuell hinzugefügt werden.
 
-## Fremde Bibliotheken importieren
-Wenn du eigene Sensoren benutzen möchtest, kann es sein dass du die dazugehörigen Bibliotheken selbst herunterladen und importieren musst.
+## Zusätzliche Bibliotheken installieren
+Als erstes muss die gewünschte Bibliothek heruntergeladen werden, welche in der Regel ein `zip`-Archiv ist.
 
-Als erstes muss die gewünschte Bibliothek heruntergeladen werden.
-Die Arduino-IDE bietet eine Funktion um externe Bibliotheken zu importieren. Dazu musst du auf *Sketch* -> *Library importieren* -> *Add Library...* klicken. Es öffnet sich ein Fenstern in welchem du zum Speicherort der heruntergeladen .zip-Datei navigieren und diese dann auswählen kannst.
+Die Arduino-IDE bietet eine Funktion um externe Bibliotheken zu importieren. Dazu musst du auf *Sketch* -> *Library importieren* -> *Add Library...* klicken. Es öffnet sich ein Fenster in welchem du zum Speicherort der heruntergeladenen `.zip`-Datei navigieren und diese dann auswählen kannst.
 
-## Einfügen von Softwarebibliotheken in deinen Sketch
-Nachdem du die Softwarebibliotheken der Arduino IDE hinzugefügt hast musst du diese noch in deinen Sketch einbinden.
-Das Einbinden erfolgt als erstes im Programmablauf, noch bevor die `setup`-Funktion aufgerufen wird.
-Mithilfe der `#include` Direktive wird eine Bibliothek geladen. Für das Ethernet-Shield wird zum Beispiel eine Library benötigt, die über `#include <Ethernet.h>` eingebunden wird.
+## Bibliotheken in deinen Sketch einfügen
+Nachdem du die Softwarebibliotheken der Arduino IDE hinzugefügt hast musst du diese noch in deinen Sketch einbinden. Dazu hast du prinzipiell zwei Möglichkeiten:
+
+### Über das Arduino IDE Menü
+Um eine Bibliothek in deinen Sketch einzubinden musst du auf *Sketch* -> *Library importieren* klicken, woraufhin sich eine Liste aller verfügbarer Bibliotheken öffnet. Wenn du in einem unserer Projekte eine Bibliothek benötigst, wird dir genau erklärt werden, welche du einbinden musst.
+
+### Über Programmcode
+Wenn du diesen Vorgang öfter machst, ist es in der Regel schneller das gleiche Ziel durch eine Zeile Programmcode zu erreichen.
+
+Diese Yeile muss als erstes im Programmablauf stehen, noch bevor die `setup()`-Funktion definiert wird.
+Mithilfe der `#include` Direktive wird eine Bibliothek geladen.
+Für das Ethernet-Shield wird zum Beispiel eine Library benötigt, die über `#include <Ethernet.h>` eingebunden wird.
 
 Zum besseren Verständis kannst du dir einmal folgenden Beispielcode anschauen:
 
@@ -31,6 +38,6 @@ void setup() {
 }
 
 void loop() {
-  //Anweisungen, die fortlaufend ausgeführt werden
+  // Anweisungen, die fortlaufend ausgeführt werden
 }
 ```

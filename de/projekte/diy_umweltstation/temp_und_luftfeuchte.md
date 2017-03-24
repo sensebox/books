@@ -3,7 +3,7 @@ Damit wir täglich den Wetterbericht im Internet, im Fernsehen, in der Zeitung o
 
 ## Voraussetzungen
 - [Die Verwendung von Software-Bibliotheken](../../grundlagen/software_libraries.md)
-- [Der seriellen Datenbus](../../grundlagen/der_serielle_datenbus.md)
+- [Der serielle Datenbus I²C](../../grundlagen/der_serielle_datenbus.md)
 - [Der serielle Monitor](../../grundlagen/der_serielle_monitor.md)
 
 ## Ziele der Station
@@ -22,29 +22,34 @@ Steckt den Schaltkreis wie ihr ihn unten in der Grafik seht.
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/aufbau_station_5.png" width="500"/>
 
 ## Programmierung
-Bevor wir mit der Programmierung starten können, müssen wir die HDC100X Bibliothek hinzufügen. Dies solltest du eigentlich bereits mit den [ersten Schritten](../../getting_started/installation_der_software.md) getan haben, falls nicht kannst du im Kapitel zu [Softwarebibliotheken](../../grundlagen/software_libraries.md) nachlesen.
+Bevor wir mit der Programmierung starten können, müssen wir die `HDC100X.h` Bibliothek installieren.
+Dies solltest du eigentlich bereits mit den [ersten Schritten](../../getting_started/installation_der_software.md) getan haben, falls nicht kannst du im Kapitel zu [Softwarebibliotheken](../../grundlagen/software_libraries.md) nachlesen.
 
 Um alle zusätzlichen Funktionen der Bibliothek nutzen zu können, muss sie an oberster Stelle in eurem Programm mit der Direktive `#include` eingebunden werden. In unserem Fall brauchen wir neben der HDC100X Bibliothek noch die Wire-Bibliothek (Standarderweiterung für I²C Geräte), also steht in den ersten beiden Zeilen:
 ```arduino
 #include <Wire.h>
 #include <HDC100X.h>
 ```
-***Hinweis:*** *Anders als bei regulären Befehlen, steht am Ende der include Direktive **KEIN** Semikolon.*
+> ***Hinweis:*** *Anders als bei regulären Befehlen, steht am Ende der include Direktive **kein** Semikolon.*
 
-In allen darauf folgenden Zeilen können nun die Funktionen der Bibliotheken genutzt werden. Als erstes muss eine Verbindung zur Sensoradresse angegeben werden. Bei diesem Sensor lautet die Adresse `0x43` (s. Datenblatt).
+In allen darauf folgenden Zeilen können nun die Funktionen der Bibliotheken genutzt werden.
+
+Als erstes muss eine Verbindung zur Sensoradresse angegeben werden. Bei diesem Sensor lautet die Adresse `0x43` (vgl. [Datenblatt](https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf)).
 ```arduino
-HDC100X HDC(0x43);
+HDC100X hdc(0x43);
 ```
-Durch diesen Befehl hast du nun eine Instanz `HDC` des Sensors vom Typ `HDC100X` angelegt. Jetzt muss dieser Sensor in der `setup`-Funktion wie folgt gestartet werden:
+Durch diesen Befehl hast du nun eine Instanz `hdc` des Sensors vom Typ `HDC100X` angelegt. Jetzt muss dieser Sensor in der `setup()`-Funktion wie folgt gestartet werden:
+Die Argumente der `begin()`-Funktion geben dabei an, dass Temperatur und Luftfeuchte gemessen werden, jeweils in einer Auflösung von 14 Bit, und dass das Heizelement des Sensors deaktiviert werden soll.
 ```arduino
-HDC.begin(HDC100X_TEMP_HUMI, HDC100X_14BIT, DISABLE);
+hdc.begin(HDC100X_TEMP_HUMI, HDC100X_14BIT, DISABLE);
 ```
-Die Argumente der `begin`-Funktion geben dabei an, dass Temperatur und Luftfeuchte gemessen werden, jeweils in einer Auflösung von 14 Bit, und dass das Heizelement des Sensors deaktiviert werden soll. Nachdem du den Sensor, wie oben beschrieben, initialisiert hast, kannst du zwei Befehle in der loop-Funktion nutzen, um einen Temperatur- bzw. Feuchtigkeitswert ausgeben zu lassen:
+
+Nachdem du den Sensor, wie oben beschrieben, initialisiert hast, kannst du zwei Befehle in der `loop()`-Funktion nutzen, um einen Temperatur- bzw. Feuchtigkeitswert ausgeben zu lassen:
 ```arduino
-HDC.getHumi();
-HDC.getTemp();
+hdc.getHumi();
+hdc.getTemp();
 ```
-***Hinweis:*** *Beim Speichern der Messwerte sollten die Variablen den gleichen Datentypen haben wie die Rückgabewerte der Messfunktionen. In unserem Fall sind das beides float Werte.*
+***Hinweis:*** *Beim Speichern der Messwerte sollten die Variablen den gleichen Datentypen haben wie die Rückgabewerte der Messfunktionen. In unserem Fall sind das beides `float` Werte.*
 
 ## Aufgabe 1
 Baue die oben beschriebene Schaltung nach und versuche den HDC1008 auszulesen und Dir die gemessenen Daten im seriellen Monitor anzeigen zu lassen.
