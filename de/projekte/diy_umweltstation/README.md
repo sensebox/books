@@ -4,3 +4,5 @@ Am Ende wird die Messung diverser Umweltphänomene wie Temperatur, Luftfeuchte, 
 
 Dieses Projekt ist das umfangreichste, weshalbt es in mehrere Kapitel aufgeteilt wurde.
 In jedem neuen Kapitel wird ein zusätzlicher Baustein eingeführt, bis eine vollwertige - den Funktionen der senseBox:home ähnliche - Wetterstation gebaut wurde!
+
+Ihr könnt die Stationen als einzelne Projekte bearbeiten, oder euren Programm-Code mit jeder Station erweitern, um alle fünf Phänomene gleichzeitig messen zu können.

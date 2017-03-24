@@ -28,17 +28,17 @@ Wir benötigen weitere Konstanten um das Auslesen des Sensors zu ermöglichen, s
 #include <Wire.h>
 
 #define I2C_ADDR_UV 0x38
-// Integrationszeit
-#define IT_1_2 0x0 //1/2T
-#define IT_1   0x1 //1T
-#define IT_2   0x2 //2T
-#define IT_4   0x3 //4T
+// Integrationszeiten
+#define IT_0_5 0x0 // 1/2T
+#define IT_1   0x1 // 1T
+#define IT_2   0x2 // 2T
+#define IT_4   0x3 // 4T
 
-// Referenzwert: 0,01 W/m2 ist äquivalent zu 0.4 als UV-Index
+// Referenzwert: 0,01 W/m^2 ist äquivalent zu 0.4 als UV-Index
 float refVal = 0.4;
 ```
 
-Jetzt können wir unser Programm in der `setup`-Funktion konfigurieren.
+Jetzt können wir den Sensor in der `setup()`-Funktion konfigurieren.
 
 ```arduino
 void setup() {
@@ -52,27 +52,29 @@ void setup() {
 }
 ```
 
-In der `loop`-Funktion schreiben wir unser Hauptprogramm:
+In der `loop()`-Funktion schreiben wir unser Hauptprogramm um den Sensor regelmäßig auszulesen:
 
 ```arduino
 void loop() {
   byte msb=0, lsb=0;
   uint16_t uv;
 
-  Wire.requestFrom(I2C_ADDR_UV+1, 1); // MSB (erstes byte am sensor lesen)
+  Wire.requestFrom(I2C_ADDR_UV+1, 1); // MSB (erstes Byte am Sensor lesen)
   delay(1);
-  if(Wire.available())
+  if(Wire.available()) {
     msb = Wire.read();
+  }
 
-  Wire.requestFrom(I2C_ADDR_UV+0, 1); // LSB (zweites byte am sensor lesen)
+  Wire.requestFrom(I2C_ADDR_UV+0, 1); // LSB (zweites Byte am Sensor lesen)
   delay(1);
-  if(Wire.available())
+  if(Wire.available()) {
     lsb = Wire.read();
+  }
 
-  uv = (msb<<8) | lsb;   // bytes durch Bitshift zu einer Zahl verbinden
+  uv = (msb<<8) | lsb; // beide Bytes durch Bitshift zu einer Zahl verbinden
 
   Serial.print("uW je cm²: ");
-  Serial.println(uv, DEC);            // Ausgabe als 16bit integer
+  Serial.println(uv, DEC);     // Ausgabe als 16bit Integer
   Serial.print("UV-Index: ");
   Serial.println(getUVI(uv));
 
@@ -90,8 +92,8 @@ Da im Alltag häufig mit dem [UV-Index](https://de.wikipedia.org/wiki/UV-Index) 
  * erwartet den Messert des UV-Sensors als Eingabeparameter
  * und gibt den entsprechenden Wert auf dem UV-Index zurück
  */
-float getUVI(int uv){
-  float uvi = refVal*(uv*5.625)/1000;
+float getUVI(int uv) {
+  float uvi = refVal * (uv * 5.625) / 1000;
   return uvi;
 }
 ```

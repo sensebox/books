@@ -36,7 +36,7 @@ Diese Register werden zur Konfiguration und Kommunikation benötigt:
 #define REG_ID        0x0A
 ```
 
-In der Setup-Funktion soll nun eine Verbindung zu dem Sensor hergestellt werden und dem Kontrollregister der Befehl zum Hochfahren gegeben werden:
+In der `setup()`-Funktion soll nun eine Verbindung zu dem Sensor hergestellt werden und dem Kontrollregister der Befehl zum Hochfahren gegeben werden:
 
 ```arduino
 Wire.begin();
@@ -56,13 +56,14 @@ Wire.endTransmission();
 ```
 
 Um die Belichtungszeit zu verändern, kann man den entsprechenden Wert von `0x00` in `0x01` oder `0x02` ändern, um die Belichtungszeit auf 200 bzw. 100 ms im Konfigurationsregister des Sensors zu reduzieren.
-In der Loop-Funktion geben wir nun den Befehl zum Start der Messroutine und lassen uns vom Sensor die Daten senden, die für die Berechnung der Beleuchtungsstärke benötigt werden:
+
+In der `loop()`-Funktion geben wir nun den Befehl zum Start der Messroutine und lassen uns vom Sensor die Daten senden, die für die Berechnung der Beleuchtungsstärke benötigt werden:
 
 ```arduino
 Wire.beginTransmission(I2C_ADDR);
 Wire.write(0x80 | REG_DATALOW);
 Wire.endTransmission();
-Wire.requestFrom(I2C_ADDR, 2); //2 Bytes anfordern
+Wire.requestFrom(I2C_ADDR, 2); // 2 Bytes anfordern
 uint16_t low = Wire.read();
 uint16_t high = Wire.read();
 ```
@@ -70,7 +71,7 @@ uint16_t high = Wire.read();
 Falls der Sensor noch Daten sendet, sollten diese danach abgefangen werden, um Fehler im nächsten Durchgang zu vermeiden.
 
 ```arduino
-while(Wire.available()){
+while(Wire.available()) {
 	Wire.read();
 }
 ```
@@ -82,7 +83,7 @@ Zu guter Letzt nutzt du die ausgelesenen Datenbytes, um Beleuchtungsstärke in L
 ```arduino
 uint32_t lux;
 lux = (high << 8) | (low << 0);
-lux = lux * 1; //Multiplikator für 400ms
+lux = lux * 1; // Multiplikator für 400ms
 ```
 
 Um diese Formel auf eine Belichtungszeit von 200 oder 100ms anzupassen, musst du nur den Multiplikator auf 2 bzw. 4 erhöhen.
