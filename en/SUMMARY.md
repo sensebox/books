@@ -26,7 +26,7 @@
 * [Traffic Light](projects/traffic_light.md)
 * [DIY Eco Station](projects/eco_station/README.md)
     * [Experiments with light](projects/eco_station/experiments_with_light.md)
-#    * [UV-Sensor]()
+    * [UV-Sensor](projects/eco_station/uv_sensor.md)
 #    * [Luftfeuchtigkeit und Thermometer]()
 #    * [Luftdruck]()
 #    * [Speichern auf SD-Karte]()
