@@ -6,6 +6,7 @@
 * [openSenseMap Registrierung](osem.md)
 * [Beispielaufbauten](aufbau/README.md)
     * [senseBox fibox](aufbau/fibox.md)
+    * [Botanischer Garten](aufbau/bot-garten.md)
 * [senseBox:home mit ESP8266](esp8266/README.md)
     * [Softwareinstallation](esp8266/software_installation.md)
     * [Anpassen des Sketches](esp8266/modify_sketch.md)
