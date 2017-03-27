@@ -1,9 +1,9 @@
 # DIY - UV-Light Sensor
-Solar Radiation in the ultraviolet (UV) spectrum can get hazardous to the skin very quickly.
-Because official weather stations rarely measure the UV-intensity, we want to measure the UV-light ourselves!
+Solar radiation in the ultraviolet (UV) spectrum can get hazardous to the skin very quickly.
+Official weather stations rarely measure the UV-intensity, so we want to measure the UV-light ourselves!
 
 ## Aim of this lesson
-In this station we are using an UV-light sensor to detect the amount of solar radiation in the UV-spectrum as power per area (μW / cm²).
+In this lesson we are using an UV-light sensor to detect the amount of solar radiation in the UV-spectrum as *power per area* (μW / cm²).
 
 Additionally, we convert the measured value to the standardized UV-Index which is easier to comprehend.
 
@@ -15,10 +15,10 @@ Ultraviolet "light" is a kind of radiation that is invisible to the human eye.
 It has a shorter wavelength than visible light, but longer than that of X-rays:
 The spectrum is defined from 100 nm to 380 nm.
 
-Through absorption of the earth's athmosphere in the ozone layer, the solar radiation in the UV-B spectrum (100 - 300 nm) does barely reach the earth's surface.
-The less dangerous UV-A radiation (300 - 380 nm) is far less absorbed by the athmosphere.
+Through absorption of the earth's atmosphere in the ozone layer, the solar radiation in the UV-B spectrum (100 - 300 nm) does barely reach the earth's surface.
+The less dangerous UV-A radiation (300 - 380 nm) is far less absorbed by the atmosphere.
 
-UV-light intensity is measured in microwatts per square-centimeter (μW / cm²).
+UV-light intensity is measured in micro-watts per square-centimeter (μW / cm²).
 Our `VEML6070` sensor measures radiation from round about 300 - 400 nm, so it can only detect UV-A radiation (for more precise information, consider the [datasheet](https://github.com/sensebox/resources/raw/master/datasheets/datasheet_veml6070-UV-A-Light-Sensor.pdf)).
 
 ## Construction

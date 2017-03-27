@@ -1,11 +1,11 @@
 # DIY - Airtemperature & Humidity
-To provide the daily weather forecast in TV, web and newspapers, not only satellite imagery is analysed, but also data from measuring stations on the ground provide important datapoints.
+To provide the daily weather forecast in TV, web and newspapers, not only satellite imagery is analyzed, but also data from measuring stations on the ground provide important data points.
 But how does the measurement and visualization of temperature and humidity values work exactly?
 
 <!-- TODO: not translated yet
 ## Required Reading
 - [Usage of Software-Libraries](../../basics/software_libraries.md)
-- [serial databus I²C](../../basics/i2c.md)
+- [serial data bus I²C](../../basics/i2c.md)
 - [Serial Monitor](../../basics/serial_monitor.md)
 -->
 
@@ -13,7 +13,7 @@ But how does the measurement and visualization of temperature and humidity value
 In this lesson we measure and display air-temperature and -humidity using the HDC1008 sensor.
 
 ## Materials
-- combined temperature and hummidity sensor `HDC1008`
+- combined temperature and humidity sensor `HDC1008`
 
 ## Basics
 The `HDC1008` from *Texas Instruments* series *HDX100X* combines two sensors on one breakout board:
@@ -32,7 +32,7 @@ Before starting to write code, we need to install the `HDC100X.h` library. If yo
 
 This library allows us to conveniently speak to the sensor, without manually defining all the configuration registers.
 To be able to use this library, it has to be included at the top of the program with an `#include` directive.
-In this case we additionaly require the `Wire.h` library to use the I²C bus:
+In this case we additionally require the `Wire.h` library to use the I²C bus:
 
 ```arduino
 #include <Wire.h>
@@ -43,7 +43,7 @@ In this case we additionaly require the `Wire.h` library to use the I²C bus:
 
 The rest of the program may now use the included functions from these libraries.
 
-In order to connect to the sensor, the HDC100X library needs to know the I²C adress of the sensor. The HDC1008 listens to the adress `0x43` (see [datasheet](https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf)).
+In order to connect to the sensor, the HDC100X library needs to know the I²C address of the sensor. The HDC1008 listens to the address `0x43` (see [datasheet](https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf)).
 ```arduino
 HDC100X hdc(0x43);
 ```
