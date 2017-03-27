@@ -5,6 +5,7 @@
 * [Arduino/Genuino](getting_started/genuino_board.md)
 * [Installation der Software](getting_started/installation_der_software.md)
 * [Arduino IDE](getting_started/arduino_ide.md)
+* [Hello World Programm](getting_started/hello_world.md)
 
 ## Grundlagen
 * [Digitale Signale](grundlagen/digitale_signale.md)
@@ -31,6 +32,9 @@
     * [Luftfeuchtigkeit und Thermometer](projekte/diy_umweltstation/temp_und_luftfeuchte.md)
     * [Luftdruck](projekte/diy_umweltstation/luftdruck.md)
     * [Datenupload zur OSeM](projekte/diy_umweltstation/osem.md)
+* [Fotowiderstand (LDR)](projekte/ldr.md)
+* [Leitfähigkeit](projekte/leitfaehigkeit.md)
+* [PH-Wert](projekte/ph_wert.md)
 * [Auf die Töne fertig los!](projekte/summer.md)
 * [Lauschangriff](projekte/mikrofon.md)
 * [Kleiner Webserver](projekte/webserver.md)
