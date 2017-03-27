@@ -8,6 +8,7 @@ Nutze die folgenden Anleitungen als Empfehlung und Inspiration!
 |-----------------------------------|---------------|-----------|
 | [Fibox Gehäuse mit PoE](fibox.md) | senseBox Team | 2015      |
 | [MyOSD WiFi][myosd] (PDF)         | MyOSD         | Okt. 2016 |
+| [Botanischer Garten](bot-garten.md)         | Felix         | März. 2017 |
 
 [myosd]: https://owncloud.mpi-bremen.de/index.php/s/PFGBQlriiQHuF97/download
 
