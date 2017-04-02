@@ -7,10 +7,10 @@ Usually we use libraries to make communication with specific sensors less compli
 A lot of libraries are already included with the Arduino IDE, but those for the senseBox sensors have to be installed manually.
 You should have added these already, if you followed the chapter [Software Installation](../basics/software_installation.md).
 
-## Importing additional Libraries
+## Importing additional libraries
 When using additional sensors, it is likely that you need to add the associated library manually.
 
-First you have to download the library which usually is a zip file.
+First you have to download the library which is usually a zip file.
 The Arduino IDE has a function to add external libraries. To do this, click in the menu on *Sketch* -> *Import Library* -> *Add Library*.
 In the following dialog navigate to the downloaded zip file and select it.
 

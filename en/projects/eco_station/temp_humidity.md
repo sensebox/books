@@ -61,7 +61,7 @@ hdc.getHumi();
 hdc.getTemp();
 ```
 
-***Hint:*** *These functions return the measured value as `float`. Be sure that the variables you want to store the measurements in has the correct data type!*
+> ***Hint:*** *These functions return the measured value as `float`. Be sure that the variables you want to store the measurements in has the correct data type!*
 
 ## Exercise 1
 Build the circuit thats depicted above and try to read measurements from the HDC1008 sensor.

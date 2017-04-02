@@ -4,7 +4,7 @@
 In dieser Station bauen wir mit Hilfe eines Widerstandes und einfachen Elektroden ein Messgerät für die elektrische Leitfähigkeit von Materialien.
 
 ## Materialien
-- Wiederstand
+- beliebiger Widerstand
 - Elektroden (die Kabel der senseBox funktionieren hierfür auch!)
 
 ## Aufbau

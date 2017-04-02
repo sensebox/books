@@ -5,7 +5,7 @@ Eine solche Bibliothek (engl. Library) kann prinzipiell von jedem erstellt werde
 Im Normalfall stellen die Entwickler der Hardwarekomponenten Bibliotheken für ihre Produkte bereit, sodass der Nutzer sich diese Arbeit sparen kann.
 
 In der Arduino-IDE sind bereits einige Software-Bibliotheken enthalten, aber Bibliotheken für die senseBox Sensoren müssen manuell hinzugefügt werden.
-Dies solltest du bereits im Kapitel [Installation der Software](../getting_started/installation_der_software.md).
+Dies solltest du bereits im Kapitel [Installation der Software](../getting_started/installation_der_software.md) getan haben.
 
 ## Zusätzliche Bibliotheken installieren
 Als erstes muss die gewünschte Bibliothek heruntergeladen werden, welche in der Regel ein `zip`-Archiv ist.
