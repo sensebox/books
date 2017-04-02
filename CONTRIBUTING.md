@@ -3,7 +3,7 @@
 We appreciate any contributions to our documentational resources!
 This includes improvements and corrections to existing content, as well as translations & entirely new content.
 
-In case you are unfamiliar with the GitHub process; there's a guide on adding your own senseBox project documentation [here](https://github.com/sensebox/books/blob/book_edu/en/contributing.md) (english) and [here](https://github.com/sensebox/books/blob/book_edu/de/eigene_projekte.md) (german)!
+In case you are unfamiliar with the GitHub process and you still want to add your own senseBox documentation, you may send it to as markdown (preferred) or office document via [mail](mailto:support@sensebox.de). Check out our guide ([english](https://github.com/sensebox/books/blob/book_edu/en/contributing.md), [german](https://github.com/sensebox/books/blob/book_edu/de/eigene_projekte.md) for templates and more.
 
 **Thank you for your contribution!**
 
@@ -22,7 +22,6 @@ Install it by running `npm i -g gitbook-cli`. If that does not work or you don't
 #### Live preview
 To get a live preview of a books website-output, run
 ```
-cd edu            # (or home, or osem)
 gitbook install   # only required once
 gitbook serve
 ```
@@ -31,7 +30,6 @@ gitbook serve
 GitBook provides the output formats `website`, `pdf` and `ebook`.
 To render a book run:
 ```
-cd edu            # (or home, or osem)
 gitbook install   # only required once
 
 gitbook build     # build the website
@@ -61,8 +59,8 @@ Currently, all BLOB files (except for community projects, see below) are hosted 
 ### senseBox:edu community projects
 Projects contributed by the community should be included in the book of their respective language, in the following directories:
 ```
-edu/de/community_projekte/
-edu/en/community_projects/
+de/community_projekte/
+en/community_projects/
 ```
 
 ### Deployment
@@ -70,4 +68,5 @@ Currently the books are built and hosted by [gitbook.com](https://gitbook.com/@s
 A commit on each of the `book_<name>` branches automatically triggers a new build of the book there.
 The domains <edu.books.sensebox.de>, <home.books.sensebox.de> and <osem.books.sensebox.de> are pointing on the builds of these books.
 
-The old travis builds (deployed on the `ghpages` branch) are deprecated by 26.01.2017.
+The pdf builds however are built on travis to support custom cover pages. These builds are autocommited into the `gh-pages` branch.
+
