@@ -1,23 +1,35 @@
 # Eigene Projekte beitragen
 
 Wenn ihr ein eigenes Projekt selbst entwickelt und die Entwicklung dokumentiert habt, fügen wir eure Anleitung gerne zu diesem Buch hinzu!
+Nicht nur eigene Inhalte, auch Korrekturen & Verbesserungen am bestehenden Inhalt sind gern gesehen ;)
 
+## Inhalt
 Die Dokumentation sollte einen Überblick über das Projekt geben, und eine Schritt-für-Schritt Anleitung zum Nachbau enthalten.
 Fotos und Programmcode können ebenfalls hinzugefügt werden!
 
+In jedem Fall sollten alle Informationen enthalten sein, sodass das Projekt von anderen wiederholt werden kann!
+
+Falls ihr schonmal mit GitHub gearbeitet habt, könnt ihr uns gerne die Dokumentation per Pull Request im Markdown Format zusenden.
+Hierfür findet ihr weiter unten eine ausführliche [Anleitung](./#schreiben-der-dokumentation-in-markdown).
+
+Alternativ könnt ihr diese <a href="./community_projekte/projekt_vorlage.odt" target="_blank">**Office-Vorlage**</a> verwenden, und uns das Dokument einfach [per Mail](mailto:info@sensebox.de?subject=Projektanleitung senseBox:edu) schicken. Wir werden die Dokumentation anschließend in dieses Buch einarbeiten.
+
+## Lizenz
+Euer Beitrag wird - wie der Rest des Buchs - unter der [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) Lizenz eingefügt.
+Das bedeutet, dass der Beitrag von anderen frei weiterverwendet werden darf, solange der Autor zusammen mit dem Inhalt genannt wird.
+
+> **Vielen Dank für euren Beitrag!**
+
+---
+
+## Schreiben der Dokumentation in Markdown
+Falls ihr den Weg über GitHub gehen wollt, und doch nicht ganz vertraut damit seid, findet ihr hier eine kurze Hilfestellung.
+
 Für die Bearbeitung und Verwaltung dieses Buches verwenden wir [github.com](https://github.com) und das Tool [GitBook](https://www.gitbook.com/), alle Inhalte werden in [Markdown](http://whatismarkdown.com/) geschrieben.
-
-Nicht nur eigene Inhalte, auch Korrekturen & Verbesserungen am bestehenden Inhalt sind gern gesehen ;)
-
-## Schreiben der Dokumentation
-Die Dokumentation sollte im Markdown-Format verfasst sein, sodass der Inhalt direkt in das Buch eingearbeitet werden kann. Falls ihr nicht vertraut mit Markdown seid, findet ihr [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) eine Hilfestellung und Syntaxerläuterung.
+Falls ihr nicht vertraut mit Markdown seid, findet ihr [hier](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) eine Hilfestellung und Syntaxerläuterung.
+Sofern sie für euer Projekt geeignet ist, könnt ihr euch an dieser <a href="./community_projekte/projekt_vorlage.md" target="_blank">**Vorlage**</a> orientieren.
 
 Um das Schreiben mit Markdown zu vereinfachen gibt es übrigens auch online-Editoren wie [stackedit](https://stackedit.io/editor).
-
-### Inhalt
-Sofern sie für euer Projekt geeignet ist, könnt ihr euch an dieser <a href="./community_projekte/projekt_vorlage.md" target="_blank">**Vorlage**</a> für Anleitungen orientieren.
-
-In jedem Fall sollten alle Informationen enthalten sein, sodass das Projekt von anderen wiederholt werden kann!
 
 ### Dateinamen
 Achtet darauf, dass in den Dateinamen keine Leerzeichen enthalten sind!
@@ -29,11 +41,7 @@ mobile-wetterstation/uebersicht.jpg
 mobile-wetterstation/mobile-wetterstation.ino
 ```
 
-## Lizenz
-Euer Beitrag wird - wie der Rest des Buchs - unter der [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) Lizenz eingefügt.
-Das bedeutet, dass der Beitrag von anderen frei weiterverwendet werden darf, solange der Autor zusammen mit dem Inhalt genannt wird.
-
-## Hochladen der Dokumentation
+### Hochladen der Dokumentation
 Um uns die Dokumentation zuzusenden, fügt ihr diese am besten in das Buch selber ein.
 
 Der Quellcode dieses Buches ist [hier](https://github.com/sensebox/books) auf GitHub zu finden.
@@ -94,9 +102,5 @@ In den nächsten Tagen solltet ihr eure Anleitung in diesem Buch im Kapitel [Com
 
 ---
 
-Alternativ zu dem Prozess auf GitHub gibt es auch den [Gitbook.com Editor](https://www.gitbook.com/editor), welcher euch einen Teil der Arbeit auf Github erspart.
-Auch hier wird allerdings ein Github Account benötigt.
+> Alternativ zu dem Prozess auf GitHub gibt es auch den [Gitbook.com Editor](https://www.gitbook.com/editor), welcher euch einen Teil der Arbeit auf Github erspart. Auch hier wird allerdings ein Github Account benötigt.
 
-Falls all dies nicht funktioniert, könnt ihr die Anleitung im Markdown-Format gezippt an uns [per Mail](mailto:info@sensebox.de?subject=Projektanleitung senseBox:edu) senden.
-
-**Vielen Dank für euren Beitrag!**
