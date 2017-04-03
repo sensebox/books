@@ -10,5 +10,6 @@ Wenn ihr selber ein Projekt hinzufügen wollt, schaut euch die [Anleitung](../ei
 | Projekt Titel                 | Autor | Datum    | zusätzliche Materialien |
 |-------------------------------|-------|----------|-------------------------|
 | [Wetterstation mit Anenometer](wetterstation_windmesser.md) | Specki & Eric | April 2016 | Anenometer |
+| [Wetterstation mit Display](wetterstation_lcd-display.md) | Christoph | April 2016 | LCD Display |
 | [Rauchmelder](rauchmelder.md) | Bernd | Januar 2017 | Rauchmelder, Lötkoben   |
 | [LED Uhr](led_clock.md)       | Bernd | Januar 2017 | LED-Ring, analoge Uhr   |
