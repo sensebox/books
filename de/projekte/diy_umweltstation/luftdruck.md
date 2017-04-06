@@ -33,6 +33,7 @@ Auf diesem Objekt werden alle Funktionen der Bibliothek aufgerufen:
 
 ```arduino
 #include <BMP280.h>
+#include <Wire.h>
 BMP280 bmp;
 ```
 
