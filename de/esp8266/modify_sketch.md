@@ -5,128 +5,79 @@ Zuallererst benötigt man seinen senseBox-Sketch.
 Entweder man registriert eine neue senseBox ([Anleitung hier](../osem.md)), oder man verwendet seinen bestehenden Sketch.
 Wichtig ist dass man seine senseBox-ID und Sensor-IDs kennt.
 
-> *Damit das Barometer (BMP280) korrekt in mit dem ESP8266 funktioniert, wird eine andere Bibliothek ([BME280](https://github.com/finitespace/BME280)) zum ansteuern des Sensors benötigt.*
-> *Diese kann [hier](https://github.com/finitespace/BME280/archive/master.zip) heruntergeladen werden.*
+> *Damit das Barometer (BMP280) korrekt in mit dem ESP8266 funktioniert, wird eine andere Bibliothek ([BME280 Version 1.0.02](https://github.com/finitespace/BME280/tree/fa4a6d4412dfb46f135cb68c15680a57ff68dfda)) zum ansteuern des Sensors benötigt.*
+> *Diese kann [hier](https://github.com/finitespace/BME280/archive/Release_Version_1.0.02.zip) heruntergeladen werden.*
 > *Die Installation erfolgt analog zu unseren Bibliotheken, wie [hier](../software_installation.md#arduino-bibliotheken-installieren) beschrieben ist.*
 
-Weiter [unten](#kompletter-sketch) findet ihr einen komplett angepassten Sketch.
+Hier findet ihr einen komplett angepassten Sketch.
 Dort müssen nur noch WiFi-Name und -Passwort, senseBox-ID und Sensor-IDs ersetzt werden.
-
-#### Ethernet durch Wifi ersetzen
-
-Da der ESP8266 über WiFi kommuniziert, brauchen wir die Ethernet Bibliothek nicht mehr.
-Dafür muss die ESP Wifi Bibliothek eingeladen und konfiguriert werden.
-
-```arduino
-#include <Ethernet.h>
-```
-ersetzen durch
-```arduino
-#include <ESP8266WiFi.h>
-```
-
-Die Zeilen welche die Ethernet Verbindung konfigurieren folgendermaßen ersetzen:
-```arduino
-//Configure ethernet connection
-IPAddress myIp(192, 168, 0, 42);
-byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-char server[] = "www.opensensemap.org";
-EthernetClient client;
-```
-nach
-```arduino
-//Configure wifi connection
-char server[] = "www.opensensemap.org";
-WiFiClient client;
-const char* ssid     = "dein-wifi-name";
-const char* password = "dein-wifi-passwort";
-```
-ändern.
-
-Dann muss das Verbinden mit dem Ethernet mit der Wifi-Verbindung ersetzt werden.
-
-Alt:
-```arduino
-// start the Ethernet connection:
-Serial.println("SenseBox Home software version 2.1");
-Serial.println();
-Serial.print("Starting ethernet connection...");
-if (Ethernet.begin(mac) == 0) {
-  Serial.println("Failed to configure Ethernet using DHCP");
-  Ethernet.begin(mac, myIp);
-}else Serial.println("done!");
-```
-Neu:
-```arduino
-// start the Wifi connection:
-Serial.println("SenseBox Home software version 2.1");
-Serial.println();
-Serial.print("Starting wifi connection...");
-WiFi.begin(ssid, password);
-
-while (WiFi.status() != WL_CONNECTED) {
-  delay(500);
-  Serial.print(".");
-}
-Serial.println("done!");
-
-```
 
 ### Kompletter Sketch
 ```arduino
 /*
-SenseBox Home - Citizen Sensingplatform
-Version: 2.1
-Date: 2016-07-23
-Homepage: http://www.sensebox.de
-Author: Jan Wirwahn & Gerald Pape, Institute for Geoinformatics, University of Muenster
-Note: Sketch for senseBox Home Kit ESP8266
-Email: support@sensebox.de
+  senseBox Home - Citizen Sensingplatform
+  Version: 2.4
+  Date: 2017-Mar-06
+  Homepage: https://www.sensebox.de https://www.opensensemap.org
+  Author: Institute for Geoinformatics, University of Muenster
+  Note: Sketch for senseBox:home
+  Email: support@sensebox.de
 */
 
 #include <Wire.h>
 #include "HDC100X.h"
-#include "BMP280.h"
+#include <BME280.h>
 #include <Makerblog_TSL45315.h>
 #include <SPI.h>
 #include <ESP8266WiFi.h>
 
-//SenseBox ID
-#define SENSEBOX_ID "SENSEBOX_ID_AUS_DEM_ORIGINAL_SKETCH"
-
-//Sensor IDs
-#define TEMPSENSOR_ID "SENSOR_ID_AUS_DEM_ORIGINAL_SKETCH"
-#define HUMISENSOR_ID "SENSOR_ID_AUS_DEM_ORIGINAL_SKETCH"
-#define PRESSURESENSOR_ID "SENSOR_ID_AUS_DEM_ORIGINAL_SKETCH"
-#define LUXSENSOR_ID "SENSOR_ID_AUS_DEM_ORIGINAL_SKETCH"
-#define UVSENSOR_ID "SENSOR_ID_AUS_DEM_ORIGINAL_SKETCH"
-
-//Configure wifi connection
-char server[] = "www.opensensemap.org";
+// Wifi Configuration
+const char* server = "ingress.opensensemap.org";
 WiFiClient client;
-const char* ssid     = "dein-wifi-name";
+const char* ssid = "dein-wifi-name";
 const char* password = "dein-wifi-passwort";
 
-//Load sensors
+typedef struct sensor {
+    const uint8_t ID[12];
+} sensor;
+
+uint8_t sensorsIndex = 0;
+
+// Number of sensors
+static const uint8_t NUM_SENSORS = 5;
+
+// senseBox ID and sensor IDs
+const uint8_t SENSEBOX_ID[12] = { 0x58, 0xd9, 0x1a, 0x6f, 0x68, 0x91, 0xfd, 0x00, 0x0f, 0x8a, 0xf7, 0xed };
+
+// Do not change order of sensor IDs
+const sensor sensors[NUM_SENSORS] = {
+  // Temperatur
+  { 0x58, 0xd9, 0x1a, 0x6f, 0x68, 0x91, 0xfd, 0x00, 0x0f, 0x8a, 0xf7, 0xee },
+  // rel. Luftfeuchte
+  { 0x58, 0xd9, 0x1a, 0x6f, 0x68, 0x91, 0xfd, 0x00, 0x0f, 0x8a, 0xf7, 0xef },
+  // Luftdruck
+  { 0x58, 0xd9, 0x1a, 0x6f, 0x68, 0x91, 0xfd, 0x00, 0x0f, 0x8a, 0xf7, 0xf0 },
+  // Beleuchtungsstärke
+  { 0x58, 0xd9, 0x1a, 0x6f, 0x68, 0x91, 0xfd, 0x00, 0x0f, 0x8a, 0xf7, 0xf1 },
+  // UV-Intensität
+  { 0x58, 0xd9, 0x1a, 0x6f, 0x68, 0x91, 0xfd, 0x00, 0x0f, 0x8a, 0xf7, 0xf2 }
+};
+
+uint8_t contentLength = 0;
+float values[NUM_SENSORS];
+
+// Load sensors
 Makerblog_TSL45315 TSL = Makerblog_TSL45315(TSL45315_TIME_M4);
 HDC100X HDC(0x43);
-BMP280 BMP;
-
-//measurement variables
-float temperature = 0;
-float humidity = 0;
-double tempBaro, pressure;
-uint32_t lux;
-uint16_t uv;
-int messTyp;
+BME280 BME;
+uint8_t pressureUnit(1);  // hPa
 #define UV_ADDR 0x38
-#define IT_1   0x1
+#define IT_1 0x1
 
-unsigned long oldTime = 0;
-const unsigned long postingInterval = 60000;
+const unsigned int postingInterval = 60000;
 
 void setup() {
-  // Open serial communications and wait for port to open:
+  sleep(2000);
   Serial.begin(9600);
   // start the Wifi connection:
   Serial.println("SenseBox Home software version 2.1");
@@ -139,147 +90,177 @@ void setup() {
     Serial.print(".");
   }
   Serial.println("done!");
-  delay(1000);
-  //Initialize sensors
+  sleep(1000);
   Serial.print("Initializing sensors...");
   Wire.begin();
   Wire.beginTransmission(UV_ADDR);
-  Wire.write((IT_1<<2) | 0x02);
+  Wire.write((IT_1 << 2) | 0x02);
   Wire.endTransmission();
-  delay(500);
-  HDC.begin(HDC100X_TEMP_HUMI,HDC100X_14BIT,HDC100X_14BIT,DISABLE);
+  sleep(500);
+  HDC.begin(HDC100X_TEMP_HUMI, HDC100X_14BIT, HDC100X_14BIT, DISABLE);
   TSL.begin();
-  BMP.begin();
-  BMP.setOversampling(4);
+  BME.begin();
   Serial.println("done!");
-  Serial.println("Starting loop.");
-  temperature = HDC.getTemp();
+  HDC.getTemp();
+  Serial.println("Starting loop.\n");
 }
 
-void loop()
-{
-  // if there are incoming bytes available
-  // from the server, read them and print them:
-  if (client.available()) {
-    char c = client.read();
-    Serial.print(c);
-    //Serial.write(c);
-  }
+void loop() {
+  addValue(HDC.getTemp());
+  sleep(200);
+  addValue(HDC.getHumi());
+  addValue(BME.ReadPressure(pressureUnit));
+  addValue(TSL.readLux());
+  addValue(getUV());
 
-  if (millis() - oldTime > postingInterval) {
-    oldTime = millis();
-    //-----Pressure-----//
-    Serial.println("Posting pressure");
-    messTyp = 2;
-    char result = BMP.startMeasurment();
-    if(result!=0){
-      delay(result);
-      result = BMP.getTemperatureAndPressure(tempBaro,pressure);
-      postObservation(pressure, PRESSURESENSOR_ID, SENSEBOX_ID);
-      //Serial.print("Temp_baro = ");Serial.println(tempBaro,2);
-      //Serial.print("Pressure  = ");Serial.println(pressure,2);
-    }
-    delay(2000);
-    //-----Humidity-----//
-    Serial.println("Posting humidity");
-    messTyp = 2;
-    humidity = HDC.getHumi();
-    //Serial.print("Humidity = "); Serial.println(humidity);
-    postObservation(humidity, HUMISENSOR_ID, SENSEBOX_ID);
-    delay(2000);
-    //-----Temperature-----//
-    Serial.println("Posting temperature");
-    messTyp = 2;
-    temperature = HDC.getTemp();
-    //Serial.println(temperature,2);
-    //Serial.print("Temperature = ");Serial.println(temperature);
-    postObservation(temperature, TEMPSENSOR_ID, SENSEBOX_ID);
-    delay(2000);
-    //-----Lux-----//
-    Serial.println("Posting illuminance");
-    messTyp = 1;
-    lux = TSL.readLux();
-    //Serial.print("Illumi = "); Serial.println(lux);
-    postObservation(lux, LUXSENSOR_ID, SENSEBOX_ID);
-    delay(2000);
-    //UV intensity
-    messTyp = 1;
-    uv = getUV();
-    postObservation(uv, UVSENSOR_ID, SENSEBOX_ID);
-  }
+  submitValues();
+
+  sleep(postingInterval);
 }
 
-void postObservation(float measurement, String sensorId, String boxId){
-  char obs[10];
-  if (messTyp == 1) dtostrf(measurement, 5, 0, obs);
-  else if (messTyp == 2) dtostrf(measurement, 5, 2, obs);
-  Serial.println(obs);
-  //json must look like: {"value":"12.5"}
-  //post observation to: http://opensensemap.org:8000/boxes/boxId/sensorId
-  Serial.println("connecting...");
-  String value = "{\"value\":";
-  value += obs;
-  value += "}";
-  if (client.connect(server, 8000))
-  {
-    Serial.println("connected");
-    // Make a HTTP Post request:
-    client.print("POST /boxes/");
-    client.print(boxId);
-    client.print("/");
-    client.print(sensorId);
-    client.println(" HTTP/1.1");
-    // Send the required header parameters
-    client.println("Host:opensensemap.org");
-    client.println("Content-Type: application/json");
-    client.println("Connection: close");
-    client.print("Content-Length: ");
-    client.println(value.length());
-    client.println();
-    // Send the data
-    client.print(value);
-    client.println();
-  }
-  waitForResponse();
+void addValue(const float& value) {
+  values[sensorsIndex] = value;
+  sensorsIndex = sensorsIndex + 1;
 }
 
-void waitForResponse()
-{
-  // if there are incoming bytes available
-  // from the server, read them and print them:
-  boolean repeat = true;
-  do{
-    if (client.available())
-    {
-      char c = client.read();
-      Serial.print(c);
-    }
-    // if the servers disconnected, stop the client:
-    if (!client.connected())
-    {
-      Serial.println();
-      Serial.println("disconnecting.");
-      client.stop();
-      repeat = false;
-    }
-  }
-  while (repeat);
-}
-
-uint16_t getUV(){
-  byte msb=0, lsb=0;
+uint16_t getUV() {
+  byte msb = 0, lsb = 0;
   uint16_t uvValue;
+  Wire.requestFrom(UV_ADDR + 1, 1);  // MSB
+  sleep(1);
+  if (Wire.available())
+    msb = Wire.read();
+  Wire.requestFrom(UV_ADDR + 0, 1);  // LSB
+  sleep(1);
+  if (Wire.available())
+    lsb = Wire.read();
+  uvValue = (msb << 8) | lsb;
+  return uvValue * 5;
+}
 
-  Wire.requestFrom(UV_ADDR+1, 1); //MSB
-  delay(1);
-  if(Wire.available()) msb = Wire.read();
+int printHexToStream(const uint8_t* data,
+                     uint8_t length,
+                     Print& stream)  // prints 8-bit data in hex
+{
+  byte first;
+  int j = 0;
+  for (uint8_t i = 0; i < length; i++) {
+    first = (data[i] >> 4) | 48;
+    if (first > 57) {
+      stream.write(first + (byte)39);
+    } else {
+      stream.write(first);
+    }
+    j++;
 
-  Wire.requestFrom(UV_ADDR+0, 1); //LSB
-  delay(1);
-  if(Wire.available()) lsb = Wire.read();
+    first = (data[i] & 0x0F) | 48;
+    if (first > 57) {
+      stream.write(first + (byte)39);
+    } else {
+      stream.write(first);
+    }
+    j++;
+  }
+  return j;
+}
 
-  uvValue = (msb<<8) | lsb;
+int printCsvToStream(Print& stream) {
+  int len = 0;
+  for (uint8_t i = 0; i < sensorsIndex; i++) {
+    if (!isnan(values[i])) {
+      len = len + printHexToStream(sensors[i].ID, 12, stream);
+      len = len + stream.print(",");
+      // do not print digits for illuminance und uv-intensity
+      if (i < 3)
+        len = len + stream.println(values[i]);
+      else
+        len = len + stream.println(values[i], 0);
+    }
+  }
+  return len;
+}
 
-  return uvValue*5;
+// millis() rollover fix -
+// http://arduino.stackexchange.com/questions/12587/how-can-i-handle-the-millis-rollover
+void sleep(unsigned long ms) {     // ms: duration
+  unsigned long start = millis();  // start: timestamp
+  for (;;) {
+    unsigned long now = millis();         // now: timestamp
+    unsigned long elapsed = now - start;  // elapsed: duration
+    if (elapsed >= ms)                    // comparing durations: OK
+      return;
+  }
+}
+
+void waitForResponse() {
+  // if there are incoming bytes from the server, read and print them
+  sleep(100);
+  String response = "";
+  char c;
+  boolean repeat = true;
+  do {
+    if (client.available())
+      c = client.read();
+    else
+      repeat = false;
+    response += c;
+    if (response == "HTTP/1.1 ")
+      response = "";
+    if (c == '\n')
+      repeat = false;
+  } while (repeat);
+
+  Serial.print("Server Response: ");
+  Serial.print(response);
+
+  client.flush();
+  client.stop();
+}
+
+void submitValues() {
+  // close any connection before send a new request.
+  // This will free the socket on the WiFi shield
+  Serial.println("__________________________\n");
+  if (client.connected()) {
+    client.stop();
+    sleep(1000);
+  }
+  // if there's a successful connection:
+  if (client.connect(server, 80)) {
+    Serial.println("connecting...");
+    // send the HTTP POST request:
+
+    client.print(F("POST /boxes/"));
+    printHexToStream(SENSEBOX_ID, 12, client);
+    client.println(F("/data HTTP/1.1"));
+
+    // !!!!! DO NOT REMOVE !!!!!
+    // !!!!! NICHT LÖSCHEN !!!!!
+    // print once to Serial to get the content-length
+    int contentLen = printCsvToStream(Serial);
+    // !!!!! DO NOT REMOVE !!!!!
+    // !!!!! NICHT LÖSCHEN !!!!!
+
+    // Send the required header parameters
+    client.print(F("Host: "));
+    client.println(server);
+    client.print(
+        F("Content-Type: text/csv\nConnection: close\nContent-Length: "));
+    client.println(contentLen);
+    client.println();
+    printCsvToStream(client);
+    client.println();
+    Serial.println("done!");
+
+    waitForResponse();
+
+    // reset index
+    sensorsIndex = 0;
+  } else {
+    // if you couldn't make a connection:
+    Serial.println("connection failed. Restarting System.");
+    sleep(5000);
+    ESP.restart();
+  }
 }
 ```
