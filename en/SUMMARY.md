@@ -6,3 +6,4 @@
 * [Data download](osem_download.md)
 * [Data analysis](osem_data-analysis.md)
 * [REST API](osem_api.md)
+* [MQTT Client](mqtt_client.md)
