@@ -3,6 +3,8 @@
 This branch contains the gitbook sources for our documentation on senseBox:edu.
 For a guide to the repository structure and contributing to this project, see [here](https://github.com/sensebox/books/tree/master/CONTRIBUTING.md).
 
+**please use the templates ([de](lessontemplate_de.md), [en](lessontemplate_en.md)) when creating new lessons!**
+
 The rendered book is hosted at [gitbook.com](https://sensebox.gitbooks.io/edu/).
 Blob resources are hosted separately at [sensebox/resources](https://github.com/sensebox/resources/)
 

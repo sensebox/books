@@ -12,11 +12,11 @@ Eine Variable hat immer einen zugeordneten Datentyp, folgende Typen sind für di
 | byte	| ganze Zahlen     		| ganze Zahlen von 0 bis 255 	|
 | int 	| ganze Zahlen			| ganze Zahlen von -32.758 bis 32.767 |
 | long	| ganze Zahlen			| ganze Zahlen von - 2 Milliarden bis 2 Milliarden |
-| float | Fließkommazahlen		| gebrochene Zahlen |
-| String| Zeichenkette			| Zeichenkette bestehend aus ASCII Zeichen|
-| array	| Variablenfeld			| mehrere Werte des selben Variablentyps können gespeichert werden |
+| float | Fließkommazahlen		| Bruchzahlen |
+| String| Zeichenkette			| Text bestehend aus ASCII Zeichen|
+| array	| Variablenfeld			| Eine Reihe von Werten des selben Variablentyps können gesammelt gespeichert werden |
 
- **Hinweis:** *Beim Programmieren gibt es einige Konventionen, das heißt einige Regeln, auf die man sich geeinigt hat, um die Lesbarkeit von Programmcode zu verbessern. Eine davon ist, dass Name von Variablen immer klein geschrieben werden.*
+> ***Hinweis:*** *Beim Programmieren gibt es einige Konventionen, das heißt einige Regeln, auf die man sich geeinigt hat, um die Lesbarkeit von Programmcode zu verbessern. Eine davon ist, dass Name von Variablen immer klein geschrieben werden.*
 
 ## So verwendet man die verschiedenen Datentypen
 
@@ -106,4 +106,4 @@ Man unterscheidet zwischen globalen und lokalen Variablen.
 Lokale Variablen sind all diejenigen, welche innerhalb geschweifeter Klammern (meist innerhalb einer Funktion) deklariert wurden.
 Globale Variablen werden üblicherweise vor der `setup`-Funktion definiert und sind für das gesamte Programm sichtbar.
 
-**Hinweis:** *Da globale Variablen immer sichtbar sind, verbrauchen sie auch für die gesamte Programmlaufzeit Speicherplatz. Willst Speicherplatz sparen, definiere Variablen nur dort wo du sie benötigst. Wenn du mehr über die Lebensdauer von Variablen erfahren willst, schaue [hier](https://de.wikipedia.org/wiki/Variable_%28Programmierung%29#Lebensdauer_von_Variablen "Wikipedia") nach.*
+> ***Hinweis:*** *Da globale Variablen immer sichtbar sind, verbrauchen sie auch für die gesamte Programmlaufzeit Speicherplatz. Willst Speicherplatz sparen, definiere Variablen nur dort wo du sie benötigst. Wenn du mehr über die Lebensdauer von Variablen erfahren willst, schaue [hier](https://de.wikipedia.org/wiki/Variable_%28Programmierung%29#Lebensdauer_von_Variablen "Wikipedia") nach.*
