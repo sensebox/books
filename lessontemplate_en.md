@@ -5,9 +5,7 @@
 ## Required Reading
 
 - [Usage of Software-Libraries](../../basics/software_libraries.md)
-
 - [serial data bus I²C](../../basics/i2c.md)
-
 - [Serial Monitor](../../basics/serial_monitor.md)
 
 ## Aim of this lesson
@@ -17,7 +15,6 @@
 ## Materials
 
 - list of components used
-
 - mark items that are not included in the senseBox:edu
 
 ## Basics
@@ -26,11 +23,10 @@
 
 ## Construction
 
-<!-- fritzing image of the circuit →
+<!-- fritzing image of the circuit -->
+<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/aufbau_station_5.png" width="500"/>
 
 <!-- explanation of the circuit-->
-
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/aufbau_station_5.png" width="500"/>
 
 ## Program
 

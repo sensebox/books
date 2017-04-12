@@ -76,7 +76,7 @@ Wozu dient die Variable `bmpStatus`?
 
 <!--sec data-title="Aufgabe 3" data-id="aufg3" data-collapse=true ces-->
 Du hast erfahren, dass sich aus dem gemessenen Luftdruck die Aufbauhöhe der senseBox bestimmen lässt.
-Verwende die Funktion `bmp.altitude(...)` um die höhe zu berechnen, und gebe diese ebenfalls auf dem Seriellen Monitor aus.
+Verwende die Funktion `bmp.altitude(...)` um die Höhe zu berechnen, und gebe diese ebenfalls auf dem Seriellen Monitor aus.
 
-> ***Tipp:*** *Sieh dir das der BMP280-Bibliothek beiliegende Beispiel an. Der Referenzdruck P0 muss an die derzeitige Wetterlage angepasst werden: [Hier](http://www.wettergefahren.de/wetter/deutschland/aktuell/beobachtungen.html) findest du den aktuellen Luftdruck. Wähle eine Wetterstation die nahe des Meerespiegelniveaus ist (zB. Greifswald, Emden, Fehmarn)*
+> ***Tipp:*** *Sieh dir das der BMP280-Bibliothek beiliegende Beispiel an. Der Referenzdruck P0 muss an die derzeitige Wetterlage angepasst werden: [Hier](https://www.meteoblue.com/en/weather/webmap/index/?variable=mslp_pressure&level=surface&lines=none) findest du den aktuellen Luftdruck.*
 <!-- endsec -->
