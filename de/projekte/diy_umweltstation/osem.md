@@ -3,6 +3,13 @@ Wenn wir unsere Wetterstation aufgebaut haben, wäre es doch schön die gewonnen
 Dazu gibt es die [openSenseMap](https://openSenseMap.org/) (OSeM), welche diverse Sensordaten online sammelt und auf einer Karte darstellt.
 Über den Ethernet- oder WiFi-Shield oder können wir unsere senseBox ans Internet anbinden und die Daten zur OSeM hochladen.
 
+## Voraussetzungen
+- [Die Verwendung von Software-Bibliotheken](../../grundlagen/software_libraries.md)
+- [**Shields**](../../grundlagen/shields.md):
+    Lese dieses Kapitel um zu erfahren, wie der Arduino mit Shields um eine Netzwerkverbindung erweitert werden kann.
+- [**openSenseMap Upload**](../../grundlagen/osem_upload.md):
+    In diesem Kapitel erfährst du, wie du deine senseBox in die openSenseMap einbinden kannst.
+
 ## Ziele der Station
 In dieser Station wird beispielhaft die Integration eines Sensors in die openSenseMap gezeigt, sodass die gewonnenen Daten online verfügbar sind.
 
@@ -11,15 +18,9 @@ In dieser Station wird beispielhaft die Integration eines Sensors in die openSen
 * evtl. Netzwerk-Kabel
 * Mindestens einen (beliebigen) Sensor
 
-## Grundlagen
-- [**Shields**](../../grundlagen/shields.md):
-    Lese dieses Kapitel um zu erfahren, wie der Arduino mit Shields um eine Netzwerkverbindung erweitert werden kann.
-- [**openSenseMap Upload**](../../grundlagen/osem_upload.md):
-    In diesem Kapitel erfährst du, wie du deine senseBox in die openSenseMap einbinden kannst.
-
 ## Aufgaben
 <!--sec data-title="Aufgabe 1" data-id="aufg1" data-collapse=true ces-->
-Mache dich mit der openSenseMap vertraut (siehe Grundlagen), und registriere dort deine senseBox mit den Sensoren, welche du bisher angeschlossen hast.
+Mache dich mit der openSenseMap vertraut (siehe Vorraussetzungen), und registriere dort deine senseBox mit den Sensoren, welche du bisher angeschlossen hast.
 <!-- endsec -->
 
 <!--sec data-title="Aufgabe 2" data-id="aufg2" data-collapse=true ces-->

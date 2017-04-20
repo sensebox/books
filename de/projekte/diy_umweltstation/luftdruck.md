@@ -1,4 +1,10 @@
-# Luftdruck Sensor
+# DIY - Luftdruck Sensor
+Die Messung des Luftdrucks erlaubt neben Wettervorhersagen auch indirekt die Bestimmung der Höhe des Sensors.
+
+## Vorraussetzungen
+- [Die Verwendung von Software-Bibliotheken](../../grundlagen/software_libraries.md)
+- [Der serielle Datenbus I²C](../../grundlagen/der_serielle_datenbus.md)
+- [Der serielle Monitor](../../grundlagen/der_serielle_monitor.md)
 
 ## Materialien
 - Luftdrucksensor `BMP280`

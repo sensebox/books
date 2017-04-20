@@ -13,9 +13,15 @@ In dieser Station beschäftigen wir uns mit dem Temperatur- und Luftfeuchtigkeit
 - kombinierter Temperatur und Luftfeuchtigkeitssensor `HDC1008`
 
 ## Grundlagen
+<!--sec data-title="HDC1008 Sensor" data-id="grundlagensensor" data-collapse=true ces-->
 Der `HDC1008`, aus der Serie HDX100X von Texas Instruments, ist ein kombinierter Temperatur- und Luftfeuchtigkeitssensor. Der Sensor kann die Luftfeuchtigkeit von 0% bis 100%, sowie die Temperatur von -40°C bis 125°C bei einer Genauigkeit von ±4% bzw. von ±0,2°C messen.
+<!--endsec-->
 
-Die Kommunikation des Sensors mit dem Mikrokontroller läuft über den [seriellen Datenbus I²C](../../grundlagen/der_serielle_datenbus.md). Anders als bei einfachen digitalen oder analogen Eingängen, können an den Datenbus mehrere I²C-Geräte (wie z.B. Sensoren oder Displays) parallel geschaltet werden. Jedes Gerät hat dabei eine eindeutige Kennung, damit der Datenbus jedes Einzelne davon zuordnen und separat ansprechen kann.
+<!--sec data-title="I²C Bus" data-id="grundlageni2c" data-collapse=true ces-->
+Die Kommunikation des Sensors mit dem Mikrokontroller läuft über den [seriellen Datenbus I²C](../../grundlagen/der_serielle_datenbus.md).
+Anders als bei einfachen digitalen oder analogen Eingängen, können an den Datenbus mehrere I²C-Geräte (wie z.B. Sensoren oder Displays) parallel geschaltet werden.
+Jedes Gerät hat dabei eine eindeutige Kennung, damit der Datenbus jedes Einzelne davon zuordnen und separat ansprechen kann.
+<!--endsec-->
 
 ## Aufbau
 Steckt den Schaltkreis wie ihr ihn unten in der Grafik seht.
@@ -34,6 +40,7 @@ Um alle zusätzlichen Funktionen der Bibliothek nutzen zu können, muss sie an o
 
 In allen darauf folgenden Zeilen können nun die Funktionen der Bibliotheken genutzt werden.
 
+<!--sec data-title="setup() Funktion" data-id="programmierungsetup" data-collapse=true ces-->
 Als erstes muss eine Verbindung zur Sensoradresse angegeben werden. Bei diesem Sensor lautet die Adresse `0x43` (vgl. [Datenblatt](https://github.com/sensebox/resources/raw/master/datasheets/datasheet_hdc1008.pdf)).
 ```arduino
 HDC100X hdc(0x43);
@@ -43,15 +50,21 @@ Die Argumente der `begin()`-Funktion geben dabei an, dass Temperatur und Luftfeu
 ```arduino
 hdc.begin(HDC100X_TEMP_HUMI, HDC100X_14BIT, DISABLE);
 ```
+<!--endsec-->
 
+<!--sec data-title="loop() Funktion" data-id="programmierungloop" data-collapse=true ces-->
 Nachdem du den Sensor, wie oben beschrieben, initialisiert hast, kannst du zwei Befehle in der `loop()`-Funktion nutzen, um einen Temperatur- bzw. Feuchtigkeitswert ausgeben zu lassen:
 ```arduino
 hdc.getHumi();
 hdc.getTemp();
 ```
 ***Hinweis:*** *Beim Speichern der Messwerte sollten die Variablen den gleichen Datentypen haben wie die Rückgabewerte der Messfunktionen. In unserem Fall sind das beides `float` Werte.*
+<!--endsec-->
 
-## Aufgabe 1
+## Aufgaben
+
+<!--sec data-title="Aufgabe 1" data-id="aufg1" data-collapse=true ces-->
 Baue die oben beschriebene Schaltung nach und versuche den HDC1008 auszulesen und Dir die gemessenen Daten im seriellen Monitor anzeigen zu lassen.
 
-***Hinweis:*** *Orientiere dich an dem Beispiel aus der HDC100X-Bibliothek.*
+> ***Hinweis:*** *Orientiere dich an dem Beispiel aus der HDC100X-Bibliothek.*
+<!--endsec-->
