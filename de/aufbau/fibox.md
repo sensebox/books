@@ -1,9 +1,10 @@
 # Aufbau mit FIBOX-Gehäuse
-Dieser Outdoor-Aufbau nutzt ein wasserfestes Gehäuse sowie Power-over-Ethernet Adapter zum Betrieb der senseBox.
+Dieser Outdoor-Aufbau nutzt ein wasserfestes Gehäuse, ein separates 3D-druckbares Temperatursensor-Gehäuse, sowie Power-over-Ethernet Adapter zum Betrieb der senseBox.
 Die zusätzlich zur senseBox benötigten Materialien sind:
 
 - ein wasserfestes Gehäuse mit klarem Deckel ([dieses Gehäuse](https://raw.githubusercontent.com/sensebox/resources/master/datasheets/datasheet_case_FIBOX_piccolo_pc-d-85-t.pdf), [hier](http://de.farnell.com/fibox/pc-d-85-t/box-polycarbonat-ip67-deckel-klar/dp/1004124) bestellbar) mit den Mindestmaßen 5.5cm x 10cm x 5cm (BxTxH)
     <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/Fibox.jpg" align="center" width="400"/>
+- ein vor Spritzwasser und Strahlung schützendes, luftdurchlässiges Gehäuse. Wir haben [dieses 3D-druckbare MoDell](https://www.thingiverse.com/thing:1523429) speziell für das Breakout Board des HDC1008 entworfen.
 - einen Satz [Power-over-Ethernet (PoE) Adapter](https://geizhals.de/digitus-dn-95001-a1214858.html)
 - ein (Flachband)-Netzwerkkabel, Länge je nach Aufbauort.
 
@@ -11,7 +12,7 @@ Die Kosten für die Materialen belaufen sich auf ca. 20€.
 
 Bei dem Gehäuse ist darauf zu achten, dass es einen transparenten Deckel ohne Lichtfilterwirkung hat, damit sinnvolle Lichtmessungen gemacht werden können.
 
-Zudem braucht ihr noch eine Heißklebepistole, Bohrmaschine ,Schraubendreher sowie ein paar Kabelbinder zur Befestigung.
+Zudem braucht ihr noch eine Heißklebepistole, Bohrmaschine, Schraubendreher sowie ein paar Kabelbinder zur Befestigung.
 
 Im folgenden Video wird der Zusammenbau gezeigt, weiter unten folgt eine Schritt-für-Schritt Anleitung:
 
@@ -70,7 +71,7 @@ Um die senseBox mit Strom zu versorgen, kann ein Power-over-Ethernet-Adapter (PO
 Nun kann das Gehäuse verschlossen werden.
 
 ## Temperatursensorgehäuse
-Damit der Temperatur- und Luftfeuchtesensor durch Regen und Schmutz geschützt ist, wird er in einem eigenen Gehäuse untergebracht. Dazu den Sensor einfach in das 3D-gedruckte Gehäuse schieben und danach die Klappe aufschieben.
+Damit der Temperatur- und Luftfeuchtesensor durch Regen und Schmutz geschützt ist, wird er in einem eigenen Gehäuse untergebracht. Dazu den Sensor einfach in das [3D-gedruckte Gehäuse](https://www.thingiverse.com/thing:1523429) schieben und danach die Klappe aufschieben.
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/temp_gehaeuse.jpg" align="center" width="400"/>
 
