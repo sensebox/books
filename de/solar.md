@@ -47,6 +47,8 @@ Eine Möglichkeit ist es, ein passendes USB-Kabel aufzutrennen und die Spannungs
 
 > ***Achtung:*** *Damit der Microcontroller korrekt mit Spannung versorgt wird, muss auf jeden Fall auf die richtige Polarität geachtet werden (Plus und Minus). Die alleinige Verantwortung liegt bei dir, nicht bei uns!*
 
+<a href="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" target="_blank"><img src="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" align="center" width="800"/></a>
+
 Die Schaltung sollte nun soweit korrekt laufen und kann ausprobiert werden, Zuerst sollte Akku, danach Microcontroller dann Solarzelle verbunden werden und ins Licht gehalten werden, leuchtet eine zusätzliche LED am Laderegler auf, ist alles korrekt und die Programmierung des Microcontroller kann angepasst werden.
 
 Die gesamte Schaltung sollte wasserdicht und witterungsgeschützt aufgestellt werden. Die Solarzelle sollte idealerweise in Richtung Süden aufgestellt werden, damit immer genügend Strom zum Laden des Akkus vorhanden ist.
