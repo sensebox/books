@@ -12,3 +12,4 @@
     * [Anpassen des Sketches](esp8266/modify_sketch.md)
     * [senseBox mit Wemos D1](esp8266/wemosd1.md)
     * [Alle weiteren ESP8266](esp8266/other_models.md)
+* [Solarbetriebene senseBox:home](solar.md)
