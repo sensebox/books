@@ -28,7 +28,8 @@ Die hier beschriebenen Methoden und vorgestellte Schaltung dienen nur als erster
 Der hier verwendete Laderegler bietet einen Eingang für eine Stromquelle (in unserem Fall eine Solarzelle), einen Anschluss für den LiPo Akku und einen Ausgang für einen Verbraucher. Dieser ist in unserem Fall der Microcontroller. Der Eingang für die Stromquelle ist bei diesem Laderegler sowohl durch verlötbare Pins, als auch durch einen Micro-USB Anschluss ausgeführt. Durch diesen Micro-USB Anschluss kann der Akku mit einem Steckernetzteil, z.B. von einem Handy, aufgeladen werden bevor man alles sich selbst bzw. der Sonne überlassen wird. Dabei sollte eine Höchststromstärke von 1000mA nicht überschritten werden. (Steht auf dem Netzteil)
 Der Laderegler sorgt dafür, dass der Akku weder überladen noch zu stark entladen wird.
 
-<img src="https://raw.githubusercontent.com/sensebox/resources/master/images/solar/laderegler_solar.JPG" align="center" width="800"/>
+> <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/solar/laderegler_solar.JPG" align="center" width="770"/>
+> Abbildung 1: Solarladeregler mit angelötetem JST Kabel
 
 Im Ersten Schritt sollte man sich nun Gedanken über die Spannungsversorgung des Microcontrollers machen. Der Laderegler hat eine Ausgangsspannung von 5V. Dies erlaubt bei Arduino Nanos mit USB die direkte Versorgung über den USB Port, bei ESP8266 die Versorgung über entsprechende Vin Pins. Je nach verwendetem Microcontroller muss man sich nun eine Leitung für die Spannungsversorgung basteln. Dafür kann entweder ein altes USB-Kabel (aufschneiden) oder zwei separate Drähte, die dann per Pins den Microcontroller versorgen, verwendet werden.
 Bei der Variante mit dem USB Kabel muss mit Hilfe eines Multimeters die passenden Vcc und GND Leitungen herausgefunden werden.
@@ -47,8 +48,8 @@ Eine Möglichkeit ist es, ein passendes USB-Kabel aufzutrennen und die Spannungs
 
 > ***Achtung:*** *Damit der Microcontroller korrekt mit Spannung versorgt wird, muss auf jeden Fall auf die richtige Polarität geachtet werden (Plus und Minus). Die alleinige Verantwortung liegt bei dir, nicht bei uns!*
 
-<a href="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" target="_blank"><img src="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" align="center" width="800"/></a>
-Abbildung 2: Beispielschaltung
+> <a href="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" target="_blank"><img src="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" align="center" width="500"/></a>
+> Abbildung 2: Beispielschaltung
 
 Die Schaltung (siehe Abbildung 2) sollte nun soweit korrekt laufen und kann ausprobiert werden. Zuerst sollte der Akku, danach der Microcontroller und dann die Solarzelle verbunden werden und ins Licht gehalten werden. Leuchtet eine zusätzliche LED am Laderegler auf, ist alles korrekt und die Programmierung des Microcontroller kann angepasst werden.
 
