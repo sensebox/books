@@ -32,7 +32,7 @@ In this example, a LED will be switched on and off 50 times.
 The head of the `for` loop contains three parts delimited by a semicolon (`;`).
 
 1. Variable initialization. Allows to initialize a variable which holds the count of loops
-2. A Condition. The condition allows you to explicitly say when the loop should run. If the expression evaluates truthy, the loop will continue. How to write a condition is explained in the chapter about [if-else](ifelse-bedingung.md)
+2. A Condition. The condition allows you to explicitly say when the loop should run. If the expression evaluates truthy, the loop will continue. How to write a condition is explained in the chapter about [if-else](if_else.md)
 3. An expression to run after each loop of the code in the body. Usually it is used to increment the counter variable.
 
 
@@ -53,7 +53,7 @@ After each loop iteration, increase `counter` by one.
 
 Think of a loop body which prints the current value of the counter variable to the serial monitor.
 
-> ***Hint:*** *The chapter [Serial Monitor](der_serielle_monitor.md) explains how to communicate over the serial interface.*
+> ***Hint:*** *The chapter [Serial Monitor](serial_monitor.md) explains how to communicate over the serial interface.*
 
 - **a)** Observe the output if you exchange `counter = counter+ 1` with `counter = counter*2` or `counter--`.
 - **b)** Observe the output if you exchange `int counter= 0` with `int counter = 25`.

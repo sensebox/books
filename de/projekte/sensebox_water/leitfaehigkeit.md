@@ -16,7 +16,7 @@ Du kannst sie entsprechend auf dem Breadboard nachbauen.
 In der Programmierung gehen wir davon aus, dass der analoge Eingang 8 verwendet wird.
 
 ## Programmierung
-Die Programmierung ist analog zur [Fotodiode (LDR)](ldr.md).
+Die Programmierung ist analog zur [Fotodiode (LDR)](../ldr.md).
 Wir verwenden den Befehl `analogRead()` um im ersten Schritt die Spannung am analogen Eingang zu bestimmen.
 
 Diese Spannung wird anschließend in den Widerstand zwischen den Elektroden in Ohm umgewandelt.

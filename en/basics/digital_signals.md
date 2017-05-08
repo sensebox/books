@@ -52,4 +52,4 @@ void loop() {
 }
 ```
 
-To check out the incoming values, you can display the variable in the [serial monitor](serialmonitor.md).
+To check out the incoming values, you can display the variable in the [serial monitor](serial_monitor.md).

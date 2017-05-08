@@ -5,7 +5,7 @@ In principle such a library can be created by anyone, because it just separates 
 Usually we use libraries to make communication with specific sensors less complicated, and fortunately most hardware vendors provide such libraries for us.
 
 A lot of libraries are already included with the Arduino IDE, but those for the senseBox sensors have to be installed manually.
-You should have added these already, if you followed the chapter [Software Installation](../basics/software_installation.md).
+You should have added these already, if you followed the chapter [Software Installation](../getting_started/software_installation.md).
 
 ## Importing additional libraries
 When using additional sensors, it is likely that you need to add the associated library manually.

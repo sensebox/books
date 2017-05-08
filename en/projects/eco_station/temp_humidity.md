@@ -2,12 +2,10 @@
 To provide the daily weather forecast in TV, web and newspapers, not only satellite imagery is analyzed, but also data from measuring stations on the ground provide important data points.
 But how does the measurement and visualization of temperature and humidity values work exactly?
 
-<!-- TODO: not translated yet
 ## Required Reading
 - [Usage of Software-Libraries](../../basics/software_libraries.md)
 - [serial data bus I²C](../../basics/i2c.md)
 - [Serial Monitor](../../basics/serial_monitor.md)
--->
 
 ## Aim of this lesson
 In this lesson we measure and display air-temperature and -humidity using the HDC1008 sensor.
@@ -28,7 +26,7 @@ Connect the devices as shown in the graphic below.
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/aufbau_station_5.png" width="500"/>
 
 ## Program
-Before starting to write code, we need to install the `HDC100X.h` library. If you have not done this in one of the previous chapters, you should follow the chapter [Software Installation](getting_started/software_installation.md).
+Before starting to write code, we need to install the `HDC100X.h` library. If you have not done this in one of the previous chapters, you should follow the chapter [Software Installation](../../getting_started/software_installation.md).
 
 This library allows us to conveniently speak to the sensor, without manually defining all the configuration registers.
 To be able to use this library, it has to be included at the top of the program with an `#include` directive.

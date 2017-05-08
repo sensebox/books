@@ -5,7 +5,7 @@ A shield is a board that can be plugged into the top of an Arduino to extend its
 You can find a shield inside the box of the senseBox:edu created for internet connection. Depending on your version, you will see a red ethernet shield or a blue WiFi shield to connect your senseBox to the internet via ethernet or WLAN.
 
 
-Additionally you will find a green senseBox shield on which a [real-time clock](uhr.md), a microSD card reader and further connections are mounted.
+Additionally you will find a green senseBox shield on which a [real-time clock](rtc.md), a microSD card reader and further connections are mounted.
 
 ## Features of the ethernet shield
 Our ethernet shield is a modified version of the official arduino shield. Therefore, the official `Ethernet.h` library will not work. Please use our versions of this library (see [Downloads](../downloads.md)).
