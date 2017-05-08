@@ -11,7 +11,8 @@
     "piwik",
     "sectionx@git+https://github.com/noerw/gitbook-plugin-sectionx.git#v3.2.0",
     "scripts",
-    "printlinks"
+    "printlinks@git+https://github.com/noerw/gitbook-plugin-printlinks.git#sensebox",
+    "validate-links"
   ],
   "pluginsConfig": {
     "edit-link": {
