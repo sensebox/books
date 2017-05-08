@@ -1,6 +1,6 @@
 # Solarbetriebene senseBox:home
 
-> *Diese Anleitung richtet sich an Fortgeschrittene.*
+> ***Hinweis:*** *Diese Anleitung richtet sich an Fortgeschrittene.*
 
 Die handelsübliche senseBox:home ist darauf ausgelegt, ständig durch ein Netzteil mit Strom versorgt zu werden. Durch Änderungen im Code und an der Hardware lassen sich die Messwerte jedoch auch vom Stromnetz getrennt und autark an die openSenseMap übertragen. Handelsübliche Solarladeregler für LiPo Akkus helfen dabei, eine Solarzelle und einen Akku mit einem Microcontroller zu verbinden. Hierbei ist darauf zu achten, dass die Ausgangsspannung des Ladereglers meist bei 5V liegt. Diese Spannung sollte in jedem Fall über den USB Port eingespeist werden.
 
@@ -65,11 +65,11 @@ Bevor man hier weitermacht, sollte mindestens einmal die [Anleitung ESP8266](htt
 
 Der angepasste Sketch basiert im Großen und Ganzen auf dem Standard senseBox:home sketch, der Unterschied liegt aber darin, dass durch den DeepSleep die `loop` Methode niemals erreicht wird. Der ESP8266 startet sich nach dem DeepSleep jedes Mal neu. Der Sketch muss also die Messungen und das Übertragen an die openSenseMap alles im `setup` abhandeln.
 
-Einen Beispielsketch für eine senseBox:home mit ESP8266 und DeepSleep findet ihr [hier](https://github.com/ubergesundheit/senseBox-ESP8266/blob/master/senseBox-ESP8266-Solar.ino).
+Einen Beispielsketch für eine senseBox:home mit ESP8266 und DeepSleep befindet sich [hier](https://github.com/ubergesundheit/senseBox-ESP8266/blob/master/senseBox-ESP8266-Solar.ino).
 
 ### Arduino
 
-Der Arduino Uno oder Nano hat leider keinen Sleep Modus, kann aber durch die [Narcoleptic Libray](https://github.com/doc62/narcoleptic) zu einem geringeren Stromverbrauch überredet werden. Diese deaktiviert alles unnötigen Vorgänge des Arduino.
+Der Arduino Uno oder Nano hat leider keinen Sleep Modus, kann aber durch die [Narcoleptic Libray](https://github.com/doc62/narcoleptic) zu einem geringeren Stromverbrauch überredet werden. Diese deaktiviert alle unnötigen Vorgänge des Arduino.
 
 Der originale senseBox:home Sketch kann fast 1:1 weiterbenutzt werden. Es muss nur die Narcoleptic Library eingebunden und aktiviert werden.
 
