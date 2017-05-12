@@ -30,9 +30,6 @@ Zum besseren Verständis kannst du dir einmal folgenden Beispielcode anschauen:
 ```arduino
 #include <Ethernet.h> // Einbinden der Bibliothek
 
-int Sensor;           // Deklaration von Variablen
-
-
 void setup() {
   Ethernet.begin();   // diese Funktion ist nur durch das Laden der
                       // Ethernet.h Bibliothek verfügbar!

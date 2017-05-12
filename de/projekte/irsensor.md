@@ -7,7 +7,12 @@
 * Widerstand
 
 ##Grundlagen
-Die Entfernungsmessung mit Infrarotlicht erfolgt durch eine sog. Triangulation. Eine Triangulation ist eine geometrische Methode, Distanzen durch genaue Winkelmessung innerhalb eines Dreiecks zu ermitteln. Damit der Sensor Entfernungen messen kann, benötigt er zwei Bauteile: eine IR-Diode und eine sogenannte ortsauflösende Photodiode. Die IR-Diode sendet einen Infrarotstrahl aus und das von einem Objekt reflektierte Licht wird von der ortsauflösenden Photodiode empfangen. Ändert sich nun die Entfernung des Objektes vom Sensor, ändert sich auch der Winkel, in dem das Licht reflektiert und wieder empfangen wird. Mit dem gemessenen Winkel wird mit Hilfe der Winkelfunktionen die Entfernung des Objektes von der Lichtquelle errechnet. 
+Die Entfernungsmessung mit Infrarotlicht erfolgt durch eine sogenannte Triangulation.
+Eine Triangulation ist eine geometrische Methode, Distanzen durch genaue Winkelmessung innerhalb eines Dreiecks zu ermitteln.
+Damit der Sensor Entfernungen messen kann, benötigt er zwei Bauteile: eine IR-Diode und eine sogenannte ortsauflösende Photodiode.
+Die IR-Diode sendet einen Infrarotstrahl aus und das von einem Objekt reflektierte Licht wird von der ortsauflösenden Photodiode empfangen.
+Ändert sich nun die Entfernung des Objektes vom Sensor, ändert sich auch der Winkel, in dem das Licht reflektiert und wieder empfangen wird.
+Mit dem gemessenen Winkel wird mit Hilfe der Winkelfunktionen die Entfernung des Objektes von der Lichtquelle errechnet. 
 
 ##Aufbau
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_Station_4_IR.png" width="500"/>

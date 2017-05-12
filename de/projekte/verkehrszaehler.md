@@ -8,22 +8,19 @@ Die so aufgenommenen Werte sollen im *Seriellen Monitor* ausgegeben werden.
 ## Materialien
 * Ultraschall-Distanzsensor
 
-## Zusätzliche Materialien
-* Ihr benötigt keine zusätzlichen Materialien.
-
 ## Grundlagen
 Der Ultraschall-Distanzsensor nutzt den Schall um die Entfernung von Objekten zu bestimmen. Der Sensor sendet einen Impuls aus und misst die Zeit, bis er das Echo des Impulses wieder empfängt. Aus dieser Zeit errechnet man mit Hilfe der Schallgeschwindigkeit die Entfernung des Objekts.
 
 ## Aufbau
-Der Ultraschallsensor wird mit vier verschiedenen Ports des Arduino verbunden.
-Zur Stromversorgung wird der VCC-Pin des Sensors mit dem 5V-Port des Arduino
+Der Ultraschallsensor wird mit vier verschiedenen Pins des Arduino verbunden.
+Zur Stromversorgung wird der VCC-Pin des Sensors mit dem 5V-Pin des Arduino
 verbunden. Um den Stromkreis zu schließen wird der GND-Pin des Sensors mit
-einem GND-Port des Arduino verbunden. Als Letztes werden der Echo- und der
-Trig-Pin des Sensors jeweils mit digitalen Ports des Arduino verbunden.
+einem GND-Pin des Arduino verbunden. Als Letztes werden der Echo- und der
+Trig-Pin des Sensors jeweils mit digitalen Pins des Arduino verbunden.
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Verkehrszaehler.jpg" width="500"/>
 
-***Hinweis:*** *Ihr könnt natürlich jeden digitalen Port verwenden, denkt aber daran den Code anzupassen.*
+***Hinweis:*** *Ihr könnt natürlich jeden digitalen Pin verwenden, denkt aber daran den Code anzupassen.*
 
 ## Programmierung
 

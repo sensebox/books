@@ -6,11 +6,11 @@ Wenn du eine LED 50 Mal blinken lassen willst, ist das ganz schön viel Schreiba
 ```arduino
 digitalWrite(led, HIGH);
 delay(100);
-digitalWrite(led, LOW);
+digitalWrite(led, LOW); // 1
 delay(100);
 digitalWrite(led, HIGH);
 delay(100);
-digitalWrite(led, LOW);
+digitalWrite(led, LOW); // 2
 //...
 ```
 
@@ -19,11 +19,11 @@ Eine Schleife führt eine Anweisungen mehrmals aus, bis eine bestimmte Bedingung
 
 ## Aufbau von Schleifen
 Schleifen bestehen aus zwei Teilen, einem **Schleifen-Kopf** und einem **Schleifen-Körper**.
-Anweisungen die wiederholt werden sollen, werden in Geschweiften Klammern in den Schleifen-Körper geschrieben.
+Anweisungen die wiederholt werden sollen, werden in geschweiften Klammern in den Schleifen-Körper geschrieben.
 Jetzt müssen wir aber noch fest legen, wie oft diese Anweisungen wiederholt werden sollen.
 Dies geschieht im Schleifen-Kopf.
 
-Es gibt verschiedene Arten von Schleifen, die je nach Bedarf verwendet werden kann. Hier sollen die zwei wichtigsten Schleifentypen vorgestellt werden.
+Es gibt verschiedene Arten von Schleifen, die je nach Bedarf verwendet werden können. Hier sollen die zwei wichtigsten Schleifentypen vorgestellt werden.
 
 ## Die for-Schleife
 `for`-Schleifen werden dann verwendet, wenn man genau weiß, wie oft Anweisungen wiederholt werden sollen.
@@ -78,7 +78,7 @@ Du kannst zum Beispiel einen Knopf an den Arduino anschließen und die Schleife 
 ### Aufgabe 2
 - **a)** Programmiere eine `while`-Schleife, die den Text "Die Aussage stimmt!" über den seriellen Monitor ausgibt, wenn eine Variable `a` größer als 0 ist.
 - **b)** Programmiere eine `while`-Schleife, die eine LED blinken lässt, wenn ein Knopf gedrückt wurde.
-- **c)** Jede `for`-Schleife lässt sich auch durch eine `while`-Schleife beschreiben. Schreibt die folgende `for`-Schleife in eine `while`-Schleife um:
+- **c)** Jede `for`-Schleife lässt sich auch durch eine `while`-Schleife beschreiben. Schreibe die folgende `for`-Schleife in eine `while`-Schleife um:
     ```arduino
     for (int i = 10; i > 0; i--) {
         Serial.print("Countdown: ");
