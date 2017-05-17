@@ -78,14 +78,17 @@ Solarzellen gibt es entweder ohne Drähte, mit Drähten, mit JST Stecker oder mi
 
 Nun kann überlegt werden, wie der Microcontroller mit Spannung versorgt werden soll. Der hier verwendete Laderegler hat eine Ausgangsspannung von 5 Volt. Bei normalen Arduinos sollten diese 5 Volt am sichersten über den USB Port angelegt werden. Deswegen sollte man sich an dieser Stelle informieren, wie man seinen Microcontroller am besten mit den 5V versorgt.
 
+> <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/solar/solar_komponenten.jpg" align="center" width="500"/>
+> Abbildung 2: Solarladeregler mit Solarzelle, Akku und Versorgungskabel für Microcontroller
+
 Eine Möglichkeit ist es, ein passendes USB-Kabel aufzutrennen und die Spannungsversorgungsleitungen an den Laderegler zu löten. Als eine andere Möglicheit, sofern es der verwendete Microcontroller es erlaubt, kann man sich auch eine andersartige Steckverbindung basteln.
 
 > ***Achtung:*** *Damit der Microcontroller korrekt mit Spannung versorgt wird, muss auf jeden Fall auf die richtige Polarität geachtet werden (Plus und Minus). Die alleinige Verantwortung liegt bei dir, nicht bei uns!*
 
 > <a href="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" target="_blank"><img src="https://github.com/sensebox/resources/raw/master/images/solar/beispiel_esp_solar.png" align="center" width="500"/></a>
-> Abbildung 2: Beispielschaltung
+> Abbildung 3: Beispielschaltung
 
-Die Schaltung (siehe Abbildung 2) sollte nun soweit korrekt laufen und kann ausprobiert werden. Zuerst sollte der Akku, danach der Microcontroller und dann die Solarzelle verbunden werden und ins Licht gehalten werden. Leuchtet eine zusätzliche LED am Laderegler auf, ist alles korrekt und die Programmierung des Microcontroller kann angepasst werden.
+Die Schaltung (siehe Abbildung 3) sollte nun soweit korrekt laufen und kann ausprobiert werden. Zuerst sollte der Akku, danach der Microcontroller und dann die Solarzelle verbunden werden und ins Licht gehalten werden. Leuchtet eine zusätzliche LED am Laderegler auf, ist alles korrekt und die Programmierung des Microcontroller kann angepasst werden.
 
 Die gesamte Schaltung sollte wasserdicht und witterungsgeschützt aufgestellt werden. Dabei ist es auch wichtig, dass die Solarzelle idealerweise in Richtung Süden aufgestellt wird, damit immer genügend Strom zum Laden des Akkus vorhanden ist.
 
@@ -126,4 +129,4 @@ In der Methode `loop` muss noch der Aufruf `sleep(postingInterval);` durch `Narc
 
 ## Abschließende Worte
 
-Die in dieser Anleitung gezeigten Schaltungen und Techniken umreißen den Aufbau einer energieautarken senseBox:home. Wie Eingangs erwähnt, bildet dieses Vorgehen nur einen Weg um das Ziel einer solarbetriebenen senseBox:home zu erreichen, ab. Die konkrete Durchführung hängt stark von den verwendeten Teilen ab.
+Die in dieser Anleitung gezeigten Schaltungen und Techniken umreißen den Aufbau einer energieautarken senseBox:home. Wie Eingangs erwähnt, bildet dieses Vorgehen nur einen Weg von vielen um das Ziel einer solarbetriebenen senseBox:home zu erreichen, ab. Die konkrete Durchführung hängt stark von den verwendeten Teilen ab.
