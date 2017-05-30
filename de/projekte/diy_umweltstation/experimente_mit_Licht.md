@@ -36,76 +36,29 @@ Der Sensor wird über das I²C Protokoll angesprochen. Wir sprechen ihn direkt m
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/edu/Aufbau_station_6.png" width="500"/>
 
 ## Programmierung
-Zur manuellen Programmierung benutzen wir dieses Mal nur die Wire-Bibliothek.
-Am Anfang brauchen wir ein paar Konstanten, die mit der Direktive `#define` definiert werden.
-Anders als bei Variablen belegen sie einen festen Platz im Speicher, der sich nur auslesen, aber nicht beschreiben lässt.
-In unserem Fall soll die Busadresse sowie die oben genannten Registeradressen zur Steuerung des Sensors gespeichert werden.
+Zur manuellen Programmierung benutzen wir die senseBox Bibliothek, außerdem müsst ihr ein Objekt vom Typ TSL45315 erstellen.
 
-Diese Register werden zur Konfiguration und Kommunikation benötigt:
 ```arduino
-#include <Wire.h>
-#define I2C_ADDR     (0x29)
-#define REG_CONTROL   0x00
-#define REG_CONFIG    0x01
-#define REG_DATALOW   0x04
-#define REG_DATAHIGH  0x05
-#define REG_ID        0x0A
+#include <SenseBox.h>
+TSL45315 lux_sensor;
 ```
 
 <!--sec data-title="setup() Funktion" data-id="programmierungsetup" data-collapse=true ces-->
-In der `setup()`-Funktion soll nun eine Verbindung zu dem Sensor hergestellt werden und dem Kontrollregister der Befehl zum Hochfahren gegeben werden:
+In der `setup()`-Funktion soll der Sensor nun gestartet werden: 
 
 ```arduino
-Wire.begin();
-Wire.beginTransmission(I2C_ADDR);
-Wire.write(0x80 | REG_CONTROL);
-Wire.write(0x03); //Power on
-Wire.endTransmission();
-```
-
-Als nächstes legen wir eine Belichtungszeit von 400 ms fest:
-
-```arduino
-Wire.beginTransmisson(I2C_ADDR);
-Wire.write(0x80 | REG_CONFIG);
-Wire.write(0x00); //400 ms
-Wire.endTransmission();
+lux_sensor.begin();
 ```
 
 Um die Belichtungszeit zu verändern, kann man den entsprechenden Wert von `0x00` in `0x01` oder `0x02` ändern, um die Belichtungszeit auf 200 bzw. 100 ms im Konfigurationsregister des Sensors zu reduzieren.
 <!-- endsec -->
 
 <!--sec data-title="loop() Funktion" data-id="programmierungloop" data-collapse=true ces-->
-In der `loop()`-Funktion geben wir nun den Befehl zum Start der Messroutine und lassen uns vom Sensor die Daten senden, die für die Berechnung der Beleuchtungsstärke benötigt werden:
+In der `loop()`-Funktion können wir mit dem Befehl 'getLux()' die aktuelle gemessene Lichtintensität abrufen:
 
 ```arduino
-Wire.beginTransmission(I2C_ADDR);
-Wire.write(0x80 | REG_DATALOW);
-Wire.endTransmission();
-Wire.requestFrom(I2C_ADDR, 2); // 2 Bytes anfordern
-uint16_t low = Wire.read();
-uint16_t high = Wire.read();
+lux_sensor.getLux();
 ```
-
-Falls der Sensor noch Daten sendet, sollten diese danach abgefangen werden, um Fehler im nächsten Durchgang zu vermeiden.
-
-```arduino
-while(Wire.available()) {
-	Wire.read();
-}
-```
-
-***Hinweis:*** *Ähnlich wie bei unserer loop-Funktion führt eine while-Schleife die Anweisungen in den geschweiften Klammern immer wieder aufs Neue aus. Abgebrochen wird sie erst dann, wenn die Bedingung nicht mehr erfüllt wird.*
-
-Zu guter Letzt nutzt du die ausgelesenen Datenbytes, um Beleuchtungsstärke in Lux auszurechnen. Im Datenblatt findet sich die dazu passende Formel:
-
-```arduino
-uint32_t lux;
-lux = (high << 8) | (low << 0);
-lux = lux * 1; // Multiplikator für 400ms
-```
-
-Um diese Formel auf eine Belichtungszeit von 200 oder 100ms anzupassen, musst du nur den Multiplikator auf 2 bzw. 4 erhöhen.
 <!-- endsec -->
 
 ## Aufgaben
@@ -114,8 +67,3 @@ Um diese Formel auf eine Belichtungszeit von 200 oder 100ms anzupassen, musst du
 Füge den Code aus dieser Lektion zusammen und ergänze eine Funktion um die Daten im Seriellen Monitor ausgeben zu lassen.
 <!-- endsec -->
 
-<!--sec data-title="Aufgabe 2" data-id="aufg2" data-collapse=true ces-->
-Ändere die Belichtungszeit des Sensors und vergleiche danach die Ergebnisse der Messungen.
-
-> ***Tipp:*** *Vergiss nicht, neben der Belichtungszeit im Konfigurationsregister auch die Berechnung des Lux-Wertes entsprechend anzupassen.*
-<!-- endsec -->
