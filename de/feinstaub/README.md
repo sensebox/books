@@ -1,6 +1,6 @@
 # Feinstaub-Erweiterung für die senseBox:home
 
-In dieser Anleitung wird das Anschließen, Aufbauen und Registrieren der Feinstaub-Erweiterung für die senseBox:home beschrieben. Die Feinstaub-Erweiterung erweitert die senseBox:home um die Möglichkeit Feinstaubmessungen durchzuführen. Dazu wird ein SDS011 Sensor von Inovafit genutzt, welcher die Feinstaubkonzentration in den Messgrößen PM10 (Partikel kleiner 10 Mikrometer) und PM2.5 (Partikel kleiner 2,5 Mikrometer) ermöglicht. Dieser Sensor ist mit einem kleinen Ventilator ausgestattet, um Luft anzusaugen. In seinem Inneren befindet sich ein Laser, der zusammen mit einer Photodiode die Anzahl der Partikel misst. Die Ergebnisse der Messungen werden in µg/m³ (Mikrogramm pro Kubikmeter) angegeben. Weitere Informationen findet ihr auf [dieser Seite](http://aqicn.org/sensor/sds011/de/).
+In dieser Anleitung wird das Anschließen, Aufbauen und Registrieren der Feinstaub-Erweiterung für die senseBox:home beschrieben. Die Feinstaub-Erweiterung ergänzt die senseBox:home um die Möglichkeit, Feinstaubmessungen durchzuführen. Dazu wird ein SDS011 Sensor von Inovafit genutzt, welcher die Feinstaubkonzentration in den Messgrößen PM10 (Partikel kleiner 10 Mikrometer) und PM2.5 (Partikel kleiner 2,5 Mikrometer) ermöglicht. Dieser Sensor ist mit einem kleinen Ventilator ausgestattet, um Luft anzusaugen. In seinem Inneren befindet sich ein Laser, der zusammen mit einer Photodiode die Anzahl der Partikel misst. Die Ergebnisse der Messungen werden in µg/m³ (Mikrogramm pro Kubikmeter) angegeben. Weitere Informationen findet ihr auf [dieser Seite](http://aqicn.org/sensor/sds011/de/).
 
 ### Benötigte Bauteile:
 - SDS011 Feinstaub Sensor
@@ -13,14 +13,14 @@ In dieser Anleitung wird das Anschließen, Aufbauen und Registrieren der Feinsta
 
 ### Registrierung auf der openSenseMap
 
-_Option a: Bestehende senseBox:home_ Falls ihr eure senseBox:home mit einem Feinstaubsensor erweitern wollt, müsst ihr auf der [openSenseMap](https://opensensemap.org/) eure Station auswählen und die Einstellungen bearbeiten. Dies ist über das kleine Zahnrad neben dem Namen eurer Station möglich. Als Passwort benutzt ihr den API-Key den ihr bei der Registrierung per Mail zugeschickt bekommen habt.
+_Option a: Bestehende senseBox:home_ Falls ihr eure senseBox:home mit einem Feinstaubsensor erweitern wollt, müsst ihr auf der [openSenseMap](https://opensensemap.org/) eure Station auswählen und die Einstellungen bearbeiten. Dies ist über das kleine Zahnrad neben dem Namen eurer Station möglich. Als Passwort benutzt ihr den API-Key, den ihr bei der Registrierung per Mail zugeschickt bekommen habt.
 Nun könnt ihr unterhalb der Konfiguration für die Sensoren auf "Feinstaub-Erweiterung hinzufügen" klicken. Danach speichert ihr die Änderungen und bekommt eine Email mit einem neuen Sketch zugeschickt.
 
 _Option b: Neue senseBox:home mit Feinstaub-Erweiterung_ Falls ihr eine neue senseBox:home inklusive Feinstaub-Erweiterung registrieren wollt, wählt bei der Registrierung auf der [openSenseMap](https://opensensemap.org/) das Modell "senseBox:home mit Feinstaub-Erweiterung" aus. Ihr bekommt darauf hin eine Mail mit einem passenden Sketch zugeschickt.
 
 ### Aktualisierung der Arduino Software
 
-Zur Kommunikation zwischen dem SDS011 und dem Arduino/Genuino Mikrokontroller wird eine einfache serielle Datenverbindung aufgebaut. Diese serielle Schnittstelle wird auch genutzt wird um über die USB Verbindung mit dem Computer zu kommunizieren. Daher dürfen die digitalen Pins 0 (RX) und 1 (TX), bzw. der UART Steckplatz auf dem senseBox Shield, **nicht verbunden** sein wenn ein Sketch über die Arduino IDE auf das Arduino/Genuino Board geladen wird!
+Zur Kommunikation zwischen dem SDS011 und dem Arduino/Genuino Mikrokontroller wird eine einfache serielle Datenverbindung aufgebaut. Diese serielle Schnittstelle wird auch genutzt, um über die USB Verbindung mit dem Computer zu kommunizieren. Daher dürfen die digitalen Pins 0 (RX) und 1 (TX), bzw. der UART Steckplatz auf dem senseBox Shield **nicht verbunden** sein, wenn ein Sketch über die Arduino IDE auf das Arduino/Genuino Board geladen wird!
 
 1. Installiert zunächst die Bibliothek für den Feinstaubsensor. Ladet dazu [dieses zip-Archiv](https://github.com/sensebox/SDS011-select-serial/archive/master.zip) herunter und kopiert den Inhalt in euer arduino/libraries Verzeichnis.
 2. Startet nun die Ardunio IDE neu und öffnet den soeben erhaltenen Sketch.
@@ -37,7 +37,7 @@ Der Feinstaubsensor muss mit vier Kabeln mit dem Arduino verbunden werden. Dafü
 
 [![Bild Anschluss passendes Kabel](https://raw.githubusercontent.com/sensebox/resources/master/images/feinstaub-erweiterung/03verkabelung2_small.jpg)](https://raw.githubusercontent.com/sensebox/resources/master/images/feinstaub-erweiterung/03verkabelung2.jpg)
 
-Die 5V und GND Pins des SDS011 werden mit den gleichen Pins am Arduino verbunden. Die Pins TXD und RXD gekreuzt (RX ↔ TX) an die Pins 0 (RX) und 1 (TX) am Arduino angeschlossen.
+Die 5 Volt (5V) und GND Pins des SDS011 werden mit den gleichen Pins am Arduino verbunden. Danach werden die Pins TXD und RXD gekreuzt (RX ↔ TX) an die Pins 0 (RX) und 1 (TX) am Arduino angeschlossen.
 ![Bild Kabel](https://raw.githubusercontent.com/sensebox/resources/master/images/feinstaub-erweiterung/035verkabelung.png)
 
 ### Gehäuse
@@ -45,7 +45,7 @@ Als Gehäuse wird hier eine einfache Verteilerdose verwendet. Es müssen jeweils
 
 [![Bild Gehäuse](https://raw.githubusercontent.com/sensebox/resources/master/images/feinstaub-erweiterung/04bohrung_small.jpg)](https://raw.githubusercontent.com/sensebox/resources/master/images/feinstaub-erweiterung/04bohrung.jpg)
 
-Jetzt legt ihr den Sensor in das Gehäuse und schließt den Teflonschlauch bzw das Kabel an. Am Ende sollte alles so aussehen wie in dem Bild unterhalb:
+Jetzt legt ihr den Sensor in das Gehäuse und schließt den Teflonschlauch und das Kabel an. Am Ende sollte alles so aussehen wie in dem unteren Bild:
 
 [![Bild Final](https://raw.githubusercontent.com/sensebox/resources/master/images/feinstaub-erweiterung/05ready_small.jpg)](https://raw.githubusercontent.com/sensebox/resources/master/images/feinstaub-erweiterung/05ready.jpg)
 
