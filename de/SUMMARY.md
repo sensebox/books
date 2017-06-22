@@ -2,6 +2,7 @@
 
 * [Einleitung](README.md)
 * [Registrierung](osem_registrierung.md)
+    * [Luftdaten.info Feinstaubsensor](luftdaten_feinstaub.md)
     * [Andere Plattformen](osem_custom_sensor.md)
 * [Bearbeiten einer Station](osem_bearbeiten.md)
 * [Datendownload](osem_download.md)
