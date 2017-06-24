@@ -5,7 +5,8 @@
     * [Luftdaten.info Feinstaubsensor](luftdaten_feinstaub.md)
     * [Andere Plattformen](osem_custom_sensor.md)
     * [MQTT Client](mqtt_client.md)
-* [Bearbeiten einer Station](osem_bearbeiten.md)
+    * [TheThingNetwork](ttn_integration.md)
+* [Verwalten von senseBoxen](osem_manage-boxes.md)
 * [Datendownload](osem_download.md)
 * [Datenanalyse](osem_datenanalyse.md)
 
