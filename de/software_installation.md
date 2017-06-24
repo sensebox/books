@@ -4,7 +4,7 @@ Bevor die senseBox aktiviert werden kann, musst du Treiber sowie eine Software a
 Falls etwas bei dem Testlauf schief geht, melde dich am besten [per Mail](mailto:support@sensebox.de) bei unserem Support.
 
 ## Arduino Software herunterladen
-> Für einen reibungslosen Ablauf bitte Arduino 1.6.5 oder höher nutzen.
+> Für einen reibungslosen Ablauf bitte Arduino 1.8.3 oder höher nutzen.
 
 Das Mainboard der senseBox ist eine modifizierte Version des Arduino Uno Mikrocontrollers. Um ein Programm auf das Board zu laden, brauchst du die integrierte Entwicklungsumgebung von Arduino, kurz *Arduino IDE*. Lade die neueste Version als zip-Datei von der [Arduino Homepage](https://www.arduino.cc/en/main/software) herunter:
 
@@ -22,8 +22,8 @@ Linux-Nutzer können die Linuxvariante herunterladen und entpacken. Das enthalte
 Am schnellsten geht dies über die folgenden Terminal-Befehle:
 
 ```bash
-tar -xvf arduino-1.8.1-linux64.tar.xz
-cd arduino-1.8.1
+tar -xvf arduino-1.8.3-linux64.tar.xz
+cd arduino-1.8.3
 ./install.sh
 ```
 
