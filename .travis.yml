@@ -12,8 +12,26 @@ cache:
 script: |
   test $TRAVIS_PULL_REQUEST == "false" && \
   git checkout $TRAVIS_BRANCH && \
-  bash scripts/build.sh && \
-  bash scripts/deploy_ghpages.sh
+  bash scripts/build.sh
+before_deploy:
+  - git config --global user.email "builds@travis-ci.com"
+  - git config --global user.name "Travis CI"
+  - export GIT_TAG=TAG-$TRAVIS_BRANCH
+  - git push origin :refs/tags/$GIT_TAG
+  - git tag $GIT_TAG -af -m "generated tag from travis for build $TRAVIS_BUILD_NUMBER"
+  - git push -qf https://GH_TOKEN@github.com/senseboxx/books.git --tags
+deploy:
+  provider: releases
+  api-key: $GH_TOKEN
+  file_glob: true
+  file: *.pdf
+  skip_cleanup: true
+  overwrite: true
+  on:
+    tags: false
+    all_branches: true
 branches:
   only:
     /^book_.*$/
+  except:
+    /^TAG-.*$/
