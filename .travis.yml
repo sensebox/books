@@ -24,7 +24,7 @@ deploy:
   provider: releases
   api-key: $GH_TOKEN
   file_glob: true
-  file: *.pdf
+  file: "./*.pdf"
   skip_cleanup: true
   overwrite: true
   on:
