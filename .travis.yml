@@ -19,7 +19,7 @@ before_deploy:
   - export GIT_TAG=TAG-$TRAVIS_BRANCH
   - git push https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG :refs/tags/$GIT_TAG
   - git tag $GIT_TAG -af -m "generated tag from travis for build $TRAVIS_BUILD_NUMBER"
-  - git push -qf https://GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git --tags
+  - git push -qf https://$GH_TOKEN@github.com/$TRAVIS_REPO_SLUG.git --tags
 deploy:
   provider: releases
   api-key: $GH_TOKEN
