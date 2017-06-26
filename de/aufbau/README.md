@@ -12,5 +12,5 @@ Nutze die folgenden Anleitungen als Empfehlung und Inspiration!
 
 [myosd]: https://owncloud.mpi-bremen.de/index.php/s/PFGBQlriiQHuF97/download
 
-Wenn du selber einen Aufbau entwickelt und dokumentiert hast, fügen wir diesen gern zu dieser Liste hinzu!
-Erstelle hierzu einen Pullrequest auf [github](https://github.com/sensebox/books), oder sende uns die Dokumentation [per Mail](mailto:info@sensebox.de?subject=Aufbau senseBox:home) (idealerweise im [Markdown Format](http://five.squarespace.com/display/ShowHelp?section=Markdown)) zu!
+Wenn du selbst einen Aufbau entwickelt und dokumentiert hast, fügen wir diesen gern zu dieser Liste hinzu!
+Erstelle hierzu einen Pull Request auf [GitHub](https://github.com/sensebox/books), oder sende uns die Dokumentation [per E-Mail](mailto:info@sensebox.de?subject=Aufbau senseBox:home) (idealerweise im [Markdown Format](http://five.squarespace.com/display/ShowHelp?section=Markdown)) zu!
