@@ -1,7 +1,7 @@
 # senseBox Botanischer Garten
 #### https://opensensemap.org/explore/5819ed81c5f60d0011b7f94f
 
-Die senseBox im Botanischen Garten in Münster besteht aus einer erweiterten senseBox:home. Sie misst die üblichen Phänomene wie Temperatur, Luftfeuchtigkeit, Luftdruck, Helligkeit und UV-Index. Zusätzlich wird die Windrichtung, Windgeschwindigkeit, Niederschlagsmenge sowie die Wolkenbedeckung gemessen.
+Die senseBox im Botanischen Garten in Münster besteht aus einer erweiterten senseBox:home. Sie misst die üblichen Phänomene wie Temperatur, Luftfeuchtigkeit, Luftdruck, Helligkeit und UV-Index. Zusätzlich werden die Windrichtung, Windgeschwindigkeit, Niederschlagsmenge sowie die Wolkenbedeckung gemessen.
 
 ## Komponenten
 
@@ -13,12 +13,12 @@ Die senseBox besteht aus folgenden Komponenten:
 
 ## Aufbau
 
-Alle Komponenten sind an der Wetter-Messeinheit befestigt. Die senseBox:cloud und senseBox:home wurde an einem Arm befestigt, damit die Kamera einen uneingeschränkten Blick auf den Himmel hat.
+Alle Komponenten sind an der Wetter-Messeinheit befestigt. Die senseBox:cloud und senseBox:home wurden an einem Arm befestigt, damit die Kamera einen uneingeschränkten Blick auf den Himmel hat.
 
 ![Foto](https://github.com/sensebox/resources/raw/0e66831132400659b518729a37133a3f6f13f815/images/Botanischer_Garten/sensebox-botanischer-garten.jpg)
 
 ### Gehäuse
-Als Gehäuse wird Installationsgehäuse mit transparentem Deckel genutzt (in diesem Fall: https://www.conrad.de/de/installations-gehaeuse-202-x-152-x-90-abs-licht-grau-ral-7035-spelsberg-tg-abs-2015-9-to-1-st-533295.html). Im Gehäuse sind die senseBox:cloud und die senseBox:home untergebracht.
+Als Gehäuse wird ein Installationsgehäuse mit transparentem Deckel genutzt (in diesem Fall: https://www.conrad.de/de/installations-gehaeuse-202-x-152-x-90-abs-licht-grau-ral-7035-spelsberg-tg-abs-2015-9-to-1-st-533295.html). Im Gehäuse sind die senseBox:cloud und die senseBox:home untergebracht.
 ![Foto](https://github.com/sensebox/resources/raw/0e66831132400659b518729a37133a3f6f13f815/images/Botanischer_Garten/gehaeuse-innen.jpg)
 
 ### Stromversorgung
@@ -47,4 +47,4 @@ Der Arduino Sketch befindet sich [hier](https://github.com/sensebox/resources/bl
 
 ## Standort
 
-Die komplette Wetterstation wurde im Botanischen Garten in Münster in etwa 3m Höhe aufgestellt. Sie hängt an einem Masten an welchem vorher eine Webcam installiert war. Der Masten ist umgeben von Bambusstangen.
+Die komplette Wetterstation wurde im Botanischen Garten in Münster in etwa 3m Höhe aufgestellt. Sie hängt an einem Masten, an welchem vorher eine Webcam installiert war. Der Masten ist umgeben von Bambusstangen.
