@@ -35,7 +35,7 @@ Für den Server werden drei Bibliotheken benötigt:
 #include <TextFinder.h>
 #include <SD.h>
 ```
-**Achtung** *Es ist wichtig, dass ihr unsere Version der Ethernet-Bibliothek nutzt (siehe [Downloads](../downloads.md)). Mit der Standartbibliothek vom Arduino funktioniert unser Ethernet-Shield nicht. Die Arduinoumgebung wird die Ethernet-Bibliothek immer 'aktualisieren' wollen; das dürft ihr nicht machen.*
+**Achtung** *Es ist wichtig, dass ihr unsere Version der Ethernet-Bibliothek nutzt (siehe [Downloads](../downloads.md)). Mit der Standardbibliothek vom Arduino funktioniert unser Ethernet-Shield nicht. Die Arduinoumgebung wird die Ethernet-Bibliothek immer 'aktualisieren' wollen; das dürft ihr nicht machen.*
 
 Anschließend müssen in zwei Variablen die MAC-Adresse und die IP-Adresse des Arduino-Servers fest legen. Zusätzlich muss der Pin 4 als SD-Karten Pin festgelegt werden. Außerdem definieren wir uns ein`File`-Objekt `webFile` in dem die HTML Seite abgelegt wird.
 
@@ -86,7 +86,7 @@ Die `loop`-Methode ist in zwei Bereiche unterteilt. Im ersten Teil werden Aktion
 
 ### Auswertung von Anfragen
 Wenn der client verfügbar ist, wartet der `finder` auf eine Anfrage vom client. Bekommt er diese, sucht er das Schlüsselwort "pin" speichert er die nächsten beiden Zeichen in den Variablen `typ`, `pin` und `val`. Je nach Typ wird dann eine Aktion ausgeführt.
-Standartmäßig sind die Typen D, A und a definiert.
+Standardmäßig sind die Typen D, A und a definiert.
 D = digitalen Pin schalten
 A = analogen Pin schalten
 a = analogen Pin auslesen
