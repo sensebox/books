@@ -13,19 +13,23 @@ In dieser Anleitung wird das Anschließen, Aufbauen und Registrieren der Feinsta
 
 ### Registrierung auf der openSenseMap
 
-_Option a: Bestehende senseBox:home_ Falls ihr eure senseBox:home mit einem Feinstaubsensor erweitern wollt, müsst ihr auf der [openSenseMap](https://opensensemap.org/) eure Station auswählen und die Einstellungen bearbeiten. Dies ist über das kleine Zahnrad neben dem Namen eurer Station möglich. Als Passwort benutzt ihr den API-Key, den ihr bei der Registrierung per Mail zugeschickt bekommen habt.
-Nun könnt ihr unterhalb der Konfiguration für die Sensoren auf "Feinstaub-Erweiterung hinzufügen" klicken. Danach speichert ihr die Änderungen und bekommt eine Email mit einem neuen Sketch zugeschickt.
+- **Option a: Bestehende senseBox:home** Falls ihr eure senseBox:home mit einem Feinstaubsensor erweitern wollt, müsst ihr auf der [openSenseMap](https://opensensemap.org/) die Einstellungen eurer Station bearbeiten. Dies ist nach dem Login im Dashboard unter *senseBox verwalten* möglich.
+Nun könnt ihr unter dem Reiter *Erweiterungen* die Feinstaub-Erweiterung aktivieren.
+Nachdem die Einstellungen gespeichert wurden (oben rechts), erhaltet ihr einen aktualisierten Sketch per Email. Dieser muss anschliessend auf die senseBox hochgeladen werden!
 
-_Option b: Neue senseBox:home mit Feinstaub-Erweiterung_ Falls ihr eine neue senseBox:home inklusive Feinstaub-Erweiterung registrieren wollt, wählt bei der Registrierung auf der [openSenseMap](https://opensensemap.org/) das Modell "senseBox:home mit Feinstaub-Erweiterung" aus. Ihr bekommt darauf hin eine Mail mit einem passenden Sketch zugeschickt.
+- **Option b: Neue senseBox:home mit Feinstaub-Erweiterung** Falls ihr eine neue senseBox:home inklusive Feinstaub-Erweiterung registrieren wollt, aktiviert bei der Registrierung auf der [openSenseMap](https://opensensemap.org/account/register) unter *senseBox:Erweiterungen* die Feinstaub-Erweiterung. Ihr bekommt darauf hin eine Mail mit einem angepassten Sketch zugeschickt.
 
 ### Aktualisierung der Arduino Software
 
-Zur Kommunikation zwischen dem SDS011 und dem Arduino/Genuino Mikrokontroller wird eine einfache serielle Datenverbindung aufgebaut. Diese serielle Schnittstelle wird auch genutzt, um über die USB Verbindung mit dem Computer zu kommunizieren. Daher dürfen die digitalen Pins 0 (RX) und 1 (TX), bzw. der UART Steckplatz auf dem senseBox Shield **nicht verbunden** sein, wenn ein Sketch über die Arduino IDE auf das Arduino/Genuino Board geladen wird!
+Um den Sensor korrekt auszulesen muss der erhaltene Arduino-Sketch auf die senseBox geladen werden.
+
+> **Hinweis:** *Zur Kommunikation zwischen dem SDS011 und dem Arduino/Genuino Mikrokontroller wird eine einfache serielle Datenverbindung aufgebaut. Diese serielle Schnittstelle wird auch genutzt, um über die USB Verbindung mit dem Computer zu kommunizieren. Daher dürfen die digitalen Pins 0 (RX) und 1 (TX), bzw. der UART Steckplatz auf dem senseBox Shield **nicht verbunden** sein, wenn ein Sketch über die Arduino IDE auf das Arduino/Genuino Board geladen wird!*
 
 1. Installiert zunächst die Bibliothek für den Feinstaubsensor. Ladet dazu [dieses zip-Archiv](https://github.com/sensebox/SDS011-select-serial/archive/master.zip) herunter und kopiert den Inhalt in euer arduino/libraries Verzeichnis.
 2. Startet nun die Ardunio IDE neu und öffnet den soeben erhaltenen Sketch.
 3. Passt den Sketch für eure Netzwerkverbindung an. Dazu gehört das Eintragen von Wifi Name und Passwort oder statische IP.
 4. Trennt die Kabelverbindung zwischen dem Feinstaubsensor und dem Arduino/Genuino Board und übertragt den Sketch auf das Board. Als letztes schließt ihr das Kabel des Sensors wieder an.
+
 
 ### Anschluss Feinstaubsensor
 
