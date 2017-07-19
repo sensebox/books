@@ -30,7 +30,8 @@ eine *Application* und ein *Device* registriert werden. Hierbei erhält man eine
 
 Für die registrierte Application muss die HTTP Integration unter <https://console.thethingsnetwork.org/applications/DEINE_APPID/integrations/create/http-ttn>
 aktiviert werden. Diese muss konfiguriert werden, dass sie die Nachrichten von
-Devices per `POST` an `https://ttn.opensensemap.org/v1.1` weiterleitet:
+Devices per `POST` an `https://ttn.opensensemap.org/v1.1` weiterleitet. Das
+Authorization-Feld kann leer bleiben!
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/osem_ttnconsole.png" center width="767" />
 
@@ -52,11 +53,11 @@ ausgewählt oder definiert werden.
 Die Auswahl des Decoding-Profils ist von dem Encoding der Nachrichten auf dem
 Mikrocontroller, und ob im TTN eine Payload-Function eingestellt wurde abhängig.
 
-Für die senseBox:home (ohne Erweiterungen) kann das `senseBox:home` Profil
+- Für die senseBox:home (ohne Erweiterungen) kann das `senseBox:home` Profil
 verwendet werden.
-Werden die Messungen auf der LoRa-Node mit der `lora-serialization`-Library
-encodiert, sollte das `lora-serialization` Profil verwendet werden`.
-Mit dem `json` Profil werden beliebige andere Encodings unterstuetzt, falls eine
+- Werden die Messungen auf der LoRa-Node mit der `lora-serialization`-Library
+encodiert, sollte das `lora-serialization` Profil verwendet werden.
+- Mit dem `json` Profil werden beliebige andere Encodings unterstuetzt, falls eine
 Payload-Function in der TTN Console die Nachrichten passend decodiert.
 
 Im Folgenden wird erklärt wie die unterstützten Profile konfiguriert werden:
@@ -75,10 +76,10 @@ Hierzu nutzen wir die [`lora-serialization`](https://github.com/thesolarnomad/lo
 Bibliothek, welche ein einheitliches Encoding auf dem Microcontroller, und
 Decoding am anderen Ende der Leitung erlaubt.
 
-Es werden die Encodings `temperature`, `humidity`, `unixtime` `uint8` und
-`uint16` unterstützt, welche pro Sensor unter **Dekodierungsoptionen** angegeben werden müssen.
-Die Zuordnung des Sensors kann über eine der folgenden Properties erfolgen:
-`sensor_id`, `sensor_title`, `sensor_unit`, `sensor_type`.
+Es werden die Encodings `temperature`, `humidity`, `unixtime`, `uint8` und
+`uint16` unterstützt, welche pro Sensor unter **Dekodierungsoptionen** angegeben
+werden müssen.  Die Zuordnung des Sensors kann über eine der Properties
+`sensor_id`, `sensor_title`, `sensor_unit`, `sensor_type` erfolgen.
 
 Ein Beispiel für zwei Sensoren sähe so aus:
 
@@ -104,7 +105,7 @@ erhält. Beispiel:
 ]
 ```
 
-#### `json` - Decoding als JSON mit TTN Payload Function
+#### `json` - Decoding mit TTN Payload Function
 Falls die `lora-serialization` Library nicht zur Wahl steht, können Messungen
 schon auf Seite des TTN mittels einer *Payload Function* dekodiert werden,
 sodass hier beliebige Datenformate unterstützt werden.
