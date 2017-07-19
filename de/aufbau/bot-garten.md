@@ -1,7 +1,16 @@
 # senseBox Botanischer Garten
-#### https://opensensemap.org/explore/5819ed81c5f60d0011b7f94f
 
 Die senseBox im Botanischen Garten in Münster besteht aus einer erweiterten senseBox:home. Sie misst die üblichen Phänomene wie Temperatur, Luftfeuchtigkeit, Luftdruck, Helligkeit und UV-Index. Zusätzlich werden die Windrichtung, Windgeschwindigkeit, Niederschlagsmenge sowie die Wolkenbedeckung gemessen.
+
+<iframe
+  src="https://sensebox.github.io/opensensemap-widget/iframe.html?senseboxId=5819ed81c5f60d0011b7f94f"
+  width="400"
+  height="600"
+  marginwidth="8" marginheight="8"
+  hspace="0" vspace="0"
+  frameborder="0"
+  scrolling="no"
+></iframe>
 
 ## Komponenten
 
