@@ -10,7 +10,7 @@ Nutze die folgenden Anleitungen als Empfehlung und Inspiration!
 | [MyOSD WiFi][myosd] (PDF)         | MyOSD         | Okt. 2016 |
 | [Botanischer Garten](bot-garten.md)         | Felix         | März. 2017 |
 
-[myosd]: https://owncloud.mpi-bremen.de/index.php/s/PFGBQlriiQHuF97/download
+[myosd]: https://github.com/sensebox/resources/blob/master/guides/MyOSD_senseBox_home_Wlan.pdf?raw=true
 
 Wenn du selbst einen Aufbau entwickelt und dokumentiert hast, fügen wir diesen gern zu dieser Liste hinzu!
 Erstelle hierzu einen Pull Request auf [GitHub](https://github.com/sensebox/books), oder sende uns die Dokumentation [per E-Mail](mailto:info@sensebox.de?subject=Aufbau senseBox:home) (idealerweise im [Markdown Format](http://five.squarespace.com/display/ShowHelp?section=Markdown)) zu!
