@@ -43,8 +43,9 @@
 * [Mehrfarbige LED](projekte/rgb_led.md)
 * [Kaminfeuer](projekte/randomBlink.md)
 * [Community-Projekte](community_projekte/README.md)
+    * [Wetterstation](community_projekte/wetterstation.md)
     * [Wetterstation mit Display](community_projekte/wetterstation_lcd-display.md)
-    * [Wetterstation mit Anenometer](community_projekte/wetterstation_windmesser.md)
+    * [Wetterstation mit Anemometer](community_projekte/wetterstation_windmesser.md)
     * [Rauchmelder](community_projekte/rauchmelder.md)
     * [LED Uhr](community_projekte/led_clock.md)
 
