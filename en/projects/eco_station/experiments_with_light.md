@@ -4,7 +4,7 @@ If we watch television, turn on the radio, write a message with our smartphone, 
 ## Aim of this lesson
 In this lesson we are using a light sensor to detect the illuminance of visible light in lux.
 
-##Materials
+## Materials
 * Light Sensor `TSL 45315`
 
 ## Basics
@@ -50,7 +50,7 @@ Wire.endTransmission();
 Next, we will set a fixed exposure time of 400 ms:
 
 ```arduino
-Wire.beginTransmisson(I2C_ADDR);
+Wire.beginTransmission(I2C_ADDR);
 Wire.write(0x80 | REG_CONFIG);
 Wire.write(0x00); // 400 ms
 Wire.endTransmission();
@@ -60,7 +60,7 @@ To change the shutter speed, you can change the corresponding value of `0x00` in
 In the `loop()` function, we start the measurement routine and request the raw bytes containing the measurement from the sensor:
 
 ```arduino
-Wire.beginTransmisson(I2C_ADDR);
+Wire.beginTransmission(I2C_ADDR);
 Wire.write(0x80 | REG_DATALOW);
 Wire.endTransmission();
 Wire.requestFrom(I2C_ADDR, 2); // Request 2 bytes
@@ -81,7 +81,7 @@ In the sensor's datasheet, we can find the matching formula:
 
 ```arduino
 uint32_t lux;
-lux = (high << 8) | (Low << 0);
+lux = (high << 8) | (low << 0);
 lux *= 1; // Multiplier for 400ms
 ```
 
