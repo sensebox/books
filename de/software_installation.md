@@ -94,4 +94,3 @@ Wenn die Verbindung klappt, bekommst du eine entsprechende Meldung im seriellen 
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/12_serial2.png" align="center" width="400"/>
 
-> Damit die Datenübertragung funktioniert darf Port 8000 nicht von deinem Router geblockt werden. Im Normalfall ist dieser Port aber freigegeben.

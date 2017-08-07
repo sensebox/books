@@ -16,7 +16,7 @@ This setup guide is written for Windows 7, but other operating systems like Linu
 If something goes wrong, just [contact our support team](mailto:support@sensebox.de)!
 
 ## Arduino IDE software download
-> Please use Arduino IDE v1.6.5 or higher!
+> Please use Arduino IDE v1.8.3 or higher!
 
 The senseBox uses a modified version of the Arduino Uno microcontroller.
 To load a program onto the board, you need the integrated development environment (IDE) by Arduino.
@@ -85,4 +85,3 @@ If the connection was successful, an according message is displayed in the seria
 
 <img src="https://raw.githubusercontent.com/sensebox/resources/master/images/home/12_serial2.png" align="center" width="400"/>
 
-> Due to legacy reasons port 8000 and 9000 must be opened on your router for a successful connection to the OSeM server. This should normally be the case without configuration
