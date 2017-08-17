@@ -15,5 +15,6 @@
 
 ---
 
-* [HTML Widget](osem_widget.md)
 * [REST API](osem_api.md)
+* [Community Anwendungen](community_anwendungen.md)
+* [HTML Widget](osem_widget.md)
