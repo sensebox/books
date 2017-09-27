@@ -85,10 +85,14 @@ In einem geschlossen Raum sollte keine bzw. nur minimale UV-Strahlung gemessen w
 Nach dem selben Schema kann noch die Internetverbindung der senseBox:home getestet werden:
 
 1. den seriellen Monitor (Fenster mit den Messwerten) schließen
-2. ein Netzwerkkabel von eurem Heimnetzwerk mit der senseBox verbinden
-3. in Menüleiste `Datei` → `Beispiele` → `senseBox` → `_02_network_test` auswählen
-4. das Programm über das **Pfeil** Icon auf den Mikrocontroller laden
-5. den seriellen Monitor über das **Lupe** Icon starten
+2. wenn kein WLAN Modell vorliegt:
+    - ein Netzwerkkabel von eurem Heimnetzwerk mit der senseBox verbinden 
+    - in Menüleiste `Datei` → `Beispiele` → `senseBox` → `_02_internet_test` auswählen
+2. mit WLAN-Modell:
+    - in Menüleiste `Datei` → `Beispiele` → `senseBox` → `_03_wifi_internet_test`
+    - ganz oben in der Datei `03_wifi_internet_test`die WLAN Zugangsdaten eintragen (Netzwerk-Name und Passwort)
+3. das Programm über das **Pfeil** Icon auf den Mikrocontroller laden
+4. den seriellen Monitor über das **Lupe** Icon starten
 
 Wenn die Verbindung klappt, bekommst du eine entsprechende Meldung im seriellen Monitor angezeigt.
 
