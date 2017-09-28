@@ -85,7 +85,7 @@ In einem geschlossen Raum sollte keine bzw. nur minimale UV-Strahlung gemessen w
 Nach dem selben Schema kann noch die Internetverbindung der senseBox:home getestet werden:
 
 1. den seriellen Monitor (Fenster mit den Messwerten) schließen
-2. wenn kein WLAN Modell vorliegt:
+2. wenn ein Ethernet Modell vorliegt:
     - ein Netzwerkkabel von eurem Heimnetzwerk mit der senseBox verbinden 
     - in Menüleiste `Datei` → `Beispiele` → `senseBox` → `_02_internet_test` auswählen
 2. mit WLAN-Modell:
