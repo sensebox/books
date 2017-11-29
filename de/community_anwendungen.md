@@ -20,6 +20,7 @@ welche die openSenseMap integrieren oder als Schnittstelle nutzen.
 ## Datenanalyse
 
 - [`opensensmapr` R client](https://github.com/noerw/opensensmapR): openSenseMap Messwerte und Boxen in der statistischen Umgebung R
+- [`senseBox` openSenseMap R client](https://github.com/JohannesFriedrich/senseBox): An R API for the senseBox project. Download and analyse environmental data provided by https://sensebox.de/en/.
 
 ## Sensor Firmware
 

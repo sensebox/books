@@ -20,6 +20,7 @@ that made by the community.
 ## Data Analysis
 
 - [`opensensmapr` R client](https://github.com/noerw/opensensmapR): package for analysis of observations within the R statistical environment
+- [`senseBox` openSenseMap R client](https://github.com/JohannesFriedrich/senseBox): An R API for the senseBox project. Download and analyse environmental data provided by https://sensebox.de/en/.
 
 ## Sensor Firmware
 
