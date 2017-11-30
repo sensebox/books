@@ -3,7 +3,6 @@ In this area various downloads and helpful resources regarding the senseBox are 
 
 ## Libraries
 A package of all the required libraries for the various sensors we use is provided [here](https://raw.githubusercontent.com/sensebox/resources/master/libraries/senseBox_Libraries.zip).
-Note that we use a customized `Ethernet.h` library, as the stock-library is not compatible with our ethernet shield.
 
 ## Datasheets
 Most manufacturers provide datasheets for their sensors and other components, which provide specifications and further insights into the inner workings of the devices:

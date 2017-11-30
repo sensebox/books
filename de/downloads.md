@@ -3,7 +3,6 @@ In diesem Bereich findest du verschiedene Downloads, die dir bei der Verwendung 
 
 ## Libraries
 Ein vollständiges Library Paket für die senseBox:edu findest du [hier](https://raw.githubusercontent.com/sensebox/resources/master/libraries/senseBox_Libraries.zip).
-Beachte, dass wir eine modifizierte Version der `Ethernet.h`-Bibliothek verwenden, da die Variante der Arduino-IDE inkompatibel mit unserem Ethernet-Shield ist.
 
 ## Datenblätter
 Viele Hersteller bieten für ihre Sensoren und andere Bauteile Datenblätter an, aus denen ihr verschiedenen elektronische Spezifikationen ablesen könnt:
