@@ -28,7 +28,7 @@ Dazu sind folgende Schritte nötig:
 7. Windows wird die Treiberinstallation vervollständigen und der Arduino-Uno sollte funktionieren.
 
 ## Arduino Bibliotheken installieren
-Um die Sensoren und die Netzwerkkarte nutzen zu können, müssen noch ein paar Bibliotheken installiert werden. Ein zip-Archiv mit allen benötigten Bibliotheken findet ihr [hier](https://github.com/sensebox/resources/raw/master/libraries/senseBox_Libraries.zip).
+Um die Sensoren und die Netzwerkkarte nutzen zu können, müssen noch ein paar Bibliotheken installiert werden. Ein zip-Archiv mit allen benötigten Bibliotheken findet ihr [hier](https://github.com/sensebox/senseBox_library/archive/master.zip).
 
 Ladet das zip-Archiv herunter und integriert nun die beiden Ordner „examples“ und „libraries“ aus dem Archiv in euren Arduino Ordner.
 Wenn ihr gefragt werdet ob bestehende Dateien ersetzt werden sollen, folgt den Anweisungen unten auf der Seite.
