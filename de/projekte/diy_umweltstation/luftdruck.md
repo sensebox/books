@@ -39,7 +39,7 @@ Auf diesem Objekt werden alle Funktionen der Bibliothek aufgerufen:
 
 ```arduino
 #include <SenseBox.h>
-BMP280 bmp;
+BMP280 bmp_sensor;
 ```
 
 In der `setup()`-Funktion muss der Sensor initialisiert werden. Verwende dazu die folgenden Zeilen:
@@ -54,7 +54,7 @@ In den Variablen `temp` und `pressure` stehen dann jeweils die aktuellen Messwer
 ```arduino
 double temp, pressure;
  pressure = bmp_sensor.getPressure();
- temp = bmp_sensor.getTemperatur();
+ temp = bmp_sensor.getTemperature();
 ```
 
 ## Aufgaben
