@@ -16,7 +16,7 @@ Die Arduino-IDE bietet eine Funktion um externe Bibliotheken zu importieren. Daz
 Nachdem du die Softwarebibliotheken der Arduino IDE hinzugefügt hast musst du diese noch in deinen Sketch einbinden. Dazu hast du prinzipiell zwei Möglichkeiten:
 
 ### Über das Arduino IDE Menü
-Um eine Bibliothek in deinen Sketch einzubinden musst du auf *Sketch* -> *Library importieren* klicken, woraufhin sich eine Liste aller verfügbarer Bibliotheken öffnet. Wenn du in einem unserer Projekte eine Bibliothek benötigst, wird dir genau erklärt werden, welche du einbinden musst. Du kannst aber jetzt schon mal die senseBox-Libarary installieren. Die aktuelle Version findest du [hier](../../getting_started/installation_der_software).
+Um eine Bibliothek in deinen Sketch einzubinden musst du auf *Sketch* -> *Library importieren* klicken, woraufhin sich eine Liste aller verfügbarer Bibliotheken öffnet. Wenn du in einem unserer Projekte eine Bibliothek benötigst, wird dir genau erklärt werden, welche du einbinden musst. Du kannst aber jetzt schon mal die senseBox-Libarary installieren. Die aktuelle Version findest du [hier](../getting_started/installation_der_software).
 
 ### Über Code
 Wenn du diesen Vorgang öfter machst, ist es in der Regel schneller das gleiche Ziel durch eine Zeile Programmcode zu erreichen.
