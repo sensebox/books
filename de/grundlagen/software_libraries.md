@@ -25,7 +25,7 @@ Diese Yeile muss als erstes im Programmablauf stehen, noch bevor die `setup()`-F
 Mithilfe der `#include` Direktive wird eine Bibliothek geladen.
 Für das Ethernet-Shield wird zum Beispiel eine Library benötigt, die über `#include <Ethernet.h>` eingebunden wird.
 
-Zum besseren Verständis kannst du dir einmal folgenden Beispielcode anschauen:
+Zum besseren Verständis kannst du dir einmal folgenden Beispielcode anschauen::
 
 ```arduino
 #include <Ethernet.h> // Einbinden der Bibliothek
