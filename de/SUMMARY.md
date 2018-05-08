@@ -4,6 +4,7 @@
 * [Inventar & Grundaufbau](inventar.md)
 * [Softwareinstallation](software_installation.md)
 * [openSenseMap Registrierung](osem.md)
+* [openSenseMap Downloads](osem.md)
 ---
 * [senseBox:home Feinstaub-Erweiterung](feinstaub/README.md)
 * [Solarbetriebene senseBox:home](solar.md)
