@@ -12,6 +12,7 @@ welche die openSenseMap integrieren oder als Schnittstelle nutzen.
 - [senseBox Dashboard](https://github.com/sensebox/sensebox-dashboard): zeigt aktuelle Messwerte einer senseBox an
 - [senseBox Widget](osem_widget.md)
 - [Open Sense](https://play.google.com/store/apps/details?id=de.codefor.karlsruhe.opensense): Android widget zum Darstellen von aktuellen Messwerten von opensensemap.org ([Code auf GitHub](https://github.com/CodeforKarlsruhe/opensense))
+- [SenseBox Data Dashboard](https://sensebox-data-dashboard.de/) umfangreiches Dashboard für SenseBox Daten und externe Daten
 
 <!-- not actually using oSeM as data input
 - [R Shiny Weather Conditions](https://github.com/Avipsa1/Sensebox): Visualization of weather conditions as measured with a senseBox with R Shiny
